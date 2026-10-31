@@ -1,0 +1,15 @@
+# Build-time Postgres pro lokální vývoj. Migrace se aplikují při prvním startu.
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: papanek
+      POSTGRES_PASSWORD: papanek
+      POSTGRES_DB: papanek
+    ports:
+      - "5437:5432"
+    volumes:
+      - ./tools/migrations:/docker-entrypoint-initdb.d:ro
+      - papanek-db:/var/lib/postgresql/data
+volumes:
+  papanek-db:

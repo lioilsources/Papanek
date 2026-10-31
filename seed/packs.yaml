@@ -1,0 +1,9 @@
+# Balíčky (plán §5, §13). target = cílový počet receptů. Návrh čeká na potvrzení (§15 bod 2).
+- {id: free, cs: Zdarma, en: Free, target: 50}
+- {id: czech, cs: Česká, en: Czech, product: com.ol1n.papanek.pack.czech, target: 300}
+- {id: italian, cs: Italská, en: Italian, product: com.ol1n.papanek.pack.italian, target: 250}
+- {id: vietnamese, cs: Vietnamská, en: Vietnamese, product: com.ol1n.papanek.pack.vietnamese, target: 150}
+- {id: asian, cs: Asijská, en: Asian, product: com.ol1n.papanek.pack.asian, target: 300}
+- {id: mexmed, cs: Mexická a středomořská, en: Mexican & Mediterranean, product: com.ol1n.papanek.pack.mexmed, target: 200}
+- {id: quick, cs: Rychlá a studentská, en: Quick & Student, product: com.ol1n.papanek.pack.quick, target: 200}
+- {id: family, cs: Dětská a rodinná, en: Kids & Family, product: com.ol1n.papanek.pack.family, target: 150}

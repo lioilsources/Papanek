@@ -1,0 +1,27 @@
+- {slug: palm_oil, cs: palmový olej, en: palm oil, cat: oleje_tuky, unit: ml, shelf: 365, al_cs: [palmový olej, palmového oleje, palmovým olejem], al_en: [palm oil, red palm oil]}
+- {slug: evaporated_milk, cs: zahuštěné neslazené mléko, en: evaporated milk, cat: mlecne, unit: ml, shelf: 365, allergens: [mleko], al_cs: [zahuštěné neslazené mléko, zahuštěného neslazeného mléka], al_en: [evaporated milk]}
+- {slug: whipping_stabilizer, cs: ztužovač šlehačky, en: whipped cream stabilizer, cat: sladidla, unit: balicek, gpp: 10, shelf: 365, al_cs: [ztužovač šlehačky, ztužovače šlehačky, ztužovačem šlehačky, ztužovač, ztužovače], al_en: [whipped cream stabilizer, cream stabilizer]}
+- {slug: pineapple_juice, cs: ananasový džus, en: pineapple juice, cat: napoje, unit: ml, shelf: 7, al_cs: [ananasový džus, ananasového džusu, ananasovým džusem], al_en: [pineapple juice]}
+- {slug: ice, cs: led, en: ice, cat: napoje, unit: g, al_cs: [led, ledu, ledem, kostky ledu, kostek ledu, drcený led, drceného ledu], al_en: [ice, ice cubes, crushed ice]}
+- {slug: ice_cream, cs: zmrzlina, en: ice cream, cat: mlecne, unit: g, shelf: 90, allergens: [mleko], al_cs: [zmrzlina, zmrzliny, zmrzlinu, zmrzlinou, vanilková zmrzlina, vanilkové zmrzliny], al_en: [ice cream, vanilla ice cream, strawberry ice cream]}
+- {slug: tequila, cs: tequila, en: tequila, cat: napoje, unit: ml, al_cs: [tequila, tequily, tequilu], al_en: [tequila]}
+- {slug: bourbon, cs: bourbon, en: bourbon, cat: napoje, unit: ml, al_cs: [bourbon, bourbonu, whisky, whiskey], al_en: [bourbon, whisky, whiskey]}
+- {slug: coffee_liqueur, cs: kávový likér, en: coffee liqueur, cat: napoje, unit: ml, al_cs: [kávový likér, kávového likéru], al_en: [coffee liqueur, kahlua]}
+- {slug: cream_of_tartar, cs: vinný kámen, en: cream of tartar, cat: mouka, unit: g, al_cs: [vinný kámen, vinného kamene], al_en: [cream of tartar]}
+- {slug: citric_acid, cs: kyselina citronová, en: citric acid, cat: koreni, unit: g, al_cs: [kyselina citronová, kyseliny citronové, kyselinu citronovou], al_en: [citric acid]}
+- {slug: puff_pastry, cs: listové těsto, en: puff pastry, cat: pecivo, unit: g, gpp: 400, shelf: 14, allergens: [lepek], al_cs: [listové těsto, listového těsta, listovým těstem], al_en: [puff pastry, puff pastry dough, frozen puff pastry]}
+- {slug: phyllo, cs: fíla, en: phyllo dough, cat: pecivo, unit: g, shelf: 14, allergens: [lepek], al_cs: [fíla, fíly, fílo těsto, filo těsto, těsto fílo], al_en: [phyllo, phyllo dough, filo, filo pastry, fillo dough]}
+- {slug: shortcrust_pastry, cs: křehké těsto, en: shortcrust pastry, cat: pecivo, unit: g, shelf: 7, allergens: [lepek], al_cs: [křehké těsto, křehkého těsta], al_en: [shortcrust pastry, shortcrust pastry dough, pie crust, pie shell, pie dough]}
+- {slug: marshmallow, cs: marshmallow, en: marshmallows, cat: sladidla, unit: g, shelf: 180, al_cs: [marshmallow, marshmallows], al_en: [marshmallows, marshmallow, mini marshmallows, miniature marshmallows]}
+- {slug: almond_extract, cs: mandlové aroma, en: almond extract, cat: sladidla, unit: ml, allergens: [skorapkove_plody], al_cs: [mandlové aroma, mandlového aroma], al_en: [almond extract]}
+- {slug: lemon_extract, cs: citronové aroma, en: lemon extract, cat: sladidla, unit: ml, al_cs: [citronové aroma, citronového aroma], al_en: [lemon extract]}
+- {slug: rose_water, cs: růžová voda, en: rose water, cat: sladidla, unit: ml, al_cs: [růžová voda, růžové vody, růžovou vodu], al_en: [rose water, rosewater]}
+- {slug: ginger_paste, cs: zázvorová pasta, en: ginger paste, cat: ocet_omacky, unit: g, shelf: 60, al_cs: [zázvorová pasta, zázvorové pasty], al_en: [ginger paste, ginger-garlic paste, ginger garlic paste]}
+- {slug: garlic_paste, cs: česneková pasta, en: garlic paste, cat: ocet_omacky, unit: g, shelf: 60, al_cs: [česneková pasta, česnekové pasty], al_en: [garlic paste]}
+- {slug: tamarind, cs: tamarind, en: tamarind, cat: ocet_omacky, unit: g, shelf: 365, al_cs: [tamarind, tamarindu, tamarindová pasta, tamarindové pasty], al_en: [tamarind, tamarind paste, tamarind pulp, tamarind concentrate]}
+- {slug: collard_greens, cs: kadeřávek listový, en: collard greens, cat: zelenina, unit: g, shelf: 5, al_cs: [listový kadeřávek, listového kadeřávku], al_en: [collard greens, collards]}
+- {slug: bacon_fat, cs: slaninový tuk, en: bacon fat, cat: oleje_tuky, unit: g, shelf: 90, al_cs: [slaninový tuk, škvařená slanina], al_en: [bacon fat, bacon grease, bacon drippings]}
+- {slug: flour_barley, cs: ječná mouka, en: barley flour, cat: mouka, unit: g, shelf: 365, allergens: [lepek], al_cs: [ječná mouka, ječné mouky, ječnou mouku], al_en: [barley flour]}
+- {slug: flour_cake, cs: dortová mouka, en: cake flour, cat: mouka, unit: g, shelf: 365, allergens: [lepek], al_cs: [dortová mouka, dortové mouky], al_en: [cake flour, pastry flour]}
+- {slug: pickling_sugar, cs: želírovací cukr, en: jam sugar, cat: sladidla, unit: g, al_cs: [želírovací cukr, želírovacího cukru, želírovacím cukrem, džemový cukr, džemového cukru], al_en: [jam sugar, preserving sugar]}
+- {slug: cracklings, cs: škvarky, en: pork cracklings, cat: uzeniny, unit: g, shelf: 14, al_cs: [škvarky, škvarků, škvarkami], al_en: [cracklings, pork cracklings, pork rinds]}

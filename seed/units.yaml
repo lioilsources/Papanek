@@ -1,0 +1,47 @@
+# Jednotky a obecné konverze (plán §3, §6). Hodnoty: 1 lžíce = 15 ml, 1 lžička = 5 ml.
+units:
+  - {id: g, name: gram, kind: mass, aliases: [g, gr, gram, gramy, gramu, gramů, grams]}
+  - {id: kg, name: kilogram, kind: mass, aliases: [kg, kilo, kila, kilogram, kilogramy, kilogramu, kilogramů, kilograms]}
+  - {id: dkg, name: dekagram, kind: mass, aliases: [dkg, deka, dag]}
+  - {id: oz, name: ounce, kind: mass, aliases: [oz, ounce, ounces]}
+  - {id: lb, name: pound, kind: mass, aliases: [lb, lbs, pound, pounds]}
+  - {id: ml, name: mililitr, kind: volume, aliases: [ml, mililitr, mililitry, mililitru, mililitrů, milliliter, milliliters, millilitre, millilitres]}
+  - {id: dl, name: decilitr, kind: volume, aliases: [dl, decilitr, decilitry, decilitru, decilitrů, deciliter, decilitre]}
+  - {id: l, name: litr, kind: volume, aliases: [l, litr, litry, litru, litrů, liter, liters, litre, litres]}
+  - {id: cl, name: centilitr, kind: volume, aliases: [cl, centilitr, centilitry, centilitru, centilitrů]}
+  - {id: gallon, name: galon, kind: volume, aliases: [gallon, gallons, gal, galon, galony, galonů]}
+  - {id: lzice, name: lžíce, kind: volume, aliases: [lžíce, lžic, lžíci, lžící, polévková lžíce, polévkové lžíce, polévkových lžic, pol. lžíce, pl, tbsp, tbs, tablespoon, tablespoons]}
+  - {id: lzicka, name: lžička, kind: volume, aliases: [lžička, lžičky, lžiček, lžičku, kávová lžička, čajová lžička, kl, čl, tsp, teaspoon, teaspoons]}
+  - {id: hrnek, name: hrnek, kind: volume, aliases: [hrnek, hrnky, hrnků, hrnku, hrníček, hrníčky, hrníčků, hrníčku, šálek, šálky, šálků, šálku, cup, cups]}
+  - {id: pint, name: pint, kind: volume, aliases: [pint, pints, pt]}
+  - {id: quart, name: quart, kind: volume, aliases: [quart, quarts, qt]}
+  - {id: flozs, name: fluid ounce, kind: volume, aliases: [fl oz, fluid ounce, fluid ounces]}
+  - {id: stipka, name: špetka, kind: volume, aliases: [špetka, špetky, špetku, špetek, pinch, pinches, dash, dashes]}
+  - {id: ks, name: kus, kind: count, aliases: [ks, kus, kusy, kusů, kusu, piece, pieces]}
+  - {id: strouzek, name: stroužek, kind: count, aliases: [stroužek, stroužky, stroužků, clove, cloves]}
+  - {id: svazek, name: svazek, kind: count, aliases: [svazek, svazky, svazku, svazků, svazeček, bunch, bunches]}
+  - {id: hrst, name: hrst, kind: count, aliases: [hrst, hrsti, hrstí, handful, handfuls]}
+  - {id: plechovka, name: plechovka, kind: count, aliases: [plechovka, plechovky, plechovku, plechovek, konzerva, konzervy, konzervu, can, cans, tin, tins]}
+  - {id: balicek, name: balíček, kind: count, aliases: [balíček, balíčky, balíčků, balíčku, balení, sáček, sáčky, sáčků, package, packages, pkg, packet, packets, pack, envelope, envelopes, carton, cartons]}
+  - {id: platek, name: plátek, kind: count, aliases: [plátek, plátky, plátků, slice, slices]}
+  - {id: stonek, name: stonek, kind: count, aliases: [stonek, stonky, stonků, stalk, stalks]}
+  - {id: snitka, name: snítka, kind: count, aliases: [snítka, snítky, snítek, snítku, sprig, sprigs]}
+  - {id: kostka, name: kostka, kind: count, aliases: [kostka, kostky, kostku, kostek, cube, cubes]}
+  - {id: hlava, name: hlava, kind: count, aliases: [hlava, hlavy, hlavu, hlávka, hlávky, hlávku, head, heads]}
+
+conversions:
+  - {from: kg, to: g, factor: 1000}
+  - {from: dkg, to: g, factor: 10}
+  - {from: oz, to: g, factor: 28.35}
+  - {from: lb, to: g, factor: 453.6}
+  - {from: l, to: ml, factor: 1000}
+  - {from: dl, to: ml, factor: 100}
+  - {from: cl, to: ml, factor: 10}
+  - {from: gallon, to: ml, factor: 3785}
+  - {from: lzice, to: ml, factor: 15}
+  - {from: lzicka, to: ml, factor: 5}
+  - {from: hrnek, to: ml, factor: 240}
+  - {from: pint, to: ml, factor: 473}
+  - {from: quart, to: ml, factor: 946}
+  - {from: flozs, to: ml, factor: 29.57}
+  - {from: stipka, to: ml, factor: 0.3}
