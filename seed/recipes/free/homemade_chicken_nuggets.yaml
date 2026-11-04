@@ -1,0 +1,73 @@
+slug: homemade_chicken_nuggets
+pack: free
+cuisine: family
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 15
+servings: 4
+tags:
+  - kids
+  - quick
+  - main
+image_prompt: Golden brown chicken nuggets served on a white plate with a side of ketchup and fresh parsley.
+ingredients:
+  - ingredient: chicken_breast
+    qty: 500
+    unit: g
+  - ingredient: egg
+    qty: 1
+    unit: ks
+  - ingredient: breadcrumbs
+    qty: 100
+    unit: g
+  - ingredient: flour_plain
+    qty: 50
+    unit: g
+    note_cs: na obalení
+    note_en: for coating
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: sunflower_oil
+    qty: 200
+    unit: ml
+    note_cs: na smažení
+    note_en: for frying
+  - ingredient: ketchup
+    qty: 4
+    unit: lzice
+    optional: true
+    note_cs: k podávání
+    note_en: for serving
+cs:
+  title: Domácí kuřecí nugety
+  summary: Křupavé kuřecí nugety, které snadno připravíš doma. Chutnají dětem i jako rychlá večeře.
+  steps:
+    - text: Kuřecí prsa osuš papírovou utěrkou a nakrájej na kousky velké asi 2–3 cm.
+    - text: Maso osol a opepři.
+    - text: Připrav si tři talíře. Na první nasyp mouku, na druhém rozšlehej vejce a na třetí nasyp strouhanku.
+    - text: Každý kousek masa obal nejdřív v mouce, pak ve vejci a nakonec ve strouhance. Obal lehce přitiskni, aby držel.
+    - text: Na pánvi rozehřej olej na středním plameni. Je dost horký, když kolem hozeného drobku strouhanky začne bublat.
+    - text: Vlož do oleje první várku nugetů a smaž je 3 minuty, dokud spodní strana nezezlátne.
+      timer_sec: 180
+    - text: Nugety obrať a smaž další 3 minuty. Jeden rozkroj, uvnitř musí být maso bílé a bez růžové barvy.
+      timer_sec: 180
+    - text: Hotové nugety dej na talíř s papírovou utěrkou, aby odsál přebytečný tuk. Stejně usmaž zbytek.
+    - text: Podávej horké s kečupem.
+  tips: Nedávej do pánve příliš mnoho nugetů najednou, olej by vychladl a obal by nebyl křupavý. Po práci se syrovým masem si umyj ruce, prkénko i nůž.
+en:
+  title: Homemade Chicken Nuggets
+  summary: Crispy chicken nuggets you can easily make at home. Kids love them and they make a quick dinner.
+  steps:
+    - text: Pat the chicken breasts dry with paper towels and cut them into pieces of about 2–3 cm.
+    - text: Season the meat with salt and pepper.
+    - text: Set out three plates. Put the flour on the first, beat the egg on the second, and put the breadcrumbs on the third.
+    - text: Coat each piece of meat first in flour, then in egg, and finally in breadcrumbs. Press the coating lightly so it sticks.
+    - text: Heat the oil in a frying pan over medium heat. It is hot enough when a breadcrumb dropped in starts to sizzle.
+    - text: Put the first batch of nuggets in the oil and fry for 3 minutes until the bottom is golden.
+      timer_sec: 180
+    - text: Flip the nuggets and fry for another 3 minutes. Cut one open; the meat must be white inside with no pink.
+      timer_sec: 180
+    - text: Transfer the finished nuggets to a plate lined with paper towels to soak up excess oil. Fry the rest the same way.
+    - text: Serve hot with ketchup.
+  tips: Do not put too many nuggets in the pan at once, or the oil cools down and the coating will not be crispy. After handling raw meat, wash your hands, the cutting board, and the knife.

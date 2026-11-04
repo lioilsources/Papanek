@@ -1,0 +1,72 @@
+slug: spaghetti_carbonara
+pack: free
+cuisine: italian
+model: bench-qwen36
+difficulty: 2
+prep_min: 10
+cook_min: 15
+servings: 4
+tags:
+  - main
+  - quick
+image_prompt: A plate of spaghetti carbonara in a glossy egg and cheese sauce with crispy pancetta pieces, grated parmesan and black pepper.
+ingredients:
+  - ingredient: spaghetti
+    qty: 400
+    unit: g
+  - ingredient: pancetta
+    qty: 200
+    unit: g
+    note_cs: nebo slanina
+    note_en: or bacon
+  - ingredient: egg_yolk
+    qty: 4
+    unit: ks
+  - ingredient: egg
+    qty: 1
+    unit: ks
+  - ingredient: parmesan
+    qty: 100
+    unit: g
+    note_cs: nastrouhaný
+    note_en: grated
+  - ingredient: black_pepper
+    qty: 1
+    unit: lzicka
+    note_cs: čerstvě mletý
+    note_en: freshly ground
+  - ingredient: salt
+    note_cs: do vody na těstoviny
+    note_en: for the pasta water
+cs:
+  title: Špagety carbonara
+  summary: Klasické italské těstoviny s krémovou omáčkou z vajec a sýra, bez smetany. Rozhoduje rychlost a správná teplota, aby se vejce nesrazila.
+  steps:
+    - text: Pancettu nakrájej na malé kostičky nebo tenké proužky.
+    - text: V misce prošlehej žloutky, celé vejce, nastrouhaný parmazán a pepř do hladka.
+    - text: Ve velkém hrnci přiveď k varu asi 4 l vody, osol ji a vař v ní špagety al dente podle obalu, obvykle asi 9 minut. Al dente znamená, že uprostřed ještě lehce kousnou.
+      timer_sec: 540
+    - text: Mezitím dej pancettu na studenou pánev a zapni střední oheň. Opékej ji 6–8 minut, dokud se z ní nevypustí tuk a nezezlátne.
+    - text: Než těstoviny sliješ, naber si hrnkem asi 200 ml vody, ve které se vařily. Špagety sceď a hned je přendej do pánve k pancettě. Promíchej, aby se obalily tukem.
+    - text: Pánev stáhni z plotny a nech ji asi 1 minutu stát, aby trochu zchladla.
+      timer_sec: 60
+    - text: Přilij asi 50 ml odebrané vody, pak vlij vaječnou směs a ihned rychle míchej. Teplo těstovin vejce zahřeje a vznikne krémová omáčka.
+    - text: Je-li omáčka moc řídká, vrať pánev na nejmírnější oheň a za stálého míchání ji zahřívej, až zhoustne – jen pár desítek sekund. Je-li moc hustá, přilij další vodu z těstovin.
+    - text: Hned podávej, dokud jsou špagety horké.
+  tips: Vaječnou směs nikdy nelij do pánve na plotně, vejce by se srazila na míchaná vejce. Používej co nejčerstvější vejce, protože se v omáčce jen zahřejí.
+en:
+  title: Spaghetti Carbonara
+  summary: Classic Italian pasta with a creamy sauce made from eggs and cheese, no cream. Speed and the right temperature are what keep the eggs from scrambling.
+  steps:
+    - text: Cut the pancetta into small cubes or thin strips.
+    - text: In a bowl, whisk the yolks, the whole egg, the grated parmesan and the pepper until smooth.
+    - text: In a large pot, bring about 4 l of water to a boil, salt it and cook the spaghetti al dente according to the package, usually about 9 minutes. Al dente means it still has a slight bite in the center.
+      timer_sec: 540
+    - text: Meanwhile, put the pancetta in a cold pan and turn on medium heat. Fry it for 6–8 minutes until the fat renders and it turns golden.
+    - text: Before draining the pasta, scoop out about 200 ml of the cooking water with a mug. Drain the spaghetti and immediately add it to the pan with the pancetta. Toss to coat it in the fat.
+    - text: Take the pan off the heat and let it stand for about 1 minute to cool slightly.
+      timer_sec: 60
+    - text: Pour in about 50 ml of the reserved water, then add the egg mixture and stir quickly right away. The heat of the pasta warms the eggs into a creamy sauce.
+    - text: If the sauce is too thin, put the pan back over the lowest heat and warm it, stirring constantly, until it thickens – just a few dozen seconds. If it is too thick, add more pasta water.
+    - text: Serve right away while the spaghetti is hot.
+  tips: Never pour the egg mixture into a pan that is on the heat, or the eggs will turn into scrambled eggs. Use the freshest eggs you can, since they are only warmed through in the sauce.

@@ -1,0 +1,64 @@
+slug: roast_chicken_thighs_with_vegetables
+pack: free
+cuisine: family
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 45
+servings: 4
+tags:
+  - main
+  - budget
+image_prompt: Roasted chicken thighs with golden crispy skin on a bed of roasted potatoes, carrots, peppers and onion on a baking sheet.
+ingredients:
+  - ingredient: chicken_thigh
+    qty: 8
+    unit: ks
+    note_cs: s kostí a kůží
+    note_en: bone-in, skin-on
+  - ingredient: potato
+    qty: 800
+    unit: g
+  - ingredient: carrot
+    qty: 300
+    unit: g
+  - ingredient: bell_pepper
+    qty: 1
+    unit: ks
+  - ingredient: onion
+    qty: 1
+    unit: ks
+  - ingredient: olive_oil
+    qty: 3
+    unit: lzice
+  - ingredient: sweet_paprika
+    qty: 2
+    unit: lzicka
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Pečená kuřecí stehna se zeleninou
+  summary: Jednoduché jídlo z jednoho plechu. Kuře má křupavou kůrčičku a zelenina se upeče ve šťávě z masa.
+  steps:
+    - text: Předehřej troubu na 200 °C.
+    - text: Brambory oloupej a nakrájej na kostky asi 2 cm. Mrkev nakrájej na kolečka, papriku zbav semínek a nakrájej na proužky, cibuli nakrájej na měsíčky.
+    - text: Zeleninu rozlož na plech vyložený pečicím papírem. Pokapej ji 2 lžícemi oleje, osol, opepři a promíchej rukama, aby byla celá obalená olejem.
+    - text: Kuřecí stehna potři zbylou lžící oleje, osol, opepři a ze všech stran posyp sladkou paprikou.
+    - text: Stehna polož na zeleninu kůží nahoru.
+    - text: Plech dej do trouby a peč asi 45 minut.
+      timer_sec: 2700
+    - text: Kuře je hotové, když po propíchnutí u kosti vytéká čirá šťáva a maso už není růžové. Zelenina má být měkká a zlatavá. Pokud není, peč ještě 5–10 minut.
+  tips: Zeleninu rozlož v jedné vrstvě – když leží natěsno, dusí se a nezezlátne. Máš-li teploměr, změř maso u kosti, mělo by mít aspoň 75 °C.
+en:
+  title: Roast Chicken Thighs with Vegetables
+  summary: A simple one-tray dinner. The chicken gets crispy skin and the vegetables roast in the juices from the meat.
+  steps:
+    - text: Preheat the oven to 200 °C.
+    - text: Peel the potatoes and cut them into roughly 2 cm cubes. Slice the carrots into rounds, seed the bell pepper and cut it into strips, and cut the onion into wedges.
+    - text: Spread the vegetables on a baking sheet lined with parchment paper. Drizzle with 2 tablespoons of oil, season with salt and pepper, and toss with your hands so everything is coated in oil.
+    - text: Rub the chicken thighs with the remaining tablespoon of oil, season with salt and pepper, and sprinkle sweet paprika on all sides.
+    - text: Place the thighs on top of the vegetables, skin side up.
+    - text: Put the tray in the oven and roast for about 45 minutes.
+      timer_sec: 2700
+    - text: The chicken is done when the juices run clear when pierced near the bone and the meat is no longer pink. The vegetables should be soft and golden. If not, roast for another 5–10 minutes.
+  tips: Spread the vegetables in a single layer – if they are crowded, they steam instead of browning. If you have a thermometer, check the meat near the bone; it should reach at least 75 °C.

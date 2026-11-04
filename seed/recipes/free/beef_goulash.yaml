@@ -1,0 +1,87 @@
+slug: beef_goulash
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 2
+prep_min: 20
+cook_min: 130
+servings: 4
+tags:
+  - main
+image_prompt: A bowl of dark red beef goulash with tender chunks of beef, potatoes and carrots in a thick paprika sauce.
+ingredients:
+  - ingredient: beef_stew
+    qty: 800
+    unit: g
+    note_cs: nakrájené na kostky asi 3 cm
+    note_en: cut into 3 cm cubes
+  - ingredient: onion
+    qty: 2
+    unit: ks
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: garlic
+    qty: 3
+    unit: strouzek
+    note_cs: prolisovaný
+    note_en: crushed
+  - ingredient: sweet_paprika
+    qty: 2
+    unit: lzicka
+  - ingredient: goulash_seasoning
+    qty: 2
+    unit: lzicka
+  - ingredient: carrot
+    qty: 2
+    unit: ks
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: potato
+    qty: 4
+    unit: ks
+    note_cs: oloupané, nakrájené na kostky
+    note_en: peeled and cubed
+  - ingredient: bell_pepper
+    qty: 1
+    unit: ks
+    optional: true
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: water
+    qty: 800
+    unit: ml
+  - ingredient: sunflower_oil
+    qty: 3
+    unit: lzice
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Hovězí guláš
+  summary: Poctivý hovězí guláš s kousky masa, bramborami a zeleninou. Sytý, voňavý a vhodný pro celou rodinu.
+  steps:
+    - text: Ve velkém hrnci rozehřej olej a osmahni cibuli dozlatova, asi 8 minut.
+      timer_sec: 480
+    - text: Přidej maso a opékej ho ze všech stran, dokud nezhnědne. Pokud se do hrnce nevejde v jedné vrstvě, opékej ho po částech.
+    - text: Stáhni plamen na minimum, přisyp sladkou papriku a gulášové koření a krátce promíchej, aby se koření nepřipálilo a nezhořklo.
+    - text: Přidej česnek, zalij vodou tak, aby bylo maso ponořené, a osol. Přiveď k varu.
+    - text: Přikryj pokličkou a vař na mírném ohni 1,5 hodiny. Občas zamíchej, a kdyby se voda vyvařila, trochu podlij.
+      timer_sec: 5400
+    - text: Přidej brambory, mrkev a papriku a vař pod pokličkou dalších 25 minut, dokud brambory nezměknou.
+      timer_sec: 1500
+    - text: Ochutnej, dosol a opepři. Pokud je omáčka moc řídká, povař ji pár minut bez pokličky.
+  tips: Maso je hotové, když jde snadno rozkousat – pokud je ještě tuhé, vař ho před přidáním brambor o 20–30 minut déle. Guláš je druhý den ještě lepší.
+en:
+  title: Beef goulash
+  summary: Hearty beef goulash with chunks of meat, potatoes and vegetables. Filling, fragrant and great for the whole family.
+  steps:
+    - text: Heat the oil in a large pot and fry the onion until golden, about 8 minutes.
+      timer_sec: 480
+    - text: Add the beef and brown it on all sides. If it doesn't fit in the pot in a single layer, brown it in batches.
+    - text: Turn the heat down to the lowest setting, add the sweet paprika and goulash seasoning, and stir briefly so the spices don't burn and turn bitter.
+    - text: Add the garlic, pour in enough water to cover the meat, and add salt. Bring to a boil.
+    - text: Cover with a lid and simmer over low heat for 1.5 hours. Stir occasionally and add a little water if it boils away.
+      timer_sec: 5400
+    - text: Add the potatoes, carrots and bell pepper and cook covered for another 25 minutes, until the potatoes are soft.
+      timer_sec: 1500
+    - text: Taste and season with more salt and pepper. If the sauce is too thin, simmer it uncovered for a few minutes.
+  tips: The beef is done when it is easy to chew – if it is still tough, simmer it 20–30 minutes longer before adding the potatoes. Goulash tastes even better the next day.

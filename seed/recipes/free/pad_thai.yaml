@@ -1,0 +1,106 @@
+slug: pad_thai
+pack: free
+cuisine: asian
+model: bench-qwen36
+difficulty: 2
+prep_min: 20
+cook_min: 10
+servings: 4
+tags:
+  - main
+  - quick
+  - one_pot
+image_prompt: A plate of pad thai noodles with shrimp, bean sprouts, peanuts, and lime wedges.
+ingredients:
+  - ingredient: rice_noodles
+    qty: 250
+    unit: g
+    note_cs: ploché rýžové nudle
+    note_en: flat rice noodles
+  - ingredient: shrimp
+    qty: 300
+    unit: g
+    note_cs: syrové, oloupané a očištěné
+    note_en: raw, peeled and deveined
+  - ingredient: egg
+    qty: 2
+    unit: ks
+    note_cs: rozšlehaná
+    note_en: beaten
+  - ingredient: bean_sprouts
+    qty: 150
+    unit: g
+  - ingredient: spring_onion
+    qty: 4
+    unit: ks
+    note_cs: nakrájená na kousky 3 cm
+    note_en: cut into 3 cm pieces
+  - ingredient: peanuts
+    qty: 50
+    unit: g
+    note_cs: pražené, nahrubo nasekané
+    note_en: roasted, roughly chopped
+  - ingredient: lime
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na měsíčky
+    note_en: cut into wedges
+  - ingredient: soy_sauce
+    qty: 3
+    unit: lzice
+  - ingredient: tamarind
+    qty: 3
+    unit: lzice
+    note_cs: tamarindová pasta
+    note_en: tamarind paste
+  - ingredient: brown_sugar
+    qty: 2
+    unit: lzice
+  - ingredient: garlic
+    qty: 3
+    unit: strouzek
+    note_cs: nasekaný
+    note_en: minced
+  - ingredient: chilli_flakes
+    qty: 1
+    unit: lzicka
+    optional: true
+    note_cs: pro pálivější verzi
+    note_en: for a spicier version
+  - ingredient: peanut_oil
+    qty: 3
+    unit: lzice
+cs:
+  title: Pad thai
+  summary: Klasické thajské rýžové nudle s krevetami, vejcem a sladkokyselou omáčkou. Hotové za 30 minut.
+  steps:
+    - text: Nudle zalij v míse horkou vodou a nech je 10 minut namáčet, dokud nezměknou. Sceď je a propláchni studenou vodou, aby se neslepily.
+      timer_sec: 600
+    - text: V misce smíchej sójovou omáčku, tamarindovou pastu, hnědý cukr a případně chilli vločky. Míchej, dokud se cukr nerozpustí.
+    - text: Ve woku nebo velké pánvi rozpal 2 lžíce oleje na vysokém plameni. Krevety opékej asi 3 minuty, dokud nezrůžovějí a nejsou uvnitř neprůhledné. Vyndej je na talíř.
+      timer_sec: 180
+    - text: Do pánve přilij zbylou lžíci oleje, přidej česnek a opékej asi 30 sekund, dokud nezačne vonět. Dej pozor, ať se nespálí.
+      timer_sec: 30
+    - text: Přidej nudle a omáčku a obracej je asi 1 minutu, aby se nudle omáčkou obalily.
+    - text: Nudle odsuň na kraj pánve. Do volného místa vlij vejce a míchej je, dokud se úplně nesrazí, pak je promíchej s nudlemi.
+    - text: Vrať do pánve krevety, přidej klíčky a jarní cibulku. Vše promíchej a 1 minutu prohřej.
+      timer_sec: 60
+    - text: Podávej hned, posypané arašídy a s měsíčky limety na vymačkání.
+  tips: Nudle nenamáčej déle, než je potřeba – při smažení ještě změknou a mohly by se rozpadat. Všechny suroviny si připrav dopředu, samotné smažení trvá jen pár minut.
+en:
+  title: Pad Thai
+  summary: Classic Thai rice noodles with shrimp, egg and a sweet and sour sauce. Ready in 30 minutes.
+  steps:
+    - text: Cover the noodles with hot water in a bowl and let them soak for 10 minutes until soft. Drain and rinse with cold water so they do not stick together.
+      timer_sec: 600
+    - text: In a small bowl, mix the soy sauce, tamarind paste, brown sugar and the chili flakes, if using. Stir until the sugar dissolves.
+    - text: Heat 2 tablespoons of oil in a wok or large pan over high heat. Fry the shrimp for about 3 minutes until pink and opaque all the way through. Transfer to a plate.
+      timer_sec: 180
+    - text: Add the remaining tablespoon of oil to the pan, add the garlic and fry for about 30 seconds until fragrant. Be careful not to burn it.
+      timer_sec: 30
+    - text: Add the noodles and the sauce and toss for about 1 minute so the noodles are coated in sauce.
+    - text: Push the noodles to the side of the pan. Pour the eggs into the empty space and stir until fully set, then mix them into the noodles.
+    - text: Return the shrimp to the pan and add the bean sprouts and spring onion. Toss everything and heat through for 1 minute.
+      timer_sec: 60
+    - text: Serve right away, sprinkled with peanuts and with lime wedges for squeezing.
+  tips: Do not soak the noodles longer than needed – they soften further in the pan and could fall apart. Prepare all ingredients in advance, as the frying itself takes only a few minutes.

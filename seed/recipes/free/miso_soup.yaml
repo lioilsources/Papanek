@@ -1,0 +1,63 @@
+slug: miso_soup
+pack: free
+cuisine: asian
+model: bench-qwen36
+difficulty: 1
+prep_min: 5
+cook_min: 10
+servings: 4
+tags:
+  - quick
+  - soup
+  - main
+  - one_pot
+  - budget
+image_prompt: A bowl of miso soup with small cubes of silken tofu and sliced spring onion floating in the cloudy broth.
+ingredients:
+  - ingredient: water
+    qty: 1
+    unit: l
+  - ingredient: dashi
+    qty: 2
+    unit: lzicka
+    note_cs: instantní granule
+    note_en: instant granules
+  - ingredient: tofu
+    qty: 200
+    unit: g
+    note_cs: hedvábné, nakrájené na kostičky 2 cm
+    note_en: silken, cut into 2 cm cubes
+  - ingredient: miso_paste
+    qty: 4
+    unit: lzice
+    note_cs: bílé nebo červené
+    note_en: white or red
+  - ingredient: spring_onion
+    qty: 2
+    unit: ks
+    note_cs: nakrájená na kolečka
+    note_en: sliced into rings
+cs:
+  title: Jednoduchá miso polévka
+  summary: Rychlá japonská polévka s tofu a jarní cibulkou. Hotová za 15 minut bez složitých postupů.
+  steps:
+    - text: Do hrnce nalij 1 litr vody a přiveď ji k varu.
+    - text: Vsyp instantní dashi a míchej, dokud se nerozpustí.
+    - text: Ztlum plamen tak, aby vývar jen mírně probublával, a přidej tofu. Nech ho 2 minuty prohřát.
+      timer_sec: 120
+    - text: Vypni plotnu. V malé misce rozmíchej miso pastu s naběračkou horkého vývaru do hladka.
+    - text: Směs vlij zpět do hrnce a opatrně promíchej, aby se tofu nerozpadlo.
+    - text: Rozlij polévku do misek a posyp jarní cibulkou.
+  tips: Polévka s misem už se nesmí vařit, jinak ztratí vůni a chuť. Při ohřívání ji jen zahřej, nenech ji vřít.
+en:
+  title: Simple Miso Soup
+  summary: A quick Japanese soup with tofu and spring onion. Ready in 15 minutes with no complicated steps.
+  steps:
+    - text: Pour 1 liter of water into a pot and bring it to a boil.
+    - text: Add the instant dashi and stir until it dissolves.
+    - text: Lower the heat so the broth just gently simmers and add the tofu. Let it warm through for 2 minutes.
+      timer_sec: 120
+    - text: Turn off the heat. In a small bowl, stir the miso paste with a ladle of hot broth until smooth.
+    - text: Pour the mixture back into the pot and stir gently so the tofu does not break apart.
+    - text: Ladle the soup into bowls and sprinkle with spring onion.
+  tips: Once the miso is in, the soup must not boil, or it will lose its aroma and flavor. When reheating, only warm it up and do not let it boil.

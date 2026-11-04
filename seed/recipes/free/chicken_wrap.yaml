@@ -1,0 +1,61 @@
+slug: chicken_wrap
+pack: free
+cuisine: quick
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 10
+servings: 4
+tags:
+  - quick
+  - main
+image_prompt: A chicken wrap cut in half on a plate, showing chicken, lettuce, tomato and mayonnaise inside a wheat tortilla.
+ingredients:
+  - ingredient: chicken_breast
+    qty: 400
+    unit: g
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: olive_oil
+    qty: 2
+    unit: lzice
+  - ingredient: tortilla_wheat
+    qty: 4
+    unit: ks
+  - ingredient: butter_lettuce
+    qty: 1
+    unit: hlava
+  - ingredient: tomato
+    qty: 2
+    unit: ks
+  - ingredient: mayonnaise
+    qty: 4
+    unit: lzice
+cs:
+  title: Rychlý kuřecí wrap
+  summary: Jednoduchý a rychlý oběd. Opečeš kuřecí prsa a zabalíš je do tortilly se zeleninou a majonézou.
+  steps:
+    - text: Kuřecí prsa osuš papírovou utěrkou a nakrájej na proužky.
+    - text: Kuře osol a opepři.
+    - text: Na pánvi rozehřej olej a kuře opékej na vyšším plameni asi 6 minut, občas promíchej. Hotové je, když je dozlatova a uvnitř už není růžové.
+      timer_sec: 360
+    - text: Salát omyj, osuš a nakrájej na tenké proužky.
+    - text: Rajčata omyj a nakrájej na tenká kolečka.
+    - text: Tortilly ohřej na suché pánvi, asi 20 sekund z každé strany, aby změkly.
+    - text: Doprostřed každé tortilly namaž lžíci majonézy a navrch polož salát, rajčata a kuře.
+    - text: Spodní okraj tortilly přelož přes náplň, boční okraje přehni dovnitř a tortillu pevně zaroluj.
+  tips: Tortillu ohřívej jen krátce, jinak ztvrdne a při rolování praskne. Kuře nech před zabalením chvíli vychladnout, aby salát nezvadl.
+en:
+  title: Quick Chicken Wrap
+  summary: A simple and quick lunch. You pan-fry chicken breast and wrap it in a tortilla with vegetables and mayonnaise.
+  steps:
+    - text: Pat the chicken breasts dry with a paper towel and cut them into strips.
+    - text: Season the chicken with salt and pepper.
+    - text: Heat the oil in a frying pan and fry the chicken over medium-high heat for about 6 minutes, stirring occasionally. It is done when it is golden and no longer pink inside.
+      timer_sec: 360
+    - text: Wash the lettuce, dry it and slice it into thin strips.
+    - text: Wash the tomatoes and slice them into thin rounds.
+    - text: Warm the tortillas in a dry pan for about 20 seconds on each side to soften them.
+    - text: Spread a spoonful of mayonnaise in the middle of each tortilla and top with lettuce, tomatoes and chicken.
+    - text: Fold the bottom edge of the tortilla over the filling, fold in the sides and roll it up tightly.
+  tips: Warm the tortilla only briefly, otherwise it hardens and cracks when you roll it. Let the chicken cool for a moment before wrapping so the lettuce does not wilt.

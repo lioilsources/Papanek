@@ -1,0 +1,58 @@
+slug: grilled_cheese_toast
+pack: free
+cuisine: quick
+model: bench-qwen36
+difficulty: 1
+prep_min: 5
+cook_min: 12
+servings: 4
+tags:
+  - quick
+  - vegetarian
+  - main
+  - snack
+image_prompt: Four golden brown grilled cheese sandwiches cut diagonally on a white plate with melted cheese oozing out.
+ingredients:
+  - ingredient: bread
+    qty: 8
+    unit: platek
+    note_cs: toustový nebo jiný světlý chléb
+    note_en: sandwich bread or other white bread
+  - ingredient: cheddar
+    qty: 200
+    unit: g
+    note_cs: na plátky nebo nastrouhaný
+    note_en: sliced or grated
+  - ingredient: butter
+    qty: 40
+    unit: g
+    note_cs: změklé
+    note_en: softened
+cs:
+  title: Toasty s cheddarem z pánve
+  summary: Křupavé zlaté toasty s roztaveným sýrem, hotové za 15 minut. Ideální rychlá večeře nebo svačina.
+  steps:
+    - text: Každý plátek chleba potři z jedné strany tenkou vrstvou změklého másla.
+    - text: Polož 4 plátky máslem dolů, rozděl na ně sýr a přikryj je zbylými plátky máslem nahoru.
+    - text: Rozehřej pánev na středním plameni.
+    - text: Vlož do pánve 2 toasty a opékej je asi 3 minuty, dokud spodní strana nezezlátne.
+      timer_sec: 180
+    - text: Toasty opatrně obrať obracečkou a opékej další 3 minuty, dokud se sýr nerozpustí.
+      timer_sec: 180
+    - text: Stejně opeč zbylé 2 toasty.
+    - text: Toasty rozkroj úhlopříčně a podávej hned, dokud jsou teplé.
+  tips: Kdyby toasty zvenku hnědly moc rychle a sýr se ještě nerozpustil, ztlum plamen. Vnitřní stranu chleba můžeš potřít tenkou vrstvou hořčice.
+en:
+  title: Cheddar Grilled Cheese
+  summary: Crispy golden toasts with melted cheese, ready in 15 minutes. Perfect for a quick dinner or snack.
+  steps:
+    - text: Spread a thin layer of softened butter on one side of each bread slice.
+    - text: Lay 4 slices buttered side down, divide the cheese among them, and top with the remaining slices, buttered side up.
+    - text: Heat a frying pan over medium heat.
+    - text: Put 2 sandwiches in the pan and cook for about 3 minutes until the bottom is golden.
+      timer_sec: 180
+    - text: Carefully flip them with a spatula and cook for another 3 minutes until the cheese melts.
+      timer_sec: 180
+    - text: Cook the remaining 2 sandwiches the same way.
+    - text: Cut the sandwiches diagonally and serve right away while warm.
+  tips: If the outside browns too quickly before the cheese melts, turn down the heat. You can spread a thin layer of mustard on the inside of the bread.

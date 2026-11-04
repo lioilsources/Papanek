@@ -1,0 +1,78 @@
+slug: garlic_soup
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 20
+servings: 4
+tags:
+  - soup
+  - main
+  - budget
+  - quick
+image_prompt: A bowl of hot garlic soup with potato cubes, egg ribbons and golden croutons, garnished with fresh parsley.
+ingredients:
+  - ingredient: garlic
+    qty: 8
+    unit: strouzek
+  - ingredient: potato
+    qty: 300
+    unit: g
+  - ingredient: bread
+    qty: 4
+    unit: platek
+    note_cs: na krutony
+    note_en: for croutons
+  - ingredient: sunflower_oil
+    qty: 3
+    unit: lzice
+  - ingredient: water
+    qty: 1
+    unit: l
+  - ingredient: stock_cube
+    qty: 1
+    unit: kostka
+  - ingredient: marjoram
+    qty: 1
+    unit: lzicka
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: egg
+    qty: 2
+    unit: ks
+  - ingredient: parsley
+    qty: 1
+    unit: hrst
+    note_cs: na posypání
+    note_en: for garnish
+cs:
+  title: Česnečka
+  summary: Horká a voňavá česneková polévka s bramborami, vajíčkem a křupavými krutony. Zahřeje v zimě a postaví na nohy po oslavě.
+  steps:
+    - text: Česnek oloupej a nakrájej na tenké plátky. Brambory oloupej a nakrájej na malé kostičky.
+    - text: V hrnci rozehřej 1 lžíci oleje a česnek na něm na mírném plameni krátce osmahni, jen dokud nezačne vonět. Nesmí zhnědnout.
+    - text: Přidej brambory, zalij je 1 l vody, přidej kostku bujonu a majoránku a přiveď k varu.
+    - text: Vař na mírném plameni 15 minut, dokud brambory nezměknou.
+      timer_sec: 900
+    - text: Mezitím nakrájej chléb na kostičky. Na pánvi rozehřej zbylé 2 lžíce oleje a kostičky na něm opeč dozlatova.
+    - text: Vejce rozšlehej v misce se špetkou soli. Za stálého míchání je vlij tenkým pramínkem do vroucí polévky a nech 1 minutu povařit, aby se vejce srazila.
+      timer_sec: 60
+    - text: Polévku dosol a opepři. Petrželku nasekej.
+    - text: Polévku nalij do talířů, přidej krutony a posyp ji petrželkou.
+  tips: Česnek nepřipal, jinak polévka zhořkne. Pro výraznější chuť si 2 stroužky nech stranou, prolisuj je a vmíchej až do hotové polévky.
+en:
+  title: Czech Garlic Soup
+  summary: A hot, fragrant garlic soup with potatoes, egg, and crunchy croutons. It warms you up in winter and revives you after a party.
+  steps:
+    - text: Peel the garlic and slice it thinly. Peel the potatoes and cut them into small cubes.
+    - text: Heat 1 tablespoon of oil in a pot and gently fry the garlic over low heat just until fragrant. Do not let it brown.
+    - text: Add the potatoes, pour in 1 l of water, add the stock cube and marjoram, and bring to a boil.
+    - text: Simmer over low heat for 15 minutes until the potatoes are soft.
+      timer_sec: 900
+    - text: Meanwhile, cut the bread into cubes. Heat the remaining 2 tablespoons of oil in a pan and toast the cubes until golden.
+    - text: Whisk the eggs in a small bowl with a pinch of salt. While stirring, pour them into the boiling soup in a thin stream and let it cook for 1 minute so the egg sets.
+      timer_sec: 60
+    - text: Season the soup with salt and pepper. Chop the parsley.
+    - text: Ladle the soup into bowls, add the croutons, and sprinkle with parsley.
+  tips: Do not burn the garlic, or the soup will taste bitter. For a stronger flavor, set 2 cloves aside, crush them, and stir them into the finished soup.

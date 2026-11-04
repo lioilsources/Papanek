@@ -1,0 +1,65 @@
+slug: spaghetti_aglio_e_olio
+pack: free
+cuisine: italian
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 15
+servings: 4
+tags:
+  - quick
+  - vegetarian
+  - vegan
+image_prompt: A plate of spaghetti aglio e olio glossy with olive oil, with golden garlic slices, chilli flakes and chopped parsley.
+ingredients:
+  - ingredient: spaghetti
+    qty: 400
+    unit: g
+  - ingredient: garlic
+    qty: 6
+    unit: strouzek
+  - ingredient: olive_oil
+    qty: 80
+    unit: ml
+  - ingredient: chilli_flakes
+    qty: 1
+    unit: lzicka
+    optional: true
+    note_cs: pro pálivost
+    note_en: for heat
+  - ingredient: parsley
+    qty: 1
+    unit: svazek
+  - ingredient: salt
+  - ingredient: black_pepper
+    optional: true
+cs:
+  title: Špagety aglio e olio
+  summary: Klasické italské špagety s česnekem, olivovým olejem a petrželkou. Hotové za čtvrt hodiny z pár surovin.
+  steps:
+    - text: Ve velkém hrnci přiveď k varu asi 4 l vody a pořádně ji osol.
+    - text: Mezitím oloupej česnek a nakrájej ho na co nejtenčí plátky. Petrželku nasekej najemno.
+    - text: Do vroucí vody dej špagety a vař je o 1–2 minuty kratší dobu, než je uvedeno na obalu, obvykle asi 8 minut.
+      timer_sec: 480
+    - text: Zatímco se těstoviny vaří, nalij olej do velké pánve, přidej česnek a případně chilli vločky. Na mírném ohni je pomalu opékej 3–4 minuty, dokud česnek lehce nezezlátne. Nesmí zhnědnout.
+    - text: Než těstoviny sliješ, naber si hrnkem asi 250 ml vody, ve které se vařily. Pak špagety sceď.
+    - text: Špagety přendej do pánve k česneku, přidej petrželku a asi polovinu odebrané vody.
+    - text: Na mírném ohni špagety asi 1 minutu intenzivně promíchávej, až se voda s olejem spojí v lesklou omáčku, která je obalí. Kdyby byly suché, přilij další vodu.
+      timer_sec: 60
+    - text: Ochutnej, případně dosol a opepři. Podávej hned.
+  tips: Česnek opékej jen na mírném ohni – jakmile zhnědne, zhořkne a celé jídlo pokazí. Škrobová voda z těstovin je to, co z oleje udělá omáčku, proto ji nevylévej celou.
+en:
+  title: Spaghetti Aglio e Olio
+  summary: Classic Italian spaghetti with garlic, olive oil and parsley. Ready in a quarter of an hour from just a few ingredients.
+  steps:
+    - text: In a large pot, bring about 4 l of water to a boil and salt it generously.
+    - text: Meanwhile, peel the garlic and slice it as thinly as you can. Chop the parsley finely.
+    - text: Add the spaghetti to the boiling water and cook it 1–2 minutes less than the package says, usually about 8 minutes.
+      timer_sec: 480
+    - text: While the pasta cooks, pour the oil into a large pan and add the garlic and the chilli flakes, if using. Fry them slowly over low heat for 3–4 minutes until the garlic is lightly golden. It must not turn brown.
+    - text: Before draining the pasta, scoop out about 250 ml of the cooking water with a mug. Then drain the spaghetti.
+    - text: Transfer the spaghetti to the pan with the garlic and add the parsley and about half of the reserved water.
+    - text: Over low heat, toss the spaghetti vigorously for about 1 minute until the water and oil come together into a glossy sauce that coats the pasta. If it looks dry, add more water.
+      timer_sec: 60
+    - text: Taste, adding more salt and some pepper if needed. Serve right away.
+  tips: Fry the garlic only over low heat – once it turns brown it becomes bitter and spoils the whole dish. The starchy pasta water is what turns the oil into a sauce, so do not pour it all away.

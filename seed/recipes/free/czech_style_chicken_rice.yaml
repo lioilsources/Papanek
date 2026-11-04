@@ -1,0 +1,82 @@
+slug: czech_style_chicken_rice
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 30
+servings: 4
+tags:
+  - main
+  - quick
+image_prompt: A plate of creamy chicken and vegetable risotto with green peas and carrots, garnished with fresh parsley.
+ingredients:
+  - ingredient: rice_arborio
+    qty: 300
+    unit: g
+  - ingredient: chicken_breast
+    qty: 400
+    unit: g
+    note_cs: nakrájená na kostky
+    note_en: cut into cubes
+  - ingredient: onion
+    qty: 1
+    unit: ks
+  - ingredient: carrot
+    qty: 1
+    unit: ks
+  - ingredient: green_peas
+    qty: 100
+    unit: g
+    note_cs: mražený
+    note_en: frozen
+  - ingredient: cooking_cream
+    qty: 200
+    unit: ml
+  - ingredient: water
+    qty: 800
+    unit: ml
+  - ingredient: stock_cube
+    qty: 1
+    unit: kostka
+  - ingredient: olive_oil
+    qty: 3
+    unit: lzice
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: parsley
+    qty: 1
+    unit: svazek
+    optional: true
+    note_cs: nasekaná, na posypání
+    note_en: chopped, for sprinkling
+cs:
+  title: Rizoto s kuřetem a zeleninou
+  summary: Krémové rizoto s kuřecím masem, mrkví a hráškem. Hotové za 45 minut a zvládne ho i začátečník.
+  steps:
+    - text: Kuřecí prsa osuš papírovou utěrkou a nakrájej na kostky asi 2 cm velké.
+    - text: Cibuli oloupej a nakrájej najemno. Mrkev oloupej a nastrouhej nahrubo.
+    - text: V širokém hrnci rozehřej olivový olej. Přidej kuře a opékej ho asi 5 minut ze všech stran dozlatova.
+    - text: Přidej cibuli a restuj asi 3 minuty, dokud nezměkne.
+    - text: Vsyp rýži a míchej ji 1 minutu, aby se zrnka obalila olejem.
+    - text: Zalij 800 ml vody, přidej bujón, mrkev, sůl a pepř. Přiveď k varu, pak stáhni plamen a vař pod pokličkou 18 minut. Občas promíchej, aby se rýže nepřichytila.
+      timer_sec: 1080
+    - text: Přidej hrášek a smetanu, promíchej a vař bez pokličky ještě 3 minuty, dokud rizoto nezhoustne.
+      timer_sec: 180
+    - text: Ochutnej a případně dosol. Před podáváním posyp petrželkou.
+  tips: Rýži před vařením neproplachuj, škrob z ní dělá rizoto krémové. Když je rizoto moc husté, přilij trochu horké vody.
+en:
+  title: Chicken and Vegetable Risotto
+  summary: Creamy risotto with chicken, carrot and peas. Ready in 45 minutes and easy enough for a beginner.
+  steps:
+    - text: Pat the chicken breasts dry with a paper towel and cut them into cubes of about 2 cm.
+    - text: Peel the onion and chop it finely. Peel the carrot and grate it coarsely.
+    - text: Heat the olive oil in a wide pot. Add the chicken and fry it for about 5 minutes until golden on all sides.
+    - text: Add the onion and fry for about 3 minutes until soft.
+    - text: Add the rice and stir for 1 minute so the grains get coated in oil.
+    - text: Pour in 800 ml of water and add the stock cube, carrot, salt and pepper. Bring to a boil, then turn the heat down and cook covered for 18 minutes. Stir occasionally so the rice does not stick.
+      timer_sec: 1080
+    - text: Add the peas and cream, stir and cook uncovered for another 3 minutes until the risotto thickens.
+      timer_sec: 180
+    - text: Taste and add more salt if needed. Sprinkle with parsley before serving.
+  tips: Do not rinse the rice before cooking; its starch makes the risotto creamy. If the risotto is too thick, stir in a little hot water.

@@ -1,0 +1,61 @@
+# Balíček Zdarma (plán §13): 50 jídel pro začátečníky napříč kuchyněmi.
+# NÁVRH ke schválení Ol1nem. Jen názvy jídel; recepty se píšou od nuly (§5).
+# Rozhodnuto 2. 11. 2026: styl obrázků flat-komiks, první cíl iOS (TestFlight).
+# level: 1 = zvládne každý, 2 = potřebuje trochu pozornosti
+czech:
+  - {cs: Česnečka, en: Garlic soup, level: 1}
+  - {cs: Bramboračka, en: Czech potato soup, level: 1}
+  - {cs: Hovězí guláš, en: Beef goulash, level: 2}
+  - {cs: Kuře na paprice, en: Chicken paprikash, level: 2}
+  - {cs: Smažený sýr s bramborami, en: Fried cheese with potatoes, level: 1}
+  - {cs: Kuřecí řízek s bramborovou kaší, en: Chicken schnitzel with mashed potatoes, level: 2}
+  - {cs: Bramboráky, en: Potato pancakes, level: 1}
+  - {cs: Francouzské brambory, en: Potato and egg bake, level: 1}
+  - {cs: Čočka na kyselo s vejcem, en: Sour lentils with fried egg, level: 1}
+  - {cs: Rizoto s kuřetem a zeleninou, en: Czech-style chicken rice, level: 1}
+  - {cs: Lívance, en: Czech pancakes, level: 1}
+  - {cs: Palačinky, en: Crêpes, level: 1}
+italian:
+  - {cs: Špagety aglio e olio, en: Spaghetti aglio e olio, level: 1}
+  - {cs: Špagety carbonara, en: Spaghetti carbonara, level: 2}
+  - {cs: Těstoviny s rajčatovou omáčkou, en: Pasta al pomodoro, level: 1}
+  - {cs: Boloňská omáčka, en: Bolognese, level: 1}
+  - {cs: Houbové rizoto, en: Mushroom risotto, level: 2}
+  - {cs: Minestrone, en: Minestrone, level: 1}
+  - {cs: Bruschetta, en: Bruschetta, level: 1}
+  - {cs: Frittata, en: Frittata, level: 1}
+  - {cs: Pizza margherita, en: Pizza margherita, level: 2}
+  - {cs: Tiramisu, en: Tiramisu, level: 1}
+vietnamese:
+  - {cs: Kuřecí phở, en: Chicken pho, level: 2}
+  - {cs: Letní závitky, en: Fresh spring rolls, level: 1}
+  - {cs: Vietnamská smažená rýže, en: Vietnamese fried rice, level: 1}
+  - {cs: Bún s hovězím a zeleninou, en: Beef noodle salad, level: 1}
+  - {cs: Kuře se zázvorem, en: Ginger chicken, level: 1}
+asian:
+  - {cs: Kuře teriyaki s rýží, en: Chicken teriyaki with rice, level: 1}
+  - {cs: Pad thai, en: Pad thai, level: 2}
+  - {cs: Zelené kari s kuřetem, en: Green chicken curry, level: 1}
+  - {cs: Kung pao kuře, en: Kung pao chicken, level: 2}
+  - {cs: Smažené nudle se zeleninou, en: Vegetable stir-fried noodles, level: 1}
+  - {cs: Miso polévka, en: Miso soup, level: 1}
+  - {cs: Indický dal z červené čočky, en: Red lentil dal, level: 1}
+mexmed:
+  - {cs: Chilli con carne, en: Chilli con carne, level: 1}
+  - {cs: Quesadilla, en: Quesadilla, level: 1}
+  - {cs: Burrito bowl, en: Burrito bowl, level: 1}
+  - {cs: Shakshuka, en: Shakshuka, level: 1}
+  - {cs: Řecký salát, en: Greek salad, level: 1}
+  - {cs: Hummus, en: Hummus, level: 1}
+  - {cs: Pečený losos s citronem a zeleninou, en: Baked lemon salmon with vegetables, level: 1}
+quick:
+  - {cs: Míchaná vejce, en: Scrambled eggs, level: 1}
+  - {cs: Omeleta se sýrem, en: Cheese omelette, level: 1}
+  - {cs: Zapečené toasty, en: Grilled cheese toast, level: 1}
+  - {cs: Kuskus se zeleninou, en: Vegetable couscous, level: 1}
+  - {cs: Tortilla wrap s kuřetem, en: Chicken wrap, level: 1}
+family:
+  - {cs: Pečená kuřecí stehna se zeleninou, en: Roast chicken thighs with vegetables, level: 1}
+  - {cs: Domácí kuřecí nugety, en: Homemade chicken nuggets, level: 1}
+  - {cs: Těstoviny se sýrovou omáčkou, en: Mac and cheese, level: 1}
+  - {cs: Banánové muffiny, en: Banana muffins, level: 1}

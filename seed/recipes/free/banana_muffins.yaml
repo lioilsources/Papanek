@@ -1,0 +1,74 @@
+slug: banana_muffins
+pack: free
+cuisine: family
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 20
+servings: 4
+tags:
+  - quick
+  - vegetarian
+  - kids
+  - budget
+image_prompt: Eight golden banana muffins in paper cases on a white plate next to a glass of milk.
+ingredients:
+  - ingredient: flour_plain
+    qty: 200
+    unit: g
+  - ingredient: sugar
+    qty: 100
+    unit: g
+  - ingredient: butter
+    qty: 100
+    unit: g
+  - ingredient: egg
+    qty: 2
+    unit: ks
+  - ingredient: banana
+    qty: 2
+    unit: ks
+    note_cs: hodně zralé
+    note_en: very ripe
+  - ingredient: baking_powder
+    qty: 2
+    unit: lzicka
+  - ingredient: salt
+    qty: 1
+    unit: stipka
+  - ingredient: vanilla_extract
+    qty: 1
+    unit: lzicka
+    optional: true
+cs:
+  title: Banánové muffiny
+  summary: Rychlé a vláčné muffiny ze zralých banánů. Z těsta upečeš 8 kusů – ideální ke snídani nebo na svačinu pro celou rodinu.
+  steps:
+    - text: Předehřej troubu na 180 °C. Do formy na muffiny vlož 8 papírových košíčků, nebo 8 důlků vymaž máslem.
+    - text: Máslo rozpusť v malém hrnci na mírném ohni a nech ho trochu vychladnout.
+    - text: Banány oloupej a v míse je rozmačkej vidličkou na kaši. Malé kousky klidně nech.
+    - text: K banánům přidej rozpuštěné máslo, vejce, cukr a vanilkový extrakt. Vše důkladně promíchej.
+    - text: Přisyp mouku, kypřicí prášek a špetku soli. Míchej jen tak dlouho, než mouka zmizí. Těsto nemusí být hladké, hrudky nevadí.
+    - text: Těsto rovnoměrně rozděl do košíčků, každý naplň zhruba do tří čtvrtin.
+    - text: Muffiny vlož do trouby a peč 20 minut.
+      timer_sec: 1200
+    - text: Do středu jednoho muffinu zapíchni špejli. Když vyjde čistá, jsou hotové. Pokud je na ní syrové těsto, peč ještě 3–5 minut.
+    - text: Muffiny nech 5 minut vychladnout ve formě, pak je vyndej.
+      timer_sec: 300
+  tips: Použij banány s hnědými skvrnami na slupce – jsou nejsladší. Těsto míchej jen krátce, jinak budou muffiny tuhé.
+en:
+  title: Banana muffins
+  summary: Quick, moist muffins made from ripe bananas. The batter makes 8 muffins – perfect for breakfast or a snack for the whole family.
+  steps:
+    - text: Preheat the oven to 180 °C. Put 8 paper liners into a muffin tin, or grease 8 cups with butter.
+    - text: Melt the butter in a small pot over low heat and let it cool slightly.
+    - text: Peel the bananas and mash them in a bowl with a fork. A few small lumps are fine.
+    - text: Add the melted butter, eggs, sugar and vanilla extract to the bananas. Mix everything thoroughly.
+    - text: Add the flour, baking powder and a pinch of salt. Stir only until the flour disappears. The batter does not need to be smooth; lumps are fine.
+    - text: Divide the batter evenly among the liners, filling each about three-quarters full.
+    - text: Put the muffins in the oven and bake for 20 minutes.
+      timer_sec: 1200
+    - text: Insert a skewer into the center of one muffin. If it comes out clean, they are done. If there is raw batter on it, bake for another 3–5 minutes.
+    - text: Let the muffins cool in the tin for 5 minutes, then take them out.
+      timer_sec: 300
+  tips: Use bananas with brown spots on the peel – they are the sweetest. Mix the batter only briefly, or the muffins will be tough.

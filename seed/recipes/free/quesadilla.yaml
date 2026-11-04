@@ -1,0 +1,84 @@
+slug: quesadilla
+pack: free
+cuisine: mexmed
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 25
+servings: 4
+tags:
+  - quick
+  - main
+  - kids
+  - budget
+image_prompt: Golden brown quesadilla triangles filled with melted cheese and chicken, arranged on a white plate.
+ingredients:
+  - ingredient: tortilla_wheat
+    qty: 8
+    unit: ks
+    note_cs: velké pšeničné tortilly
+    note_en: large wheat tortillas
+  - ingredient: cheddar
+    qty: 200
+    unit: g
+    note_cs: nastrouhaný
+    note_en: grated
+  - ingredient: mozzarella
+    qty: 100
+    unit: g
+    note_cs: nastrouhaná
+    note_en: grated
+  - ingredient: ground_chicken
+    qty: 300
+    unit: g
+  - ingredient: onion
+    qty: 1
+    unit: ks
+    note_cs: nadrobno nakrájená
+    note_en: finely chopped
+  - ingredient: bell_pepper
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na drobné kostičky
+    note_en: finely diced
+  - ingredient: sunflower_oil
+    qty: 2
+    unit: lzice
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Quesadilla se sýrem a kuřecím masem
+  summary: Křupavé pšeničné tortilly plněné rozteklým sýrem a kuřecím masem. Rychlé jídlo, které chutná i dětem.
+  steps:
+    - text: Na pánvi rozehřej olej na středním plameni.
+    - text: Přidej cibuli a papriku a restuj asi 3 minuty, dokud nezměknou.
+      timer_sec: 180
+    - text: Přidej mleté kuřecí maso, rozdrob ho vařečkou a opékej asi 7 minut, dokud není úplně propečené a nikde nezůstala růžová místa.
+      timer_sec: 420
+    - text: Maso osol, opepři a přendej do misky. Oba sýry smíchej v jiné misce. Pánev vytři papírovou utěrkou.
+    - text: Na suchou pánev polož jednu tortillu. Na jednu její polovinu nasyp osminu sýra a osminu masa.
+    - text: Druhou polovinu tortilly přelož přes náplň a lehce přitiskni.
+    - text: Opékej na středním plameni asi 2 minuty, dokud není spodek zlatavý a křupavý.
+      timer_sec: 120
+    - text: Quesadillu opatrně obrať a opékej další 2 minuty, dokud se sýr úplně nerozteče.
+      timer_sec: 120
+    - text: Stejně připrav zbylé tortilly. Hotové quesadilly nakrájej na trojúhelníky a podávej horké.
+  tips: Sýr nastrouhej, nekrájej ho – nastrouhaný se rozteče rychleji a rovnoměrněji. Pro vegetariánskou verzi vynech maso a do quesadilly dej jen sýr a opečenou cibuli s paprikou.
+en:
+  title: Cheese and Chicken Quesadilla
+  summary: Crispy wheat tortillas filled with melted cheese and chicken. A quick meal that kids love too.
+  steps:
+    - text: Heat the oil in a pan over medium heat.
+    - text: Add the onion and bell pepper and sauté for about 3 minutes until softened.
+      timer_sec: 180
+    - text: Add the ground chicken, break it up with a wooden spoon and cook for about 7 minutes until fully cooked through with no pink left.
+      timer_sec: 420
+    - text: Season the meat with salt and pepper and transfer it to a bowl. Mix both cheeses in another bowl. Wipe the pan clean with a paper towel.
+    - text: Place one tortilla in the dry pan. Sprinkle one eighth of the cheese and one eighth of the meat over one half of it.
+    - text: Fold the other half of the tortilla over the filling and press down lightly.
+    - text: Cook over medium heat for about 2 minutes until the bottom is golden and crispy.
+      timer_sec: 120
+    - text: Carefully flip the quesadilla and cook for another 2 minutes until the cheese has completely melted.
+      timer_sec: 120
+    - text: Make the remaining tortillas the same way. Cut the finished quesadillas into triangles and serve hot.
+  tips: Grate the cheese rather than slicing it – grated cheese melts faster and more evenly. For a vegetarian version, leave out the meat and fill the quesadilla with just the cheese and the sautéed onion and pepper.

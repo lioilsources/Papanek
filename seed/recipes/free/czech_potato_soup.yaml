@@ -1,0 +1,100 @@
+slug: czech_potato_soup
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 30
+servings: 4
+tags:
+  - soup
+  - main
+  - budget
+  - one_pot
+  - vegetarian
+image_prompt: A bowl of creamy potato soup with carrot pieces, topped with fresh dill and served with toasted bread.
+ingredients:
+  - ingredient: potato
+    qty: 600
+    unit: g
+    note_cs: oloupané a nakrájené na kostičky
+    note_en: peeled and cut into cubes
+  - ingredient: onion
+    qty: 1
+    unit: ks
+    note_cs: nakrájená najemno
+    note_en: finely chopped
+  - ingredient: carrot
+    qty: 1
+    unit: ks
+    optional: true
+    note_cs: nakrájená na kostičky
+    note_en: cut into cubes
+  - ingredient: garlic
+    qty: 2
+    unit: strouzek
+    note_cs: prolisovaný
+    note_en: crushed
+  - ingredient: sunflower_oil
+    qty: 1
+    unit: lzice
+  - ingredient: water
+    qty: 1
+    unit: l
+  - ingredient: stock_cube
+    qty: 1
+    unit: kostka
+    note_cs: zeleninový
+    note_en: vegetable
+  - ingredient: marjoram
+    qty: 1
+    unit: lzicka
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: cooking_cream
+    qty: 100
+    unit: ml
+    optional: true
+  - ingredient: dill
+    qty: 1
+    unit: svazek
+    note_cs: nasekaný
+    note_en: chopped
+  - ingredient: bread
+    qty: 4
+    unit: platek
+    optional: true
+    note_cs: na opečení
+    note_en: for toasting
+cs:
+  title: Klasická česká bramboračka
+  summary: Hřejivá a sytá polévka z brambor s majoránkou a koprem. Hotová za 45 minut, ideální na studené dny.
+  steps:
+    - text: V hrnci rozehřej olej a osmahni na něm cibuli asi 5 minut dosklovita.
+      timer_sec: 300
+    - text: Přidej brambory a mrkev, zalij 1 litrem vody a přidej bujón.
+    - text: Přiveď k varu, pak stáhni plamen a vař 20 minut, dokud brambory nezměknou.
+      timer_sec: 1200
+    - text: Přidej česnek a majoránku, kterou předtím rozemni mezi dlaněmi.
+    - text: Vlij smetanu, promíchej a nech polévku 2 minuty prohřát. Už ji nevař prudce.
+      timer_sec: 120
+    - text: Polévku osol a opepři.
+    - text: Chléb opeč v toustovači nebo na suché pánvi.
+    - text: Polévku nalij do talířů, posyp koprem a podávej s opečeným chlebem.
+  tips: Pro hustší polévku rozmixuj tyčovým mixérem asi třetinu polévky přímo v hrnci, ještě než přidáš smetanu. Kopr přidávej až do talíře, vařením ztrácí vůni.
+en:
+  title: Classic Czech Potato Soup
+  summary: A warming, filling potato soup with marjoram and dill. Ready in 45 minutes and perfect for cold days.
+  steps:
+    - text: Heat the oil in a pot and fry the onion for about 5 minutes until translucent.
+      timer_sec: 300
+    - text: Add the potatoes and carrot, pour in 1 litre of water and add the stock cube.
+    - text: Bring to a boil, then turn the heat down and simmer for 20 minutes until the potatoes are soft.
+      timer_sec: 1200
+    - text: Add the garlic and the marjoram, rubbing it between your palms first.
+    - text: Pour in the cream, stir and let the soup heat through for 2 minutes. Do not let it boil hard any more.
+      timer_sec: 120
+    - text: Season the soup with salt and pepper.
+    - text: Toast the bread in a toaster or in a dry frying pan.
+    - text: Ladle the soup into bowls, sprinkle with dill and serve with the toasted bread.
+  tips: For a thicker soup, blend about a third of it with an immersion blender right in the pot before adding the cream. Add the dill only in the bowl, as cooking takes away its aroma.

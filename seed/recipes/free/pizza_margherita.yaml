@@ -1,0 +1,80 @@
+slug: pizza_margherita
+pack: free
+cuisine: italian
+model: bench-qwen36
+difficulty: 2
+prep_min: 20
+cook_min: 15
+servings: 4
+tags:
+  - main
+  - vegetarian
+  - baking
+image_prompt: A rectangular pizza margherita cut into slices, with melted mozzarella, tomato sauce and fresh basil leaves, on a wooden board.
+ingredients:
+  - ingredient: flour_plain
+    qty: 400
+    unit: g
+  - ingredient: water
+    qty: 250
+    unit: ml
+    note_cs: vlažná
+    note_en: lukewarm
+  - ingredient: yeast_dry
+    qty: 7
+    unit: g
+    note_cs: 1 sáček
+    note_en: 1 sachet
+  - ingredient: salt
+    qty: 1
+    unit: lzicka
+  - ingredient: olive_oil
+    qty: 2
+    unit: lzice
+  - ingredient: passata
+    qty: 200
+    unit: ml
+  - ingredient: mozzarella
+    qty: 250
+    unit: g
+    note_cs: scezená, natrhaná na kousky
+    note_en: drained, torn into pieces
+  - ingredient: basil
+    qty: 1
+    unit: hrst
+    note_cs: čerstvé lístky
+    note_en: fresh leaves
+  - ingredient: black_pepper
+    optional: true
+cs:
+  title: Pizza Margherita
+  summary: Klasická italská pizza s tenkým těstem, rajčatovou omáčkou a mozzarellou. Upečeš ji doma na obyčejném plechu.
+  steps:
+    - text: V míse smíchej mouku, droždí a sůl.
+    - text: Přilij vlažnou vodu a olivový olej a hněť asi 5 minut, dokud není těsto hladké a pružné.
+    - text: Mísu přikryj utěrkou a nech těsto na teplém místě kynout 1 hodinu, dokud nezdvojnásobí objem.
+      timer_sec: 3600
+    - text: Předehřej troubu na 250 °C a plech vylož pečicím papírem.
+    - text: Těsto krátce prohněť a na pomoučené desce ho rozválej na tenký plát velký jako plech.
+    - text: Přendej těsto na plech a rovnoměrně ho potři passatou, okraje nech volné.
+    - text: Rozlož na pizzu kousky mozzarelly a podle chuti opepři.
+    - text: Peč na nejnižší příčce trouby 12–15 minut, dokud okraje nezezlátnou a sýr nezačne bublat.
+      timer_sec: 900
+    - text: Vyndej pizzu z trouby, posyp ji lístky bazalky, nakrájej a podávej horkou.
+  tips: Když se těsto při válení stahuje zpátky, nech ho 10 minut odpočinout a pak válej dál. Mozzarellu dobře sceď, jinak pustí vodu a těsto bude rozměklé.
+en:
+  title: Pizza Margherita
+  summary: Classic Italian pizza with a thin crust, tomato sauce and mozzarella. You can bake it at home on a regular baking tray.
+  steps:
+    - text: In a bowl, mix the flour, yeast and salt.
+    - text: Pour in the lukewarm water and olive oil and knead for about 5 minutes until the dough is smooth and elastic.
+    - text: Cover the bowl with a cloth and let the dough rise in a warm place for 1 hour until doubled in size.
+      timer_sec: 3600
+    - text: Preheat the oven to 250 °C and line a baking tray with baking paper.
+    - text: Briefly knead the dough and roll it out on a floured surface into a thin sheet the size of the tray.
+    - text: Transfer the dough to the tray and spread the passata evenly over it, leaving the edges free.
+    - text: Scatter the mozzarella pieces over the pizza and season with pepper to taste.
+    - text: Bake on the lowest rack of the oven for 12–15 minutes until the edges are golden and the cheese is bubbling.
+      timer_sec: 900
+    - text: Take the pizza out of the oven, scatter the basil leaves over it, slice and serve hot.
+  tips: If the dough keeps shrinking back while rolling, let it rest for 10 minutes and then continue. Drain the mozzarella well, otherwise it releases water and the crust turns soggy.

@@ -1,0 +1,81 @@
+slug: fried_cheese_with_potatoes
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 25
+servings: 4
+tags:
+  - quick
+  - main
+  - budget
+image_prompt: Golden fried cheese slices served on a white plate with boiled potatoes and a side of tartar sauce.
+ingredients:
+  - ingredient: eidam
+    qty: 400
+    unit: g
+    note_cs: nakrájený na plátky 1 cm silné
+    note_en: cut into 1 cm thick slices
+  - ingredient: egg
+    qty: 2
+    unit: ks
+    note_cs: rozšlehaná
+    note_en: beaten
+  - ingredient: flour_plain
+    qty: 100
+    unit: g
+  - ingredient: breadcrumbs
+    qty: 150
+    unit: g
+  - ingredient: sunflower_oil
+    qty: 200
+    unit: ml
+    note_cs: na smažení
+    note_en: for frying
+  - ingredient: potato
+    qty: 800
+    unit: g
+  - ingredient: salt
+    note_cs: do vody na brambory
+    note_en: for the potato water
+  - ingredient: tartar_sauce
+    qty: 4
+    unit: lzice
+    optional: true
+    note_cs: na podávání
+    note_en: for serving
+cs:
+  title: Smažený sýr s bramborami
+  summary: Klasika české kuchyně. Smažený eidam v křupavé strouhance s vařenými bramborami.
+  steps:
+    - text: Brambory oloupej, nakrájej na stejně velké kusy a vař je v osolené vodě doměkka, asi 20 minut.
+      timer_sec: 1200
+    - text: Mezitím nakrájej sýr na plátky silné asi 1 cm.
+    - text: 'Připrav si tři talíře: do prvního dej mouku, do druhého rozšlehaná vejce a do třetího strouhanku.'
+    - text: Každý plátek sýra obal v mouce, pak ve vejci a ve strouhance. Pak ho ještě jednou obal ve vejci a ve strouhance, aby sýr při smažení nevytekl.
+    - text: Na pánvi rozehřej olej na středním plameni. Má být horký, ale nesmí kouřit.
+    - text: Opatrně vlož obalený sýr do pánve a smaž asi 2 minuty dozlatova.
+      timer_sec: 120
+    - text: Sýr obrať a smaž druhou stranu také asi 2 minuty dozlatova.
+      timer_sec: 120
+    - text: Hotový sýr dej na talíř s papírovou utěrkou, aby okapal tuk.
+    - text: Brambory slij a podávej je se smaženým sýrem a tatarskou omáčkou.
+  tips: Obalený sýr dej na 15 minut do lednice, při smažení pak lépe drží tvar. Pokud sýr začne vytékat, olej je moc studený nebo obal příliš tenký.
+en:
+  title: Fried Cheese with Potatoes
+  summary: A Czech classic. Fried Eidam cheese in a crispy breadcrumb coating with boiled potatoes.
+  steps:
+    - text: Peel the potatoes, cut them into even pieces and boil them in salted water until tender, about 20 minutes.
+      timer_sec: 1200
+    - text: Meanwhile, cut the cheese into slices about 1 cm thick.
+    - text: 'Set out three plates: flour on the first, beaten eggs on the second and breadcrumbs on the third.'
+    - text: Coat each cheese slice in flour, then in egg and breadcrumbs. Then coat it once more in egg and breadcrumbs so the cheese does not leak out when frying.
+    - text: Heat the oil in a frying pan over medium heat. It should be hot but not smoking.
+    - text: Carefully place the breaded cheese in the pan and fry for about 2 minutes until golden.
+      timer_sec: 120
+    - text: Flip the cheese and fry the other side for about 2 minutes until golden too.
+      timer_sec: 120
+    - text: Put the finished cheese on a plate lined with paper towels to drain.
+    - text: Drain the potatoes and serve them with the fried cheese and tartar sauce.
+  tips: Put the breaded cheese in the fridge for 15 minutes; it will hold its shape better when frying. If the cheese starts to leak, the oil is too cool or the coating is too thin.

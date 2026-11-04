@@ -1,0 +1,73 @@
+slug: ginger_chicken
+pack: free
+cuisine: vietnamese
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 15
+servings: 4
+tags:
+  - quick
+  - main
+image_prompt: Stir-fried chicken pieces with fresh ginger, spring onions and sesame seeds served on a white plate.
+ingredients:
+  - ingredient: chicken_breast
+    qty: 600
+    unit: g
+  - ingredient: fresh_ginger
+    qty: 30
+    unit: g
+  - ingredient: garlic
+    qty: 3
+    unit: strouzek
+  - ingredient: soy_sauce
+    qty: 3
+    unit: lzice
+  - ingredient: sesame_oil
+    qty: 1
+    unit: lzice
+  - ingredient: sesame_seeds
+    qty: 1
+    unit: lzicka
+    note_cs: na posypání
+    note_en: for garnish
+  - ingredient: spring_onion
+    qty: 2
+    unit: ks
+  - ingredient: sunflower_oil
+    qty: 2
+    unit: lzice
+    note_cs: na opékání
+    note_en: for frying
+  - ingredient: salt
+    optional: true
+  - ingredient: black_pepper
+    optional: true
+cs:
+  title: Kuře se zázvorem
+  summary: Rychlé a voňavé jídlo inspirované vietnamskou kuchyní. Šťavnaté kuřecí kousky s výraznou chutí čerstvého zázvoru a česneku.
+  steps:
+    - text: Kuřecí prsa osuš papírovou utěrkou a nakrájej na kostičky asi 2 cm.
+    - text: Zázvor oloupej a nastrouhej, česnek oloupej a prolisuj. Jarní cibulku nakrájej na kolečka.
+    - text: V míse smíchej kuře se sójovou omáčkou, sezamovým olejem, česnekem a zázvorem. Nech 10 minut marinovat.
+      timer_sec: 600
+    - text: Ve velké pánvi rozehřej slunečnicový olej na středně vysokém plameni.
+    - text: Přidej kuře a za občasného míchání ho opékej asi 8 minut, dokud není zlatavé a uvnitř propečené, bez růžové barvy.
+      timer_sec: 480
+    - text: Ochutnej a podle potřeby dosol a opepři.
+    - text: Posyp jarní cibulkou a sezamem a hned podávej.
+  tips: Pokud se maso do pánve nevejde v jedné vrstvě, opékej ho na dvakrát, aby se opeklo a nedusilo ve vlastní šťávě. Máš-li rád pálivé, přidej do marinády špetku chilli vloček.
+en:
+  title: Ginger Chicken
+  summary: A quick, fragrant dish inspired by Vietnamese cooking. Juicy chicken pieces with the bold flavor of fresh ginger and garlic.
+  steps:
+    - text: Pat the chicken breasts dry with a paper towel and cut them into cubes of about 2 cm.
+    - text: Peel and grate the ginger, peel and crush the garlic. Slice the spring onions into rings.
+    - text: In a bowl, mix the chicken with the soy sauce, sesame oil, garlic, and ginger. Let it marinate for 10 minutes.
+      timer_sec: 600
+    - text: Heat the sunflower oil in a large frying pan over medium-high heat.
+    - text: Add the chicken and fry for about 8 minutes, stirring occasionally, until golden and cooked through with no pink inside.
+      timer_sec: 480
+    - text: Taste and add salt and pepper if needed.
+    - text: Sprinkle with spring onions and sesame seeds and serve right away.
+  tips: If the meat does not fit in the pan in a single layer, fry it in two batches so it browns instead of stewing in its own juices. If you like it spicy, add a pinch of chili flakes to the marinade.

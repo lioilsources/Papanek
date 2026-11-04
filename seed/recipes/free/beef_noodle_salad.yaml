@@ -1,0 +1,106 @@
+slug: beef_noodle_salad
+pack: free
+cuisine: vietnamese
+model: bench-qwen36
+difficulty: 1
+prep_min: 20
+cook_min: 15
+servings: 4
+tags:
+  - quick
+  - main
+image_prompt: A bowl of Vietnamese rice noodle salad topped with thin slices of beef, carrot strips, red onion, bean sprouts, fresh herbs and a lime wedge.
+ingredients:
+  - ingredient: rice_noodles
+    qty: 300
+    unit: g
+    note_cs: tenké rýžové nudle
+    note_en: thin rice vermicelli
+  - ingredient: beef_sirloin
+    qty: 400
+    unit: g
+    note_cs: nakrájené na tenké plátky
+    note_en: thinly sliced
+  - ingredient: red_onion
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na tenké proužky
+    note_en: thinly sliced
+  - ingredient: carrot
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na tenké nudličky
+    note_en: julienned
+  - ingredient: bean_sprouts
+    qty: 100
+    unit: g
+  - ingredient: coriander_leaves
+    qty: 1
+    unit: hrst
+    note_cs: natrhaný
+    note_en: torn
+  - ingredient: fresh_mint
+    qty: 1
+    unit: hrst
+    optional: true
+    note_cs: natrhaná
+    note_en: torn
+  - ingredient: lime
+    qty: 2
+    unit: ks
+    note_cs: jedna na šťávu, jedna na klínky
+    note_en: one for juice, one cut into wedges
+  - ingredient: fish_sauce
+    qty: 3
+    unit: lzice
+  - ingredient: sugar
+    qty: 2
+    unit: lzicka
+  - ingredient: garlic
+    qty: 1
+    unit: strouzek
+    note_cs: prolisovaný
+    note_en: crushed
+  - ingredient: water
+    qty: 2
+    unit: l
+    note_cs: na vaření a trocha do zálivky
+    note_en: for boiling, plus a little for the dressing
+  - ingredient: black_pepper
+    optional: true
+cs:
+  title: Vietnamský nudlový salát s hovězím
+  summary: Lehký vietnamský salát z rýžových nudlí, krátce povařeného hovězího a čerstvé zeleniny se sladkokyselou zálivkou.
+  steps:
+    - text: Ve velkém hrnci přiveď k varu 2 litry vody.
+    - text: Do vroucí vody vsyp rýžové nudle a vař je asi 4 minuty (podle návodu na obalu), dokud nezměknou.
+      timer_sec: 240
+    - text: Nudle vylov sítkem do mísy a propláchni je studenou vodou, aby se nelepily. Vodu v hrnci nech dál vřít.
+    - text: Do vroucí vody vlož plátky hovězího a vař je 2 minuty, dokud uvnitř nepřestanou být růžové.
+      timer_sec: 120
+    - text: Maso vyndej děrovanou lžící a nech ho okapat.
+    - text: V misce smíchej rybí omáčku, cukr, šťávu z jedné limetky, česnek a 4 lžíce vody. Míchej, dokud se cukr nerozpustí.
+    - text: Nudle rozděl do čtyř misek.
+    - text: Na nudle polož hovězí, mrkev, cibuli a klíčky.
+    - text: Posyp koriandrem a mátou.
+    - text: Vše pokapej zálivkou.
+    - text: Podávej s klínky druhé limetky a podle chuti opepři.
+  tips: Maso krájej napříč vlákny na co nejtenčí plátky, bude pak křehké. Zálivku si nejdřív ochutnej – chceš-li ji jemnější, přidej lžíci vody.
+en:
+  title: Vietnamese beef noodle salad
+  summary: A light Vietnamese salad of rice noodles, quickly boiled beef and fresh vegetables with a sweet and sour dressing.
+  steps:
+    - text: Bring 2 liters of water to a boil in a large pot.
+    - text: Add the rice noodles to the boiling water and cook for about 4 minutes (check the package) until soft.
+      timer_sec: 240
+    - text: Lift the noodles out with a strainer into a bowl and rinse them with cold water so they don't stick. Keep the water in the pot boiling.
+    - text: Add the beef slices to the boiling water and cook for 2 minutes, until no longer pink inside.
+      timer_sec: 120
+    - text: Lift out the beef with a slotted spoon and let it drain.
+    - text: In a small bowl, mix the fish sauce, sugar, juice of one lime, garlic and 4 tablespoons of water. Stir until the sugar dissolves.
+    - text: Divide the noodles among four bowls.
+    - text: Top the noodles with the beef, carrot, onion and bean sprouts.
+    - text: Sprinkle with coriander and mint.
+    - text: Drizzle everything with the dressing.
+    - text: Serve with wedges of the second lime and black pepper to taste.
+  tips: Slice the beef across the grain as thinly as you can so it stays tender. Taste the dressing first – if you want it milder, add a tablespoon of water.

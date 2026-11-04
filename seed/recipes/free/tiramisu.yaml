@@ -1,0 +1,75 @@
+slug: tiramisu
+pack: free
+cuisine: italian
+model: bench-qwen36
+difficulty: 1
+prep_min: 20
+cook_min: 0
+servings: 4
+tags:
+  - dessert
+  - no_oven
+image_prompt: A square slice of tiramisu on a white plate showing layers of coffee-soaked ladyfingers and creamy mascarpone, dusted with cocoa powder.
+ingredients:
+  - ingredient: egg_yolk
+    qty: 3
+    unit: ks
+    note_cs: velikost M
+    note_en: size M
+  - ingredient: sugar
+    qty: 60
+    unit: g
+  - ingredient: mascarpone
+    qty: 250
+    unit: g
+    note_cs: pokojové teploty
+    note_en: at room temperature
+  - ingredient: egg_white
+    qty: 3
+    unit: ks
+    note_cs: velikost M, vychlazené
+    note_en: size M, chilled
+  - ingredient: powdered_sugar
+    qty: 20
+    unit: g
+  - ingredient: coffee
+    qty: 200
+    unit: ml
+    note_cs: silná, vychladlá
+    note_en: strong, cooled
+  - ingredient: ladyfingers
+    qty: 16
+    unit: ks
+  - ingredient: cocoa_powder
+    qty: 10
+    unit: g
+    note_cs: na posypání
+    note_en: for dusting
+cs:
+  title: Klasické tiramisu
+  summary: Italský dezert bez pečení z piškotů namočených v kávě a jemného krému z mascarpone a vajec. Příprava zabere 20 minut, pak už jen čekáš, až se v lednici spojí.
+  steps:
+    - text: Do čisté mísy dej vychlazené bílky a ručním šlehačem je vyšlehej. Postupně přisyp moučkový cukr a šlehej, až vznikne pevný sníh.
+    - text: V jiné míse vyšlehej žloutky s cukrem, dokud směs nezhoustne a nezesvětlí.
+    - text: Přidej mascarpone a krátce ho zašlehej, až vznikne hladký krém bez hrudek.
+    - text: Stěrkou do krému opatrně vmíchej sníh, aby zůstal nadýchaný.
+    - text: Piškoty po jednom krátce namoč do kávy a polovinou z nich vylož dno formy asi 20 × 15 cm.
+    - text: Na piškoty rozetři polovinu krému. Pak polož druhou vrstvu namočených piškotů a navrch rozetři zbytek krému.
+    - text: Formu přikryj a dej do lednice aspoň na 4 hodiny, aby krém ztuhl a piškoty změkly.
+      timer_sec: 14400
+    - text: Těsně před podáváním tiramisu posyp přes sítko kakaem.
+  tips: Piškoty máčej jen na vteřinu z každé strany, jinak se rozmočí a rozpadnou. Krém obsahuje syrová vejce, proto použij co nejčerstvější a tiramisu spotřebuj do 2 dnů.
+en:
+  title: Classic Tiramisu
+  summary: An Italian no-bake dessert of coffee-dipped ladyfingers and a light mascarpone and egg cream. It takes 20 minutes to make, then you just wait for it to set in the fridge.
+  steps:
+    - text: Put the chilled egg whites in a clean bowl and beat them with a hand mixer. Gradually add the powdered sugar and keep beating until you get stiff peaks.
+    - text: In another bowl, beat the yolks with the sugar until the mixture thickens and turns pale.
+    - text: Add the mascarpone and beat briefly into a smooth cream with no lumps.
+    - text: Using a spatula, gently fold the beaten egg whites into the cream so it stays airy.
+    - text: Dip the ladyfingers one at a time briefly into the coffee and use half of them to line the bottom of a dish about 20 × 15 cm.
+    - text: Spread half of the cream over the ladyfingers. Then add a second layer of dipped ladyfingers and spread the rest of the cream on top.
+    - text: Cover the dish and refrigerate for at least 4 hours so the cream sets and the ladyfingers soften.
+      timer_sec: 14400
+    - text: Just before serving, dust the tiramisu with cocoa through a sieve.
+  tips: Dip the ladyfingers for just a second on each side, or they will get soggy and fall apart. The cream contains raw eggs, so use the freshest ones you can and eat the tiramisu within 2 days.

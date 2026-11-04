@@ -1,0 +1,79 @@
+slug: vegetable_stir_fried_noodles
+pack: free
+cuisine: asian
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 10
+servings: 4
+tags:
+  - vegetarian
+  - quick
+  - main
+image_prompt: A plate of stir-fried rice noodles with carrot strips, bell pepper, broccoli florets and onion in a glossy soy sauce.
+ingredients:
+  - ingredient: rice_noodles
+    qty: 300
+    unit: g
+    note_cs: sušené
+    note_en: dried
+  - ingredient: carrot
+    qty: 2
+    unit: ks
+  - ingredient: bell_pepper
+    qty: 1
+    unit: ks
+  - ingredient: broccoli
+    qty: 200
+    unit: g
+  - ingredient: onion
+    qty: 1
+    unit: ks
+  - ingredient: garlic
+    qty: 3
+    unit: strouzek
+  - ingredient: soy_sauce
+    qty: 4
+    unit: lzice
+  - ingredient: sunflower_oil
+    qty: 2
+    unit: lzice
+  - ingredient: sesame_oil
+    qty: 1
+    unit: lzice
+  - ingredient: salt
+    optional: true
+  - ingredient: black_pepper
+    optional: true
+cs:
+  title: Smažené nudle se zeleninou
+  summary: Rychlé asijské jídlo z rýžových nudlí a čerstvé zeleniny. Ideální večeře pro začátečníky, hotová za chvilku.
+  steps:
+    - text: Nudle připrav podle návodu na obalu. Sceď je a propláchni studenou vodou, aby se neslepily.
+    - text: Zeleninu omyj. Mrkev a papriku nakrájej na tenké proužky, cibuli na měsíčky a brokolici rozeber na malé růžičky. Česnek oloupej a nasekej najemno.
+    - text: Ve velké pánvi nebo woku rozehřej slunečnicový olej na středně vysokém ohni.
+    - text: Přidej cibuli a za stálého míchání ji smaž asi 2 minuty.
+    - text: Přidej česnek, mrkev a brokolici a smaž 3 minuty, dokud zelenina nezměkne, ale zůstane křupavá.
+      timer_sec: 180
+    - text: Přidej papriku a smaž ještě 2 minuty.
+      timer_sec: 120
+    - text: Přidej nudle a sójovou omáčku a vše asi 2 minuty promíchávej, až se nudle prohřejí.
+      timer_sec: 120
+    - text: Stáhni pánev z plotny, vmíchej sezamový olej a opepři. Ochutnej a jen když je to potřeba, přisol – sójová omáčka je slaná sama.
+  tips: Všechno si nakrájej předem, smažení pak jde velmi rychle a není čas krájet. Když se nudle v pánvi lepí, přilij lžíci vody.
+en:
+  title: Vegetable Stir-Fried Noodles
+  summary: A quick Asian dish of rice noodles and fresh vegetables. An ideal beginner dinner, ready in no time.
+  steps:
+    - text: Prepare the noodles according to the package instructions. Drain them and rinse with cold water so they do not stick together.
+    - text: Wash the vegetables. Cut the carrots and pepper into thin strips, the onion into wedges, and break the broccoli into small florets. Peel and finely chop the garlic.
+    - text: Heat the sunflower oil in a large pan or wok over medium-high heat.
+    - text: Add the onion and stir-fry for about 2 minutes.
+    - text: Add the garlic, carrots and broccoli and stir-fry for 3 minutes until the vegetables soften but stay crisp.
+      timer_sec: 180
+    - text: Add the pepper and stir-fry for another 2 minutes.
+      timer_sec: 120
+    - text: Add the noodles and soy sauce and toss everything for about 2 minutes until the noodles are heated through.
+      timer_sec: 120
+    - text: Take the pan off the heat, stir in the sesame oil and season with pepper. Taste and add salt only if needed – soy sauce is salty on its own.
+  tips: Cut everything before you start – stir-frying goes very fast and there is no time to chop. If the noodles stick to the pan, add a tablespoon of water.

@@ -1,0 +1,107 @@
+slug: chicken_pho
+pack: free
+cuisine: vietnamese
+model: bench-qwen36
+difficulty: 2
+prep_min: 20
+cook_min: 120
+servings: 4
+tags:
+  - soup
+  - main
+image_prompt: A steaming bowl of Vietnamese chicken pho with rice noodles, shredded chicken, spring onions and bean sprouts in a clear broth with a lime wedge.
+ingredients:
+  - ingredient: whole_chicken
+    qty: 1
+    unit: ks
+    note_cs: asi 1,5 kg, rozporcované
+    note_en: about 1.5 kg, cut into pieces
+  - ingredient: rice_noodles
+    qty: 320
+    unit: g
+    note_cs: široké rýžové nudle
+    note_en: wide rice noodles
+  - ingredient: onion
+    qty: 1
+    unit: ks
+    note_cs: velká, rozpůlená
+    note_en: large, halved
+  - ingredient: fresh_ginger
+    qty: 50
+    unit: g
+    note_cs: na plátky
+    note_en: sliced
+  - ingredient: star_anise
+    qty: 3
+    unit: ks
+  - ingredient: cinnamon_stick
+    qty: 1
+    unit: ks
+  - ingredient: fish_sauce
+    qty: 3
+    unit: lzice
+  - ingredient: sugar
+    qty: 2
+    unit: lzicka
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: spring_onion
+    qty: 4
+    unit: ks
+    note_cs: nakrájená na kolečka
+    note_en: sliced into rings
+  - ingredient: bean_sprouts
+    qty: 200
+    unit: g
+    optional: true
+    note_cs: na podávání
+    note_en: for serving
+  - ingredient: lime
+    qty: 1
+    unit: ks
+    optional: true
+    note_cs: nakrájená na klínky
+    note_en: cut into wedges
+  - ingredient: water
+    qty: 5
+    unit: l
+    note_cs: 2 l na spaření kuřete, 3 l na vývar
+    note_en: 2 l for blanching the chicken, 3 l for the broth
+cs:
+  title: Kuřecí phở
+  summary: Vietnamská polévka s voňavým čirým vývarem, rýžovými nudlemi a kuřecím masem. Ideální na zahřátí v chladných dnech.
+  steps:
+    - text: Kuře dej do velkého hrnce, zalij 2 litry vody, přiveď k varu a vař 5 minut.
+      timer_sec: 300
+    - text: Vodu slij, kousky kuřete opláchni studenou vodou a hrnec vymyj. Díky tomu bude vývar čirý.
+    - text: Cibuli a zázvor opeč na suché pánvi řeznou stranou dolů, dokud nezhnědnou. Vývar tak dostane hlubší chuť.
+    - text: Kuře vrať do čistého hrnce, přidej cibuli, zázvor a 3 litry vody a přiveď k varu. Pěnu, která se objeví na hladině, sbírej lžící.
+    - text: Stáhni plamen, aby vývar jen mírně probublával, přikryj pokličkou a vař 1 hodinu.
+      timer_sec: 3600
+    - text: Přidej badyán a skořici a vař dalších 30 minut.
+      timer_sec: 1800
+    - text: Kuře vyndej na talíř a nech 10 minut vychladnout. Pak maso oddělej od kostí a natrhej ho na menší kousky.
+      timer_sec: 600
+    - text: Vývar sceď přes jemné sítko do čistého hrnce. Přidej rybí omáčku a cukr, ochutnej a dosol a opepři.
+    - text: Rýžové nudle uvař podle návodu na obalu, sceď je a rozděl do 4 misek.
+    - text: Na nudle dej kuřecí maso a zalij je horkým vývarem. Posyp jarní cibulkou a podávej s fazolovými klíčky a klínky limetky.
+  tips: Vývar můžeš uvařit den předem a nechat přes noc v lednici – tuk ztuhne na hladině a snadno ho sebereš. Vývar nenech prudce vřít, zůstane čirý.
+en:
+  title: Chicken pho
+  summary: A Vietnamese soup with a fragrant clear broth, rice noodles and chicken. Perfect for warming up on cold days.
+  steps:
+    - text: Put the chicken in a large pot, cover with 2 liters of water, bring to a boil and cook for 5 minutes.
+      timer_sec: 300
+    - text: Pour off the water, rinse the chicken pieces under cold water and wash the pot. This keeps the broth clear.
+    - text: Toast the onion and ginger cut side down in a dry pan until browned. This gives the broth a deeper flavor.
+    - text: Return the chicken to the clean pot, add the onion, ginger and 3 liters of water, and bring to a boil. Skim off any foam that rises to the surface.
+    - text: Turn down the heat so the broth just gently bubbles, cover with a lid and simmer for 1 hour.
+      timer_sec: 3600
+    - text: Add the star anise and cinnamon stick and simmer for another 30 minutes.
+      timer_sec: 1800
+    - text: Lift the chicken onto a plate and let it cool for 10 minutes. Then pull the meat off the bones and tear it into smaller pieces.
+      timer_sec: 600
+    - text: Strain the broth through a fine sieve into a clean pot. Add the fish sauce and sugar, taste, and season with salt and pepper.
+    - text: Cook the rice noodles according to the package instructions, drain them and divide among 4 bowls.
+    - text: Top the noodles with the chicken and pour over the hot broth. Sprinkle with spring onion and serve with bean sprouts and lime wedges.
+  tips: You can make the broth a day ahead and leave it in the fridge overnight – the fat will set on top and is easy to lift off. Don't let the broth boil hard, so it stays clear.

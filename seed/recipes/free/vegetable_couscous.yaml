@@ -1,0 +1,79 @@
+slug: vegetable_couscous
+pack: free
+cuisine: quick
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 15
+servings: 4
+tags:
+  - vegetarian
+  - quick
+  - main
+image_prompt: A plate of fluffy couscous mixed with colorful diced carrot, bell pepper, peas and corn, garnished with fresh parsley.
+ingredients:
+  - ingredient: couscous
+    qty: 300
+    unit: g
+  - ingredient: water
+    qty: 350
+    unit: ml
+  - ingredient: salt
+    qty: 1
+    unit: lzicka
+  - ingredient: olive_oil
+    qty: 3
+    unit: lzice
+  - ingredient: carrot
+    qty: 1
+    unit: ks
+  - ingredient: bell_pepper
+    qty: 1
+    unit: ks
+  - ingredient: canned_corn
+    qty: 1
+    unit: plechovka
+    note_cs: scezená
+    note_en: drained
+  - ingredient: green_peas
+    qty: 100
+    unit: g
+    note_cs: mražený
+    note_en: frozen
+  - ingredient: parsley
+    qty: 1
+    unit: svazek
+  - ingredient: black_pepper
+    optional: true
+cs:
+  title: Rychlý kuskus se zeleninou
+  summary: Lehké a rychlé vegetariánské jídlo, které zvládne každý začátečník. Kuskus se nevaří, jen nasákne horkou vodu, a zelenina mu dodá barvu i chuť.
+  steps:
+    - text: Mrkev oloupej a nakrájej na malé kostičky. Papriku zbav semínek a nakrájej na kostičky. Petrželku nasekej.
+    - text: V hrnci přiveď k varu 350 ml vody s lžičkou soli.
+    - text: Hrnec stáhni z plotny, vsyp 300 g kuskusu, zamíchej a přikryj pokličkou. Nech ho 5 minut stát.
+      timer_sec: 300
+    - text: Mezitím na pánvi rozehřej 3 lžíce oleje a na středním ohni opékej mrkev s paprikou asi 5 minut, dokud nezměknou.
+      timer_sec: 300
+    - text: Přidej scezenou kukuřici a mražený hrášek a za občasného míchání opékej ještě 3 minuty.
+      timer_sec: 180
+    - text: Kuskus odkryj a vidličkou ho prohrabej, aby se zrnka oddělila.
+    - text: Kuskus přidej k zelenině na pánev a vše důkladně promíchej.
+    - text: Vmíchej nasekanou petrželku a případně opepři. Podávej teplé.
+  tips: Kuskus nevař, stačí ho zalít vroucí vodou a nechat pod pokličkou nabobtnat. Zeleninu můžeš obměňovat podle toho, co máš doma – hodí se třeba cuketa nebo cherry rajčata.
+en:
+  title: Quick Vegetable Couscous
+  summary: A light, quick vegetarian dish any beginner can make. The couscous is not cooked, it just soaks up hot water, and the vegetables add color and flavor.
+  steps:
+    - text: Peel the carrot and cut it into small cubes. Seed the bell pepper and dice it. Chop the parsley.
+    - text: In a pot, bring 350 ml of water with a teaspoon of salt to a boil.
+    - text: Take the pot off the heat, pour in 300 g of couscous, stir and cover with a lid. Let it stand for 5 minutes.
+      timer_sec: 300
+    - text: Meanwhile, heat 3 tablespoons of oil in a pan and sauté the carrot and pepper over medium heat for about 5 minutes until softened.
+      timer_sec: 300
+    - text: Add the drained corn and frozen peas and cook for another 3 minutes, stirring occasionally.
+      timer_sec: 180
+    - text: Uncover the couscous and fluff it with a fork to separate the grains.
+    - text: Add the couscous to the vegetables in the pan and mix everything well.
+    - text: Stir in the chopped parsley and add pepper if you like. Serve warm.
+  tips: Do not cook the couscous – just pour boiling water over it and let it swell under the lid. Swap the vegetables for whatever you have at home, such as zucchini or cherry tomatoes.

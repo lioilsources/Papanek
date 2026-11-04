@@ -1,0 +1,79 @@
+slug: pasta_al_pomodoro
+pack: free
+cuisine: italian
+model: bench-qwen36
+difficulty: 1
+prep_min: 5
+cook_min: 20
+servings: 4
+tags:
+  - vegetarian
+  - quick
+  - main
+image_prompt: A plate of spaghetti coated in a rich red tomato sauce with fresh basil leaves on top.
+ingredients:
+  - ingredient: pasta
+    qty: 400
+    unit: g
+    note_cs: např. špagety
+    note_en: e.g. spaghetti
+  - ingredient: canned_tomatoes
+    qty: 1
+    unit: plechovka
+    note_cs: 400 g
+    note_en: 400 g
+  - ingredient: onion
+    qty: 1
+    unit: ks
+    note_cs: menší
+    note_en: small
+  - ingredient: garlic
+    qty: 2
+    unit: strouzek
+  - ingredient: olive_oil
+    qty: 3
+    unit: lzice
+  - ingredient: basil
+    qty: 1
+    unit: svazek
+    note_cs: čerstvá
+    note_en: fresh
+  - ingredient: sugar
+    qty: 1
+    unit: lzicka
+    optional: true
+  - ingredient: salt
+  - ingredient: black_pepper
+    optional: true
+cs:
+  title: Těstoviny s rajčatovou omáčkou
+  summary: Klasická italská pasta al pomodoro. Jednoduchá, chutná a hotová za 25 minut. Ideální pro začátečníky.
+  steps:
+    - text: Cibuli nakrájej nadrobno a česnek na tenké plátky.
+    - text: Na pánvi rozehřej olivový olej a cibuli na něm restuj asi 5 minut do sklovita.
+      timer_sec: 300
+    - text: Přidej česnek a restuj asi 1 minutu, dokud nezačne vonět. Hlídej, ať se nespálí.
+      timer_sec: 60
+    - text: Přidej rajčata z plechovky a rozmačkej je vařečkou.
+    - text: Omáčku osol, opepři a přidej lžičku cukru, který zjemní kyselost rajčat.
+    - text: Vař omáčku na mírném plameni 15 minut, dokud nezhoustne.
+      timer_sec: 900
+    - text: Mezitím přiveď k varu velký hrnec osolené vody a uvař v ní těstoviny al dente podle návodu na obalu.
+    - text: Těstoviny sceď, smíchej je s omáčkou na pánvi a vmíchej natrhanou bazalku.
+  tips: Než těstoviny scedíš, odeber hrnek vody z vaření. Když je omáčka moc hustá, přilij trochu této vody a bude se lépe držet těstovin.
+en:
+  title: Pasta with Tomato Sauce
+  summary: Classic Italian pasta al pomodoro. Simple, tasty, and ready in 25 minutes. Perfect for beginners.
+  steps:
+    - text: Finely chop the onion and thinly slice the garlic.
+    - text: Heat the olive oil in a pan and sauté the onion for about 5 minutes until translucent.
+      timer_sec: 300
+    - text: Add the garlic and sauté for about 1 minute until fragrant. Be careful not to burn it.
+      timer_sec: 60
+    - text: Add the canned tomatoes and crush them with a wooden spoon.
+    - text: Season the sauce with salt and pepper and add a teaspoon of sugar to soften the acidity of the tomatoes.
+    - text: Simmer the sauce over low heat for 15 minutes until it thickens.
+      timer_sec: 900
+    - text: Meanwhile, bring a large pot of salted water to a boil and cook the pasta al dente according to the package instructions.
+    - text: Drain the pasta, toss it with the sauce in the pan and stir in the torn basil.
+  tips: Before draining the pasta, save a cup of the cooking water. If the sauce is too thick, add a little of this water and it will cling to the pasta better.

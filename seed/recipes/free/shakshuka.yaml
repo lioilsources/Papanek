@@ -1,0 +1,96 @@
+slug: shakshuka
+pack: free
+cuisine: mexmed
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 25
+servings: 4
+tags:
+  - vegetarian
+  - quick
+  - one_pot
+  - breakfast
+  - main
+image_prompt: Eggs poached in a rich red tomato and pepper sauce in a large skillet, garnished with fresh parsley, with bread on the side.
+ingredients:
+  - ingredient: canned_tomatoes
+    qty: 800
+    unit: g
+    note_cs: celá nebo krájená
+    note_en: whole or chopped
+  - ingredient: bell_pepper
+    qty: 1
+    unit: ks
+    note_cs: červená nebo zelená
+    note_en: red or green
+  - ingredient: onion
+    qty: 1
+    unit: ks
+  - ingredient: garlic
+    qty: 2
+    unit: strouzek
+  - ingredient: egg
+    qty: 8
+    unit: ks
+  - ingredient: olive_oil
+    qty: 2
+    unit: lzice
+  - ingredient: sweet_paprika
+    qty: 1
+    unit: lzicka
+  - ingredient: cumin
+    qty: 0.5
+    unit: lzicka
+    note_cs: mletý
+    note_en: ground
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: chilli_powder
+    qty: 0.5
+    unit: lzicka
+    optional: true
+    note_cs: pro pálivost
+    note_en: for heat
+  - ingredient: parsley
+    qty: 1
+    unit: hrst
+    optional: true
+    note_cs: na ozdobu
+    note_en: for garnish
+  - ingredient: bread
+    optional: true
+    note_cs: k podávání
+    note_en: for serving
+cs:
+  title: Shakshuka
+  summary: Vejce zastřená v kořeněné rajčatové omáčce s paprikou. Jednoduché jídlo z jedné pánve k snídani i k večeři.
+  steps:
+    - text: Cibuli oloupej a nakrájej nadrobno. Česnek oloupej a prolisuj nebo nasekej najemno.
+    - text: Papriku omyj, zbav ji semínek a nakrájej na kostičky.
+    - text: Ve velké pánvi (aspoň 28 cm) rozehřej olej na středním ohni. Přidej cibuli a restuj asi 3 minuty, dokud nezměkne.
+    - text: Přidej papriku a česnek a restuj další 2 minuty.
+    - text: Zasyp sladkou paprikou, římským kmínem a případně chilli. Zamíchej a nech koření 30 sekund rozvonět.
+    - text: Přidej rajčata, větší kusy rozmačkej vařečkou. Osol, opepři a vař bez pokličky na mírném ohni 10 minut, aby omáčka zhoustla.
+      timer_sec: 600
+    - text: Lžící udělej v omáčce 8 důlků a do každého opatrně rozklepni jedno vejce.
+    - text: Pánev přikryj pokličkou a vař na mírném ohni asi 7 minut, dokud bílky úplně neztuhnou. Žloutky můžou zůstat tekuté.
+      timer_sec: 420
+    - text: Stáhni pánev z plotny, posyp nasekanou petrželkou a hned podávej s chlebem.
+  tips: Když je omáčka moc řídká, vař ji před přidáním vajec ještě pár minut bez pokličky. Pro pikantnější verzi orestuj s cibulí nakrájenou čerstvou chilli papričku.
+en:
+  title: Shakshuka
+  summary: Eggs poached in a spiced tomato and pepper sauce. A simple one-pan dish for breakfast or dinner.
+  steps:
+    - text: Peel the onion and chop it finely. Peel the garlic and press or mince it finely.
+    - text: Wash the bell pepper, remove the seeds and cut it into small cubes.
+    - text: Heat the oil in a large pan (at least 28 cm) over medium heat. Add the onion and sauté for about 3 minutes until softened.
+    - text: Add the pepper and garlic and sauté for another 2 minutes.
+    - text: Sprinkle in the sweet paprika, cumin and chilli, if using. Stir and let the spices bloom for 30 seconds.
+    - text: Add the tomatoes and break up any large pieces with a wooden spoon. Season with salt and pepper and simmer uncovered over low heat for 10 minutes until the sauce thickens.
+      timer_sec: 600
+    - text: Make 8 wells in the sauce with a spoon and carefully crack one egg into each.
+    - text: Cover the pan with a lid and cook over low heat for about 7 minutes, until the whites are completely set. The yolks can stay runny.
+      timer_sec: 420
+    - text: Take the pan off the heat, sprinkle with chopped parsley and serve right away with bread.
+  tips: If the sauce is too thin, simmer it uncovered for a few more minutes before adding the eggs. For a spicier version, sauté a chopped fresh chilli with the onion.

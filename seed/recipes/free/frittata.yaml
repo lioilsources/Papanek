@@ -1,0 +1,68 @@
+slug: frittata
+pack: free
+cuisine: italian
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 20
+servings: 4
+tags:
+  - vegetarian
+  - quick
+  - breakfast
+  - main
+image_prompt: A golden yellow vegetable frittata sliced into wedges on a white plate with fresh basil leaves.
+ingredients:
+  - ingredient: egg
+    qty: 8
+    unit: ks
+  - ingredient: milk
+    qty: 4
+    unit: lzice
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: olive_oil
+    qty: 2
+    unit: lzice
+  - ingredient: onion
+    qty: 1
+    unit: ks
+  - ingredient: bell_pepper
+    qty: 1
+    unit: ks
+  - ingredient: zucchini
+    qty: 1
+    unit: ks
+  - ingredient: basil
+    qty: 1
+    unit: hrst
+cs:
+  title: Zeleninová frittata
+  summary: Italská omeleta z trouby plná zeleniny. Připravíš ji rychle a chutná teplá i studená.
+  steps:
+    - text: Troubu předehřej na 190 °C.
+    - text: Cibuli, papriku a cuketu nakrájej na malé kostičky. Bazalku natrhej na menší kousky.
+    - text: Do mísy rozklepni vejce, přidej mléko, sůl a pepř a vidličkou vše dobře prošlehej.
+    - text: V pánvi vhodné do trouby (asi 24 cm) rozehřej olivový olej a zeleninu na něm restuj asi 5 minut doměkka.
+      timer_sec: 300
+    - text: Vmíchej bazalku, zeleninu rovnoměrně rozprostři po pánvi a zalij ji vejci.
+    - text: Pánev dej do trouby a peč 15 minut, dokud frittata neztuhne i uprostřed a povrch nezezlátne.
+      timer_sec: 900
+    - text: Frittatu nech 5 minut odpočinout a pak ji nakrájej na dílky.
+      timer_sec: 300
+  tips: Nemáš pánev do trouby? Zeleninu přendej do vymazané zapékací mísy podobné velikosti a zalij ji vejci. Rukojeť pánve je po vytažení z trouby horká, ber ji vždy chňapkou.
+en:
+  title: Vegetable Frittata
+  summary: An Italian oven-baked omelet packed with vegetables. It is quick to make and tastes great warm or cold.
+  steps:
+    - text: Preheat the oven to 190 °C.
+    - text: Dice the onion, bell pepper, and zucchini into small cubes. Tear the basil into smaller pieces.
+    - text: Crack the eggs into a bowl, add the milk, salt, and pepper, and whisk well with a fork.
+    - text: Heat the olive oil in an oven-safe pan (about 24 cm) and sauté the vegetables for about 5 minutes until soft.
+      timer_sec: 300
+    - text: Stir in the basil, spread the vegetables evenly over the pan, and pour the eggs over them.
+    - text: Put the pan in the oven and bake for 15 minutes, until the frittata is set in the middle and golden on top.
+      timer_sec: 900
+    - text: Let the frittata rest for 5 minutes, then cut it into wedges.
+      timer_sec: 300
+  tips: No oven-safe pan? Transfer the vegetables to a greased baking dish of a similar size and pour the eggs over them. The pan handle is hot after it comes out of the oven, so always use an oven mitt.

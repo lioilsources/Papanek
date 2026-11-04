@@ -1,0 +1,109 @@
+slug: minestrone
+pack: free
+cuisine: italian
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 30
+servings: 4
+tags:
+  - soup
+  - main
+  - vegetarian
+  - one_pot
+  - budget
+image_prompt: A white bowl filled with colorful minestrone soup containing beans, pasta, and vegetables, garnished with fresh basil leaves.
+ingredients:
+  - ingredient: olive_oil
+    qty: 2
+    unit: lzice
+  - ingredient: onion
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: carrot
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: celery
+    qty: 1
+    unit: stonek
+    note_cs: nakrájený na kostičky
+    note_en: diced
+  - ingredient: garlic
+    qty: 2
+    unit: strouzek
+    note_cs: prolisovaný
+    note_en: minced
+  - ingredient: canned_tomatoes
+    qty: 1
+    unit: plechovka
+    note_cs: celá loupaná rajčata, rozmačkáš je v hrnci
+    note_en: whole peeled tomatoes, you will crush them in the pot
+  - ingredient: vegetable_stock
+    qty: 1
+    unit: l
+    note_cs: nebo voda
+    note_en: or water
+  - ingredient: zucchini
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: beans_kidney_canned
+    qty: 1
+    unit: plechovka
+    note_cs: scezené a propláchnuté
+    note_en: drained and rinsed
+  - ingredient: pasta
+    qty: 100
+    unit: g
+    note_cs: drobné těstoviny, např. kolínka
+    note_en: small pasta, e.g. macaroni
+  - ingredient: spinach
+    qty: 1
+    unit: hrst
+    note_cs: čerstvý
+    note_en: fresh
+  - ingredient: salt
+    optional: true
+  - ingredient: black_pepper
+    optional: true
+cs:
+  title: Minestrone
+  summary: Sytá italská zeleninová polévka s fazolemi a těstovinami. Připravíš ji v jednom hrnci a zvládne ji i úplný začátečník.
+  steps:
+    - text: V hrnci rozehřej olivový olej na středním plameni.
+    - text: Přidej cibuli, mrkev a celer. Restuj asi 5 minut, dokud zelenina nezměkne.
+      timer_sec: 300
+    - text: Přidej česnek a restuj ještě 1 minutu, dokud nezačne vonět.
+      timer_sec: 60
+    - text: Přidej rajčata z plechovky, vařečkou je rozmačkej a zalij vývarem. Přiveď k varu.
+    - text: Ztlum plamen na mírný, přidej cuketu a vař 10 minut.
+      timer_sec: 600
+    - text: Přidej fazole a těstoviny. Vař dalších 10 minut, dokud nejsou těstoviny al dente (měkké, ale ještě na skus).
+      timer_sec: 600
+    - text: Vmíchej špenát a nech ho 2 minuty změknout v horké polévce.
+      timer_sec: 120
+    - text: Ochutnej a dosol a opepři podle chuti.
+  tips: Pokud budeš polévku ohřívat další den, těstoviny nasáknou a polévka zhoustne – stačí přilít trochu vody. Na talíři ji můžeš posypat strouhaným parmazánem.
+en:
+  title: Minestrone
+  summary: A hearty Italian vegetable soup with beans and pasta. It is made in one pot and even a complete beginner can manage it.
+  steps:
+    - text: Heat the olive oil in a pot over medium heat.
+    - text: Add the onion, carrot and celery. Sauté for about 5 minutes until the vegetables soften.
+      timer_sec: 300
+    - text: Add the garlic and sauté for 1 more minute until fragrant.
+      timer_sec: 60
+    - text: Add the canned tomatoes, crush them with a wooden spoon and pour in the stock. Bring to a boil.
+    - text: Reduce the heat to low, add the zucchini and simmer for 10 minutes.
+      timer_sec: 600
+    - text: Add the beans and pasta. Simmer for another 10 minutes until the pasta is al dente (tender but still firm to the bite).
+      timer_sec: 600
+    - text: Stir in the spinach and let it wilt in the hot soup for 2 minutes.
+      timer_sec: 120
+    - text: Taste and season with salt and pepper.
+  tips: If you reheat the soup the next day, the pasta will soak up liquid and the soup will thicken – just add a little water. You can sprinkle grated parmesan on top when serving.

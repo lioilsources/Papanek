@@ -1,0 +1,70 @@
+slug: hummus
+pack: free
+cuisine: mexmed
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 0
+servings: 4
+tags:
+  - vegetarian
+  - vegan
+  - quick
+  - side
+  - budget
+  - no_oven
+image_prompt: Creamy beige hummus in a white bowl with a drizzle of olive oil and a sprinkle of paprika on top.
+ingredients:
+  - ingredient: chickpeas_canned
+    qty: 1
+    unit: plechovka
+    note_cs: nebo 250 g vařené cizrny
+    note_en: or 250 g cooked chickpeas
+  - ingredient: tahini
+    qty: 3
+    unit: lzice
+  - ingredient: lemon_juice_bottled
+    qty: 2
+    unit: lzice
+  - ingredient: garlic
+    qty: 1
+    unit: strouzek
+  - ingredient: olive_oil
+    qty: 3
+    unit: lzice
+  - ingredient: salt
+  - ingredient: water
+    qty: 4
+    unit: lzice
+    note_cs: studená
+    note_en: cold
+  - ingredient: sweet_paprika
+    qty: 1
+    unit: stipka
+    optional: true
+    note_cs: na posypání
+    note_en: for sprinkling
+cs:
+  title: Klasický hummus
+  summary: Krémová pomazánka z cizrny, tahini a citronu. Připravíš ji rychle a bez vaření a chutná skvěle s chlebem nebo zeleninou.
+  steps:
+    - text: Cizrnu sceď v cedníku a propláchni ji studenou vodou.
+    - text: Česnek oloupej a prolisuj.
+    - text: Do mixéru dej cizrnu, tahini, citronovou šťávu, česnek, 2 lžíce olivového oleje a špetku soli.
+    - text: Mixuj, dokud nevznikne hladká hmota.
+    - text: Za stálého mixování přilévej po lžících studenou vodu, dokud není hummus krémový. Nemusíš použít všechnu.
+    - text: Ochutnej a podle potřeby dosol nebo přidej trochu citronové šťávy.
+    - text: Hummus přendej do misky, zakápni zbylou lžící olivového oleje a posyp paprikou.
+  tips: Pro extra jemný hummus z cizrny před mixováním oloupej slupky. V uzavřené nádobě vydrží v lednici 3–4 dny.
+en:
+  title: Classic Hummus
+  summary: A creamy dip made from chickpeas, tahini, and lemon. It is quick to make, needs no cooking, and tastes great with bread or vegetables.
+  steps:
+    - text: Drain the chickpeas in a colander and rinse them with cold water.
+    - text: Peel and crush the garlic.
+    - text: Put the chickpeas, tahini, lemon juice, garlic, 2 tablespoons of olive oil, and a pinch of salt in a blender.
+    - text: Blend until smooth.
+    - text: While blending, add cold water one spoonful at a time until the hummus is creamy. You may not need all of it.
+    - text: Taste and add more salt or a little lemon juice if needed.
+    - text: Transfer the hummus to a bowl, drizzle with the remaining tablespoon of olive oil, and sprinkle with paprika.
+  tips: For extra smooth hummus, peel the skins off the chickpeas before blending. It keeps in a sealed container in the fridge for 3–4 days.

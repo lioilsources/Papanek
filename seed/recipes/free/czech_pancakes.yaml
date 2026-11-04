@@ -1,0 +1,71 @@
+slug: czech_pancakes
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 20
+servings: 4
+tags:
+  - breakfast
+  - quick
+  - kids
+  - vegetarian
+  - budget
+image_prompt: A stack of small, thick golden Czech pancakes on a white plate topped with a spoonful of jam.
+ingredients:
+  - ingredient: egg
+    qty: 2
+    unit: ks
+  - ingredient: milk
+    qty: 3
+    unit: dl
+  - ingredient: flour_plain
+    qty: 250
+    unit: g
+  - ingredient: baking_powder
+    qty: 2
+    unit: lzicka
+  - ingredient: sugar
+    qty: 2
+    unit: lzice
+  - ingredient: salt
+    qty: 1
+    unit: stipka
+  - ingredient: sunflower_oil
+    qty: 3
+    unit: lzice
+    note_cs: na smažení
+    note_en: for frying
+  - ingredient: jam
+    optional: true
+    note_cs: na podávání
+    note_en: for serving
+cs:
+  title: Klasické české lívance
+  summary: Nadýchané lívance z pár surovin, které máš rychle hotové. Ideální na snídani nebo sladkou večeři.
+  steps:
+    - text: Do mísy rozklepni vejce, přidej cukr a špetku soli a prošlehej metlou.
+    - text: Přilij mléko a znovu prošlehej.
+    - text: V jiné misce promíchej mouku s práškem do pečiva a postupně ji zašlehej do mléka s vejci. Těsto má být hladké a husté jako zakysaná smetana.
+    - text: Na pánvi rozehřej lžíci oleje na středním plameni.
+    - text: Lžící nebo malou naběračkou dávej na pánev kopečky těsta a rozetři je na kolečka o průměru asi 10 cm. Smaž asi 2 minuty, dokud se na povrchu neudělají bublinky a spodek není zlatý.
+      timer_sec: 120
+    - text: Lívance obrať a smaž druhou stranu asi 1 minutu dozlatova.
+      timer_sec: 60
+    - text: Hotové lívance dej na talíř a usmaž zbytek těsta, podle potřeby přidej olej. Podávej s marmeládou.
+  tips: Když jsou lívance zvenku tmavé a uvnitř syrové, stáhni plamen. Do těsta můžeš místo obyčejného cukru dát vanilkový.
+en:
+  title: Classic Czech Pancakes
+  summary: Fluffy pancakes made from just a few ingredients and ready in no time. Ideal for breakfast or a sweet dinner.
+  steps:
+    - text: Crack the eggs into a bowl, add the sugar and a pinch of salt and whisk.
+    - text: Pour in the milk and whisk again.
+    - text: In another bowl, mix the flour with the baking powder and gradually whisk it into the milk and eggs. The batter should be smooth and as thick as sour cream.
+    - text: Heat a tablespoon of oil in a frying pan over medium heat.
+    - text: Spoon or ladle small mounds of batter into the pan and spread them into rounds about 10 cm across. Fry for about 2 minutes until bubbles form on top and the underside is golden.
+      timer_sec: 120
+    - text: Flip the pancakes and fry the other side for about 1 minute until golden.
+      timer_sec: 60
+    - text: Put the finished pancakes on a plate and fry the rest of the batter, adding oil as needed. Serve with jam.
+  tips: If the pancakes are dark outside but raw inside, turn the heat down. You can use vanilla sugar instead of regular sugar in the batter.

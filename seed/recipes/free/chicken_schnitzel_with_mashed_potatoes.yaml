@@ -1,0 +1,84 @@
+slug: chicken_schnitzel_with_mashed_potatoes
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 2
+prep_min: 20
+cook_min: 30
+servings: 4
+tags:
+  - main
+image_prompt: Golden fried chicken schnitzel served on a white plate with creamy mashed potatoes.
+ingredients:
+  - ingredient: chicken_breast
+    qty: 800
+    unit: g
+    note_cs: nakrájená na 8 plátků
+    note_en: cut into 8 cutlets
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: flour_plain
+    qty: 60
+    unit: g
+    note_cs: na obalování
+    note_en: for coating
+  - ingredient: egg
+    qty: 2
+    unit: ks
+    note_cs: rozšlehaná
+    note_en: beaten
+  - ingredient: breadcrumbs
+    qty: 200
+    unit: g
+  - ingredient: sunflower_oil
+    qty: 150
+    unit: ml
+    note_cs: na smažení
+    note_en: for frying
+  - ingredient: potato
+    qty: 1
+    unit: kg
+    note_cs: oloupané a nakrájené na kostky
+    note_en: peeled and cubed
+  - ingredient: milk
+    qty: 200
+    unit: ml
+    note_cs: teplé
+    note_en: warm
+  - ingredient: butter
+    qty: 50
+    unit: g
+cs:
+  title: Kuřecí řízek s bramborovou kaší
+  summary: Křupavý kuřecí řízek ve strouhance s hladkou bramborovou kaší. Jednoduché a chutné hlavní jídlo pro celou rodinu.
+  steps:
+    - text: Kuřecí prsa osuš papírovou utěrkou a nakrájej na 8 plátků. Přikryj je potravinovou fólií a naklepej paličkou na tloušťku asi 1 cm.
+    - text: Plátky osol a opepři z obou stran.
+    - text: 'Připrav si tři talíře: do prvního dej mouku, do druhého rozšlehaná vejce a do třetího strouhanku.'
+    - text: Každý plátek obal nejdřív v mouce, pak ve vejci a nakonec ve strouhance. Strouhanku lehce přitlač, aby dobře držela.
+    - text: Brambory oloupej, nakrájej na kostky a vař je v osolené vodě doměkka, asi 20 minut.
+      timer_sec: 1200
+    - text: Mezitím rozpal na pánvi olej na středním plameni. Vlož 2–3 řízky a smaž je 3 minuty dozlatova.
+      timer_sec: 180
+    - text: Řízky obrať a smaž další 3 minuty, dokud nejsou uvnitř propečené. Maso na řezu nesmí být růžové.
+      timer_sec: 180
+    - text: Hotové řízky polož na talíř s papírovou utěrkou, aby okapal tuk. Stejně usmaž i zbylé plátky.
+    - text: Brambory slij, přidej máslo a teplé mléko a rozšťouchej je šťouchadlem do hladka.
+  tips: Mléko na kaši vždy ohřej, se studeným mlékem kaše vychladne a bude mazlavá. Olej je dost horký, když kolem hozené kuličky strouhanky hned začne bublat.
+en:
+  title: Chicken schnitzel with mashed potatoes
+  summary: Crispy breaded chicken schnitzel with smooth mashed potatoes. A simple and tasty main dish for the whole family.
+  steps:
+    - text: Pat the chicken breasts dry with a paper towel and cut them into 8 cutlets. Cover them with cling film and pound them with a meat mallet to about 1 cm thick.
+    - text: Season the cutlets with salt and pepper on both sides.
+    - text: 'Set out three plates: flour on the first, beaten eggs on the second and breadcrumbs on the third.'
+    - text: Coat each cutlet first in flour, then in egg and finally in breadcrumbs. Press the breadcrumbs on lightly so they stick.
+    - text: Peel the potatoes, cut them into cubes and boil them in salted water until tender, about 20 minutes.
+      timer_sec: 1200
+    - text: Meanwhile, heat the oil in a frying pan over medium heat. Add 2–3 schnitzels and fry them for 3 minutes until golden.
+      timer_sec: 180
+    - text: Flip the schnitzels and fry for another 3 minutes until cooked through. The meat must not be pink inside.
+      timer_sec: 180
+    - text: Place the finished schnitzels on a plate lined with paper towels to drain. Fry the remaining cutlets the same way.
+    - text: Drain the potatoes, add the butter and warm milk and mash them with a potato masher until smooth.
+  tips: Always warm the milk for the mash; cold milk cools the potatoes and makes the mash gluey. The oil is hot enough when a pinch of breadcrumbs dropped in starts bubbling right away.

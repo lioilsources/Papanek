@@ -1,0 +1,71 @@
+slug: greek_salad
+pack: free
+cuisine: mexmed
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 0
+servings: 4
+tags:
+  - vegetarian
+  - quick
+  - no_oven
+image_prompt: A rustic bowl of chopped tomatoes, cucumber, red onion and black olives topped with cubes of feta, drizzled with olive oil and sprinkled with dried oregano.
+ingredients:
+  - ingredient: tomato
+    qty: 4
+    unit: ks
+    note_cs: pevná a zralá
+    note_en: firm and ripe
+  - ingredient: cucumber
+    qty: 1
+    unit: ks
+    note_cs: velká
+    note_en: large
+  - ingredient: red_onion
+    qty: 0.5
+    unit: ks
+  - ingredient: black_olives
+    qty: 100
+    unit: g
+    note_cs: bez pecek
+    note_en: pitted
+  - ingredient: feta
+    qty: 200
+    unit: g
+  - ingredient: olive_oil
+    qty: 4
+    unit: lzice
+    note_cs: extra panenský
+    note_en: extra virgin
+  - ingredient: oregano
+    qty: 1
+    unit: lzicka
+    note_cs: sušené
+    note_en: dried
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Řecký salát
+  summary: Svěží salát z rajčat, okurky, cibule a oliv se slanou fetou. Připravíš ho za chvilku a bez vaření.
+  steps:
+    - text: Rajčata omyj a nakrájej na větší kousky.
+    - text: Okurku omyj a nakrájej na silnější půlkolečka. Pokud má tuhou slupku, nejdřív ji oloupej.
+    - text: Cibuli nakrájej na tenké půlkroužky.
+    - text: Rajčata, okurku, cibuli a olivy dej do velké mísy. Lehce osol, opepři, zalij olivovým olejem a opatrně promíchej.
+    - text: Nech salát 10 minut odstát, aby se chutě propojily.
+      timer_sec: 600
+    - text: Fetu nakrájej na kostky, rozlož ji navrch salátu a posyp vše oreganem.
+  tips: Fetu přidávej až nakonec a už ji nemíchej, jinak se rozpadne. Se solí šetři, feta i olivy jsou samy slané.
+en:
+  title: Greek Salad
+  summary: A fresh salad of tomatoes, cucumber, onion, and olives with salty feta. Ready in minutes, no cooking needed.
+  steps:
+    - text: Wash the tomatoes and cut them into large chunks.
+    - text: Wash the cucumber and cut it into thick half-moons. If the skin is tough, peel it first.
+    - text: Slice the onion into thin half-rings.
+    - text: Put the tomatoes, cucumber, onion, and olives in a large bowl. Season lightly with salt and pepper, pour over the olive oil, and toss gently.
+    - text: Let the salad sit for 10 minutes so the flavors come together.
+      timer_sec: 600
+    - text: Cut the feta into cubes, scatter it over the salad, and sprinkle everything with oregano.
+  tips: Add the feta at the very end and do not toss it, or it will crumble. Go easy on the salt, as feta and olives are salty on their own.

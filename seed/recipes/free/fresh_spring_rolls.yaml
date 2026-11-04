@@ -1,0 +1,91 @@
+slug: fresh_spring_rolls
+pack: free
+cuisine: vietnamese
+model: bench-qwen36
+difficulty: 1
+prep_min: 20
+cook_min: 10
+servings: 4
+tags:
+  - quick
+  - no_oven
+  - main
+image_prompt: Fresh spring rolls cut in half on a white plate showing shrimp, rice noodles, lettuce and mint, with a soy-lime dipping sauce on the side.
+ingredients:
+  - ingredient: rice_paper
+    qty: 8
+    unit: ks
+  - ingredient: rice_noodles
+    qty: 100
+    unit: g
+    note_cs: tenké
+    note_en: thin
+  - ingredient: shrimp
+    qty: 8
+    unit: ks
+    note_cs: velké, oloupané a uvařené
+    note_en: large, peeled and cooked
+  - ingredient: butter_lettuce
+    qty: 1
+    unit: hlava
+  - ingredient: fresh_mint
+    qty: 1
+    unit: svazek
+  - ingredient: cucumber
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na tenké nudličky
+    note_en: cut into thin sticks
+  - ingredient: carrot
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na tenké nudličky
+    note_en: cut into thin sticks
+  - ingredient: soy_sauce
+    qty: 4
+    unit: lzice
+  - ingredient: lime
+    qty: 1
+    unit: ks
+  - ingredient: sugar
+    qty: 1
+    unit: lzice
+  - ingredient: water
+    qty: 2
+    unit: lzice
+  - ingredient: sesame_seeds
+    qty: 1
+    unit: lzicka
+    optional: true
+    note_cs: na posypání
+    note_en: for sprinkling
+cs:
+  title: Letní závitky s krevetami
+  summary: Lehké a svěží vietnamské závitky s čerstvou zeleninou, mátou a krevetami. Podávej je s dipem ze sójové omáčky a limetky.
+  steps:
+    - text: Rýžové nudle zalij vroucí vodou a nech je asi 4 minuty změknout (řiď se návodem na obalu). Pak je slij, propláchni studenou vodou a nech okapat.
+      timer_sec: 240
+    - text: Krevety rozkroj podélně napůl. Ze salátu odděl listy, omyj je a osuš. Z máty otrhej lístky.
+    - text: Do širší misky nalij teplou vodu na namáčení rýžového papíru.
+    - text: Jeden list rýžového papíru ponoř asi na 15 sekund do vody, dokud nezačne měknout. Pak ho polož na vlhké prkénko.
+      timer_sec: 15
+    - text: Na spodní třetinu papíru polož list salátu, pár lístků máty, nudličky okurky a mrkve a hrstičku nudlí. Navrch dej dvě půlky krevety řezem nahoru.
+    - text: Spodní okraj papíru přelož přes náplň, boční okraje přehni dovnitř a pevně zaroluj. Stejně připrav všech 8 závitků.
+    - text: Na dip vymačkej šťávu z limetky a smíchej ji se sójovou omáčkou, cukrem a vodou, dokud se cukr nerozpustí.
+    - text: Dip posyp sezamem a podávej ho k závitkům.
+  tips: Rýžový papír namáčej jen krátce, změkne ještě na prkénku. Hotové závitky přikryj vlhkou utěrkou, aby neoschly.
+en:
+  title: Fresh Spring Rolls with Shrimp
+  summary: Light and refreshing Vietnamese rolls with fresh vegetables, mint and shrimp. Serve them with a soy and lime dip.
+  steps:
+    - text: Pour boiling water over the rice noodles and let them soften for about 4 minutes (follow the package instructions). Then drain them, rinse with cold water and let them drip dry.
+      timer_sec: 240
+    - text: Halve the shrimp lengthwise. Separate the lettuce leaves, wash and dry them. Pick the mint leaves off the stems.
+    - text: Pour warm water into a wide bowl for soaking the rice paper.
+    - text: Dip one sheet of rice paper into the water for about 15 seconds until it starts to soften. Then lay it on a damp chopping board.
+      timer_sec: 15
+    - text: On the bottom third of the sheet, place a lettuce leaf, a few mint leaves, cucumber and carrot sticks and a small handful of noodles. Top with two shrimp halves, cut side up.
+    - text: Fold the bottom edge over the filling, fold in the sides and roll up tightly. Make all 8 rolls the same way.
+    - text: For the dip, squeeze the lime juice and mix it with the soy sauce, sugar and water until the sugar dissolves.
+    - text: Sprinkle the dip with sesame seeds and serve it with the rolls.
+  tips: Soak the rice paper only briefly; it keeps softening on the board. Cover the finished rolls with a damp towel so they do not dry out.

@@ -1,0 +1,64 @@
+slug: mac_and_cheese
+pack: free
+cuisine: family
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 20
+servings: 4
+tags:
+  - quick
+  - main
+  - kids
+  - budget
+image_prompt: A white bowl filled with creamy macaroni in a melted yellow cheddar sauce, sprinkled with black pepper.
+ingredients:
+  - ingredient: macaroni
+    qty: 400
+    unit: g
+  - ingredient: butter
+    qty: 50
+    unit: g
+  - ingredient: flour_plain
+    qty: 50
+    unit: g
+  - ingredient: milk
+    qty: 600
+    unit: ml
+  - ingredient: cheddar
+    qty: 200
+    unit: g
+    note_cs: nastrouhaný
+    note_en: grated
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Makarony se sýrovou omáčkou
+  summary: Krémové makarony v hustě sýrové omáčce. Jednoduchý recept, který zvládne každý začátečník.
+  steps:
+    - text: Ve velkém hrnci přiveď k varu osolenou vodu, vsyp makarony a vař je asi 10 minut (podle návodu na obalu), dokud nejsou al dente, tedy měkké, ale uprostřed ještě pevné.
+      timer_sec: 600
+    - text: Mezitím v jiném hrnci rozpusť máslo na středním plameni. Dej pozor, aby nezhnědlo.
+    - text: Do rozpuštěného másla vsyp mouku a za stálého míchání ji asi 1 minutu opékej, dokud nezačne vonět.
+      timer_sec: 60
+    - text: Po částech přilévej mléko a pořád míchej metlou, aby se netvořily hrudky. Pak omáčku za stálého míchání vař asi 5 minut, dokud nezhoustne.
+      timer_sec: 300
+    - text: Ztlum plamen na minimum a vmíchej nastrouhaný sýr. Míchej, dokud se sýr úplně nerozpustí a omáčka není hladká.
+    - text: Makarony sceď, vsyp je do hrnce s omáčkou a důkladně promíchej, aby byly celé obalené.
+    - text: Dochuť solí a čerstvě mletým pepřem a podávej hned, dokud je jídlo horké.
+  tips: Pokud je omáčka moc hustá, přilij trochu mléka. Sýr přidávej až na mírném plameni, při varu by se mohl srazit a omáčka by byla zrnitá.
+en:
+  title: Creamy Mac and Cheese
+  summary: Creamy macaroni in a rich cheese sauce. A simple recipe any beginner can manage.
+  steps:
+    - text: Bring a large pot of salted water to a boil, add the macaroni, and cook for about 10 minutes (check the package) until al dente, meaning soft but still firm in the center.
+      timer_sec: 600
+    - text: Meanwhile, melt the butter in another pot over medium heat. Be careful not to let it brown.
+    - text: Add the flour to the melted butter and cook for about 1 minute, stirring constantly, until it smells toasty.
+      timer_sec: 60
+    - text: Add the milk gradually, whisking all the time to prevent lumps. Then simmer the sauce for about 5 minutes, stirring constantly, until it thickens.
+      timer_sec: 300
+    - text: Turn the heat down to the lowest setting and stir in the grated cheese. Stir until the cheese has fully melted and the sauce is smooth.
+    - text: Drain the macaroni, add it to the pot with the sauce, and stir well so it is fully coated.
+    - text: Season with salt and freshly ground pepper and serve right away while hot.
+  tips: If the sauce is too thick, add a little more milk. Only add the cheese over low heat; if the sauce boils, the cheese can split and turn grainy.

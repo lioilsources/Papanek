@@ -1,0 +1,63 @@
+slug: bruschetta
+pack: free
+cuisine: italian
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 10
+servings: 4
+tags:
+  - quick
+  - vegetarian
+  - snack
+image_prompt: Slices of toasted baguette topped with diced tomatoes, fresh basil leaves and a drizzle of olive oil on a white plate.
+ingredients:
+  - ingredient: baguette
+    qty: 1
+    unit: ks
+    note_cs: nebo ciabatta
+    note_en: or ciabatta
+  - ingredient: tomato
+    qty: 4
+    unit: ks
+    note_cs: zralá a pevná
+    note_en: ripe and firm
+  - ingredient: garlic
+    qty: 1
+    unit: strouzek
+  - ingredient: olive_oil
+    qty: 2
+    unit: lzice
+  - ingredient: basil
+    qty: 1
+    unit: hrst
+    note_cs: čerstvá
+    note_en: fresh
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Klasická italská bruschetta
+  summary: Italský předkrm z opečeného pečiva, čerstvých rajčat a bazalky. Připravíš ho asi za 20 minut.
+  steps:
+    - text: Předehřej troubu na 200 °C.
+    - text: Bagetu nakrájej šikmo na plátky silné asi 1 cm a rozlož je na plech.
+    - text: Plátky peč 8 minut, po 4 minutách je otoč. Mají být zlatavé a křupavé.
+      timer_sec: 480
+    - text: Mezitím rajčata omyj, vykroj stopku a nakrájej je na malé kostičky. Dej je do mísy.
+    - text: Bazalku natrhej nebo nasekej a přidej k rajčatům spolu s 1 lžící olivového oleje, solí a pepřem. Promíchej.
+    - text: Česnek oloupej a překroj napůl. Řeznou stranou potři ještě teplé plátky pečiva.
+    - text: Plátky pokapej zbylou lžící oleje, na každý dej lžíci rajčatové směsi a hned podávej.
+  tips: Rajčata smíchej s ostatním až těsně před podáváním a nakládej je na pečivo na poslední chvíli, jinak chleba rozmékne. Hodně šťavnatá rajčata nech před mícháním chvíli okapat v sítku.
+en:
+  title: Classic Italian bruschetta
+  summary: An Italian starter of toasted bread, fresh tomatoes and basil. Ready in about 20 minutes.
+  steps:
+    - text: Preheat the oven to 200 °C.
+    - text: Slice the baguette diagonally into pieces about 1 cm thick and spread them on a baking tray.
+    - text: Bake the slices for 8 minutes, turning them over after 4 minutes. They should be golden and crisp.
+      timer_sec: 480
+    - text: Meanwhile, wash the tomatoes, cut out the stem and dice them into small cubes. Put them in a bowl.
+    - text: Tear or chop the basil and add it to the tomatoes along with 1 tablespoon of olive oil, salt and pepper. Stir.
+    - text: Peel the garlic clove and cut it in half. Rub the cut side over the still-warm slices of bread.
+    - text: Drizzle the slices with the remaining tablespoon of oil, top each with a spoonful of the tomato mixture and serve right away.
+  tips: Mix the tomatoes just before serving and spoon them onto the bread at the last moment, or the bread will go soggy. If the tomatoes are very juicy, let them drain in a sieve for a while before mixing.

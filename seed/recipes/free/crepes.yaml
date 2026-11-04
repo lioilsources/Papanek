@@ -1,0 +1,75 @@
+slug: crepes
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 15
+servings: 4
+tags:
+  - quick
+  - breakfast
+  - kids
+  - vegetarian
+image_prompt: A stack of thin golden crepes on a white plate next to a crepe rolled up with jam.
+ingredients:
+  - ingredient: flour_plain
+    qty: 200
+    unit: g
+  - ingredient: egg
+    qty: 2
+    unit: ks
+  - ingredient: milk
+    qty: 500
+    unit: ml
+  - ingredient: sugar
+    qty: 2
+    unit: lzicka
+    optional: true
+  - ingredient: salt
+    qty: 1
+    unit: stipka
+  - ingredient: butter
+    qty: 30
+    unit: g
+    note_cs: rozpuštěné
+    note_en: melted
+  - ingredient: sunflower_oil
+    qty: 2
+    unit: lzice
+    note_cs: na potírání pánve
+    note_en: for greasing the pan
+  - ingredient: jam
+    optional: true
+    note_cs: na podávání
+    note_en: for serving
+cs:
+  title: Tenké palačinky
+  summary: Klasické tenké palačinky, které rychle umícháš i usmažíš. Hodí se na snídani nebo jako dezert s marmeládou.
+  steps:
+    - text: Do mísy prosij 200 g hladké mouky a přidej špetku soli a 2 lžičky cukru.
+    - text: Přidej 2 vejce a postupně přilévej 500 ml mléka. Šlehej metlou, dokud není těsto hladké a bez hrudek.
+    - text: Vmíchej 30 g rozpuštěného másla. Těsto má být řídké jako smetana na vaření.
+    - text: Rozehřej pánev na středním plameni a lehce ji potři olejem.
+    - text: Nalij do pánve menší naběračku těsta a pánví hned otáčej, aby se těsto rozlilo v tenké vrstvě po celém dně.
+    - text: Smaž asi 1 minutu, dokud se okraje nezačnou odlepovat a spodek není zlatavý.
+      timer_sec: 60
+    - text: Palačinku obrať obracečkou a smaž druhou stranu asi 30 sekund.
+      timer_sec: 30
+    - text: Hotovou palačinku dej na talíř a stejně usmaž zbytek těsta. Před každou palačinkou pánev znovu lehce potři olejem. Podávej s marmeládou.
+  tips: Když necháš těsto před smažením 10 minut odpočinout, palačinky se méně trhají. První palačinka se často nepovede, pánev se teprve prohřívá.
+en:
+  title: Thin Crepes
+  summary: Classic thin crepes that are quick to mix and fry. Great for breakfast or as a dessert with jam.
+  steps:
+    - text: Sift 200 g of plain flour into a bowl and add a pinch of salt and 2 teaspoons of sugar.
+    - text: Add 2 eggs and gradually pour in 500 ml of milk. Whisk until the batter is smooth and free of lumps.
+    - text: Stir in 30 g of melted butter. The batter should be as runny as cooking cream.
+    - text: Heat a frying pan over medium heat and grease it lightly with oil.
+    - text: Pour a small ladle of batter into the pan and immediately swirl the pan so the batter spreads thinly over the whole bottom.
+    - text: Fry for about 1 minute until the edges start to lift and the underside is golden.
+      timer_sec: 60
+    - text: Flip the crepe with a spatula and fry the other side for about 30 seconds.
+      timer_sec: 30
+    - text: Put the finished crepe on a plate and fry the rest of the batter the same way. Grease the pan lightly before each crepe. Serve with jam.
+  tips: If you let the batter rest for 10 minutes before frying, the crepes tear less. The first crepe often fails while the pan is still heating up.

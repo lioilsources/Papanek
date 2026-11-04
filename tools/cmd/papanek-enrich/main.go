@@ -52,13 +52,24 @@ func workflow(prompt string, seed int64, prefix string) map[string]any {
 }
 
 func main() {
+	if len(os.Args) >= 2 && os.Args[1] == "recipes" {
+		recipesCmd(os.Args[2:])
+		return
+	}
+	if len(os.Args) >= 2 && os.Args[1] == "images" {
+		imagesCmd(os.Args[2:])
+		return
+	}
 	if len(os.Args) < 2 || os.Args[1] != "styles" {
-		log.Fatal("použití: papanek-enrich styles [-comfy URL] [-out DIR]")
+		log.Fatal("použití: papanek-enrich styles|recipes|images [volby]")
 	}
 	fs := flag.NewFlagSet("styles", flag.ExitOnError)
-	comfy := fs.String("comfy", "http://192.168.88.66:8188", "ComfyUI")
+	comfy := fs.String("comfy", sparkURL(8188, ""), "ComfyUI (výchozí z SPARK_HOST)")
 	out := fs.String("out", "../out/styles", "výstupní adresář")
 	_ = fs.Parse(os.Args[2:])
+	if *comfy == "" {
+		log.Fatal("chybí adresa SPARKu: nastav SPARK_HOST (viz .env.example) nebo -comfy")
+	}
 	if err := os.MkdirAll(*out, 0o755); err != nil {
 		log.Fatal(err)
 	}
@@ -66,7 +77,7 @@ func main() {
 	for style, sp := range styles {
 		for dish, dp := range dishes {
 			name := style + "_" + dish
-			if err := render(*comfy, dp+", "+sp, name, *out); err != nil {
+			if err := render(*comfy, dp+", "+sp, name, *out, 20261031); err != nil {
 				log.Printf("%s: %v", name, err)
 				failed++
 				continue
@@ -81,8 +92,8 @@ func main() {
 	}
 }
 
-func render(base, prompt, name, out string) error {
-	body, _ := json.Marshal(map[string]any{"prompt": workflow(prompt, 20261031, "papanek/"+name)})
+func render(base, prompt, name, out string, seed int64) error {
+	body, _ := json.Marshal(map[string]any{"prompt": workflow(prompt, seed, "papanek/"+name)})
 	resp, err := http.Post(base+"/prompt", "application/json", bytes.NewReader(body))
 	if err != nil {
 		return err
@@ -151,4 +162,14 @@ func download(u, path string) error {
 	defer f.Close()
 	_, err = io.Copy(f, resp.Body)
 	return err
+}
+
+// sparkURL skládá adresu služby na SPARKu z SPARK_HOST (viz .env.example), aby
+// v repu nebyla LAN adresa.
+func sparkURL(port int, path string) string {
+	h := os.Getenv("SPARK_HOST")
+	if h == "" {
+		return ""
+	}
+	return fmt.Sprintf("http://%s:%d%s", h, port, path)
 }

@@ -1,0 +1,50 @@
+slug: scrambled_eggs
+pack: free
+cuisine: quick
+model: bench-qwen36
+difficulty: 1
+prep_min: 5
+cook_min: 5
+servings: 4
+tags:
+  - quick
+  - breakfast
+  - vegetarian
+image_prompt: A plate of soft, creamy yellow scrambled eggs garnished with fresh chopped chives.
+ingredients:
+  - ingredient: egg
+    qty: 8
+    unit: ks
+  - ingredient: butter
+    qty: 40
+    unit: g
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: chives
+    qty: 1
+    unit: hrst
+    optional: true
+    note_cs: na ozdobu
+    note_en: for garnish
+cs:
+  title: Míchaná vejce
+  summary: Nadýchaná a krémová míchaná vejce, která zvládne každý začátečník. Celé tajemství je v mírném ohni a trpělivosti.
+  steps:
+    - text: Rozklepni 8 vajec do misky, přidej špetku soli a trochu čerstvě mletého pepře. Vidličkou nebo metlou je prošlehej, až se žloutky s bílky úplně spojí.
+    - text: Na pánvi o průměru aspoň 24 cm rozpusť na mírném ohni 40 g másla. Počkej, až začne lehce pěnit, ale nenech ho zhnědnout.
+    - text: Vlij vejce do pánve a nech je asi 10 sekund v klidu.
+    - text: Vařečkou nebo silikonovou stěrkou pomalu a stále přihrnuj vejce od okrajů ke středu. Vytvoří se velké, měkké kusy.
+    - text: Jakmile jsou vejce skoro hotová, ale ještě vlhká a lesklá, stáhni pánev z plotny. Zbytkové teplo je dodělá.
+    - text: Vejce přendej na talíře, případně posyp nasekanou pažitkou a hned podávej.
+  tips: Nespěchej a nezvyšuj oheň – na prudkém ohni vejce rychle ztvrdnou a pustí vodu. Pánev sundávej o chvilku dřív, než se ti vejce zdají hotová, na talíři ještě dojdou.
+en:
+  title: Scrambled Eggs
+  summary: Fluffy, creamy scrambled eggs any beginner can make. The whole secret is low heat and patience.
+  steps:
+    - text: Crack 8 eggs into a bowl, add a pinch of salt and a little freshly ground pepper. Beat with a fork or whisk until the yolks and whites are fully combined.
+    - text: In a pan at least 24 cm wide, melt 40 g of butter over low heat. Wait until it starts to foam lightly, but do not let it brown.
+    - text: Pour the eggs into the pan and leave them undisturbed for about 10 seconds.
+    - text: With a wooden spoon or silicone spatula, slowly and constantly push the eggs from the edges towards the center. Large, soft curds will form.
+    - text: As soon as the eggs are almost set but still moist and glossy, take the pan off the heat. The residual heat will finish them.
+    - text: Transfer the eggs to plates, sprinkle with chopped chives if using, and serve right away.
+  tips: Do not rush or turn up the heat – on high heat the eggs quickly turn rubbery and release water. Take the pan off a moment before the eggs look done; they will finish setting on the plate.

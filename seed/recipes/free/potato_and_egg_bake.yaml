@@ -1,0 +1,69 @@
+slug: potato_and_egg_bake
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 55
+servings: 4
+tags:
+  - main
+  - budget
+  - vegetarian
+image_prompt: Golden brown baked potato and egg casserole in a white ceramic dish.
+ingredients:
+  - ingredient: potato
+    qty: 800
+    unit: g
+  - ingredient: egg
+    qty: 4
+    unit: ks
+  - ingredient: milk
+    qty: 200
+    unit: ml
+  - ingredient: onion
+    qty: 1
+    unit: ks
+  - ingredient: butter
+    qty: 50
+    unit: g
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Zapékané brambory s vejci
+  summary: Pečené brambory s cibulkou zalité vejci a mlékem. Sytý oběd nebo večeře z pár levných surovin.
+  steps:
+    - text: Troubu předehřej na 200 °C.
+    - text: Brambory oloupej a nakrájej na tenké plátky, asi 3 mm silné.
+    - text: Cibuli oloupej a nakrájej na malé kostičky.
+    - text: Na pánvi rozpusť polovinu másla a cibuli na něm restuj asi 5 minut do sklovita.
+      timer_sec: 300
+    - text: Přidej brambory, osol je a za občasného obracení opékej 5 minut.
+      timer_sec: 300
+    - text: V míse rozšlehej vejce s mlékem, špetkou soli a pepřem.
+    - text: Zapékací mísu vymaž trochou zbylého másla, vlož do ní brambory s cibulí a zalij je vaječnou směsí.
+    - text: Zbytek másla nakrájej na kousky a rozlož je po povrchu.
+    - text: Mísu přikryj alobalem a peč 30 minut.
+      timer_sec: 1800
+    - text: Alobal sundej a peč ještě 15 minut, dokud není povrch zlatavý a vejce úplně ztuhlá.
+      timer_sec: 900
+  tips: Než mísu vyndáš, propíchni brambory vidličkou – musí být úplně měkké. Pokud nejsou, peč je ještě 10 minut. Na posledních 15 minut můžeš povrch posypat strouhaným sýrem.
+en:
+  title: Baked Potatoes with Eggs
+  summary: Baked potatoes with onion covered in eggs and milk. A filling lunch or dinner made from a few cheap ingredients.
+  steps:
+    - text: Preheat the oven to 200 °C.
+    - text: Peel the potatoes and slice them thinly, about 3 mm thick.
+    - text: Peel the onion and dice it finely.
+    - text: Melt half of the butter in a pan and sauté the onion for about 5 minutes until translucent.
+      timer_sec: 300
+    - text: Add the potatoes, salt them and fry for 5 minutes, turning them occasionally.
+      timer_sec: 300
+    - text: In a bowl, beat the eggs with the milk, a pinch of salt and pepper.
+    - text: Grease a baking dish with a little of the remaining butter, put in the potatoes and onion and pour the egg mixture over them.
+    - text: Cut the rest of the butter into small pieces and scatter them over the top.
+    - text: Cover the dish with aluminium foil and bake for 30 minutes.
+      timer_sec: 1800
+    - text: Remove the foil and bake for another 15 minutes until the top is golden and the eggs are completely set.
+      timer_sec: 900
+  tips: Before taking the dish out, pierce the potatoes with a fork – they must be completely soft. If they are not, bake for another 10 minutes. For the last 15 minutes you can sprinkle grated cheese over the top.

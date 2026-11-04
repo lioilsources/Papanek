@@ -1,0 +1,75 @@
+slug: vietnamese_fried_rice
+pack: free
+cuisine: vietnamese
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 10
+servings: 4
+tags:
+  - quick
+  - main
+  - budget
+image_prompt: A plate of Vietnamese fried rice with scrambled egg pieces, onion and sliced spring onions.
+ingredients:
+  - ingredient: rice_jasmine
+    qty: 300
+    unit: g
+    note_cs: váha suché rýže; uvař ji den předem a vychlaď
+    note_en: dry weight; cook the day before and chill
+  - ingredient: egg
+    qty: 4
+    unit: ks
+  - ingredient: onion
+    qty: 1
+    unit: ks
+  - ingredient: garlic
+    qty: 2
+    unit: strouzek
+  - ingredient: soy_sauce
+    qty: 2
+    unit: lzice
+  - ingredient: fish_sauce
+    qty: 1
+    unit: lzice
+  - ingredient: sesame_oil
+    qty: 1
+    unit: lzicka
+  - ingredient: spring_onion
+    qty: 4
+    unit: stonek
+  - ingredient: sunflower_oil
+    qty: 3
+    unit: lzice
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Vietnamská smažená rýže
+  summary: Rychlá smažená rýže s vejcem, cibulí, sójovou a rybí omáčkou. Skvěle využiješ rýži, která zbyla od včerejška.
+  steps:
+    - text: Cibuli nakrájej na kostičky, česnek nasekej najemno a jarní cibulku nakrájej na kolečka.
+    - text: Vejce rozšlehej v misce se špetkou soli a pepře.
+    - text: Ve velké pánvi nebo woku rozehřej 1 lžíci oleje, vlij vejce a za míchání je opékej asi 2 minuty, dokud úplně neztuhnou. Přendej je na talíř a nakrájej na menší kousky.
+    - text: Do stejné pánve dej zbylé 2 lžíce oleje a na středním ohni restuj cibuli asi 3 minuty dosklovata.
+      timer_sec: 180
+    - text: Přidej česnek a restuj 30 sekund, až zavoní.
+    - text: Přidej vychlazenou rýži, rozmělni hrudky a na vyšším ohni ji za častého míchání smaž asi 5 minut, až se prohřeje.
+      timer_sec: 300
+    - text: Zalij sójovou a rybí omáčkou a sezamovým olejem a promíchej.
+    - text: Vrať do pánve vejce a jarní cibulku a vše krátce promíchej. Ochutnej, případně dosol a opepři a hned podávej.
+  tips: Nejlepší je rýže uvařená den předem – je sušší a při smažení se nelepí. Když máš jen čerstvou, rozprostři ji na plech a nech ji aspoň 30 minut vychladnout a oschnout.
+en:
+  title: Vietnamese Fried Rice
+  summary: Quick fried rice with egg, onion, soy sauce and fish sauce. A great way to use up yesterday's rice.
+  steps:
+    - text: Dice the onion, finely chop the garlic and slice the spring onions into rings.
+    - text: Beat the eggs in a bowl with a pinch of salt and pepper.
+    - text: Heat 1 tablespoon of oil in a large pan or wok, pour in the eggs and cook, stirring, for about 2 minutes until fully set. Transfer them to a plate and cut into smaller pieces.
+    - text: Add the remaining 2 tablespoons of oil to the same pan and sauté the onion over medium heat for about 3 minutes until translucent.
+      timer_sec: 180
+    - text: Add the garlic and sauté for 30 seconds until fragrant.
+    - text: Add the chilled rice, break up any clumps and stir-fry over higher heat for about 5 minutes, stirring often, until heated through.
+      timer_sec: 300
+    - text: Pour in the soy sauce, fish sauce and sesame oil and stir.
+    - text: Return the eggs to the pan with the spring onions and toss briefly. Taste, add salt and pepper if needed and serve right away.
+  tips: Rice cooked the day before works best – it is drier and does not stick when frying. If you only have freshly cooked rice, spread it on a tray and let it cool and dry for at least 30 minutes.

@@ -1,0 +1,92 @@
+slug: red_lentil_dal
+pack: free
+cuisine: asian
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 30
+servings: 4
+tags:
+  - vegetarian
+  - vegan
+  - one_pot
+  - main
+  - budget
+image_prompt: A bowl of creamy orange red lentil dal garnished with fresh coriander leaves.
+ingredients:
+  - ingredient: lentils_red
+    qty: 250
+    unit: g
+    note_cs: propláchnutá
+    note_en: rinsed
+  - ingredient: onion
+    qty: 1
+    unit: ks
+    note_cs: nadrobno nakrájená
+    note_en: finely chopped
+  - ingredient: garlic
+    qty: 3
+    unit: strouzek
+    note_cs: prolisovaný
+    note_en: crushed
+  - ingredient: fresh_ginger
+    qty: 20
+    unit: g
+    note_cs: nastrouhaný
+    note_en: grated
+  - ingredient: turmeric
+    qty: 1
+    unit: lzicka
+  - ingredient: chilli_powder
+    qty: 0.5
+    unit: lzicka
+    note_cs: kdo má rád pálivé, může přidat víc
+    note_en: add more if you like it spicy
+  - ingredient: canned_tomatoes
+    qty: 1
+    unit: plechovka
+    note_cs: krájená nebo celá
+    note_en: chopped or whole
+  - ingredient: water
+    qty: 750
+    unit: ml
+  - ingredient: olive_oil
+    qty: 2
+    unit: lzice
+  - ingredient: salt
+  - ingredient: coriander_leaves
+    qty: 1
+    unit: hrst
+    optional: true
+    note_cs: na posypání
+    note_en: for garnish
+cs:
+  title: Jednoduchý dal z červené čočky
+  summary: Krémový a voňavý indický pokrm z červené čočky s kurkumou, zázvorem a chilli. Hotový za 40 minut a ideální pro začátečníky.
+  steps:
+    - text: V hrnci rozehřej olivový olej na středním plameni.
+    - text: Přidej cibuli a restuj ji asi 5 minut, dokud nezměkne a nezesklovatí.
+      timer_sec: 300
+    - text: Přidej česnek, zázvor, kurkumu a chilli. Míchej 1 minutu, dokud koření nezačne vonět.
+      timer_sec: 60
+    - text: Přidej rajčata z plechovky a vařečkou je rozmačkej. Vsyp propláchnutou čočku.
+    - text: Zalij vodou, přidej lžičku soli a přiveď k varu.
+    - text: Ztlum plamen na minimum, přikryj pokličkou a vař 20 minut. Občas zamíchej, aby se čočka nepřichytila ke dnu. Čočka má být úplně rozvařená.
+      timer_sec: 1200
+    - text: Dal promíchej, ochutnej, případně dosol a posyp koriandrem.
+  tips: Když je dal moc hustý, vmíchej trochu horké vody. Podávej ho s rýží nebo s plackou.
+en:
+  title: Simple Red Lentil Dal
+  summary: A creamy and aromatic Indian dish of red lentils with turmeric, ginger and chili. Ready in 40 minutes and perfect for beginners.
+  steps:
+    - text: Heat the olive oil in a pot over medium heat.
+    - text: Add the onion and sauté for about 5 minutes until soft and translucent.
+      timer_sec: 300
+    - text: Add the garlic, ginger, turmeric and chili powder. Stir for 1 minute until the spices are fragrant.
+      timer_sec: 60
+    - text: Add the canned tomatoes and crush them with a wooden spoon. Stir in the rinsed lentils.
+    - text: Pour in the water, add a teaspoon of salt and bring to a boil.
+    - text: Reduce the heat to low, cover with a lid and simmer for 20 minutes. Stir occasionally so the lentils do not stick to the bottom. The lentils should be completely broken down.
+      timer_sec: 1200
+    - text: Stir the dal, taste, add more salt if needed and sprinkle with coriander.
+  tips: If the dal is too thick, stir in a little hot water. Serve it with rice or flatbread.

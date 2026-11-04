@@ -1,0 +1,87 @@
+slug: potato_pancakes
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 25
+servings: 4
+tags:
+  - vegetarian
+  - quick
+  - main
+  - side
+image_prompt: Golden brown potato pancakes served on a white plate with a side of sour cream and fresh dill.
+ingredients:
+  - ingredient: potato
+    qty: 800
+    unit: g
+    note_cs: syrové, oloupané
+    note_en: raw, peeled
+  - ingredient: egg
+    qty: 1
+    unit: ks
+  - ingredient: flour_plain
+    qty: 4
+    unit: lzice
+  - ingredient: garlic
+    qty: 3
+    unit: strouzek
+    note_cs: prolisovaný
+    note_en: pressed
+  - ingredient: marjoram
+    qty: 1
+    unit: lzicka
+    note_cs: sušená
+    note_en: dried
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: sunflower_oil
+    qty: 100
+    unit: ml
+    note_cs: na smažení
+    note_en: for frying
+  - ingredient: sour_cream
+    qty: 200
+    unit: g
+    optional: true
+    note_cs: k podávání
+    note_en: for serving
+  - ingredient: dill
+    qty: 1
+    unit: svazek
+    optional: true
+    note_cs: na ozdobu
+    note_en: for garnish
+cs:
+  title: Křupavé bramboráky
+  summary: Tradiční české bramboráky s česnekem a majoránkou. Hodí se jako hlavní jídlo i jako příloha, nejlepší jsou horké se zakysanou smetanou.
+  steps:
+    - text: Brambory nastrouhej na jemném struhadle do mísy.
+    - text: Nastrouhané brambory vezmi do hrsti a vymačkej z nich co nejvíc vody. Vodu vylij.
+    - text: Přidej vejce, mouku, česnek, majoránku, lžičku soli a pepř. Vše důkladně promíchej na husté těsto.
+    - text: Na pánvi rozehřej asi 3 lžíce oleje na středně vysokém plameni.
+    - text: Lžící dávej těsto na pánev a roztlač ho na placky asi 1 cm silné.
+    - text: Smaž 3–4 minuty, dokud nejsou spodem zlatavé a křupavé.
+      timer_sec: 240
+    - text: Placky obrať a smaž další 3–4 minuty z druhé strany.
+      timer_sec: 240
+    - text: Hotové bramboráky dej na talíř s papírovou utěrkou, aby vsákla přebytečný tuk. Stejně usmaž zbytek těsta, olej podle potřeby doplňuj.
+    - text: Podávej horké se zakysanou smetanou a posypané koprem.
+  tips: Nastrouhané brambory rychle tmavnou, proto těsto smaž hned po umíchání. Když je těsto moc řídké a placky se rozpadají, přimíchej ještě lžíci mouky.
+en:
+  title: Crispy Potato Pancakes
+  summary: Traditional Czech potato pancakes with garlic and marjoram. They work as a main dish or a side and are best served hot with sour cream.
+  steps:
+    - text: Grate the potatoes into a bowl using a fine grater.
+    - text: Take the grated potatoes by the handful and squeeze out as much liquid as possible. Pour the liquid away.
+    - text: Add the egg, flour, garlic, marjoram, a teaspoon of salt and pepper. Mix everything well into a thick batter.
+    - text: Heat about 3 tablespoons of oil in a frying pan over medium-high heat.
+    - text: Spoon the batter into the pan and flatten it into pancakes about 1 cm thick.
+    - text: Fry for 3–4 minutes until golden and crispy underneath.
+      timer_sec: 240
+    - text: Flip the pancakes and fry for another 3–4 minutes on the other side.
+      timer_sec: 240
+    - text: Transfer the cooked pancakes to a plate lined with paper towels to absorb excess oil. Fry the rest of the batter the same way, adding oil as needed.
+    - text: Serve hot with sour cream, sprinkled with dill.
+  tips: Grated potatoes darken quickly, so fry the batter right after mixing. If the batter is too runny and the pancakes fall apart, mix in another spoonful of flour.

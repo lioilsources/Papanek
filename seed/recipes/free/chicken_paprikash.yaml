@@ -1,0 +1,84 @@
+slug: chicken_paprikash
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 2
+prep_min: 15
+cook_min: 45
+servings: 4
+tags:
+  - main
+image_prompt: A white plate of chicken paprikash with tender chicken pieces in a creamy orange paprika sauce, served with white rice.
+ingredients:
+  - ingredient: chicken_thigh
+    qty: 800
+    unit: g
+    note_cs: vykostěná, bez kůže
+    note_en: boneless, skinless
+  - ingredient: onion
+    qty: 2
+    unit: ks
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: sweet_paprika
+    qty: 2
+    unit: lzice
+  - ingredient: flour_plain
+    qty: 1
+    unit: lzice
+  - ingredient: cooking_cream
+    qty: 2
+    unit: dl
+  - ingredient: water
+    qty: 8
+    unit: dl
+    note_cs: 2 dl do omáčky, 6 dl na rýži
+    note_en: 2 dl for the sauce, 6 dl for the rice
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: sunflower_oil
+    qty: 3
+    unit: lzice
+  - ingredient: rice_white
+    qty: 300
+    unit: g
+    note_cs: na přílohu
+    note_en: for serving
+cs:
+  title: Kuře na paprice
+  summary: Klasické kuře na paprice v krémové omáčce, podávané s rýží. Jednoduché, chutné a ideální na rodinnou večeři.
+  steps:
+    - text: Kuřecí stehna nakrájej na kostky asi 3 cm, osol je a opepři.
+    - text: Ve velké pánvi nebo kastrolu rozehřej olej a opékej kuře asi 5 minut ze všech stran dozlatova. Vyndej ho na talíř.
+      timer_sec: 300
+    - text: Do tuku po mase dej cibuli a za občasného míchání ji 5 minut restuj, dokud nezměkne a nezesklovatí.
+      timer_sec: 300
+    - text: Stáhni plamen na minimum, přisyp papriku a rychle zamíchej. Dej pozor, aby se nepřipálila.
+    - text: Hned zalij 2 dl vody, promíchej dohladka a vrať do pánve kuře.
+    - text: Přikryj pokličkou a duš na mírném plameni 20 minut, dokud kuře nezměkne a uvnitř už není růžové.
+      timer_sec: 1200
+    - text: Zatímco se kuře dusí, propláchni rýži, dej ji do hrnce se 6 dl vody a špetkou soli a přiveď k varu. Pak ji přikryj a na mírném ohni vař 15 minut.
+      timer_sec: 900
+    - text: Smetanu v hrnku rozmíchej s moukou dohladka, vlij ji ke kuřeti a za stálého míchání vař 5 minut, dokud omáčka nezhoustne.
+      timer_sec: 300
+    - text: Omáčku ochutnej, dosol a opepři. Podávej s rýží.
+  tips: Papriku přidávej vždy na mírném plameni a hned ji zalij vodou, jinak zhořkne. Pokud chceš omáčku řidší, přilij trochu vody.
+en:
+  title: Chicken paprikash
+  summary: Classic chicken paprikash in a creamy sauce, served with rice. Simple, tasty and perfect for a family dinner.
+  steps:
+    - text: Cut the chicken thighs into roughly 3 cm cubes and season with salt and pepper.
+    - text: Heat the oil in a large pan or casserole and brown the chicken on all sides for about 5 minutes. Transfer it to a plate.
+      timer_sec: 300
+    - text: Add the onion to the fat left in the pan and cook for 5 minutes, stirring occasionally, until soft and translucent.
+      timer_sec: 300
+    - text: Turn the heat down to the lowest setting, add the paprika and stir quickly. Be careful not to let it burn.
+    - text: Immediately pour in 2 dl of water, stir until smooth and return the chicken to the pan.
+    - text: Cover with a lid and simmer over low heat for 20 minutes, until the chicken is tender and no longer pink inside.
+      timer_sec: 1200
+    - text: While the chicken simmers, rinse the rice, put it in a pot with 6 dl of water and a pinch of salt, and bring to a boil. Then cover and cook over low heat for 15 minutes.
+      timer_sec: 900
+    - text: Whisk the cream with the flour in a cup until smooth, pour it over the chicken and cook for 5 minutes, stirring constantly, until the sauce thickens.
+      timer_sec: 300
+    - text: Taste the sauce and season with more salt and pepper. Serve with the rice.
+  tips: Always add the paprika over low heat and pour in the water right away, otherwise it turns bitter. If you want a thinner sauce, add a little water.

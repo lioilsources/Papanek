@@ -1,0 +1,105 @@
+slug: kung_pao_chicken
+pack: free
+cuisine: asian
+model: bench-qwen36
+difficulty: 2
+prep_min: 20
+cook_min: 10
+servings: 4
+tags:
+  - main
+  - spicy
+  - quick
+image_prompt: Stir-fried chicken pieces with peanuts, dried red chilies and spring onion in a dark glossy sauce on a white plate.
+ingredients:
+  - ingredient: chicken_breast
+    qty: 600
+    unit: g
+    note_cs: nakrájená na kostičky
+    note_en: cut into cubes
+  - ingredient: soy_sauce
+    qty: 3
+    unit: lzice
+  - ingredient: rice_vinegar
+    qty: 2
+    unit: lzice
+  - ingredient: sugar
+    qty: 1
+    unit: lzice
+  - ingredient: cornstarch
+    qty: 2
+    unit: lzice
+  - ingredient: water
+    qty: 4
+    unit: lzice
+  - ingredient: sesame_oil
+    qty: 1
+    unit: lzice
+  - ingredient: sunflower_oil
+    qty: 3
+    unit: lzice
+  - ingredient: garlic
+    qty: 4
+    unit: strouzek
+    note_cs: nasekaný
+    note_en: chopped
+  - ingredient: fresh_ginger
+    qty: 15
+    unit: g
+    note_cs: oloupaný, na tenké plátky
+    note_en: peeled, thinly sliced
+  - ingredient: dried_chilli
+    qty: 8
+    unit: ks
+    note_cs: nalámané na kousky
+    note_en: broken into pieces
+  - ingredient: sichuan_pepper
+    qty: 1
+    unit: lzicka
+    optional: true
+  - ingredient: peanuts
+    qty: 100
+    unit: g
+    note_cs: pražené, nesolené
+    note_en: roasted, unsalted
+  - ingredient: spring_onion
+    qty: 4
+    unit: ks
+    note_cs: nakrájená na kolečka
+    note_en: sliced into rings
+cs:
+  title: Kung pao kuře
+  summary: Rychlé čínské jídlo s kuřecím masem, arašídy a pálivou omáčkou. Maso zůstane šťavnaté a omáčka je sladká, kyselá i pikantní zároveň.
+  steps:
+    - text: Kuřecí kostičky dej do misky, přidej 1 lžíci sójové omáčky a 1 lžíci kukuřičného škrobu a promíchej. Nech 15 minut marinovat.
+      timer_sec: 900
+    - text: V malé misce smíchej zbylé 2 lžíce sójové omáčky, rýžový ocet, cukr, zbylou lžíci škrobu, vodu a sezamový olej. Míchej, dokud se cukr nerozpustí.
+    - text: Ve woku nebo velké pánvi rozehřej slunečnicový olej na středně vysokém plameni.
+      timer_sec: 60
+    - text: Přidej kuře a za stálého míchání ho opékej asi 5 minut, dokud není ze všech stran zlatavé a uvnitř propečené. Pak ho vyndej na talíř.
+      timer_sec: 300
+    - text: Do stejné pánve dej česnek, zázvor, chilli papričky a sečuánský pepř. Za stálého míchání je osmahni asi 30 sekund, dokud nezačnou vonět. Česnek nesmí zhnědnout.
+      timer_sec: 30
+    - text: Vrať do pánve kuře, omáčku ještě jednou promíchej a vlij ji k masu. Míchej asi 1 minutu, dokud omáčka nezhoustne a neobalí maso.
+      timer_sec: 60
+    - text: Pánev odstav z plotny, přidej arašídy a jarní cibulku a krátce promíchej.
+    - text: Podávej hned, nejlépe s rýží.
+  tips: Škrob v marinádě udrží kuře šťavnaté a pomůže omáčce zhoustnout. Kousky chilli papriček nejez, slouží jen k ochucení, a chceš-li jídlo méně pálivé, dej jich jen polovinu.
+en:
+  title: Kung Pao Chicken
+  summary: A quick Chinese dish with chicken, peanuts, and a spicy sauce. The meat stays juicy and the sauce is sweet, sour, and spicy at once.
+  steps:
+    - text: Put the chicken cubes in a bowl, add 1 tablespoon of soy sauce and 1 tablespoon of cornstarch, and mix. Let it marinate for 15 minutes.
+      timer_sec: 900
+    - text: In a small bowl, mix the remaining 2 tablespoons of soy sauce, rice vinegar, sugar, the remaining tablespoon of cornstarch, water, and sesame oil. Stir until the sugar dissolves.
+    - text: Heat the sunflower oil in a wok or large frying pan over medium-high heat.
+      timer_sec: 60
+    - text: Add the chicken and stir-fry for about 5 minutes until golden on all sides and cooked through. Then transfer it to a plate.
+      timer_sec: 300
+    - text: In the same pan, stir-fry the garlic, ginger, chilies, and Sichuan pepper for about 30 seconds until fragrant. Do not let the garlic brown.
+      timer_sec: 30
+    - text: Return the chicken to the pan, stir the sauce once more, and pour it over the meat. Stir for about 1 minute until the sauce thickens and coats the meat.
+      timer_sec: 60
+    - text: Take the pan off the heat, add the peanuts and spring onions, and stir briefly.
+    - text: Serve right away, ideally with rice.
+  tips: The starch in the marinade keeps the chicken juicy and helps thicken the sauce. Do not eat the chili pieces, they are only for flavor, and if you want the dish milder, use just half of them.

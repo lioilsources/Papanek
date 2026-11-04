@@ -1,0 +1,86 @@
+slug: chilli_con_carne
+pack: free
+cuisine: mexmed
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 45
+servings: 4
+tags:
+  - main
+  - one_pot
+  - spicy
+  - meal_prep
+image_prompt: A bowl of thick chilli con carne with ground beef, red kidney beans and tomatoes.
+ingredients:
+  - ingredient: ground_beef
+    qty: 500
+    unit: g
+  - ingredient: onion
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: garlic
+    qty: 3
+    unit: strouzek
+    note_cs: nasekaný
+    note_en: chopped
+  - ingredient: bell_pepper
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: canned_tomatoes
+    qty: 1
+    unit: plechovka
+    note_cs: krájená, asi 400 g
+    note_en: chopped, about 400 g
+  - ingredient: beans_kidney_canned
+    qty: 1
+    unit: plechovka
+    note_cs: slitá a propláchnutá
+    note_en: drained and rinsed
+  - ingredient: tomato_paste
+    qty: 2
+    unit: lzice
+  - ingredient: chilli_powder
+    qty: 1
+    unit: lzicka
+  - ingredient: cumin
+    qty: 1
+    unit: lzicka
+  - ingredient: smoked_paprika
+    qty: 1
+    unit: lzice
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: olive_oil
+    qty: 2
+    unit: lzice
+cs:
+  title: Chilli con carne
+  summary: Sytý, pikantní a voňavý pokrm z mletého masa, fazolí a rajčat. Jednoduchý recept do jednoho hrnce, který druhý den chutná ještě lépe.
+  steps:
+    - text: V hrnci rozehřej olej a osmahni na něm cibuli a papriku asi 5 minut, až změknou. Přidej česnek a smaž ještě minutu.
+    - text: Přidej mleté maso, rozdrob ho vařečkou a opékej asi 5 minut, dokud celé nezhnědne a nezmizí růžová barva.
+    - text: Vmíchej rajčatový protlak, mleté chilli, kmín a uzenou papriku. Za stálého míchání opékej 2 minuty, aby se koření rozvonělo.
+      timer_sec: 120
+    - text: Přilij rajčata z plechovky i se šťávou, přidej fazole a osol a opepři.
+    - text: Stáhni plamen na mírný a nech chilli 30 minut zvolna vařit pod pokličkou. Občas promíchej.
+      timer_sec: 1800
+    - text: Ochutnej a podle potřeby dosol nebo přidej chilli. Podávej horké.
+  tips: Mleté chilli je hodně pálivé, pro děti ho dej jen polovinu. Pokud chceš hustší chilli, vař posledních 10 minut bez pokličky, aby se odpařila tekutina.
+en:
+  title: Chilli con carne
+  summary: A hearty, spicy and fragrant dish of ground beef, beans and tomatoes. A simple one-pot recipe that tastes even better the next day.
+  steps:
+    - text: Heat the oil in a pot and fry the onion and bell pepper for about 5 minutes until soft. Add the garlic and fry for one more minute.
+    - text: Add the ground beef, break it up with a wooden spoon and cook for about 5 minutes until it is browned all over and no longer pink.
+    - text: Stir in the tomato paste, chilli powder, cumin and smoked paprika. Cook for 2 minutes, stirring constantly, so the spices release their aroma.
+      timer_sec: 120
+    - text: Pour in the canned tomatoes with their juice, add the beans and season with salt and pepper.
+    - text: Turn the heat down to low and let the chilli simmer covered for 30 minutes. Stir occasionally.
+      timer_sec: 1800
+    - text: Taste and add more salt or chilli if needed. Serve hot.
+  tips: Chilli powder is very hot, so use only half for children. For a thicker chilli, cook it uncovered for the last 10 minutes so the liquid evaporates.

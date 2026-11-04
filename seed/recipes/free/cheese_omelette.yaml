@@ -1,0 +1,59 @@
+slug: cheese_omelette
+pack: free
+cuisine: quick
+model: bench-qwen36
+difficulty: 1
+prep_min: 5
+cook_min: 10
+servings: 2
+tags:
+  - quick
+  - breakfast
+  - vegetarian
+  - kids
+  - budget
+image_prompt: Two fluffy folded cheese omelettes with melted cheddar on white plates.
+ingredients:
+  - ingredient: egg
+    qty: 4
+    unit: ks
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: cheddar
+    qty: 80
+    unit: g
+    note_cs: nastrouhaný
+    note_en: grated
+  - ingredient: butter
+    qty: 20
+    unit: g
+    note_cs: na smažení
+    note_en: for frying
+cs:
+  title: Sýrová omeleta
+  summary: Rychlá omeleta s rozteklým sýrem, ideální ke snídani nebo na lehkou večeři. Zvládne ji každý začátečník.
+  steps:
+    - text: Vejce rozklepni do mísy, přidej špetku soli a pepře a vidličkou je důkladně rozšlehej, aby se žloutky spojily s bílky.
+    - text: Na pánvi rozpusť polovinu másla na středním plameni.
+    - text: Vlij polovinu vajec a nech je 30 sekund v klidu, aby začala tuhnout.
+      timer_sec: 30
+    - text: Stěrkou přitahuj ztuhlé okraje do středu, aby tekuté vejce steklo na volné místo pánve.
+    - text: Jakmile je spodek pevný a vršek jen lehce vlhký, posyp jednu polovinu omelety polovinou sýra.
+    - text: Druhou polovinu přelož přes sýr a nech omeletu ještě 1 minutu na pánvi, aby se sýr rozpustil a vejce dopeklo.
+      timer_sec: 60
+    - text: Omeletu opatrně přesuň na talíř. Stejně připrav druhou omeletu ze zbylého másla, vajec a sýra.
+  tips: Pánev nerozpaluj na nejvyšší stupeň, omeleta by ztvrdla a spálila se. Uvnitř nesmí zůstat tekuté vejce – když si nejsi jistý, nech ji o půl minuty déle.
+en:
+  title: Cheese omelette
+  summary: A quick omelette with melted cheese, perfect for breakfast or a light dinner. Any beginner can make it.
+  steps:
+    - text: Crack the eggs into a bowl, add a pinch of salt and pepper, and whisk well with a fork until the yolks and whites are combined.
+    - text: Melt half of the butter in a pan over medium heat.
+    - text: Pour in half of the eggs and leave them undisturbed for 30 seconds so they start to set.
+      timer_sec: 30
+    - text: With a spatula, pull the set edges toward the center so the runny egg flows into the empty space.
+    - text: Once the bottom is firm and the top only slightly moist, sprinkle half of the cheese over one half of the omelette.
+    - text: Fold the other half over the cheese and leave the omelette in the pan for 1 more minute so the cheese melts and the egg finishes cooking.
+      timer_sec: 60
+    - text: Carefully slide the omelette onto a plate. Make the second omelette the same way with the remaining butter, eggs and cheese.
+  tips: Don't heat the pan to the highest setting, or the omelette will turn tough and burn. No runny egg should remain inside – if you're not sure, give it another 30 seconds.

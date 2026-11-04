@@ -1,0 +1,90 @@
+slug: burrito_bowl
+pack: free
+cuisine: mexmed
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 25
+servings: 4
+tags:
+  - main
+  - quick
+image_prompt: A white bowl filled with rice, black beans, corn, diced tomatoes and ground beef, topped with sour cream and cilantro.
+ingredients:
+  - ingredient: rice_white
+    qty: 300
+    unit: g
+  - ingredient: water
+    qty: 600
+    unit: ml
+  - ingredient: ground_beef
+    qty: 400
+    unit: g
+  - ingredient: onion
+    qty: 1
+    unit: ks
+  - ingredient: garlic
+    qty: 2
+    unit: strouzek
+  - ingredient: beans_black_canned
+    qty: 1
+    unit: plechovka
+  - ingredient: canned_corn
+    qty: 1
+    unit: plechovka
+  - ingredient: tomato
+    qty: 2
+    unit: ks
+  - ingredient: sour_cream
+    qty: 200
+    unit: g
+    optional: true
+    note_cs: na podávání
+    note_en: for serving
+  - ingredient: olive_oil
+    qty: 2
+    unit: lzice
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: chilli_powder
+    qty: 1
+    unit: lzicka
+    optional: true
+  - ingredient: coriander_leaves
+    qty: 1
+    unit: hrst
+    optional: true
+    note_cs: na ozdobu
+    note_en: for garnish
+cs:
+  title: Burrito bowl
+  summary: Sytá miska s rýží, mletým masem a fazolemi. Hotová je rychle a chutná skvěle.
+  steps:
+    - text: Rýži propláchni v sítku, dej ji do hrnce se 600 ml vody a špetkou soli a přiveď k varu. Přikryj pokličkou a na mírném ohni vař 15 minut, dokud se voda nevsákne.
+      timer_sec: 900
+    - text: Mezitím nakrájej cibuli na kostičky a česnek prolisuj. Na pánvi rozehřej olej, osmahni cibuli do sklovita, přidej česnek a smaž ještě minutu.
+    - text: Přidej mleté maso, rozdrob ho vařečkou a opékej asi 5 minut, dokud není celé hnědé a bez růžových míst.
+      timer_sec: 300
+    - text: Přisyp chilli, osol, opepři, promíchej a nech 2 minuty probublat.
+      timer_sec: 120
+    - text: Fazole a kukuřici sceď a propláchni vodou. Přidej je k masu a 3 minuty prohřívej.
+      timer_sec: 180
+    - text: Rajčata nakrájej na kostičky. Do misek dej rýži, na ni masovou směs s fazolemi a navrch rajčata.
+    - text: Podávej teplé se lžící zakysané smetany a lístky koriandru.
+  tips: Fazole a kukuřici před použitím vždy propláchni, budou méně slané. Místo hovězího můžeš použít mleté kuřecí, nebo maso vynechat a dát dvojnásobek fazolí.
+en:
+  title: Burrito bowl
+  summary: A filling bowl of rice, ground beef and beans. Quick to make and full of flavor.
+  steps:
+    - text: Rinse the rice in a sieve, put it in a pot with 600 ml of water and a pinch of salt, and bring to a boil. Cover with a lid and cook over low heat for 15 minutes, until the water is absorbed.
+      timer_sec: 900
+    - text: Meanwhile, dice the onion and crush the garlic. Heat the oil in a pan, fry the onion until translucent, add the garlic and cook for another minute.
+    - text: Add the ground beef, break it up with a wooden spoon and cook for about 5 minutes, until it is browned all over with no pink left.
+      timer_sec: 300
+    - text: Add the chilli powder, salt and pepper, stir and let it bubble for 2 minutes.
+      timer_sec: 120
+    - text: Drain and rinse the beans and corn. Add them to the meat and heat through for 3 minutes.
+      timer_sec: 180
+    - text: Dice the tomatoes. Put rice into the bowls, top with the meat and bean mixture, and finish with the tomatoes.
+    - text: Serve warm with a spoonful of sour cream and coriander leaves.
+  tips: Always rinse canned beans and corn before using them; they will be less salty. Instead of beef you can use ground chicken, or skip the meat and use twice the beans.

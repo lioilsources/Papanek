@@ -1,0 +1,86 @@
+slug: sour_lentils_with_fried_egg
+pack: free
+cuisine: czech
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 45
+servings: 4
+tags:
+  - main
+  - budget
+  - no_oven
+image_prompt: A deep plate of thick sour brown lentils topped with a fried egg and chopped parsley, on a wooden table.
+ingredients:
+  - ingredient: lentils_brown
+    qty: 300
+    unit: g
+  - ingredient: water
+    qty: 1
+    unit: l
+  - ingredient: bay_leaf
+    qty: 2
+    unit: ks
+  - ingredient: onion
+    qty: 1
+    unit: ks
+  - ingredient: carrot
+    qty: 1
+    unit: ks
+  - ingredient: sunflower_oil
+    qty: 3
+    unit: lzice
+  - ingredient: flour_plain
+    qty: 2
+    unit: lzice
+  - ingredient: apple_cider_vinegar
+    qty: 3
+    unit: lzice
+  - ingredient: sugar
+    qty: 1
+    unit: lzicka
+  - ingredient: salt
+  - ingredient: black_pepper
+  - ingredient: egg
+    qty: 4
+    unit: ks
+  - ingredient: parsley
+    qty: 1
+    unit: hrst
+    optional: true
+    note_cs: na ozdobu
+    note_en: for garnish
+cs:
+  title: Čočka na kyselo s volským okem
+  summary: Tradiční české jídlo z hnědé čočky, zahuštěné jíškou a dochucené octem. Levné, syté a hotové bez trouby.
+  steps:
+    - text: Čočku propláchni v cedníku studenou vodou. Dej ji do hrnce, zalij 1 l vody, přidej bobkové listy a přiveď k varu.
+    - text: Sběračkou seber pěnu z povrchu. Ztlum oheň na mírný a vař pod pokličkou asi 30 minut doměkka. Zatím neosoluj, čočka by zůstala tvrdá.
+      timer_sec: 1800
+    - text: Mezitím cibuli oloupej a nakrájej nadrobno. Mrkev oloupej a nastrouhej najemno.
+    - text: Na pánvi rozehřej 2 lžíce oleje a na středním ohni restuj cibuli s mrkví asi 5 minut, dokud nezměknou a lehce nezezlátnou.
+    - text: Zasyp zeleninu 2 lžícemi mouky a za stálého míchání ji opékej ještě 1 minutu.
+    - text: Z čočky vylov bobkové listy. Přidej k ní obsah pánve, dobře rozmíchej, aby nevznikly hrudky, a vař ještě 5 minut, až čočka zhoustne. Kdyby byla moc hustá, přilij trochu vody.
+      timer_sec: 300
+    - text: Vmíchej ocet a cukr, osol a opepři. Ochutnej a případně přidej octa nebo cukru.
+    - text: Na pánvi rozehřej zbylou lžíci oleje a usmaž 4 volská oka. Smaž je asi 4 minuty, dokud bílky úplně neztuhnou.
+      timer_sec: 240
+    - text: Čočku rozděl do hlubokých talířů, na každou porci polož volské oko a posyp nasekanou petrželkou.
+  tips: Sůl a ocet přidávej až do měkké čočky – v kyselé nebo slané vodě čočka déle tvrdne. Když čočka postojí, ještě zhoustne – při ohřívání ji proto zřeď trochou vody.
+en:
+  title: Sour Lentils with Fried Egg
+  summary: A traditional Czech dish of brown lentils thickened with a roux and seasoned with vinegar. Cheap, filling and made without an oven.
+  steps:
+    - text: Rinse the lentils in a sieve under cold water. Put them in a pot, add 1 l of water and the bay leaves, and bring to a boil.
+    - text: Skim the foam off the surface with a ladle. Reduce the heat to low and simmer covered for about 30 minutes until tender. Do not add salt yet, or the lentils will stay hard.
+      timer_sec: 1800
+    - text: Meanwhile, peel the onion and chop it finely. Peel the carrot and grate it finely.
+    - text: Heat 2 tablespoons of oil in a pan and sauté the onion and carrot over medium heat for about 5 minutes until soft and lightly golden.
+    - text: Sprinkle 2 tablespoons of flour over the vegetables and cook for 1 more minute, stirring constantly.
+    - text: Remove the bay leaves from the lentils. Add the contents of the pan, stir well so no lumps form, and simmer for another 5 minutes until the lentils thicken. If they get too thick, add a little water.
+      timer_sec: 300
+    - text: Stir in the vinegar and sugar and season with salt and pepper. Taste and add more vinegar or sugar if needed.
+    - text: Heat the remaining tablespoon of oil in a pan and fry 4 eggs. Fry them for about 4 minutes, until the whites are completely set.
+      timer_sec: 240
+    - text: Divide the lentils among deep plates, top each portion with a fried egg and sprinkle with chopped parsley.
+  tips: Add the salt and vinegar only once the lentils are soft – in salty or acidic water they take longer to cook. The lentils thicken further as they stand, so thin them with a little water when reheating.

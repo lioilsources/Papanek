@@ -1,0 +1,79 @@
+slug: green_chicken_curry
+pack: free
+cuisine: asian
+model: bench-qwen36
+difficulty: 1
+prep_min: 10
+cook_min: 20
+servings: 4
+tags:
+  - main
+  - quick
+image_prompt: A bowl of green chicken curry in coconut sauce garnished with fresh basil leaves.
+ingredients:
+  - ingredient: chicken_breast
+    qty: 600
+    unit: g
+    note_cs: nakrájená na kostičky
+    note_en: cut into cubes
+  - ingredient: coconut_milk
+    qty: 400
+    unit: ml
+  - ingredient: green_curry_paste
+    qty: 3
+    unit: lzice
+  - ingredient: fish_sauce
+    qty: 2
+    unit: lzice
+  - ingredient: sugar
+    qty: 1
+    unit: lzicka
+  - ingredient: lime
+    qty: 1
+    unit: ks
+    note_cs: na šťávu
+    note_en: for juice
+  - ingredient: coconut_oil
+    qty: 2
+    unit: lzice
+  - ingredient: basil
+    qty: 1
+    unit: hrst
+    note_cs: čerstvá, na ozdobu
+    note_en: fresh, for garnish
+  - ingredient: salt
+    optional: true
+cs:
+  title: Zelené kari s kuřetem
+  summary: Rychlé a voňavé thajské zelené kari s kuřecím masem v kokosovém mléce. Hotové do 30 minut.
+  steps:
+    - text: V hluboké pánvi rozehřej kokosový olej na středním plameni.
+      timer_sec: 60
+    - text: Přidej zelenou kari pastu a za stálého míchání ji 1 minutu restuj, dokud nezačne vonět.
+      timer_sec: 60
+    - text: Přidej kuřecí kostičky a opékej je asi 5 minut, dokud ze všech stran nezbělají.
+      timer_sec: 300
+    - text: Zalij kokosovým mlékem a přiveď k varu.
+    - text: Ztlum plamen na mírný a vař 10 minut, dokud není kuře uvnitř propečené.
+      timer_sec: 600
+    - text: Vmíchej rybí omáčku a cukr. Ochutnej a podle potřeby dosol.
+    - text: Pánev odstav z plotny a vmíchej šťávu z limetky.
+    - text: Posyp natrhanou bazalkou a podávej.
+  tips: Nejlépe chutná s jasmínovou rýží. Pokud je kari moc husté, přilij trochu vody, a pokud ho chceš méně pálivé, dej jen 2 lžíce kari pasty.
+en:
+  title: Green Chicken Curry
+  summary: A quick and fragrant Thai green curry with chicken in coconut milk. Ready in 30 minutes.
+  steps:
+    - text: Heat the coconut oil in a deep pan over medium heat.
+      timer_sec: 60
+    - text: Add the green curry paste and fry for 1 minute, stirring constantly, until fragrant.
+      timer_sec: 60
+    - text: Add the chicken cubes and cook for about 5 minutes until white on all sides.
+      timer_sec: 300
+    - text: Pour in the coconut milk and bring to a boil.
+    - text: Reduce the heat to low and simmer for 10 minutes until the chicken is cooked through.
+      timer_sec: 600
+    - text: Stir in the fish sauce and sugar. Taste and add salt if needed.
+    - text: Take the pan off the heat and stir in the lime juice.
+    - text: Sprinkle with torn basil and serve.
+  tips: It tastes best with jasmine rice. If the curry is too thick, add a little water, and if you want it milder, use only 2 tablespoons of curry paste.

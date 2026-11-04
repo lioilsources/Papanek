@@ -1,0 +1,87 @@
+slug: bolognese
+pack: free
+cuisine: italian
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 75
+servings: 4
+tags:
+  - main
+  - one_pot
+  - meal_prep
+image_prompt: A bowl of spaghetti topped with a thick, rich meat bolognese sauce.
+ingredients:
+  - ingredient: ground_beef
+    qty: 500
+    unit: g
+  - ingredient: onion
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: carrot
+    qty: 1
+    unit: ks
+    note_cs: nakrájená na kostičky
+    note_en: diced
+  - ingredient: celery
+    qty: 1
+    unit: stonek
+    note_cs: nakrájený na kostičky
+    note_en: diced
+  - ingredient: garlic
+    qty: 2
+    unit: strouzek
+    note_cs: prolisovaný
+    note_en: crushed
+  - ingredient: tomato_paste
+    qty: 2
+    unit: lzice
+  - ingredient: canned_tomatoes
+    qty: 1
+    unit: plechovka
+  - ingredient: beef_stock
+    qty: 200
+    unit: ml
+  - ingredient: olive_oil
+    qty: 2
+    unit: lzice
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Klasická boloňská omáčka
+  summary: Sytá masová omáčka, která se skvěle hodí k těstovinám. Pomalé vaření se vyplatí – chuť bude hluboká.
+  steps:
+    - text: Ve velkém hrnci rozehřej olivový olej na středním plameni.
+    - text: Přidej cibuli, mrkev a celer a za občasného míchání je opékej 5 minut, dokud nezměknou.
+      timer_sec: 300
+    - text: Přidej mleté maso, rozdrob ho vařečkou a opékej asi 5 minut, dokud není všude hnědé a nezmizí růžová barva.
+      timer_sec: 300
+    - text: Přimíchej česnek a rajčatový protlak a minutu opékej, dokud to nezačne vonět.
+      timer_sec: 60
+    - text: Přilij rajčata z plechovky a hovězí vývar a dobře promíchej.
+    - text: Přiveď k varu, přikryj pokličkou a vař na mírném plameni 45 minut. Občas zamíchej.
+      timer_sec: 2700
+    - text: Odkryj a vař ještě 15 minut, aby omáčka zhoustla.
+      timer_sec: 900
+    - text: Ochuť solí a pepřem. Omáčka je hotová, když je hustá a lesklá.
+  tips: Omáčka chutná ještě lépe druhý den. V lednici vydrží 3 dny, nebo ji můžeš po porcích zamrazit.
+en:
+  title: Classic bolognese sauce
+  summary: A hearty meat sauce that goes perfectly with pasta. Slow cooking pays off – the flavor will be deep.
+  steps:
+    - text: Heat the olive oil in a large pot over medium heat.
+    - text: Add the onion, carrot and celery and cook for 5 minutes, stirring occasionally, until softened.
+      timer_sec: 300
+    - text: Add the ground beef, break it up with a wooden spoon and cook for about 5 minutes, until browned all over with no pink left.
+      timer_sec: 300
+    - text: Stir in the garlic and tomato paste and cook for 1 minute until fragrant.
+      timer_sec: 60
+    - text: Pour in the canned tomatoes and beef stock and stir well.
+    - text: Bring to a boil, cover with a lid and simmer over low heat for 45 minutes. Stir occasionally.
+      timer_sec: 2700
+    - text: Uncover and cook for another 15 minutes so the sauce thickens.
+      timer_sec: 900
+    - text: Season with salt and pepper. The sauce is done when it is thick and glossy.
+  tips: The sauce tastes even better the next day. It keeps for 3 days in the fridge, or you can freeze it in portions.

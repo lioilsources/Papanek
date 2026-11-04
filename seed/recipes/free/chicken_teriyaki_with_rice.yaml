@@ -1,0 +1,89 @@
+slug: chicken_teriyaki_with_rice
+pack: free
+cuisine: asian
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 20
+servings: 4
+tags:
+  - main
+  - quick
+image_prompt: A plate of chicken thigh pieces glazed in a glossy dark teriyaki sauce, sprinkled with sesame seeds and served with white rice.
+ingredients:
+  - ingredient: chicken_thigh
+    qty: 800
+    unit: g
+    note_cs: bez kosti a kůže, nakrájená na kousky
+    note_en: boneless and skinless, cut into chunks
+  - ingredient: rice_white
+    qty: 300
+    unit: g
+  - ingredient: water
+    qty: 600
+    unit: ml
+    note_cs: na vaření rýže
+    note_en: for cooking the rice
+  - ingredient: soy_sauce
+    qty: 80
+    unit: ml
+  - ingredient: sugar
+    qty: 40
+    unit: g
+  - ingredient: rice_vinegar
+    qty: 20
+    unit: ml
+  - ingredient: ginger_paste
+    qty: 10
+    unit: g
+  - ingredient: garlic
+    qty: 2
+    unit: strouzek
+    note_cs: prolisovaný
+    note_en: crushed
+  - ingredient: sesame_seeds
+    qty: 10
+    unit: g
+    note_cs: na posypání
+    note_en: for sprinkling
+  - ingredient: sunflower_oil
+    qty: 30
+    unit: ml
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Kuře teriyaki s rýží
+  summary: Rychlé asijské jídlo se sladkoslanou omáčkou a nadýchanou rýží. Hotovo za 35 minut.
+  steps:
+    - text: Rýži propláchni ve studené vodě, dokud voda není čirá. Dej ji do hrnce, zalij 600 ml vody a přidej špetku soli. Přiveď k varu, pak stáhni plotnu na minimum a vař pod pokličkou 15 minut.
+      timer_sec: 900
+    - text: Hrnec odstav z plotny a nech rýži pod pokličkou ještě 5 minut dojít.
+      timer_sec: 300
+    - text: Mezitím v misce smíchej 80 ml sójové omáčky, 40 g cukru, 20 ml rýžového octa, 10 g zázvorové pasty a 2 prolisované stroužky česneku. Míchej, dokud se cukr nerozpustí.
+    - text: Kuřecí kousky lehce osol a opepři. Na pánvi rozehřej 30 ml oleje na středním plameni.
+    - text: Kuře opékej asi 8 minut, občas ho otoč, dokud není dozlatova a uvnitř propečené. Pak ho přendej na talíř.
+      timer_sec: 480
+    - text: Do stejné pánve nalij připravenou omáčku a za stálého míchání ji nech asi 2 minuty probublávat, až trochu zhoustne.
+      timer_sec: 120
+    - text: Vrať kuře do pánve, promíchej, aby bylo celé pokryté omáčkou, a nech ho 1 minutu prohřát.
+      timer_sec: 60
+    - text: Podávej kuře s rýží a posyp ho sezamovými semínky.
+  tips: Kuře osol jen lehce, sójová omáčka je sama slaná. Omáčku nevař příliš dlouho, po vychladnutí ještě zhoustne.
+en:
+  title: Chicken Teriyaki with Rice
+  summary: A quick Asian dish with a sweet and salty sauce and fluffy rice. Ready in 35 minutes.
+  steps:
+    - text: Rinse the rice in cold water until the water runs clear. Put it in a pot, add 600 ml of water and a pinch of salt. Bring to a boil, then turn the heat down to the lowest setting and cook covered for 15 minutes.
+      timer_sec: 900
+    - text: Take the pot off the heat and let the rice rest, covered, for another 5 minutes.
+      timer_sec: 300
+    - text: Meanwhile, mix 80 ml soy sauce, 40 g sugar, 20 ml rice vinegar, 10 g ginger paste and 2 crushed garlic cloves in a bowl. Stir until the sugar dissolves.
+    - text: Season the chicken pieces lightly with salt and pepper. Heat 30 ml of oil in a frying pan over medium heat.
+    - text: Fry the chicken for about 8 minutes, turning occasionally, until golden and cooked through. Then transfer it to a plate.
+      timer_sec: 480
+    - text: Pour the prepared sauce into the same pan and let it bubble for about 2 minutes, stirring constantly, until it thickens slightly.
+      timer_sec: 120
+    - text: Return the chicken to the pan, stir to coat it in the sauce and let it heat through for 1 minute.
+      timer_sec: 60
+    - text: Serve the chicken with the rice and sprinkle with sesame seeds.
+  tips: Salt the chicken only lightly, as soy sauce is already salty. Do not boil the sauce too long; it thickens further as it cools.

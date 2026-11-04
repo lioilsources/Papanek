@@ -110,6 +110,15 @@ func run(seed, schema, out, version string) error {
 	if err != nil {
 		return err
 	}
+	ids := map[string]int{}
+	for i, in := range items {
+		ids[in.Slug] = i + 1
+	}
+	n, err := exportRecipes(tx, filepath.Join(seed, "recipes"), ids, items)
+	if err != nil {
+		return err
+	}
+	log.Printf("recepty: %d", n)
 	if err := tx.Commit(); err != nil {
 		return err
 	}

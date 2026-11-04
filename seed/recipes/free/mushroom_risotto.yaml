@@ -1,0 +1,95 @@
+slug: mushroom_risotto
+pack: free
+cuisine: italian
+model: bench-qwen36
+difficulty: 2
+prep_min: 15
+cook_min: 30
+servings: 4
+tags:
+  - main
+  - vegetarian
+  - one_pot
+image_prompt: A creamy plate of mushroom risotto with visible pieces of mushrooms and grated parmesan on top.
+ingredients:
+  - ingredient: rice_arborio
+    qty: 300
+    unit: g
+  - ingredient: mixed_mushrooms
+    qty: 400
+    unit: g
+    note_cs: nakrájené na plátky
+    note_en: sliced
+  - ingredient: onion
+    qty: 1
+    unit: ks
+    note_cs: nadrobno nakrájená
+    note_en: finely chopped
+  - ingredient: garlic
+    qty: 2
+    unit: strouzek
+    note_cs: prolisovaný
+    note_en: crushed
+  - ingredient: vegetable_stock
+    qty: 1
+    unit: l
+  - ingredient: olive_oil
+    qty: 3
+    unit: lzice
+  - ingredient: butter
+    qty: 50
+    unit: g
+  - ingredient: parmesan
+    qty: 50
+    unit: g
+    note_cs: nastrouhaný
+    note_en: grated
+  - ingredient: white_wine
+    qty: 100
+    unit: ml
+    note_cs: suché
+    note_en: dry
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Houbové rizoto
+  summary: Krémové italské rizoto s houbami a parmazánem. Chce to jen trpělivě míchat a výsledek chutná jako z restaurace.
+  steps:
+    - text: Vývar ohřej v menším hrnci a nech ho na mírném plameni, aby zůstal horký.
+    - text: Ve velkém hrnci rozehřej 2 lžíce oleje a houby na něm restuj asi 5 minut, dokud nezezlátnou. Osol je a přendej na talíř.
+      timer_sec: 300
+    - text: Do stejného hrnce dej zbylou lžíci oleje a polovinu másla. Na středním plameni restuj cibuli asi 5 minut, dokud nezesklovatí.
+      timer_sec: 300
+    - text: Přidej česnek a restuj 1 minutu, dokud nezačne vonět.
+      timer_sec: 60
+    - text: Vsyp rýži a za stálého míchání ji 2 minuty opékej, dokud zrnka nejsou lesklá a na okrajích průsvitná.
+      timer_sec: 120
+    - text: Zalij vínem a míchej asi 2 minuty, dokud se skoro úplně neodpaří.
+      timer_sec: 120
+    - text: Přilévej horký vývar po naběračkách a často míchej. Další naběračku přidej, až když se předchozí vstřebá. Trvá to asi 18 minut, rýže má být měkká, ale ještě lehce na skus.
+      timer_sec: 1080
+    - text: Vmíchej opečené houby, zbytek másla a parmazán. Opepři a podle chuti dosol.
+    - text: Odstav z plotny, přikryj pokličkou a nech 2 minuty odpočinout. Pak hned podávej.
+      timer_sec: 120
+  tips: Rýži před vařením neproplachuj – škrob z jejího povrchu dělá rizoto krémovým. Když rizoto na konci moc zhoustne, vmíchej ještě trochu horkého vývaru nebo vody.
+en:
+  title: Mushroom Risotto
+  summary: Creamy Italian risotto with mushrooms and parmesan. All it takes is patient stirring, and it tastes like it came from a restaurant.
+  steps:
+    - text: Heat the stock in a small saucepan and keep it over low heat so it stays hot.
+    - text: In a large pot, heat 2 tablespoons of oil and sauté the mushrooms for about 5 minutes until golden. Salt them and transfer to a plate.
+      timer_sec: 300
+    - text: Add the remaining tablespoon of oil and half of the butter to the same pot. Sauté the onion over medium heat for about 5 minutes until translucent.
+      timer_sec: 300
+    - text: Add the garlic and sauté for 1 minute until fragrant.
+      timer_sec: 60
+    - text: Add the rice and toast it for 2 minutes, stirring constantly, until the grains are glossy and translucent at the edges.
+      timer_sec: 120
+    - text: Pour in the wine and stir for about 2 minutes until it has almost completely evaporated.
+      timer_sec: 120
+    - text: Add the hot stock one ladle at a time, stirring often. Add the next ladle only once the previous one has been absorbed. This takes about 18 minutes; the rice should be tender but still slightly firm to the bite.
+      timer_sec: 1080
+    - text: Stir in the cooked mushrooms, the remaining butter and the parmesan. Season with pepper and salt to taste.
+    - text: Remove from the heat, cover with a lid and let it rest for 2 minutes. Then serve right away.
+      timer_sec: 120
+  tips: Do not rinse the rice before cooking – the starch on its surface makes the risotto creamy. If the risotto gets too thick at the end, stir in a little more hot stock or water.

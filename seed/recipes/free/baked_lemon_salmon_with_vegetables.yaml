@@ -1,0 +1,69 @@
+slug: baked_lemon_salmon_with_vegetables
+pack: free
+cuisine: mexmed
+model: bench-qwen36
+difficulty: 1
+prep_min: 15
+cook_min: 25
+servings: 4
+tags:
+  - main
+  - quick
+image_prompt: Four pieces of baked salmon topped with lemon slices on a bed of roasted zucchini, bell pepper and onion on a white plate.
+ingredients:
+  - ingredient: salmon
+    qty: 800
+    unit: g
+    note_cs: filé bez kůže
+    note_en: boneless skinless fillet
+  - ingredient: lemon
+    qty: 2
+    unit: ks
+    note_cs: jeden na plátky, jeden na šťávu
+    note_en: one for slices, one for juice
+  - ingredient: zucchini
+    qty: 2
+    unit: ks
+  - ingredient: bell_pepper
+    qty: 2
+    unit: ks
+  - ingredient: onion
+    qty: 1
+    unit: ks
+  - ingredient: olive_oil
+    qty: 4
+    unit: lzice
+  - ingredient: salt
+  - ingredient: black_pepper
+cs:
+  title: Pečený losos s citronem a zeleninou
+  summary: Jednoduché a zdravé jídlo, při kterém se losos i zelenina upečou na jednom plechu. Hotovo zhruba za 40 minut.
+  steps:
+    - text: Předehřej troubu na 200 °C a plech vylož pečicím papírem.
+    - text: Cukety nakrájej na kolečka silná asi 1 cm, papriky na větší kusy a cibuli na měsíčky. Rozlož zeleninu na plech.
+    - text: Zeleninu pokapej dvěma lžícemi olivového oleje, osol, opepři a promíchej.
+    - text: Zeleninu peč 10 minut, aby začala měknout.
+      timer_sec: 600
+    - text: Mezitím lososa osuš papírovou utěrkou a nakrájej ho na 4 stejné porce.
+    - text: Jeden citron nakrájej na tenká kolečka.
+    - text: Plech vytáhni, porce lososa polož na zeleninu, osol je, opepři a pokapej zbylými dvěma lžícemi oleje. Na rybu polož plátky citronu.
+    - text: Peč dalších 15 minut, dokud není losos uvnitř neprůhledný a nejde snadno rozdělit vidličkou.
+      timer_sec: 900
+    - text: Hotové jídlo pokapej šťávou z druhého citronu a podávej.
+  tips: Losos je hotový, když se po zatlačení vidličkou rozpadá na lupínky a uvnitř už není sklovitý. Tenčí kousky ryby zkontroluj už po 12 minutách, ať nevyschnou.
+en:
+  title: Baked lemon salmon with vegetables
+  summary: A simple, healthy dish where the salmon and vegetables bake on a single tray. Ready in about 40 minutes.
+  steps:
+    - text: Preheat the oven to 200 °C and line a baking tray with parchment paper.
+    - text: Slice the zucchini into rounds about 1 cm thick, cut the bell peppers into large pieces and the onion into wedges. Spread the vegetables on the tray.
+    - text: Drizzle the vegetables with two tablespoons of olive oil, season with salt and pepper, and toss.
+    - text: Roast the vegetables for 10 minutes so they start to soften.
+      timer_sec: 600
+    - text: Meanwhile, pat the salmon dry with paper towels and cut it into 4 equal portions.
+    - text: Slice one lemon into thin rounds.
+    - text: Take out the tray, place the salmon on the vegetables, season with salt and pepper, and drizzle with the remaining two tablespoons of oil. Lay the lemon slices on the fish.
+    - text: Bake for another 15 minutes, until the salmon is opaque inside and flakes easily with a fork.
+      timer_sec: 900
+    - text: Drizzle the finished dish with the juice of the second lemon and serve.
+  tips: The salmon is done when it flakes apart under a fork and is no longer translucent inside. Check thinner pieces after 12 minutes so they don't dry out.
