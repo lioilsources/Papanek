@@ -17,8 +17,23 @@ Offline kuchařka pro začátečníky: ví, co máš doma, a vybere recept. Plá
 make test       # testy nástrojů
 make seed       # sloučí seed/parts do seed/ingredients.yaml
 make content    # postaví content.db
-make db         # lokální Postgres s pgvector na portu 5437
+make db         # Postgres s pgvector na JODĚ, profil qa (port 5437)
 ```
+
+## Databáze na JODĚ
+
+Docker na Macu neběží; build-time Postgres (`docker-compose.yml`) jede na JODĚ ve dvou
+profilech a nástroje na něj dosáhnou přes LAN (`DATABASE_URL` skládá Makefile):
+
+| profil | příkaz | port | k čemu |
+|---|---|---|---|
+| `qa` | `make db` | 5437 | pokusy, ingest, ladění ontologie |
+| `prod` | `make db PROFILE=prod` | 5438 | data, ze kterých se exportuje vydaný `content.db` |
+
+`make db` nahraje `docker-compose.yml` a `tools/migrations` do `~/deploy/Papanek` na JODĚ a
+spustí projekt `papanek-<profil>`; migrace se aplikují jen na prázdný svazek. Dál `make db-logs`,
+`make psql`, `make db-down` a `make db-reset` (smaže data profilu). Adresu JODY a heslo lze
+změnit v `.env` (`JODA_HOST`, `POSTGRES_PASSWORD`, viz `.env.example`).
 
 ## Zdroje dat
 

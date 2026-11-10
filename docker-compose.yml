@@ -1,15 +1,26 @@
-# Build-time Postgres pro lokální vývoj. Migrace se aplikují při prvním startu.
+# Build-time Postgres pro výrobu obsahu (nikdy runtime). Běží na JODĚ ve dvou profilech,
+# `make db PROFILE=qa|prod` (projekty papanek-qa a papanek-prod, každý se svým svazkem).
+# Nástroje na Macu se připojují přes LAN (DATABASE_URL skládá Makefile). Migrace se aplikují
+# při prvním startu prázdného svazku.
 services:
   db:
     image: pgvector/pgvector:pg17
+    restart: unless-stopped
     environment:
       POSTGRES_USER: papanek
-      POSTGRES_PASSWORD: papanek
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-papanek}
       POSTGRES_DB: papanek
+    # DB_BIND = LAN adresa JODY, aby na databázi dosáhl Mac (doplní Makefile); výchozí je jen
+    # loopback. DB_PORT: qa 5437, prod 5438.
     ports:
-      - "5437:5432"
+      - "${DB_BIND:-127.0.0.1}:${DB_PORT:-5437}:5432"
     volumes:
       - ./tools/migrations:/docker-entrypoint-initdb.d:ro
       - papanek-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U papanek -d papanek"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
 volumes:
   papanek-db:
