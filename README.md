@@ -31,9 +31,13 @@ profilech a nástroje na něj dosáhnou přes LAN (`DATABASE_URL` skládá Makef
 | `prod` | `make db PROFILE=prod` | 5438 | data, ze kterých se exportuje vydaný `content.db` |
 
 `make db` nahraje `docker-compose.yml` a `tools/migrations` do `~/deploy/Papanek` na JODĚ a
-spustí projekt `papanek-<profil>`; migrace se aplikují jen na prázdný svazek. Dál `make db-logs`,
-`make psql`, `make db-down` a `make db-reset` (smaže data profilu). Adresu JODY a heslo lze
-změnit v `.env` (`JODA_HOST`, `POSTGRES_PASSWORD`, viz `.env.example`).
+spustí projekt `papanek-<profil>`; migrace se aplikují jen na prázdná data. Data leží na pool
+disku v `/home/oli/pool-papanek/<profil>/db` (ZFS dataset `pool/papanek`, zakládá Olin se sudo,
+DevConventions `shared/infra.md`); dokud dataset není, v `~/deploy/Papanek/data/<profil>/db`.
+Port je jen na LAN adrese JODY. Dál `make db-logs`, `make psql`, `make db-down` a
+`make db-reset CONFIRM=yes` (smaže data profilu). Každá akce zapíše řádek do
+`~/deploy/events.jsonl`. Adresu JODY a heslo lze změnit v `.env` (`JODA_HOST`,
+`POSTGRES_PASSWORD`, viz `.env.example`).
 
 ## Zdroje dat
 

@@ -14,13 +14,13 @@ services:
     # loopback. DB_PORT: qa 5437, prod 5438.
     ports:
       - "${DB_BIND:-127.0.0.1}:${DB_PORT:-5437}:5432"
+    # DB_DIR: data profilu na pool disku (DevConventions shared/infra.md: /home/oli/pool-papanek/
+    # <profil>/db); dokud dataset není, ~/deploy/Papanek/data/<profil>/db. Doplní Makefile.
     volumes:
       - ./tools/migrations:/docker-entrypoint-initdb.d:ro
-      - papanek-db:/var/lib/postgresql/data
+      - ${DB_DIR:-./data/qa/db}:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U papanek -d papanek"]
       interval: 5s
       timeout: 3s
       retries: 30
-volumes:
-  papanek-db:
