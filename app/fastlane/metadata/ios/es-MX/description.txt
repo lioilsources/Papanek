@@ -1,0 +1,8 @@
+Papánek es un recetario sin conexión para principiantes. Sabe lo que tienes en casa y elige una receta.
+
+• Añade ingredientes a la despensa; se da por hecho que tienes sal, pimienta, aceite y otros básicos
+• Mira qué puedes cocinar ahora, qué receta necesita uno o dos ingredientes más y qué toca comprar
+• Modo de cocina paso a paso con temporizadores
+• Los ingredientes que faltan van a la lista de la compra con un toque y lo comprado pasa a la despensa
+
+Por ahora las recetas están en checo e inglés; la interfaz de la app está disponible en 45 idiomas.

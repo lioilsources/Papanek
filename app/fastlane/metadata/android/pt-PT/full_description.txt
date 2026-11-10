@@ -1,0 +1,8 @@
+O Papánek é um livro de receitas offline para iniciantes. Sabe o que tem em casa e escolhe uma receita.
+
+• Adicione ingredientes à despensa; sal, pimenta, azeite e outros produtos básicos são dados como existentes
+• Veja o que pode cozinhar já, o que precisa de mais um ou dois ingredientes e o que é preciso comprar
+• Modo de cozinha passo a passo com temporizadores
+• Os ingredientes em falta vão para a lista de compras com um toque, e o que comprar passa para a despensa
+
+Por agora as receitas estão em checo e inglês; a interface da aplicação está disponível em 45 idiomas.

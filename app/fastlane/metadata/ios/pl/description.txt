@@ -1,0 +1,8 @@
+Papánek to offline'owa książka kucharska dla początkujących. Wie, co masz w domu, i wybiera przepis.
+
+• Dodaj składniki do spiżarni; sól, pieprz, olej i inne podstawy uznajemy za dostępne
+• Zobacz, co ugotujesz od razu, w czym brakuje jednego lub dwóch składników i co trzeba kupić
+• Tryb gotowania krok po kroku z minutnikami
+• Brakujące składniki trafiają na listę zakupów jednym dotknięciem, a kupione przechodzą do spiżarni
+
+Przepisy są na razie po czesku i angielsku; interfejs aplikacji jest dostępny w 45 językach.

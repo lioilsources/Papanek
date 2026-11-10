@@ -1,0 +1,8 @@
+Papánek on offline-keittokirja aloittelijoille. Se tietää, mitä sinulla on kotona, ja valitsee reseptin.
+
+• Lisää ainekset komeroon; suola, pippuri, öljy ja muut perustarvikkeet oletetaan olevan
+• Katso, mitä voit valmistaa heti, mistä puuttuu yksi tai kaksi ainesta ja mitä pitää ostaa
+• Ruoanlaittotila vaihe vaiheelta ajastimilla
+• Puuttuvat ainekset menevät ostoslistalle yhdellä napautuksella ja ostetut siirtyvät komeroon
+
+Reseptit ovat toistaiseksi tšekiksi ja englanniksi; sovelluksen käyttöliittymä on 45 kielellä.

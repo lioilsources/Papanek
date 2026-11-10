@@ -1,0 +1,8 @@
+Papánek è un ricettario offline per principianti. Sa cosa hai in casa e sceglie una ricetta.
+
+• Aggiungi gli ingredienti alla dispensa; sale, pepe, olio e altri ingredienti di base si danno per scontati
+• Guarda cosa puoi cucinare subito, cosa richiede uno o due ingredienti in più e cosa va comprato
+• Modalità cucina passo passo con timer
+• Gli ingredienti mancanti vanno nella lista della spesa con un tocco e quelli comprati passano in dispensa
+
+Per ora le ricette sono in ceco e in inglese; l'interfaccia dell'app è disponibile in 45 lingue.

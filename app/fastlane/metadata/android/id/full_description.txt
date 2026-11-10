@@ -1,0 +1,8 @@
+Papánek adalah buku resep offline untuk pemula. Ia tahu apa yang ada di rumahmu dan memilihkan resep.
+
+• Tambahkan bahan ke persediaan; garam, lada, minyak, dan bahan dasar lain dianggap sudah ada
+• Lihat apa yang bisa dimasak sekarang, resep yang kurang satu atau dua bahan, dan yang perlu belanja
+• Mode memasak langkah demi langkah dengan timer
+• Bahan yang kurang masuk daftar belanja dengan satu ketukan, dan yang sudah dibeli pindah ke persediaan
+
+Resep saat ini dalam bahasa Ceko dan Inggris; antarmuka aplikasi tersedia dalam 45 bahasa.

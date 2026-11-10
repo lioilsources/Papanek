@@ -1,0 +1,8 @@
+Papánek este o carte de bucate offline pentru începători. Știe ce ai acasă și alege o rețetă.
+
+• Adaugă ingrediente în cămară; sarea, piperul, uleiul și alte produse de bază se consideră existente
+• Vezi ce poți găti acum, unde lipsesc unul sau două ingrediente și ce trebuie cumpărat
+• Mod de gătit pas cu pas, cu cronometre
+• Ingredientele lipsă ajung pe lista de cumpărături cu o atingere, iar cele cumpărate se mută în cămară
+
+Deocamdată rețetele sunt în cehă și engleză; interfața aplicației este disponibilă în 45 de limbi.

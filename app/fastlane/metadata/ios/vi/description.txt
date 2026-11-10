@@ -1,0 +1,8 @@
+Papánek là cuốn sách nấu ăn ngoại tuyến dành cho người mới. Nó biết bạn có gì ở nhà và chọn công thức cho bạn.
+
+• Thêm nguyên liệu vào tủ bếp; muối, tiêu, dầu ăn và các nguyên liệu cơ bản khác được coi là đã có
+• Xem món nào nấu được ngay, món nào còn thiếu một hai thứ và cần mua gì
+• Chế độ nấu từng bước kèm hẹn giờ
+• Nguyên liệu còn thiếu vào danh sách mua chỉ với một chạm, đồ đã mua sẽ chuyển vào tủ bếp
+
+Hiện công thức có tiếng Séc và tiếng Anh; giao diện ứng dụng có sẵn trong 45 ngôn ngữ.

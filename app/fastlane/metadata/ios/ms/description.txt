@@ -1,0 +1,8 @@
+Papánek ialah buku resipi luar talian untuk pemula. Ia tahu apa yang ada di rumah anda dan memilih resipi.
+
+• Tambah bahan ke stor; garam, lada, minyak dan bahan asas lain dianggap sudah ada
+• Lihat apa yang boleh dimasak sekarang, resipi yang kurang satu atau dua bahan dan apa yang perlu dibeli
+• Mod memasak langkah demi langkah dengan pemasa
+• Bahan yang kurang masuk ke senarai beli-belah dengan satu ketikan, dan yang dibeli berpindah ke stor
+
+Resipi buat masa ini dalam bahasa Czech dan Inggeris; antara muka aplikasi tersedia dalam 45 bahasa.

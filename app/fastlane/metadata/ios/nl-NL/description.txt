@@ -1,0 +1,8 @@
+Papánek is een offline kookboek voor beginners. Het weet wat je in huis hebt en kiest een recept.
+
+• Voeg ingrediënten toe aan je voorraad; zout, peper, olie en andere basisproducten gelden als aanwezig
+• Zie wat je nu kunt koken, waar een of twee ingrediënten aan ontbreken en wat je moet kopen
+• Kookmodus stap voor stap met timers
+• Ontbrekende ingrediënten komen met één tik op je boodschappenlijst en gekochte items gaan naar je voorraad
+
+De recepten zijn voorlopig in het Tsjechisch en Engels; de app-interface is beschikbaar in 45 talen.
