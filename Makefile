@@ -24,7 +24,7 @@ endef
 
 # Každá akce nechá řádek v ~/deploy/events.jsonl na JODĚ (DevConventions infra-architektura.md).
 define joda_event
-ssh $(JODA) 'printf "{\"ts\":\"%s\",\"who\":\"%s\",\"repo\":\"Papanek\",\"action\":\"$(1)\",\"profile\":\"$(PROFILE)\",\"commit\":\"%s\"}\n" \
+ssh $(JODA) 'printf "{\"ts\":\"%s\",\"project\":\"Papanek\",\"action\":\"$(1) ($(PROFILE))\",\"who\":\"%s\",\"commit\":\"%s\"}\n" \
 	"$$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$(USER)@$(shell hostname -s)" "$(shell git rev-parse --short HEAD)" >> ~/deploy/events.jsonl'
 endef
 
