@@ -257,68 +257,68 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'சமையல் வகைகள்';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'வாங்கியவற்றை மீட்டமை';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'வாங்கியவை மீட்டமைக்கப்படுகின்றன…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'ஸ்டோர் இப்போது கிடைக்கவில்லை. ஆன்லைனில் இருக்கும்போது பிறகு முயலவும்.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'விலைகள் ஏற்றப்படுகின்றன…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'திறக்கப்பட்டது';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'வாங்கு · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'இன்னும் கிடைக்கவில்லை';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'உறுதிப்படுத்தலுக்குக் காத்திருக்கிறது…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'வாங்குதல் தோல்வி: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'அனைத்து சமையல் வகைகள்';
 
   @override
   String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+      'எல்லா தொகுப்புகளையும் ஒரே நேரத்தில் திறக்கும், தனித்தனியாக வாங்குவதை விட மலிவு.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n செய்முறைகள்',
+      one: '$n செய்முறை',
+      zero: 'செய்முறைகள் தயாராகின்றன',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return '$pack தொகுப்பின் செய்முறை';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'பொருட்கள் தெரியும்; படிகளும் சமையல் பயன்முறையும் தொகுப்புடன் திறக்கும்.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'திற';
 }

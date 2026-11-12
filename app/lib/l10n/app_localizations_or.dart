@@ -255,68 +255,68 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'ରୋଷେଇ';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'କିଣାକିଣି ଫେରାଇ ଆଣନ୍ତୁ';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'କିଣାକିଣି ଫେରାଇ ଆଣାଯାଉଛି…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'ଷ୍ଟୋର ଏବେ ଉପଲବ୍ଧ ନାହିଁ। ଅନଲାଇନ ଥିଲେ ପରେ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'ମୂଲ୍ୟ ଲୋଡ ହେଉଛି…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'ଅନଲକ';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'କିଣନ୍ତୁ · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'ଏପର୍ଯ୍ୟନ୍ତ ଉପଲବ୍ଧ ନାହିଁ';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'ନିଶ୍ଚିତକରଣ ପାଇଁ ଅପେକ୍ଷା…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'କିଣିବା ବିଫଳ: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'ସବୁ ରୋଷେଇ';
 
   @override
   String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+      'ସବୁ ପ୍ୟାକ ଏକାସାଙ୍ଗରେ ଅନଲକ କରେ, ଅଲଗା କିଣିବା ଠାରୁ ଶସ୍ତା।';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$nଟି ରେସିପି',
+      one: '$nଟି ରେସିପି',
+      zero: 'ରେସିପି ପ୍ରସ୍ତୁତ ହେଉଛି',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return '$pack ପ୍ୟାକର ରେସିପି';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'ଉପାଦାନ ଦେଖାଯାଉଛି; ପ୍ରଣାଳୀ ଓ ରୋଷେଇ ମୋଡ ପ୍ୟାକ ସହ ଖୋଲିବ।';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'ଅନଲକ କରନ୍ତୁ';
 }

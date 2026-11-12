@@ -249,70 +249,66 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => '菜系';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => '恢复购买';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => '正在恢复购买…';
 
   @override
-  String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+  String get storeUnavailable => '商店暂时不可用。请在联网后再试。';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => '正在加载价格…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => '已解锁';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return '购买 · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => '暂未开售';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => '等待确认…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return '购买失败：$msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => '全部菜系';
 
   @override
-  String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+  String get allPacksBody => '一次解锁所有菜谱包，比单买更划算。';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n 道菜谱',
+      zero: '菜谱准备中',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return '来自「$pack」菜谱包';
   }
 
   @override
-  String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+  String get lockedBody => '食材已可查看；步骤和烹饪模式随菜谱包解锁。';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => '解锁';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hans`).
@@ -560,70 +556,66 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => '菜系';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => '恢复购买';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => '正在恢复购买…';
 
   @override
-  String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+  String get storeUnavailable => '商店暂时不可用。请在联网后再试。';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => '正在加载价格…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => '已解锁';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return '购买 · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => '暂未开售';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => '等待确认…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return '购买失败：$msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => '全部菜系';
 
   @override
-  String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+  String get allPacksBody => '一次解锁所有菜谱包，比单买更划算。';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n 道菜谱',
+      zero: '菜谱准备中',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return '来自「$pack」菜谱包';
   }
 
   @override
-  String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+  String get lockedBody => '食材已可查看；步骤和烹饪模式随菜谱包解锁。';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => '解锁';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -871,68 +863,64 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => '菜系';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => '回復購買';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => '正在回復購買…';
 
   @override
-  String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+  String get storeUnavailable => '商店暫時無法使用。請在連網後再試。';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => '正在載入價格…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => '已解鎖';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return '購買 · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => '尚未開賣';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => '等待確認…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return '購買失敗：$msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => '全部菜系';
 
   @override
-  String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+  String get allPacksBody => '一次解鎖所有食譜包，比單買更划算。';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n 道食譜',
+      zero: '食譜準備中',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return '來自「$pack」食譜包';
   }
 
   @override
-  String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+  String get lockedBody => '食材已可查看；步驟和烹飪模式隨食譜包解鎖。';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => '解鎖';
 }

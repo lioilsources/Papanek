@@ -259,68 +259,69 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'Bucătării';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Restabilește achizițiile';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'Se restabilesc achizițiile…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'Magazinul nu este disponibil acum. Încearcă mai târziu, când ești online.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'Se încarcă prețurile…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'Deblocat';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'Cumpără · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'Încă indisponibil';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'Se așteaptă confirmarea…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'Achiziția a eșuat: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'Toate bucătăriile';
 
   @override
   String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+      'Deblochează toate pachetele deodată, mai ieftin decât pe rând.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n de rețete',
+      few: '$n rețete',
+      one: '$n rețetă',
+      zero: 'rețete în pregătire',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return 'Rețetă din pachetul $pack';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'Vezi deja ingredientele; pașii și modul de gătit se deblochează cu pachetul.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'Deblochează';
 }

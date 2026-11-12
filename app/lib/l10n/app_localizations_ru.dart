@@ -252,68 +252,70 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'Кухни';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Восстановить покупки';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'Восстанавливаем покупки…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'Магазин сейчас недоступен. Попробуй позже, когда будешь в сети.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'Загружаем цены…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'Разблокировано';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'Купить · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'Пока недоступно';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'Ожидание подтверждения…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'Покупка не удалась: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'Все кухни';
 
   @override
   String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+      'Открывает все наборы сразу, выгоднее, чем по одному.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n рецепта',
+      many: '$n рецептов',
+      few: '$n рецепта',
+      one: '$n рецепт',
+      zero: 'рецепты готовятся',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return 'Рецепт из набора «$pack»';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'Ингредиенты видны сразу; шаги и режим готовки откроются вместе с набором.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'Разблокировать';
 }

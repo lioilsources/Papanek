@@ -257,70 +257,70 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'Cozinhas';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Restaurar compras';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'Restaurando compras…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'A loja não está disponível agora. Tente de novo mais tarde quando estiver online.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'Carregando preços…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'Desbloqueado';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'Comprar · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'Ainda não disponível';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'Aguardando confirmação…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'A compra falhou: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'Todas as cozinhas';
 
   @override
   String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+      'Desbloqueia todos os pacotes de uma vez, mais barato que um por um.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n receitas',
+      one: '$n receita',
+      zero: 'receitas em preparação',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return 'Receita do pacote $pack';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'Você já vê os ingredientes; o passo a passo e o modo cozinhar são liberados com o pacote.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'Desbloquear';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -576,70 +576,70 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'Cozinhas';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Restaurar compras';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'Restaurando compras…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'A loja não está disponível agora. Tente de novo mais tarde quando estiver online.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'Carregando preços…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'Desbloqueado';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'Comprar · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'Ainda não disponível';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'Aguardando confirmação…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'A compra falhou: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'Todas as cozinhas';
 
   @override
   String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+      'Desbloqueia todos os pacotes de uma vez, mais barato que um por um.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n receitas',
+      one: '$n receita',
+      zero: 'receitas em preparação',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return 'Receita do pacote $pack';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'Você já vê os ingredientes; o passo a passo e o modo cozinhar são liberados com o pacote.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'Desbloquear';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -895,68 +895,68 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'Cozinhas';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Restaurar compras';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'A restaurar compras…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'A loja não está disponível agora. Tenta novamente mais tarde quando estiveres online.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'A carregar preços…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'Desbloqueado';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'Comprar · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'Ainda não disponível';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'A aguardar confirmação…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'A compra falhou: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'Todas as cozinhas';
 
   @override
   String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+      'Desbloqueia todos os pacotes de uma vez, mais barato do que um a um.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n receitas',
+      one: '$n receita',
+      zero: 'receitas em preparação',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return 'Receita do pacote $pack';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'Já vês os ingredientes; os passos e o modo cozinhar desbloqueiam-se com o pacote.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'Desbloquear';
 }

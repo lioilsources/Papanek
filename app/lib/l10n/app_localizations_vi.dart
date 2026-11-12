@@ -252,68 +252,66 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'Ẩm thực';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Khôi phục giao dịch';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'Đang khôi phục giao dịch…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'Cửa hàng hiện không khả dụng. Hãy thử lại sau khi bạn có mạng.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'Đang tải giá…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'Đã mở khóa';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'Mua · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'Chưa mở bán';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'Đang chờ xác nhận…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'Mua không thành công: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'Tất cả ẩm thực';
 
   @override
-  String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+  String get allPacksBody => 'Mở khóa mọi gói cùng lúc, rẻ hơn mua từng gói.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n công thức',
+      zero: 'công thức đang được chuẩn bị',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return 'Công thức từ gói $pack';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'Bạn đã xem được nguyên liệu; các bước và chế độ nấu sẽ mở khóa cùng gói.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'Mở khóa';
 }
