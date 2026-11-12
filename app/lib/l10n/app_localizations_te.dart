@@ -256,68 +256,68 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'వంటకాల రకాలు';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'కొనుగోళ్లను పునరుద్ధరించు';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'కొనుగోళ్లు పునరుద్ధరించబడుతున్నాయి…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'స్టోర్ ఇప్పుడు అందుబాటులో లేదు. ఆన్‌లైన్‌లో ఉన్నప్పుడు తర్వాత మళ్లీ ప్రయత్నించండి.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'ధరలు లోడ్ అవుతున్నాయి…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'అన్‌లాక్ అయింది';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'కొను · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'ఇంకా అందుబాటులో లేదు';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'నిర్ధారణ కోసం వేచి ఉంది…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'కొనుగోలు విఫలమైంది: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'అన్ని వంటకాల రకాలు';
 
   @override
   String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+      'అన్ని ప్యాక్‌లను ఒకేసారి అన్‌లాక్ చేస్తుంది, ఒక్కొక్కటి కొనడం కంటే చౌక.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n వంటకాలు',
+      one: '$n వంటకం',
+      zero: 'వంటకాలు సిద్ధమవుతున్నాయి',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return '$pack ప్యాక్ వంటకం';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'పదార్థాలు కనిపిస్తాయి; దశలు, వంట మోడ్ ప్యాక్‌తో అన్‌లాక్ అవుతాయి.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'అన్‌లాక్ చేయి';
 }

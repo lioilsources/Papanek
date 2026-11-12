@@ -259,68 +259,68 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'מטבחים';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'שחזור רכישות';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'משחזר רכישות…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'החנות לא זמינה כרגע. נסה שוב מאוחר יותר כשתהיה מחובר.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'טוען מחירים…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'פתוח';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'קנייה · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'עדיין לא זמין';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'ממתין לאישור…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'הרכישה נכשלה: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'כל המטבחים';
 
   @override
-  String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+  String get allPacksBody => 'פותח את כל החבילות בבת אחת, בזול יותר מאחת־אחת.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n מתכונים',
+      two: 'שני מתכונים',
+      one: 'מתכון אחד',
+      zero: 'מתכונים בהכנה',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return 'מתכון מהחבילה $pack';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'את המצרכים כבר רואים; השלבים ומצב הבישול נפתחים עם החבילה.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'פתיחה';
 }

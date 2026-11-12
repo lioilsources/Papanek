@@ -257,68 +257,68 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'Keittiöt';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Palauta ostokset';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'Palautetaan ostoksia…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'Kauppa ei ole nyt käytettävissä. Yritä myöhemmin uudelleen, kun olet verkossa.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'Ladataan hintoja…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'Avattu';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'Osta · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'Ei vielä saatavilla';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'Odotetaan vahvistusta…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'Osto epäonnistui: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'Kaikki keittiöt';
 
   @override
   String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+      'Avaa kaikki paketit kerralla, edullisemmin kuin yksitellen.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n reseptiä',
+      one: '$n resepti',
+      zero: 'reseptejä tulossa',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return 'Resepti paketista $pack';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'Näet ainekset; vaiheet ja kokkaustila avautuvat paketin myötä.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'Avaa';
 }

@@ -245,68 +245,64 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => '요리 종류';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => '구매 복원';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => '구매를 복원하는 중…';
 
   @override
-  String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+  String get storeUnavailable => '지금은 스토어를 사용할 수 없습니다. 온라인일 때 다시 시도하세요.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => '가격 불러오는 중…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => '잠금 해제됨';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return '구매 · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => '아직 구매할 수 없음';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => '확인 대기 중…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return '구매 실패: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => '모든 요리 종류';
 
   @override
-  String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+  String get allPacksBody => '모든 팩을 한 번에 잠금 해제합니다. 하나씩 사는 것보다 저렴해요.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '레시피 $n개',
+      zero: '레시피 준비 중',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return '$pack 팩의 레시피';
   }
 
   @override
-  String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+  String get lockedBody => '재료는 볼 수 있어요. 조리 단계와 요리 모드는 팩과 함께 열립니다.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => '잠금 해제';
 }

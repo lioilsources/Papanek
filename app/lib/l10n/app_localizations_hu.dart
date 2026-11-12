@@ -256,68 +256,68 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get tabShop => 'Cuisines';
+  String get tabShop => 'Konyhák';
 
   @override
-  String get restorePurchases => 'Restore purchases';
+  String get restorePurchases => 'Vásárlások visszaállítása';
 
   @override
-  String get restoreStarted => 'Restoring purchases…';
+  String get restoreStarted => 'Vásárlások visszaállítása…';
 
   @override
   String get storeUnavailable =>
-      'The store isn\'t available right now. Try again when you\'re online.';
+      'Az áruház most nem érhető el. Próbáld újra később, amikor online vagy.';
 
   @override
-  String get storeLoading => 'Loading prices…';
+  String get storeLoading => 'Árak betöltése…';
 
   @override
-  String get unlockedLabel => 'Unlocked';
+  String get unlockedLabel => 'Feloldva';
 
   @override
   String buy(String price) {
-    return 'Buy · $price';
+    return 'Vásárlás · $price';
   }
 
   @override
-  String get notForSale => 'Not available yet';
+  String get notForSale => 'Még nem elérhető';
 
   @override
-  String get purchasePending => 'Waiting for confirmation…';
+  String get purchasePending => 'Megerősítésre vár…';
 
   @override
   String purchaseFailed(String msg) {
-    return 'Purchase failed: $msg';
+    return 'A vásárlás nem sikerült: $msg';
   }
 
   @override
-  String get allPacksTitle => 'All cuisines';
+  String get allPacksTitle => 'Minden konyha';
 
   @override
   String get allPacksBody =>
-      'Unlocks every pack at once, cheaper than one by one.';
+      'Az összes csomagot egyszerre oldja fel, olcsóbban, mint egyenként.';
 
   @override
   String recipeCount(int n) {
     String _temp0 = intl.Intl.pluralLogic(
       n,
       locale: localeName,
-      other: '$n recipes',
-      one: '$n recipe',
-      zero: 'recipes coming soon',
+      other: '$n recept',
+      one: '$n recept',
+      zero: 'receptek készülnek',
     );
     return '$_temp0';
   }
 
   @override
   String lockedTitle(String pack) {
-    return 'Recipe from the $pack pack';
+    return 'Recept a(z) $pack csomagból';
   }
 
   @override
   String get lockedBody =>
-      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+      'A hozzávalókat már látod; a lépések és a főzési mód a csomaggal nyílnak meg.';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'Feloldás';
 }
