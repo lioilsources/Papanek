@@ -441,6 +441,102 @@ abstract class AppLocalizations {
   /// In cs, this message translates to:
   /// **'{u, select, g{g} kg{kg} ml{ml} l{l} dl{dl} cl{cl} ks{ks} lzice{lžíce} lzicka{lžička} hrnek{hrnek} strouzek{stroužek} stipka{špetka} plechovka{plechovka} svazek{svazek} hrst{hrst} platek{plátek} dkg{dkg} balicek{balíček} stonek{stonek} snitka{snítka} kostka{kostka} hlava{hlávka} oz{oz} lb{lb} other{}}'**
   String unit(String u);
+
+  /// No description provided for @tabShop.
+  ///
+  /// In cs, this message translates to:
+  /// **'Kuchyně'**
+  String get tabShop;
+
+  /// No description provided for @restorePurchases.
+  ///
+  /// In cs, this message translates to:
+  /// **'Obnovit nákupy'**
+  String get restorePurchases;
+
+  /// No description provided for @restoreStarted.
+  ///
+  /// In cs, this message translates to:
+  /// **'Obnovuji nákupy…'**
+  String get restoreStarted;
+
+  /// No description provided for @storeUnavailable.
+  ///
+  /// In cs, this message translates to:
+  /// **'Obchod teď není dostupný. Zkus to později, až budeš online.'**
+  String get storeUnavailable;
+
+  /// No description provided for @storeLoading.
+  ///
+  /// In cs, this message translates to:
+  /// **'Načítám ceny…'**
+  String get storeLoading;
+
+  /// No description provided for @unlockedLabel.
+  ///
+  /// In cs, this message translates to:
+  /// **'Odemčeno'**
+  String get unlockedLabel;
+
+  /// No description provided for @buy.
+  ///
+  /// In cs, this message translates to:
+  /// **'Koupit · {price}'**
+  String buy(String price);
+
+  /// No description provided for @notForSale.
+  ///
+  /// In cs, this message translates to:
+  /// **'Zatím nejde koupit'**
+  String get notForSale;
+
+  /// No description provided for @purchasePending.
+  ///
+  /// In cs, this message translates to:
+  /// **'Čeká na potvrzení…'**
+  String get purchasePending;
+
+  /// No description provided for @purchaseFailed.
+  ///
+  /// In cs, this message translates to:
+  /// **'Nákup se nepovedl: {msg}'**
+  String purchaseFailed(String msg);
+
+  /// No description provided for @allPacksTitle.
+  ///
+  /// In cs, this message translates to:
+  /// **'Všechny kuchyně'**
+  String get allPacksTitle;
+
+  /// No description provided for @allPacksBody.
+  ///
+  /// In cs, this message translates to:
+  /// **'Odemkne všechny balíčky najednou, výhodněji než po jednom.'**
+  String get allPacksBody;
+
+  /// No description provided for @recipeCount.
+  ///
+  /// In cs, this message translates to:
+  /// **'{n, plural, =0{recepty se připravují} one{{n} recept} few{{n} recepty} other{{n} receptů}}'**
+  String recipeCount(int n);
+
+  /// No description provided for @lockedTitle.
+  ///
+  /// In cs, this message translates to:
+  /// **'Recept z balíčku {pack}'**
+  String lockedTitle(String pack);
+
+  /// No description provided for @lockedBody.
+  ///
+  /// In cs, this message translates to:
+  /// **'Suroviny vidíš, postup a režim vaření se ukážou po odemčení balíčku.'**
+  String get lockedBody;
+
+  /// No description provided for @unlock.
+  ///
+  /// In cs, this message translates to:
+  /// **'Odemknout'**
+  String get unlock;
 }
 
 class _AppLocalizationsDelegate

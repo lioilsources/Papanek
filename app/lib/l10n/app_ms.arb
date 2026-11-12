@@ -42,5 +42,21 @@
   "noRecipes": "Resipi masih disediakan.",
   "cuisine": "{c, select, czech{Czech} italian{Itali} vietnamese{Vietnam} asian{Asia} mexmed{Mexico & Mediterranean} quick{Pantas} family{Keluarga} other{Lain-lain}}",
   "category": "{c, select, zelenina{Sayur-sayuran} ovoce{Buah-buahan} houby{Cendawan} cerstve_bylinky{Herba segar} maso{Daging} uzeniny{Daging proses} ryby{Ikan} mlecne{Produk tenusu} vejce{Telur} rostlinne_bilkoviny{Tauhu & seumpamanya} obiloviny{Bijirin} mouka{Tepung} testoviny{Pasta} pecivo{Roti & pastri} lusteniny{Kekacang} orechy_seminka{Kacang & biji} susene_plody{Buah kering} koreni{Rempah} oleje_tuky{Minyak & lemak} ocet_omacky{Sos & cuka} sladidla{Pemanis} konzervy{Makanan dalam tin} napoje{Minuman} other{Lain-lain}}",
-  "unit": "{u, select, g{g} kg{kg} ml{ml} l{l} dl{dl} cl{cl} ks{biji} lzice{sudu besar} lzicka{sudu teh} hrnek{cawan} strouzek{ulas} stipka{secubit} plechovka{tin} svazek{ikat} hrst{segenggam} platek{keping} dkg{dkg} balicek{bungkus} stonek{batang} snitka{tangkai} kostka{kiub} hlava{kepala} oz{oz} lb{lb} other{}}"
+  "unit": "{u, select, g{g} kg{kg} ml{ml} l{l} dl{dl} cl{cl} ks{biji} lzice{sudu besar} lzicka{sudu teh} hrnek{cawan} strouzek{ulas} stipka{secubit} plechovka{tin} svazek{ikat} hrst{segenggam} platek{keping} dkg{dkg} balicek{bungkus} stonek{batang} snitka{tangkai} kostka{kiub} hlava{kepala} oz{oz} lb{lb} other{}}",
+  "tabShop": "Cuisines",
+  "restorePurchases": "Restore purchases",
+  "restoreStarted": "Restoring purchases…",
+  "storeUnavailable": "The store isn't available right now. Try again when you're online.",
+  "storeLoading": "Loading prices…",
+  "unlockedLabel": "Unlocked",
+  "buy": "Buy · {price}",
+  "notForSale": "Not available yet",
+  "purchasePending": "Waiting for confirmation…",
+  "purchaseFailed": "Purchase failed: {msg}",
+  "allPacksTitle": "All cuisines",
+  "allPacksBody": "Unlocks every pack at once, cheaper than one by one.",
+  "recipeCount": "{n, plural, =0{recipes coming soon} one{{n} recipe} other{{n} recipes}}",
+  "lockedTitle": "Recipe from the {pack} pack",
+  "lockedBody": "You can see the ingredients; the steps and cooking mode unlock with the pack.",
+  "unlock": "Unlock"
 }

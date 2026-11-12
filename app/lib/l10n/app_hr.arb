@@ -42,5 +42,21 @@
   "noRecipes": "Recepti se još pripremaju.",
   "cuisine": "{c, select, czech{Češka} italian{Talijanska} vietnamese{Vijetnamska} asian{Azijska} mexmed{Meksička i mediteranska} quick{Brza} family{Obiteljska} other{Ostalo}}",
   "category": "{c, select, zelenina{Povrće} ovoce{Voće} houby{Gljive} cerstve_bylinky{Svježe začinsko bilje} maso{Meso} uzeniny{Suhomesnati proizvodi} ryby{Riba} mlecne{Mliječni proizvodi} vejce{Jaja} rostlinne_bilkoviny{Tofu i slično} obiloviny{Žitarice} mouka{Brašno} testoviny{Tjestenina} pecivo{Kruh i pekarski proizvodi} lusteniny{Mahunarke} orechy_seminka{Orašasti plodovi i sjemenke} susene_plody{Sušeno voće} koreni{Začini} oleje_tuky{Ulja i masti} ocet_omacky{Umaci i ocat} sladidla{Zaslađivači} konzervy{Konzerve} napoje{Pića} other{Ostalo}}",
-  "unit": "{u, select, g{g} kg{kg} ml{ml} l{l} dl{dl} cl{cl} ks{kom} lzice{žlica} lzicka{žličica} hrnek{šalica} strouzek{režanj} stipka{prstohvat} plechovka{konzerva} svazek{vezica} hrst{šaka} platek{kriška} dkg{dag} balicek{paketić} stonek{stabljika} snitka{grančica} kostka{kockica} hlava{glavica} oz{oz} lb{lb} other{}}"
+  "unit": "{u, select, g{g} kg{kg} ml{ml} l{l} dl{dl} cl{cl} ks{kom} lzice{žlica} lzicka{žličica} hrnek{šalica} strouzek{režanj} stipka{prstohvat} plechovka{konzerva} svazek{vezica} hrst{šaka} platek{kriška} dkg{dag} balicek{paketić} stonek{stabljika} snitka{grančica} kostka{kockica} hlava{glavica} oz{oz} lb{lb} other{}}",
+  "tabShop": "Cuisines",
+  "restorePurchases": "Restore purchases",
+  "restoreStarted": "Restoring purchases…",
+  "storeUnavailable": "The store isn't available right now. Try again when you're online.",
+  "storeLoading": "Loading prices…",
+  "unlockedLabel": "Unlocked",
+  "buy": "Buy · {price}",
+  "notForSale": "Not available yet",
+  "purchasePending": "Waiting for confirmation…",
+  "purchaseFailed": "Purchase failed: {msg}",
+  "allPacksTitle": "All cuisines",
+  "allPacksBody": "Unlocks every pack at once, cheaper than one by one.",
+  "recipeCount": "{n, plural, =0{recipes coming soon} one{{n} recipe} other{{n} recipes}}",
+  "lockedTitle": "Recipe from the {pack} pack",
+  "lockedBody": "You can see the ingredients; the steps and cooking mode unlock with the pack.",
+  "unlock": "Unlock"
 }

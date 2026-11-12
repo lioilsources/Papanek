@@ -39,8 +39,17 @@ class RecipeText {
 }
 
 class Recipe {
-  Recipe(this.id, this.slug, this.pack, this.cuisine, this.difficulty, this.prepMin, this.cookMin,
-      this.servings, this.image);
+  Recipe(
+    this.id,
+    this.slug,
+    this.pack,
+    this.cuisine,
+    this.difficulty,
+    this.prepMin,
+    this.cookMin,
+    this.servings,
+    this.image,
+  );
   final int id, difficulty, prepMin, cookMin, servings;
   final String slug, pack, cuisine;
   final String? image;
@@ -54,6 +63,18 @@ class Recipe {
   Iterable<RecipeLine> get required => lines.where((l) => !l.optional && !l.ingredient.staple);
 }
 
+/// Balíček receptů (§5). `free` nemá produkt a je odemčený vždy.
+class Pack {
+  Pack(this.id, this.cs, this.en, this.productIos, this.productAndroid, this.sort);
+  final String id, cs, en;
+  final String? productIos, productAndroid;
+  final int sort;
+  bool get free => id == freePack;
+  String name(String lang) => lang == 'cs' ? cs : en;
+}
+
+const freePack = 'free';
+
 class Unit {
   Unit(this.id, this.name);
   final String id, name;
@@ -66,11 +87,13 @@ class Alias {
 }
 
 class Content {
-  Content._(this.ingredients, this.recipes, this.units, this.aliases);
+  Content._(this.ingredients, this.recipes, this.units, this.aliases, this.packs);
 
   @visibleForTesting
-  Content.test(this.ingredients, this.recipes, [this.aliases = const []]) : units = {};
+  Content.test(this.ingredients, this.recipes, [this.aliases = const [], this.packs = const []]) : units = {};
   final Map<int, Ingredient> ingredients;
+  final List<Pack> packs; // podle sort
+  int recipeCount(String pack) => recipes.where((r) => r.pack == pack).length;
   final List<Recipe> recipes;
   final Map<String, Unit> units;
   final List<Alias> aliases;
@@ -101,7 +124,7 @@ class Content {
         );
       }
       final units = {
-        for (final r in await db.query('units')) r['id'] as String: Unit(r['id'] as String, r['name'] as String)
+        for (final r in await db.query('units')) r['id'] as String: Unit(r['id'] as String, r['name'] as String),
       };
       final recipes = <int, Recipe>{};
       for (final r in await db.query('recipes', orderBy: 'id')) {
@@ -122,13 +145,15 @@ class Content {
         final ing = ings[r['ingredient_id'] as int];
         if (rec == null || ing == null) continue;
         final note = r['note'] as String?;
-        rec.lines.add(RecipeLine(
-          ing,
-          (r['qty'] as num?)?.toDouble(),
-          r['unit'] as String?,
-          (r['optional'] as int) == 1,
-          note == null ? {} : (jsonDecode(note) as Map).cast<String, String>(),
-        ));
+        rec.lines.add(
+          RecipeLine(
+            ing,
+            (r['qty'] as num?)?.toDouble(),
+            r['unit'] as String?,
+            (r['optional'] as int) == 1,
+            note == null ? {} : (jsonDecode(note) as Map).cast<String, String>(),
+          ),
+        );
       }
       for (final r in await db.query('recipe_tags')) {
         recipes[r['recipe_id'] as int]?.tags.add(r['tag'] as String);
@@ -137,14 +162,29 @@ class Content {
         final steps = (jsonDecode(r['steps'] as String) as List)
             .map((s) => Step(s['text'] as String, (s['timer_sec'] as num?)?.toInt() ?? 0))
             .toList();
-        recipes[r['recipe_id'] as int]?.text[r['lang'] as String] =
-            RecipeText(r['title'] as String, r['summary'] as String, steps, r['tips'] as String);
+        recipes[r['recipe_id'] as int]?.text[r['lang'] as String] = RecipeText(
+          r['title'] as String,
+          r['summary'] as String,
+          steps,
+          r['tips'] as String,
+        );
       }
       final aliases = [
         for (final r in await db.query('ingredient_aliases'))
-          Alias(r['ingredient_id'] as int, r['alias'] as String, r['alias_ascii'] as String, r['lang'] as String)
+          Alias(r['ingredient_id'] as int, r['alias'] as String, r['alias_ascii'] as String, r['lang'] as String),
       ];
-      return Content._(ings, recipes.values.toList(), units, aliases);
+      final packs = [
+        for (final r in await db.query('packs', orderBy: 'sort'))
+          Pack(
+            r['id'] as String,
+            r['name_cs'] as String,
+            r['name_en'] as String,
+            r['product_id_ios'] as String?,
+            r['product_id_android'] as String?,
+            r['sort'] as int,
+          ),
+      ];
+      return Content._(ings, recipes.values.toList(), units, aliases, packs);
     } finally {
       await db.close();
     }

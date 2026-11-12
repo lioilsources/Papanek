@@ -42,5 +42,21 @@
   "noRecipes": "레시피를 준비하고 있어요.",
   "cuisine": "{c, select, czech{체코 요리} italian{이탈리아 요리} vietnamese{베트남 요리} asian{아시아 요리} mexmed{멕시코·지중해 요리} quick{간편 요리} family{가족 요리} other{기타}}",
   "category": "{c, select, zelenina{채소} ovoce{과일} houby{버섯} cerstve_bylinky{생허브} maso{고기} uzeniny{육가공품} ryby{생선} mlecne{유제품} vejce{달걀} rostlinne_bilkoviny{두부 등} obiloviny{곡물} mouka{밀가루} testoviny{파스타} pecivo{빵·베이커리} lusteniny{콩류} orechy_seminka{견과·씨앗} susene_plody{말린 과일} koreni{향신료} oleje_tuky{기름·지방} ocet_omacky{소스·식초} sladidla{감미료} konzervy{통조림} napoje{음료} other{기타}}",
-  "unit": "{u, select, g{g} kg{kg} ml{ml} l{l} dl{dl} cl{cl} ks{개} lzice{큰술} lzicka{작은술} hrnek{컵} strouzek{쪽} stipka{꼬집} plechovka{캔} svazek{단} hrst{줌} platek{장} dkg{dkg} balicek{팩} stonek{줄기} snitka{가지} kostka{큐브} hlava{통} oz{oz} lb{lb} other{}}"
+  "unit": "{u, select, g{g} kg{kg} ml{ml} l{l} dl{dl} cl{cl} ks{개} lzice{큰술} lzicka{작은술} hrnek{컵} strouzek{쪽} stipka{꼬집} plechovka{캔} svazek{단} hrst{줌} platek{장} dkg{dkg} balicek{팩} stonek{줄기} snitka{가지} kostka{큐브} hlava{통} oz{oz} lb{lb} other{}}",
+  "tabShop": "Cuisines",
+  "restorePurchases": "Restore purchases",
+  "restoreStarted": "Restoring purchases…",
+  "storeUnavailable": "The store isn't available right now. Try again when you're online.",
+  "storeLoading": "Loading prices…",
+  "unlockedLabel": "Unlocked",
+  "buy": "Buy · {price}",
+  "notForSale": "Not available yet",
+  "purchasePending": "Waiting for confirmation…",
+  "purchaseFailed": "Purchase failed: {msg}",
+  "allPacksTitle": "All cuisines",
+  "allPacksBody": "Unlocks every pack at once, cheaper than one by one.",
+  "recipeCount": "{n, plural, =0{recipes coming soon} one{{n} recipe} other{{n} recipes}}",
+  "lockedTitle": "Recipe from the {pack} pack",
+  "lockedBody": "You can see the ingredients; the steps and cooking mode unlock with the pack.",
+  "unlock": "Unlock"
 }

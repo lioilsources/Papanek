@@ -257,4 +257,71 @@ class AppLocalizationsCs extends AppLocalizations {
     });
     return '$_temp0';
   }
+
+  @override
+  String get tabShop => 'Kuchyně';
+
+  @override
+  String get restorePurchases => 'Obnovit nákupy';
+
+  @override
+  String get restoreStarted => 'Obnovuji nákupy…';
+
+  @override
+  String get storeUnavailable =>
+      'Obchod teď není dostupný. Zkus to později, až budeš online.';
+
+  @override
+  String get storeLoading => 'Načítám ceny…';
+
+  @override
+  String get unlockedLabel => 'Odemčeno';
+
+  @override
+  String buy(String price) {
+    return 'Koupit · $price';
+  }
+
+  @override
+  String get notForSale => 'Zatím nejde koupit';
+
+  @override
+  String get purchasePending => 'Čeká na potvrzení…';
+
+  @override
+  String purchaseFailed(String msg) {
+    return 'Nákup se nepovedl: $msg';
+  }
+
+  @override
+  String get allPacksTitle => 'Všechny kuchyně';
+
+  @override
+  String get allPacksBody =>
+      'Odemkne všechny balíčky najednou, výhodněji než po jednom.';
+
+  @override
+  String recipeCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n receptů',
+      few: '$n recepty',
+      one: '$n recept',
+      zero: 'recepty se připravují',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lockedTitle(String pack) {
+    return 'Recept z balíčku $pack';
+  }
+
+  @override
+  String get lockedBody =>
+      'Suroviny vidíš, postup a režim vaření se ukážou po odemčení balíčku.';
+
+  @override
+  String get unlock => 'Odemknout';
 }

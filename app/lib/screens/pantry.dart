@@ -36,47 +36,52 @@ class _PantryScreenState extends State<PantryScreen> {
     final hits = s.content.suggest(query.text, s.lang).where((i) => !s.pantry.contains(i.id)).toList();
     return Scaffold(
       appBar: AppBar(title: Text(l.tabPantry)),
-      body: Column(children: [
-        Padding(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
-          child: TextField(
-            controller: query,
-            focusNode: focus,
-            autocorrect: false,
-            textInputAction: TextInputAction.done,
-            decoration: InputDecoration(
-              prefixIcon: const Icon(Icons.search),
-              hintText: l.searchIngredient,
-              border: const OutlineInputBorder(),
-              suffixIcon: query.text.isEmpty
-                  ? null
-                  : IconButton(icon: const Icon(Icons.clear), onPressed: () => setState(query.clear)),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
+            child: TextField(
+              controller: query,
+              focusNode: focus,
+              autocorrect: false,
+              textInputAction: TextInputAction.done,
+              decoration: InputDecoration(
+                prefixIcon: const Icon(Icons.search),
+                hintText: l.searchIngredient,
+                border: const OutlineInputBorder(),
+                suffixIcon: query.text.isEmpty
+                    ? null
+                    : IconButton(icon: const Icon(Icons.clear), onPressed: () => setState(query.clear)),
+              ),
+              onChanged: (_) => setState(() {}),
+              onSubmitted: (_) {
+                if (hits.isNotEmpty) add(s, hits.first);
+              },
             ),
-            onChanged: (_) => setState(() {}),
-            onSubmitted: (_) {
-              if (hits.isNotEmpty) add(s, hits.first);
-            },
           ),
-        ),
-        Expanded(
-          child: query.text.isNotEmpty
-              ? ListView(children: [
-                  for (final i in hits)
-                    ListTile(
-                      leading: const Icon(Icons.add_circle_outline),
-                      title: Text(i.name(s.lang)),
-                      subtitle: Text(l.category(i.category)),
-                      onTap: () => add(s, i),
+          Expanded(
+            child: query.text.isNotEmpty
+                ? ListView(
+                    children: [
+                      for (final i in hits)
+                        ListTile(
+                          leading: const Icon(Icons.add_circle_outline),
+                          title: Text(i.name(s.lang)),
+                          subtitle: Text(l.category(i.category)),
+                          onTap: () => add(s, i),
+                        ),
+                    ],
+                  )
+                : items.isEmpty
+                ? Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(32),
+                      child: Text('${l.pantryEmpty}\n\n${l.pantryStaplesNote}', textAlign: TextAlign.center),
                     ),
-                ])
-              : items.isEmpty
-                  ? Center(
-                      child: Padding(
-                        padding: const EdgeInsets.all(32),
-                        child: Text('${l.pantryEmpty}\n\n${l.pantryStaplesNote}', textAlign: TextAlign.center),
-                      ),
-                    )
-                  : ListView(padding: const EdgeInsets.only(bottom: 24), children: [
+                  )
+                : ListView(
+                    padding: const EdgeInsets.only(bottom: 24),
+                    children: [
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Text(l.pantryStaplesNote, style: Theme.of(context).textTheme.bodySmall),
@@ -88,15 +93,21 @@ class _PantryScreenState extends State<PantryScreen> {
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: Wrap(spacing: 8, runSpacing: 8, children: [
-                            for (final i in byCat[c]!..sort((a, b) => a.name(s.lang).compareTo(b.name(s.lang))))
-                              InputChip(label: Text(i.name(s.lang)), onDeleted: () => s.removeFromPantry(i.id)),
-                          ]),
+                          child: Wrap(
+                            spacing: 8,
+                            runSpacing: 8,
+                            children: [
+                              for (final i in byCat[c]!..sort((a, b) => a.name(s.lang).compareTo(b.name(s.lang))))
+                                InputChip(label: Text(i.name(s.lang)), onDeleted: () => s.removeFromPantry(i.id)),
+                            ],
+                          ),
                         ),
                       ],
-                    ]),
-        ),
-      ]),
+                    ],
+                  ),
+          ),
+        ],
+      ),
     );
   }
 
