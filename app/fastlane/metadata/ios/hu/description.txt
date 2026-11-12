@@ -1,0 +1,8 @@
+A Papánek offline szakácskönyv kezdőknek. Tudja, mi van otthon, és receptet választ.
+
+• Add hozzá a hozzávalókat az éléskamrához; a só, a bors, az olaj és más alapok eleve megvannak
+• Nézd meg, mit főzhetsz azonnal, minél hiányzik egy-két hozzávaló, és mit kell megvenni
+• Főzési mód lépésről lépésre, időzítőkkel
+• A hiányzó hozzávalók egy koppintással a bevásárlólistára kerülnek, a megvett dolgok pedig az éléskamrába
+
+A receptek egyelőre csehül és angolul érhetők el; az alkalmazás felülete 45 nyelven elérhető.

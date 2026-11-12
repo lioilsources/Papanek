@@ -1,0 +1,8 @@
+Papánek je kuharica brez povezave za začetnike. Ve, kaj imaš doma, in izbere recept.
+
+• Dodaj sestavine v shrambo; sol, poper, olje in druge osnove so privzeto na voljo
+• Poglej, kaj lahko skuhaš takoj, kje manjkata ena ali dve sestavini in kaj je treba kupiti
+• Način kuhanja korak za korakom z merilniki časa
+• Manjkajoče sestavine pridejo na nakupovalni seznam z enim dotikom, kupljene pa se preselijo v shrambo
+
+Recepti so zaenkrat v češčini in angleščini; vmesnik aplikacije je na voljo v 45 jezikih.

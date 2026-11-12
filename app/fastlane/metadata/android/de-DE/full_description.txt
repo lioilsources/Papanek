@@ -1,0 +1,8 @@
+Papánek ist ein Offline-Kochbuch für Anfänger. Es weiß, was du zu Hause hast, und wählt ein Rezept aus.
+
+• Füge Zutaten zu deinem Vorrat hinzu; Salz, Pfeffer, Öl und andere Grundzutaten werden vorausgesetzt
+• Sieh, was du sofort kochen kannst, wo ein bis zwei Zutaten fehlen und was du einkaufen musst
+• Kochmodus Schritt für Schritt mit Timern
+• Fehlende Zutaten landen mit einem Tipp auf der Einkaufsliste, Eingekauftes wandert in den Vorrat
+
+Die Rezepte sind derzeit auf Tschechisch und Englisch; die App-Oberfläche gibt es in 45 Sprachen.

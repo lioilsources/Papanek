@@ -1,0 +1,8 @@
+Papánek est un livre de recettes hors ligne pour débutants. Il sait ce que vous avez chez vous et choisit une recette.
+
+• Ajoutez des ingrédients au garde-manger ; le sel, le poivre, l'huile et les autres bases sont supposés présents
+• Voyez ce que vous pouvez cuisiner tout de suite, ce pour quoi il manque un ou deux ingrédients et ce qu'il faut acheter
+• Mode cuisine pas à pas avec minuteurs
+• Les ingrédients manquants passent sur la liste de courses d'une pression, et les achats rejoignent le garde-manger
+
+Les recettes sont pour l'instant en tchèque et en anglais ; l'interface de l'app est disponible en 45 langues.

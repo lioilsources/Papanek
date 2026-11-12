@@ -1,0 +1,8 @@
+Papánek je offline kuharica za početnike. Zna što imaš kod kuće i bira recept.
+
+• Dodaj sastojke u smočnicu; sol, papar, ulje i druge osnove podrazumijevaju se
+• Vidi što možeš skuhati odmah, kod čega nedostaju jedan ili dva sastojka i što treba kupiti
+• Način kuhanja korak po korak s mjeračima vremena
+• Sastojci koji nedostaju jednim dodirom idu na popis za kupnju, a kupljeno se seli u smočnicu
+
+Recepti su zasad na češkom i engleskom; sučelje aplikacije dostupno je na 45 jezika.

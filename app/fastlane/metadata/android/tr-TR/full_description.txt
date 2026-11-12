@@ -1,0 +1,8 @@
+Papánek, yeni başlayanlar için çevrimdışı bir yemek kitabıdır. Evde ne olduğunu bilir ve tarif seçer.
+
+• Malzemeleri kilere ekle; tuz, karabiber, yağ ve diğer temel malzemeler var sayılır
+• Şimdi neler pişirebileceğini, hangi tarifte bir iki malzeme eksik olduğunu ve neyin alınması gerektiğini gör
+• Zamanlayıcılı, adım adım pişirme modu
+• Eksik malzemeler tek dokunuşla alışveriş listesine gider, alınanlar kilere geçer
+
+Tarifler şimdilik Çekçe ve İngilizce; uygulama arayüzü 45 dilde kullanılabilir.

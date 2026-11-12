@@ -1,0 +1,8 @@
+Papánek je offline kuchařka pro začátečníky. Ví, co máš doma, a vybere recept.
+
+• Přidej suroviny do spíže; sůl, pepř, olej a další základy se počítají automaticky
+• Uvidíš, co uvaříš hned, co chybí jedna nebo dvě věci a co je třeba nakoupit
+• Vaření krok za krokem s časovači
+• Chybějící suroviny přidáš na nákupní seznam jedním klepnutím a nakoupené se přesunou do spíže
+
+Recepty jsou zatím v češtině a angličtině; rozhraní aplikace je ve 45 jazycích.

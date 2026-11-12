@@ -1,0 +1,8 @@
+Papánek és un llibre de receptes offline per a principiants. Sap què tens a casa i tria una recepta.
+
+• Afegeix ingredients al rebost; es dona per fet que tens sal, pebre, oli i altres bàsics
+• Mira què pots cuinar ara, què et falta una o dues coses i què cal comprar
+• Mode de cuina pas a pas amb temporitzadors
+• Els ingredients que falten van a la llista de la compra amb un toc, i el que compres passa al rebost
+
+De moment les receptes són en txec i en anglès; la interfície de l'app està disponible en 45 idiomes.

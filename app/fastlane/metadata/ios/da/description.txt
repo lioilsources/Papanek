@@ -1,0 +1,8 @@
+Papánek er en offline kogebog til begyndere. Den ved, hvad du har hjemme, og vælger en opskrift.
+
+• Tilføj ingredienser til spisekammeret; salt, peber, olie og andre basisvarer regnes med
+• Se, hvad du kan lave nu, hvad der mangler en eller to ting til, og hvad du skal købe
+• Madlavningstilstand trin for trin med timere
+• Manglende ingredienser kommer på indkøbslisten med ét tryk, og købte varer flyttes til spisekammeret
+
+Opskrifterne er indtil videre på tjekkisk og engelsk; appens brugerflade findes på 45 sprog.
