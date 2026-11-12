@@ -255,6 +255,72 @@ class AppLocalizationsPt extends AppLocalizations {
     });
     return '$_temp0';
   }
+
+  @override
+  String get tabShop => 'Cuisines';
+
+  @override
+  String get restorePurchases => 'Restore purchases';
+
+  @override
+  String get restoreStarted => 'Restoring purchases…';
+
+  @override
+  String get storeUnavailable =>
+      'The store isn\'t available right now. Try again when you\'re online.';
+
+  @override
+  String get storeLoading => 'Loading prices…';
+
+  @override
+  String get unlockedLabel => 'Unlocked';
+
+  @override
+  String buy(String price) {
+    return 'Buy · $price';
+  }
+
+  @override
+  String get notForSale => 'Not available yet';
+
+  @override
+  String get purchasePending => 'Waiting for confirmation…';
+
+  @override
+  String purchaseFailed(String msg) {
+    return 'Purchase failed: $msg';
+  }
+
+  @override
+  String get allPacksTitle => 'All cuisines';
+
+  @override
+  String get allPacksBody =>
+      'Unlocks every pack at once, cheaper than one by one.';
+
+  @override
+  String recipeCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n recipes',
+      one: '$n recipe',
+      zero: 'recipes coming soon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lockedTitle(String pack) {
+    return 'Recipe from the $pack pack';
+  }
+
+  @override
+  String get lockedBody =>
+      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+
+  @override
+  String get unlock => 'Unlock';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -508,6 +574,72 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
     });
     return '$_temp0';
   }
+
+  @override
+  String get tabShop => 'Cuisines';
+
+  @override
+  String get restorePurchases => 'Restore purchases';
+
+  @override
+  String get restoreStarted => 'Restoring purchases…';
+
+  @override
+  String get storeUnavailable =>
+      'The store isn\'t available right now. Try again when you\'re online.';
+
+  @override
+  String get storeLoading => 'Loading prices…';
+
+  @override
+  String get unlockedLabel => 'Unlocked';
+
+  @override
+  String buy(String price) {
+    return 'Buy · $price';
+  }
+
+  @override
+  String get notForSale => 'Not available yet';
+
+  @override
+  String get purchasePending => 'Waiting for confirmation…';
+
+  @override
+  String purchaseFailed(String msg) {
+    return 'Purchase failed: $msg';
+  }
+
+  @override
+  String get allPacksTitle => 'All cuisines';
+
+  @override
+  String get allPacksBody =>
+      'Unlocks every pack at once, cheaper than one by one.';
+
+  @override
+  String recipeCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n recipes',
+      one: '$n recipe',
+      zero: 'recipes coming soon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lockedTitle(String pack) {
+    return 'Recipe from the $pack pack';
+  }
+
+  @override
+  String get lockedBody =>
+      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+
+  @override
+  String get unlock => 'Unlock';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -761,4 +893,70 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
     });
     return '$_temp0';
   }
+
+  @override
+  String get tabShop => 'Cuisines';
+
+  @override
+  String get restorePurchases => 'Restore purchases';
+
+  @override
+  String get restoreStarted => 'Restoring purchases…';
+
+  @override
+  String get storeUnavailable =>
+      'The store isn\'t available right now. Try again when you\'re online.';
+
+  @override
+  String get storeLoading => 'Loading prices…';
+
+  @override
+  String get unlockedLabel => 'Unlocked';
+
+  @override
+  String buy(String price) {
+    return 'Buy · $price';
+  }
+
+  @override
+  String get notForSale => 'Not available yet';
+
+  @override
+  String get purchasePending => 'Waiting for confirmation…';
+
+  @override
+  String purchaseFailed(String msg) {
+    return 'Purchase failed: $msg';
+  }
+
+  @override
+  String get allPacksTitle => 'All cuisines';
+
+  @override
+  String get allPacksBody =>
+      'Unlocks every pack at once, cheaper than one by one.';
+
+  @override
+  String recipeCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n recipes',
+      one: '$n recipe',
+      zero: 'recipes coming soon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lockedTitle(String pack) {
+    return 'Recipe from the $pack pack';
+  }
+
+  @override
+  String get lockedBody =>
+      'You can see the ingredients; the steps and cooking mode unlock with the pack.';
+
+  @override
+  String get unlock => 'Unlock';
 }

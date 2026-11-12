@@ -33,37 +33,43 @@ class CookList extends StatelessWidget {
       ),
       body: all.isEmpty
           ? Center(child: Text(l.noRecipes))
-          : CustomScrollView(slivers: [
-              if (s.pantry.isEmpty)
-                SliverToBoxAdapter(
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
-                    child: Card(
-                      color: Theme.of(context).colorScheme.secondaryContainer,
-                      child: Padding(padding: const EdgeInsets.all(16), child: Text(l.emptyPantryHint)),
-                    ),
-                  ),
-                ),
-              for (final (title, list) in groups)
-                if (list.isNotEmpty) ...[
+          : CustomScrollView(
+              slivers: [
+                if (s.pantry.isEmpty)
                   SliverToBoxAdapter(
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 20, 16, 8),
-                      child: Text('$title · ${list.length}', style: Theme.of(context).textTheme.titleLarge),
+                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                      child: Card(
+                        color: Theme.of(context).colorScheme.secondaryContainer,
+                        child: Padding(padding: const EdgeInsets.all(16), child: Text(l.emptyPantryHint)),
+                      ),
                     ),
                   ),
-                  SliverPadding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    sliver: SliverGrid.builder(
-                      gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                          maxCrossAxisExtent: 240, mainAxisSpacing: 12, crossAxisSpacing: 12, childAspectRatio: 0.78),
-                      itemCount: list.length,
-                      itemBuilder: (c, i) => RecipeCard(list[i]),
+                for (final (title, list) in groups)
+                  if (list.isNotEmpty) ...[
+                    SliverToBoxAdapter(
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 20, 16, 8),
+                        child: Text('$title · ${list.length}', style: Theme.of(context).textTheme.titleLarge),
+                      ),
                     ),
-                  ),
-                ],
-              const SliverToBoxAdapter(child: SizedBox(height: 24)),
-            ]),
+                    SliverPadding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      sliver: SliverGrid.builder(
+                        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                          maxCrossAxisExtent: 240,
+                          mainAxisSpacing: 12,
+                          crossAxisSpacing: 12,
+                          childAspectRatio: 0.78,
+                        ),
+                        itemCount: list.length,
+                        itemBuilder: (c, i) => RecipeCard(list[i]),
+                      ),
+                    ),
+                  ],
+                const SliverToBoxAdapter(child: SizedBox(height: 24)),
+              ],
+            ),
     );
   }
 }
@@ -82,19 +88,45 @@ class RecipeCard extends StatelessWidget {
     return Card(
       child: InkWell(
         onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => RecipeScreen(r))),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Expanded(child: RecipeImage(r)),
-          Padding(
-            padding: const EdgeInsets.all(10),
-            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(r.t(s.lang).title, maxLines: 2, overflow: TextOverflow.ellipsis, style: t.titleSmall),
-              const SizedBox(height: 4),
-              Text('${l.minutes(r.totalMin)} · ${l.missingCount(match.missing.length)}',
-                  style: t.bodySmall?.copyWith(
-                      color: ready ? Colors.green.shade700 : Theme.of(context).colorScheme.onSurfaceVariant)),
-            ]),
-          ),
-        ]),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  RecipeImage(r),
+                  if (!s.unlocked(r))
+                    Positioned(
+                      top: 8,
+                      right: 8,
+                      child: CircleAvatar(
+                        radius: 16,
+                        backgroundColor: Colors.black54,
+                        child: const Icon(Icons.lock, size: 18, color: Colors.white),
+                      ),
+                    ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(r.t(s.lang).title, maxLines: 2, overflow: TextOverflow.ellipsis, style: t.titleSmall),
+                  const SizedBox(height: 4),
+                  Text(
+                    '${l.minutes(r.totalMin)} · ${l.missingCount(match.missing.length)}',
+                    style: t.bodySmall?.copyWith(
+                      color: ready ? Colors.green.shade700 : Theme.of(context).colorScheme.onSurfaceVariant,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

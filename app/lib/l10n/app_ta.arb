@@ -42,5 +42,21 @@
   "noRecipes": "சமையல் குறிப்புகள் இன்னும் தயாராகின்றன.",
   "cuisine": "{c, select, czech{செக்} italian{இத்தாலியன்} vietnamese{வியட்நாமிய} asian{ஆசிய} mexmed{மெக்சிகன் மற்றும் மத்தியதரைக்கடல்} quick{விரைவு} family{குடும்பம்} other{மற்றவை}}",
   "category": "{c, select, zelenina{காய்கறிகள்} ovoce{பழங்கள்} houby{காளான்} cerstve_bylinky{புதிய மூலிகைகள்} maso{இறைச்சி} uzeniny{பதப்படுத்திய இறைச்சி} ryby{மீன்} mlecne{பால் பொருட்கள்} vejce{முட்டை} rostlinne_bilkoviny{டோஃபு போன்றவை} obiloviny{தானியங்கள்} mouka{மாவு} testoviny{பாஸ்தா} pecivo{ரொட்டி, பேக்கரி} lusteniny{பருப்பு வகைகள்} orechy_seminka{கொட்டைகள், விதைகள்} susene_plody{உலர் பழங்கள்} koreni{மசாலா} oleje_tuky{எண்ணெய், கொழுப்பு} ocet_omacky{சாஸ், வினிகர்} sladidla{இனிப்பூட்டிகள்} konzervy{டின் உணவுகள்} napoje{பானங்கள்} other{மற்றவை}}",
-  "unit": "{u, select, g{கி} kg{கிகி} ml{மிலி} l{லி} dl{டெசிலி} cl{சென்டிலி} ks{எண்} lzice{மேசைக்கரண்டி} lzicka{தேக்கரண்டி} hrnek{கப்} strouzek{பல்} stipka{சிட்டிகை} plechovka{டின்} svazek{கட்டு} hrst{கைப்பிடி} platek{துண்டு} dkg{dkg} balicek{பாக்கெட்} stonek{தண்டு} snitka{கொத்து} kostka{கனசதுரம்} hlava{தலை} oz{அவுன்ஸ்} lb{பவுண்டு} other{}}"
+  "unit": "{u, select, g{கி} kg{கிகி} ml{மிலி} l{லி} dl{டெசிலி} cl{சென்டிலி} ks{எண்} lzice{மேசைக்கரண்டி} lzicka{தேக்கரண்டி} hrnek{கப்} strouzek{பல்} stipka{சிட்டிகை} plechovka{டின்} svazek{கட்டு} hrst{கைப்பிடி} platek{துண்டு} dkg{dkg} balicek{பாக்கெட்} stonek{தண்டு} snitka{கொத்து} kostka{கனசதுரம்} hlava{தலை} oz{அவுன்ஸ்} lb{பவுண்டு} other{}}",
+  "tabShop": "Cuisines",
+  "restorePurchases": "Restore purchases",
+  "restoreStarted": "Restoring purchases…",
+  "storeUnavailable": "The store isn't available right now. Try again when you're online.",
+  "storeLoading": "Loading prices…",
+  "unlockedLabel": "Unlocked",
+  "buy": "Buy · {price}",
+  "notForSale": "Not available yet",
+  "purchasePending": "Waiting for confirmation…",
+  "purchaseFailed": "Purchase failed: {msg}",
+  "allPacksTitle": "All cuisines",
+  "allPacksBody": "Unlocks every pack at once, cheaper than one by one.",
+  "recipeCount": "{n, plural, =0{recipes coming soon} one{{n} recipe} other{{n} recipes}}",
+  "lockedTitle": "Recipe from the {pack} pack",
+  "lockedBody": "You can see the ingredients; the steps and cooking mode unlock with the pack.",
+  "unlock": "Unlock"
 }

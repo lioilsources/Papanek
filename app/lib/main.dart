@@ -7,6 +7,7 @@ import 'data/app_state.dart';
 import 'l10n/app_localizations.dart';
 import 'screens/cook_list.dart';
 import 'screens/pantry.dart';
+import 'screens/shop.dart';
 import 'screens/shopping.dart';
 
 Future<void> main() async {
@@ -42,9 +43,9 @@ ThemeData theme(Brightness b) {
     colorScheme: scheme,
     useMaterial3: true,
     textTheme: Typography.material2021(platform: TargetPlatform.iOS).black.apply(
-          bodyColor: b == Brightness.dark ? Colors.white : null,
-          displayColor: b == Brightness.dark ? Colors.white : null,
-        ),
+      bodyColor: b == Brightness.dark ? Colors.white : null,
+      displayColor: b == Brightness.dark ? Colors.white : null,
+    ),
     cardTheme: const CardThemeData(clipBehavior: Clip.antiAlias, margin: EdgeInsets.zero),
   );
 }
@@ -95,7 +96,7 @@ class _HomeState extends State<Home> {
     final s = Scope.of(context);
     final open = s.shopping.length;
     return Scaffold(
-      body: IndexedStack(index: tab, children: const [CookList(), PantryScreen(), ShoppingScreen()]),
+      body: IndexedStack(index: tab, children: const [CookList(), PantryScreen(), ShoppingScreen(), ShopScreen()]),
       bottomNavigationBar: NavigationBar(
         selectedIndex: tab,
         onDestinationSelected: (i) => setState(() => tab = i),
@@ -106,6 +107,7 @@ class _HomeState extends State<Home> {
             icon: Badge(isLabelVisible: open > 0, label: Text('$open'), child: const Icon(Icons.shopping_basket)),
             label: l.tabShopping,
           ),
+          NavigationDestination(icon: const Icon(Icons.storefront), label: l.tabShop),
         ],
       ),
     );

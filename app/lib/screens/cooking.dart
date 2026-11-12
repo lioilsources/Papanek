@@ -43,8 +43,7 @@ class _CookingScreenState extends State<CookingScreen> {
         HapticFeedback.heavyImpact();
         SystemSound.play(SystemSoundType.alert);
         if (mounted) {
-          ScaffoldMessenger.of(context)
-              .showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).timerDone)));
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).timerDone)));
         }
       }
     });
@@ -85,61 +84,69 @@ class _CookingScreenState extends State<CookingScreen> {
     return Scaffold(
       appBar: AppBar(title: Text(l.stepOf(step + 1, steps.length))),
       body: SafeArea(
-        child: Column(children: [
-          LinearProgressIndicator(value: (step + 1) / steps.length),
-          Expanded(
-            child: PageView.builder(
-              controller: pages,
-              itemCount: steps.length,
-              onPageChanged: (i) => setState(() => step = i),
-              itemBuilder: (c, i) {
-                final st = steps[i];
-                final running = timerStep == i && left > 0;
-                return SingleChildScrollView(
-                  padding: const EdgeInsets.all(24),
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text(st.text, style: Theme.of(context).textTheme.headlineSmall?.copyWith(height: 1.4)),
-                    if (st.timerSec > 0) ...[
-                      const SizedBox(height: 32),
-                      Center(
-                        child: running
-                            ? Text(formatTimer(left), style: Theme.of(context).textTheme.displayLarge)
-                            : FilledButton.tonalIcon(
-                                icon: const Icon(Icons.timer),
-                                label: Text(l.startTimer(formatTimer(st.timerSec))),
-                                onPressed: () => startTimer(st.timerSec),
-                              ),
-                      ),
-                    ],
-                  ]),
-                );
-              },
-            ),
-          ),
-          if (timerStep >= 0 && timerStep != step && left > 0)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 8),
-              child: Chip(avatar: const Icon(Icons.timer, size: 18), label: Text(formatTimer(left))),
-            ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-            child: Row(children: [
-              if (step > 0)
-                OutlinedButton(
-                  onPressed: () => pages.previousPage(duration: const Duration(milliseconds: 250), curve: Curves.easeOut),
-                  child: Text(l.back),
-                ),
-              const Spacer(),
-              FilledButton(
-                style: FilledButton.styleFrom(minimumSize: const Size(140, 56)),
-                onPressed: last
-                    ? finish
-                    : () => pages.nextPage(duration: const Duration(milliseconds: 250), curve: Curves.easeOut),
-                child: Text(last ? l.done : l.next),
+        child: Column(
+          children: [
+            LinearProgressIndicator(value: (step + 1) / steps.length),
+            Expanded(
+              child: PageView.builder(
+                controller: pages,
+                itemCount: steps.length,
+                onPageChanged: (i) => setState(() => step = i),
+                itemBuilder: (c, i) {
+                  final st = steps[i];
+                  final running = timerStep == i && left > 0;
+                  return SingleChildScrollView(
+                    padding: const EdgeInsets.all(24),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(st.text, style: Theme.of(context).textTheme.headlineSmall?.copyWith(height: 1.4)),
+                        if (st.timerSec > 0) ...[
+                          const SizedBox(height: 32),
+                          Center(
+                            child: running
+                                ? Text(formatTimer(left), style: Theme.of(context).textTheme.displayLarge)
+                                : FilledButton.tonalIcon(
+                                    icon: const Icon(Icons.timer),
+                                    label: Text(l.startTimer(formatTimer(st.timerSec))),
+                                    onPressed: () => startTimer(st.timerSec),
+                                  ),
+                          ),
+                        ],
+                      ],
+                    ),
+                  );
+                },
               ),
-            ]),
-          ),
-        ]),
+            ),
+            if (timerStep >= 0 && timerStep != step && left > 0)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Chip(avatar: const Icon(Icons.timer, size: 18), label: Text(formatTimer(left))),
+              ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              child: Row(
+                children: [
+                  if (step > 0)
+                    OutlinedButton(
+                      onPressed: () =>
+                          pages.previousPage(duration: const Duration(milliseconds: 250), curve: Curves.easeOut),
+                      child: Text(l.back),
+                    ),
+                  const Spacer(),
+                  FilledButton(
+                    style: FilledButton.styleFrom(minimumSize: const Size(140, 56)),
+                    onPressed: last
+                        ? finish
+                        : () => pages.nextPage(duration: const Duration(milliseconds: 250), curve: Curves.easeOut),
+                    child: Text(last ? l.done : l.next),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

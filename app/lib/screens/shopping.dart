@@ -21,26 +21,31 @@ class ShoppingScreen extends StatelessWidget {
       appBar: AppBar(title: Text(l.tabShopping)),
       body: items.isEmpty
           ? Center(child: Text(l.shoppingEmpty))
-          : ListView(padding: const EdgeInsets.only(bottom: 96), children: [
-              for (final (i, it) in items.indexed) ...[
-                if (i == 0 || items[i - 1].category != it.category)
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-                    child: Text(l.category(it.category), style: Theme.of(context).textTheme.titleMedium),
+          : ListView(
+              padding: const EdgeInsets.only(bottom: 96),
+              children: [
+                for (final (i, it) in items.indexed) ...[
+                  if (i == 0 || items[i - 1].category != it.category)
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                      child: Text(l.category(it.category), style: Theme.of(context).textTheme.titleMedium),
+                    ),
+                  Dismissible(
+                    key: ValueKey(it.id),
+                    onDismissed: (_) => s.removeFromShopping(it.id),
+                    child: CheckboxListTile(
+                      value: s.shopping[it.id],
+                      controlAffinity: ListTileControlAffinity.leading,
+                      title: Text(
+                        it.name(s.lang),
+                        style: s.shopping[it.id]! ? const TextStyle(decoration: TextDecoration.lineThrough) : null,
+                      ),
+                      onChanged: (_) => s.toggleShopping(it.id),
+                    ),
                   ),
-                Dismissible(
-                  key: ValueKey(it.id),
-                  onDismissed: (_) => s.removeFromShopping(it.id),
-                  child: CheckboxListTile(
-                    value: s.shopping[it.id],
-                    controlAffinity: ListTileControlAffinity.leading,
-                    title: Text(it.name(s.lang),
-                        style: s.shopping[it.id]! ? const TextStyle(decoration: TextDecoration.lineThrough) : null),
-                    onChanged: (_) => s.toggleShopping(it.id),
-                  ),
-                ),
+                ],
               ],
-            ]),
+            ),
       floatingActionButton: anyChecked
           ? FloatingActionButton.extended(
               icon: const Icon(Icons.done_all),

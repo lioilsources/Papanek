@@ -42,5 +42,21 @@
   "noRecipes": "Przepisy są jeszcze w przygotowaniu.",
   "cuisine": "{c, select, czech{Czeska} italian{Włoska} vietnamese{Wietnamska} asian{Azjatycka} mexmed{Meksykańska i śródziemnomorska} quick{Szybka} family{Rodzinna} other{Inne}}",
   "category": "{c, select, zelenina{Warzywa} ovoce{Owoce} houby{Grzyby} cerstve_bylinky{Świeże zioła} maso{Mięso} uzeniny{Wędliny} ryby{Ryby} mlecne{Nabiał} vejce{Jajka} rostlinne_bilkoviny{Tofu i podobne} obiloviny{Zboża} mouka{Mąka} testoviny{Makarony} pecivo{Pieczywo} lusteniny{Rośliny strączkowe} orechy_seminka{Orzechy i nasiona} susene_plody{Suszone owoce} koreni{Przyprawy} oleje_tuky{Oleje i tłuszcze} ocet_omacky{Sosy i ocet} sladidla{Słodziki} konzervy{Konserwy} napoje{Napoje} other{Inne}}",
-  "unit": "{u, select, g{g} kg{kg} ml{ml} l{l} dl{dl} cl{cl} ks{szt.} lzice{łyżka} lzicka{łyżeczka} hrnek{szklanka} strouzek{ząbek} stipka{szczypta} plechovka{puszka} svazek{pęczek} hrst{garść} platek{plasterek} dkg{dag} balicek{opakowanie} stonek{łodyga} snitka{gałązka} kostka{kostka} hlava{główka} oz{oz} lb{lb} other{}}"
+  "unit": "{u, select, g{g} kg{kg} ml{ml} l{l} dl{dl} cl{cl} ks{szt.} lzice{łyżka} lzicka{łyżeczka} hrnek{szklanka} strouzek{ząbek} stipka{szczypta} plechovka{puszka} svazek{pęczek} hrst{garść} platek{plasterek} dkg{dag} balicek{opakowanie} stonek{łodyga} snitka{gałązka} kostka{kostka} hlava{główka} oz{oz} lb{lb} other{}}",
+  "tabShop": "Cuisines",
+  "restorePurchases": "Restore purchases",
+  "restoreStarted": "Restoring purchases…",
+  "storeUnavailable": "The store isn't available right now. Try again when you're online.",
+  "storeLoading": "Loading prices…",
+  "unlockedLabel": "Unlocked",
+  "buy": "Buy · {price}",
+  "notForSale": "Not available yet",
+  "purchasePending": "Waiting for confirmation…",
+  "purchaseFailed": "Purchase failed: {msg}",
+  "allPacksTitle": "All cuisines",
+  "allPacksBody": "Unlocks every pack at once, cheaper than one by one.",
+  "recipeCount": "{n, plural, =0{recipes coming soon} one{{n} recipe} other{{n} recipes}}",
+  "lockedTitle": "Recipe from the {pack} pack",
+  "lockedBody": "You can see the ingredients; the steps and cooking mode unlock with the pack.",
+  "unlock": "Unlock"
 }

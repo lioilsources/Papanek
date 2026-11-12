@@ -42,5 +42,21 @@
   "noRecipes": "กำลังเตรียมสูตรอาหารอยู่",
   "cuisine": "{c, select, czech{เช็ก} italian{อิตาลี} vietnamese{เวียดนาม} asian{เอเชีย} mexmed{เม็กซิกันและเมดิเตอร์เรเนียน} quick{ด่วน} family{ครอบครัว} other{อื่น ๆ}}",
   "category": "{c, select, zelenina{ผัก} ovoce{ผลไม้} houby{เห็ด} cerstve_bylinky{สมุนไพรสด} maso{เนื้อสัตว์} uzeniny{เนื้อแปรรูป} ryby{ปลา} mlecne{ผลิตภัณฑ์นม} vejce{ไข่} rostlinne_bilkoviny{เต้าหู้และอื่น ๆ} obiloviny{ธัญพืช} mouka{แป้ง} testoviny{พาสต้า} pecivo{ขนมปังและเบเกอรี่} lusteniny{ถั่วเมล็ดแห้ง} orechy_seminka{ถั่วและเมล็ดพืช} susene_plody{ผลไม้แห้ง} koreni{เครื่องเทศ} oleje_tuky{น้ำมันและไขมัน} ocet_omacky{ซอสและน้ำส้มสายชู} sladidla{สารให้ความหวาน} konzervy{อาหารกระป๋อง} napoje{เครื่องดื่ม} other{อื่น ๆ}}",
-  "unit": "{u, select, g{ก.} kg{กก.} ml{มล.} l{ล.} dl{ดล.} cl{ซล.} ks{ชิ้น} lzice{ช้อนโต๊ะ} lzicka{ช้อนชา} hrnek{ถ้วย} strouzek{กลีบ} stipka{หยิบมือ} plechovka{กระป๋อง} svazek{กำ} hrst{กำมือ} platek{แผ่น} dkg{dkg} balicek{ห่อ} stonek{ก้าน} snitka{ก้านเล็ก} kostka{ก้อน} hlava{หัว} oz{ออนซ์} lb{ปอนด์} other{}}"
+  "unit": "{u, select, g{ก.} kg{กก.} ml{มล.} l{ล.} dl{ดล.} cl{ซล.} ks{ชิ้น} lzice{ช้อนโต๊ะ} lzicka{ช้อนชา} hrnek{ถ้วย} strouzek{กลีบ} stipka{หยิบมือ} plechovka{กระป๋อง} svazek{กำ} hrst{กำมือ} platek{แผ่น} dkg{dkg} balicek{ห่อ} stonek{ก้าน} snitka{ก้านเล็ก} kostka{ก้อน} hlava{หัว} oz{ออนซ์} lb{ปอนด์} other{}}",
+  "tabShop": "Cuisines",
+  "restorePurchases": "Restore purchases",
+  "restoreStarted": "Restoring purchases…",
+  "storeUnavailable": "The store isn't available right now. Try again when you're online.",
+  "storeLoading": "Loading prices…",
+  "unlockedLabel": "Unlocked",
+  "buy": "Buy · {price}",
+  "notForSale": "Not available yet",
+  "purchasePending": "Waiting for confirmation…",
+  "purchaseFailed": "Purchase failed: {msg}",
+  "allPacksTitle": "All cuisines",
+  "allPacksBody": "Unlocks every pack at once, cheaper than one by one.",
+  "recipeCount": "{n, plural, =0{recipes coming soon} one{{n} recipe} other{{n} recipes}}",
+  "lockedTitle": "Recipe from the {pack} pack",
+  "lockedBody": "You can see the ingredients; the steps and cooking mode unlock with the pack.",
+  "unlock": "Unlock"
 }

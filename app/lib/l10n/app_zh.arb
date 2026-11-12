@@ -42,5 +42,21 @@
   "noRecipes": "菜谱还在准备中。",
   "cuisine": "{c, select, czech{捷克菜} italian{意大利菜} vietnamese{越南菜} asian{亚洲菜} mexmed{墨西哥与地中海菜} quick{快手菜} family{家常菜} other{其他}}",
   "category": "{c, select, zelenina{蔬菜} ovoce{水果} houby{蘑菇} cerstve_bylinky{新鲜香草} maso{肉类} uzeniny{肉制品} ryby{鱼类} mlecne{乳制品} vejce{蛋类} rostlinne_bilkoviny{豆腐等} obiloviny{谷物} mouka{面粉} testoviny{意面} pecivo{面包糕点} lusteniny{豆类} orechy_seminka{坚果和种子} susene_plody{果干} koreni{香料} oleje_tuky{油脂} ocet_omacky{酱料和醋} sladidla{甜味剂} konzervy{罐头} napoje{饮料} other{其他}}",
-  "unit": "{u, select, g{克} kg{千克} ml{毫升} l{升} dl{分升} cl{厘升} ks{个} lzice{汤匙} lzicka{茶匙} hrnek{杯} strouzek{瓣} stipka{撮} plechovka{罐} svazek{把} hrst{小把} platek{片} dkg{dkg} balicek{包} stonek{根} snitka{枝} kostka{块} hlava{颗} oz{盎司} lb{磅} other{}}"
+  "unit": "{u, select, g{克} kg{千克} ml{毫升} l{升} dl{分升} cl{厘升} ks{个} lzice{汤匙} lzicka{茶匙} hrnek{杯} strouzek{瓣} stipka{撮} plechovka{罐} svazek{把} hrst{小把} platek{片} dkg{dkg} balicek{包} stonek{根} snitka{枝} kostka{块} hlava{颗} oz{盎司} lb{磅} other{}}",
+  "tabShop": "Cuisines",
+  "restorePurchases": "Restore purchases",
+  "restoreStarted": "Restoring purchases…",
+  "storeUnavailable": "The store isn't available right now. Try again when you're online.",
+  "storeLoading": "Loading prices…",
+  "unlockedLabel": "Unlocked",
+  "buy": "Buy · {price}",
+  "notForSale": "Not available yet",
+  "purchasePending": "Waiting for confirmation…",
+  "purchaseFailed": "Purchase failed: {msg}",
+  "allPacksTitle": "All cuisines",
+  "allPacksBody": "Unlocks every pack at once, cheaper than one by one.",
+  "recipeCount": "{n, plural, =0{recipes coming soon} one{{n} recipe} other{{n} recipes}}",
+  "lockedTitle": "Recipe from the {pack} pack",
+  "lockedBody": "You can see the ingredients; the steps and cooking mode unlock with the pack.",
+  "unlock": "Unlock"
 }
