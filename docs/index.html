@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papánek</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --bg: #fff8f1; --fg: #2b1d12; --muted: #7a6656; --accent: #c8611a; --card: #ffffff; --line: #f0dcc8; --link: #b5541a; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1d1510; --fg: #f6ece3; --muted: #b29c8a; --accent: #f2a465; --card: #2a1f17; --line: #3d2d21; --link: #f2a465; }
+    }
+    body { background: var(--bg); color: var(--fg); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 720px; margin: 0 auto; padding: 60px 24px; line-height: 1.7; }
+    h1 { font-size: 2rem; color: var(--accent); margin-bottom: 8px; }
+    .updated, .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 40px; }
+    h2 { font-size: 1.1rem; color: var(--accent); margin: 32px 0 10px; }
+    p, li { margin-bottom: 12px; }
+    ul { padding-left: 20px; }
+    a { color: var(--link); }
+    .contact-box { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 20px 24px; margin: 16px 0; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    body { text-align: center; }
+    h1 { font-size: 3rem; margin-bottom: 12px; }
+    .icon { width: 128px; height: 128px; border-radius: 28px; margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <img class="icon" src="icon.png" alt="Papánek icon">
+  <h1>Papánek</h1>
+  <p class="subtitle">Offline cookbook for beginners · Offline kuchařka pro začátečníky</p>
+  <p>
+    Tell Papánek what you have at home and it shows what you can cook right
+    now, what is missing one thing, and what needs a trip to the shop.
+    Step-by-step recipes written for beginners, a cooking mode with timers,
+    a pantry and a shopping list. Everything works offline, with no account
+    and no ads.
+  </p>
+  <p>
+    Řekni Papánkovi, co máš doma, a ukáže ti, co z toho uvaříš hned, čemu
+    chybí jedna věc a na co musíš nakoupit. Recepty krok za krokem pro
+    začátečníky, režim vaření s časovači, spíž a nákupní seznam. Vše funguje
+    offline, bez účtu a bez reklam.
+  </p>
+  <p class="subtitle">Papánek is in development. · Papánek je ve vývoji.</p>
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="support.html">Support</a> &nbsp;·&nbsp;
+    &copy; 2026 ol1n
+  </footer>
+</body>
+</html>
