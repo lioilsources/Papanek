@@ -95,8 +95,12 @@ class _HomeState extends State<Home> {
     final l = AppLocalizations.of(context);
     final s = Scope.of(context);
     final open = s.shopping.length;
+    // Kuchyně (obchod) jen když má nějaký placený balíček recepty; v 1.0 jsou všechny zdarma.
+    final shop = s.content.packs.any((p) => !p.free && s.content.recipeCount(p.id) > 0);
+    if (!shop && tab > 2) tab = 0;
     return Scaffold(
-      body: IndexedStack(index: tab, children: const [CookList(), PantryScreen(), ShoppingScreen(), ShopScreen()]),
+      body: IndexedStack(
+          index: tab, children: [const CookList(), const PantryScreen(), const ShoppingScreen(), if (shop) const ShopScreen()]),
       bottomNavigationBar: NavigationBar(
         selectedIndex: tab,
         onDestinationSelected: (i) => setState(() => tab = i),
@@ -107,7 +111,7 @@ class _HomeState extends State<Home> {
             icon: Badge(isLabelVisible: open > 0, label: Text('$open'), child: const Icon(Icons.shopping_basket)),
             label: l.tabShopping,
           ),
-          NavigationDestination(icon: const Icon(Icons.storefront), label: l.tabShop),
+          if (shop) NavigationDestination(icon: const Icon(Icons.storefront), label: l.tabShop),
         ],
       ),
     );
