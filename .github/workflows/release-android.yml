@@ -48,6 +48,9 @@ jobs:
           fi
           NEW="${BASE}+${{ github.run_number }}"
           sed -i -E "s/^version: .*/version: ${NEW}/" pubspec.yaml
+          # The statistics report the same version (test/telemetry_test.dart keeps
+          # the constant equal to pubspec.yaml).
+          sed -i -E "s/^const kAppVersion = .*/const kAppVersion = '${BASE}';/" lib/telemetry/telemetry_dictionary.dart
           echo "Build version: ${NEW}"
 
       - name: Create keystore and key.properties
@@ -62,11 +65,11 @@ jobs:
 
       - name: Build release AAB
         working-directory: app
-        run: flutter build appbundle --release
+        run: flutter build appbundle --release --dart-define=TELEMETRY_KEY=${{ secrets.TELEMETRY_KEY }} --dart-define=TELEMETRY_HOST=${{ secrets.TELEMETRY_HOST }}
 
       - name: Build release APK
         working-directory: app
-        run: flutter build apk --release
+        run: flutter build apk --release --dart-define=TELEMETRY_KEY=${{ secrets.TELEMETRY_KEY }} --dart-define=TELEMETRY_HOST=${{ secrets.TELEMETRY_HOST }}
 
       - name: Verify APK signing certificate
         run: |

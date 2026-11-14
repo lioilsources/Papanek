@@ -320,4 +320,14 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get unlock => 'Lås upp';
+
+  @override
+  String get settings => 'Inställningar';
+
+  @override
+  String get statsToggle => 'Anonym statistik';
+
+  @override
+  String get statsToggleBody =>
+      'Hjälper till att förbättra appen. Inga identifierare, inget av det du skriver.';
 }

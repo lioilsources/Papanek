@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../l10n/app_localizations.dart';
 import '../main.dart';
@@ -52,6 +53,8 @@ class ShoppingScreen extends StatelessWidget {
               label: Text(l.checkout),
               onPressed: () async {
                 final n = await s.checkoutShopping();
+                Telemetry.feature('checkout');
+                Telemetry.track('shopping_checkout', {'items': n.clamp(0, 10000)});
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l.checkedOut(n))));
                 }

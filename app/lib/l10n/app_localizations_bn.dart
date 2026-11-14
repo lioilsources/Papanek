@@ -320,4 +320,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get unlock => 'আনলক করুন';
+
+  @override
+  String get settings => 'সেটিংস';
+
+  @override
+  String get statsToggle => 'বেনামি পরিসংখ্যান';
+
+  @override
+  String get statsToggleBody =>
+      'অ্যাপটি উন্নত করতে সাহায্য করে। কোনো শনাক্তকারী নেই, আপনি যা লেখেন তার কিছুই নয়।';
 }

@@ -537,6 +537,24 @@ abstract class AppLocalizations {
   /// In cs, this message translates to:
   /// **'Odemknout'**
   String get unlock;
+
+  /// No description provided for @settings.
+  ///
+  /// In cs, this message translates to:
+  /// **'Nastavení'**
+  String get settings;
+
+  /// No description provided for @statsToggle.
+  ///
+  /// In cs, this message translates to:
+  /// **'Anonymní statistiky'**
+  String get statsToggle;
+
+  /// No description provided for @statsToggleBody.
+  ///
+  /// In cs, this message translates to:
+  /// **'Pomáhají appku zlepšovat. Bez identifikátorů a bez čehokoli, co zadáš.'**
+  String get statsToggleBody;
 }
 
 class _AppLocalizationsDelegate

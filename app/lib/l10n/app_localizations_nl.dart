@@ -320,4 +320,14 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get unlock => 'Ontgrendelen';
+
+  @override
+  String get settings => 'Instellingen';
+
+  @override
+  String get statsToggle => 'Anonieme statistieken';
+
+  @override
+  String get statsToggleBody =>
+      'Helpen de app te verbeteren. Geen identificatoren, niets van wat je typt.';
 }

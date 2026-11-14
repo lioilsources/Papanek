@@ -319,4 +319,14 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get unlock => 'کھولیں';
+
+  @override
+  String get settings => 'ترتیبات';
+
+  @override
+  String get statsToggle => 'گمنام اعداد و شمار';
+
+  @override
+  String get statsToggleBody =>
+      'ایپ کو بہتر بنانے میں مدد دیتے ہیں۔ کوئی شناخت کنندہ نہیں، آپ کا لکھا کچھ نہیں۔';
 }

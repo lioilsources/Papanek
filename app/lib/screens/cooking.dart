@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../data/content.dart';
 import '../l10n/app_localizations.dart';
@@ -22,15 +23,32 @@ class _CookingScreenState extends State<CookingScreen> {
   Timer? timer;
   int left = 0;
   int timerStep = -1;
+  int timers = 0; // timers started, for the statistics
+  TelemetryFlow? flow;
+
+  Map<String, Object> get flowProps => {'step': (step + 1).clamp(0, 100), 'timers': timers.clamp(0, 100)};
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (flow == null) {
+      Telemetry.feature('cooking_mode');
+      final steps = widget.recipe.t(Scope.of(context).lang).steps.length;
+      flow = Telemetry.flow('cook', {'steps': steps.clamp(0, 100)}, () => flowProps);
+    }
+  }
 
   @override
   void dispose() {
+    flow?.end('cancel', flowProps); // no-op after a finished cook
     timer?.cancel();
     pages.dispose();
     super.dispose();
   }
 
   void startTimer(int sec) {
+    Telemetry.feature('step_timer');
+    timers++;
     timer?.cancel();
     setState(() {
       left = sec;
@@ -50,6 +68,8 @@ class _CookingScreenState extends State<CookingScreen> {
   }
 
   Future<void> finish() async {
+    flow?.end('ok', flowProps);
+    Telemetry.activation();
     final l = AppLocalizations.of(context);
     final s = Scope.of(context);
     final used = widget.recipe.required.map((x) => x.ingredient.id).where(s.pantry.contains).toList();
@@ -67,6 +87,7 @@ class _CookingScreenState extends State<CookingScreen> {
         ),
       );
       if (remove == true) {
+        Telemetry.feature('pantry_deduct');
         for (final id in used) {
           await s.removeFromPantry(id);
         }

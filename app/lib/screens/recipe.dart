@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../data/content.dart';
 import '../l10n/app_localizations.dart';
@@ -58,12 +59,22 @@ class _RecipeScreenState extends State<RecipeScreen> {
                   children: [
                     Expanded(child: Text(l.ingredients, style: tt.titleLarge)),
                     IconButton.outlined(
-                      onPressed: servings > 1 ? () => setState(() => servings--) : null,
+                      onPressed: servings > 1
+                          ? () {
+                              Telemetry.feature('servings');
+                              setState(() => servings--);
+                            }
+                          : null,
                       icon: const Icon(Icons.remove),
                     ),
                     Padding(padding: const EdgeInsets.symmetric(horizontal: 8), child: Text(l.servings(servings))),
                     IconButton.outlined(
-                      onPressed: servings < 12 ? () => setState(() => servings++) : null,
+                      onPressed: servings < 12
+                          ? () {
+                              Telemetry.feature('servings');
+                              setState(() => servings++);
+                            }
+                          : null,
                       icon: const Icon(Icons.add),
                     ),
                   ],
@@ -98,6 +109,8 @@ class _RecipeScreenState extends State<RecipeScreen> {
                       icon: const Icon(Icons.add_shopping_cart),
                       label: Text(l.addMissingToShopping),
                       onPressed: () async {
+                        Telemetry.feature('shopping_list');
+                        Telemetry.track('shopping_add', {'items': missing.length.clamp(0, 100)});
                         await s.addToShopping(missing.map((i) => i.id));
                         if (context.mounted) {
                           ScaffoldMessenger.of(
@@ -129,7 +142,10 @@ class _RecipeScreenState extends State<RecipeScreen> {
                           FilledButton.icon(
                             icon: const Icon(Icons.lock_open),
                             label: Text(l.unlock),
-                            onPressed: () => openShop(context),
+                            onPressed: () {
+                              Telemetry.lockedTap('unlock');
+                              openShop(context);
+                            },
                           ),
                         ],
                       ),
@@ -168,7 +184,13 @@ class _RecipeScreenState extends State<RecipeScreen> {
           : FloatingActionButton.extended(
               icon: const Icon(Icons.local_fire_department),
               label: Text(l.startCooking),
-              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => CookingScreen(r))),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  settings: const RouteSettings(name: '/cooking'),
+                  builder: (_) => CookingScreen(r),
+                ),
+              ),
             ),
     );
   }

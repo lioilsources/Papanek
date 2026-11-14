@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{receptes en preparació} one{{n} recepta} other{{n} receptes}}",
   "lockedTitle": "Recepta del paquet {pack}",
   "lockedBody": "Ja veus els ingredients; els passos i el mode cuina es desbloquegen amb el paquet.",
-  "unlock": "Desbloqueja"
+  "unlock": "Desbloqueja",
+  "settings": "Configuració",
+  "statsToggle": "Estadístiques anònimes",
+  "statsToggleBody": "Ajuden a millorar l'aplicació. Sense identificadors ni res del que escrius."
 }

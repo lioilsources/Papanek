@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{receitas em preparação} one{{n} receita} other{{n} receitas}}",
   "lockedTitle": "Receita do pacote {pack}",
   "lockedBody": "Já vês os ingredientes; os passos e o modo cozinhar desbloqueiam-se com o pacote.",
-  "unlock": "Desbloquear"
+  "unlock": "Desbloquear",
+  "settings": "Definições",
+  "statsToggle": "Estatísticas anónimas",
+  "statsToggleBody": "Ajudam a melhorar a app. Sem identificadores, nada do que escreves."
 }

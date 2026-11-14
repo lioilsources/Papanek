@@ -305,4 +305,13 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get unlock => '解放する';
+
+  @override
+  String get settings => '設定';
+
+  @override
+  String get statsToggle => '匿名の統計';
+
+  @override
+  String get statsToggleBody => 'アプリの改善に役立ちます。識別子や入力した内容は含まれません。';
 }

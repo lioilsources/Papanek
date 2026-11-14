@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{菜谱准备中} other{{n} 道菜谱}}",
   "lockedTitle": "来自「{pack}」菜谱包",
   "lockedBody": "食材已可查看；步骤和烹饪模式随菜谱包解锁。",
-  "unlock": "解锁"
+  "unlock": "解锁",
+  "settings": "设置",
+  "statsToggle": "匿名统计",
+  "statsToggleBody": "帮助改进应用。不含任何标识符，也不含你输入的内容。"
 }

@@ -320,4 +320,14 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get unlock => 'Lås op';
+
+  @override
+  String get settings => 'Indstillinger';
+
+  @override
+  String get statsToggle => 'Anonym statistik';
+
+  @override
+  String get statsToggleBody =>
+      'Hjælper med at forbedre appen. Ingen identifikatorer, intet af det, du skriver.';
 }

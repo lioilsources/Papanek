@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{receptek készülnek} one{{n} recept} other{{n} recept}}",
   "lockedTitle": "Recept a(z) {pack} csomagból",
   "lockedBody": "A hozzávalókat már látod; a lépések és a főzési mód a csomaggal nyílnak meg.",
-  "unlock": "Feloldás"
+  "unlock": "Feloldás",
+  "settings": "Beállítások",
+  "statsToggle": "Névtelen statisztika",
+  "statsToggleBody": "Segít jobbá tenni az alkalmazást. Nincs azonosító, semmi abból, amit beírsz."
 }

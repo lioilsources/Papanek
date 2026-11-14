@@ -317,4 +317,14 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get unlock => 'Розблокувати';
+
+  @override
+  String get settings => 'Налаштування';
+
+  @override
+  String get statsToggle => 'Анонімна статистика';
+
+  @override
+  String get statsToggleBody =>
+      'Допомагає покращувати застосунок. Без ідентифікаторів і без того, що ви вводите.';
 }

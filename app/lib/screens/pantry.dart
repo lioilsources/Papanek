@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../data/app_state.dart';
 import '../data/content.dart';
@@ -55,7 +56,11 @@ class _PantryScreenState extends State<PantryScreen> {
               ),
               onChanged: (_) => setState(() {}),
               onSubmitted: (_) {
-                if (hits.isNotEmpty) add(s, hits.first);
+                if (hits.isNotEmpty) {
+                  add(s, hits.first);
+                } else if (query.text.trim().isNotEmpty) {
+                  Telemetry.track('pantry_search_miss');
+                }
               },
             ),
           ),
@@ -113,6 +118,8 @@ class _PantryScreenState extends State<PantryScreen> {
 
   void add(AppState s, Ingredient i) {
     s.addToPantry([i.id]);
+    Telemetry.feature('pantry');
+    Telemetry.track('pantry_add', {'items': s.pantry.length.clamp(0, 10000)});
     setState(query.clear);
     focus.requestFocus();
   }

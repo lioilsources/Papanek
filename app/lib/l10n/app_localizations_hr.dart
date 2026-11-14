@@ -317,4 +317,14 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get unlock => 'Otključaj';
+
+  @override
+  String get settings => 'Postavke';
+
+  @override
+  String get statsToggle => 'Anonimna statistika';
+
+  @override
+  String get statsToggleBody =>
+      'Pomaže poboljšati aplikaciju. Bez identifikatora i bez ičega što upišete.';
 }

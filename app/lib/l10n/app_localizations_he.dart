@@ -323,4 +323,14 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get unlock => 'פתיחה';
+
+  @override
+  String get settings => 'הגדרות';
+
+  @override
+  String get statsToggle => 'סטטיסטיקה אנונימית';
+
+  @override
+  String get statsToggleBody =>
+      'עוזרת לשפר את האפליקציה. בלי מזהים ובלי שום דבר שאתה מקליד.';
 }

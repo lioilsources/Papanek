@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{recept på väg} one{{n} recept} other{{n} recept}}",
   "lockedTitle": "Recept från paketet {pack}",
   "lockedBody": "Du ser ingredienserna; stegen och matlagningsläget låses upp med paketet.",
-  "unlock": "Lås upp"
+  "unlock": "Lås upp",
+  "settings": "Inställningar",
+  "statsToggle": "Anonym statistik",
+  "statsToggleBody": "Hjälper till att förbättra appen. Inga identifierare, inget av det du skriver."
 }

@@ -320,4 +320,14 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get unlock => 'Feloldás';
+
+  @override
+  String get settings => 'Beállítások';
+
+  @override
+  String get statsToggle => 'Névtelen statisztika';
+
+  @override
+  String get statsToggleBody =>
+      'Segít jobbá tenni az alkalmazást. Nincs azonosító, semmi abból, amit beírsz.';
 }

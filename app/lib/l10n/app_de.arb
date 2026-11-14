@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{Rezepte in Vorbereitung} one{{n} Rezept} other{{n} Rezepte}}",
   "lockedTitle": "Rezept aus dem Paket {pack}",
   "lockedBody": "Die Zutaten siehst du schon; Anleitung und Kochmodus werden mit dem Paket freigeschaltet.",
-  "unlock": "Freischalten"
+  "unlock": "Freischalten",
+  "settings": "Einstellungen",
+  "statsToggle": "Anonyme Statistik",
+  "statsToggleBody": "Hilft, die App zu verbessern. Keine Kennungen, nichts von dem, was du eingibst."
 }

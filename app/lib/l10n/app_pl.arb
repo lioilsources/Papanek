@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{przepisy w przygotowaniu} one{{n} przepis} few{{n} przepisy} many{{n} przepisów} other{{n} przepisu}}",
   "lockedTitle": "Przepis z pakietu {pack}",
   "lockedBody": "Składniki widzisz już teraz; przepis krok po kroku i tryb gotowania odblokujesz z pakietem.",
-  "unlock": "Odblokuj"
+  "unlock": "Odblokuj",
+  "settings": "Ustawienia",
+  "statsToggle": "Anonimowe statystyki",
+  "statsToggleBody": "Pomagają ulepszać aplikację. Bez identyfikatorów i bez niczego, co wpisujesz."
 }

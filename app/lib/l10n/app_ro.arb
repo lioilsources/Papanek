@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{rețete în pregătire} one{{n} rețetă} few{{n} rețete} other{{n} de rețete}}",
   "lockedTitle": "Rețetă din pachetul {pack}",
   "lockedBody": "Vezi deja ingredientele; pașii și modul de gătit se deblochează cu pachetul.",
-  "unlock": "Deblochează"
+  "unlock": "Deblochează",
+  "settings": "Setări",
+  "statsToggle": "Statistici anonime",
+  "statsToggleBody": "Ajută la îmbunătățirea aplicației. Fără identificatori, nimic din ce scrii."
 }

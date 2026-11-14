@@ -320,4 +320,14 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get unlock => 'અનલૉક કરો';
+
+  @override
+  String get settings => 'સેટિંગ્સ';
+
+  @override
+  String get statsToggle => 'અનામી આંકડા';
+
+  @override
+  String get statsToggleBody =>
+      'એપ સુધારવામાં મદદ કરે છે. કોઈ ઓળખકર્તા નહીં, તમે લખો તેમાંથી કંઈ નહીં.';
 }

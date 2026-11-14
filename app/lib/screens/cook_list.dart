@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../data/app_state.dart';
+import '../data/content.dart';
 import '../l10n/app_localizations.dart';
 import '../main.dart';
 import 'recipe.dart';
+import 'settings.dart';
 import 'widgets.dart';
 
 /// Domů / Co uvařím (§12.1): skupiny podle počtu chybějících surovin (§8).
@@ -26,9 +29,19 @@ class CookList extends StatelessWidget {
         title: Text(l.tabCook),
         actions: [
           TextButton(
-            onPressed: () => s.setLang(s.lang == 'cs' ? 'en' : 'cs'),
+            onPressed: () {
+              Telemetry.feature('recipe_lang');
+              s.setLang(s.lang == 'cs' ? 'en' : 'cs');
+            },
             child: Text(s.lang == 'cs' ? 'EN' : 'CZ'),
           ),
+          // The only setting is the statistics switch: no switch, no screen.
+          if (Telemetry.isConfigured)
+            IconButton(
+              icon: const Icon(Icons.settings_outlined),
+              tooltip: l.settings,
+              onPressed: () => openSettings(context),
+            ),
         ],
       ),
       body: all.isEmpty
@@ -87,7 +100,17 @@ class RecipeCard extends StatelessWidget {
     final ready = match.missing.isEmpty;
     return Card(
       child: InkWell(
-        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => RecipeScreen(r))),
+        onTap: () {
+          if (!s.unlocked(r)) Telemetry.lockedTap('recipe');
+          Telemetry.track('recipe_open', {'missing': match.missing.length.clamp(0, 100), 'free': r.pack == freePack});
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              settings: const RouteSettings(name: '/recipe'),
+              builder: (_) => RecipeScreen(r),
+            ),
+          );
+        },
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
