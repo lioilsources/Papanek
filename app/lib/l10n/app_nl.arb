@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{recepten in voorbereiding} one{{n} recept} other{{n} recepten}}",
   "lockedTitle": "Recept uit het pakket {pack}",
   "lockedBody": "De ingrediënten zie je al; de stappen en kookmodus ontgrendel je met het pakket.",
-  "unlock": "Ontgrendelen"
+  "unlock": "Ontgrendelen",
+  "settings": "Instellingen",
+  "statsToggle": "Anonieme statistieken",
+  "statsToggleBody": "Helpen de app te verbeteren. Geen identificatoren, niets van wat je typt."
 }

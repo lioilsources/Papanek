@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{レシピ準備中} other{{n}件のレシピ}}",
   "lockedTitle": "「{pack}」パックのレシピ",
   "lockedBody": "材料は見られます。手順と調理モードはパックで解放されます。",
-  "unlock": "解放する"
+  "unlock": "解放する",
+  "settings": "設定",
+  "statsToggle": "匿名の統計",
+  "statsToggleBody": "アプリの改善に役立ちます。識別子や入力した内容は含まれません。"
 }

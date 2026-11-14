@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{recepty sa pripravujú} one{{n} recept} few{{n} recepty} other{{n} receptov}}",
   "lockedTitle": "Recept z balíčka {pack}",
   "lockedBody": "Suroviny vidíš, postup a režim varenia sa ukážu po odomknutí balíčka.",
-  "unlock": "Odomknúť"
+  "unlock": "Odomknúť",
+  "settings": "Nastavenia",
+  "statsToggle": "Anonymné štatistiky",
+  "statsToggleBody": "Pomáhajú aplikáciu zlepšovať. Bez identifikátorov a bez čohokoľvek, čo zadáš."
 }

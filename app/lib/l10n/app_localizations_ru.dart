@@ -318,4 +318,14 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get unlock => 'Разблокировать';
+
+  @override
+  String get settings => 'Настройки';
+
+  @override
+  String get statsToggle => 'Анонимная статистика';
+
+  @override
+  String get statsToggleBody =>
+      'Помогает улучшать приложение. Без идентификаторов и без того, что вы вводите.';
 }

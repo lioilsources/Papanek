@@ -315,4 +315,14 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get unlock => 'Buka';
+
+  @override
+  String get settings => 'Pengaturan';
+
+  @override
+  String get statsToggle => 'Statistik anonim';
+
+  @override
+  String get statsToggleBody =>
+      'Membantu menyempurnakan aplikasi. Tanpa pengenal, tanpa apa pun yang kamu ketik.';
 }

@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{食譜準備中} other{{n} 道食譜}}",
   "lockedTitle": "來自「{pack}」食譜包",
   "lockedBody": "食材已可查看；步驟和烹飪模式隨食譜包解鎖。",
-  "unlock": "解鎖"
+  "unlock": "解鎖",
+  "settings": "設定",
+  "statsToggle": "匿名統計",
+  "statsToggleBody": "協助改進應用程式。不含任何識別碼，也不含你輸入的內容。"
 }

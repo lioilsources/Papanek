@@ -321,6 +321,16 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get unlock => 'Desbloquear';
+
+  @override
+  String get settings => 'Definições';
+
+  @override
+  String get statsToggle => 'Estatísticas anónimas';
+
+  @override
+  String get statsToggleBody =>
+      'Ajudam a melhorar a app. Sem identificadores, nada do que escreves.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -640,6 +650,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get unlock => 'Desbloquear';
+
+  @override
+  String get settings => 'Configurações';
+
+  @override
+  String get statsToggle => 'Estatísticas anônimas';
+
+  @override
+  String get statsToggleBody =>
+      'Ajudam a melhorar o app. Sem identificadores, nada do que você digita.';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -959,4 +979,14 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get unlock => 'Desbloquear';
+
+  @override
+  String get settings => 'Definições';
+
+  @override
+  String get statsToggle => 'Estatísticas anónimas';
+
+  @override
+  String get statsToggleBody =>
+      'Ajudam a melhorar a app. Sem identificadores, nada do que escreves.';
 }

@@ -319,4 +319,14 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get unlock => 'Kilidi aç';
+
+  @override
+  String get settings => 'Ayarlar';
+
+  @override
+  String get statsToggle => 'Anonim istatistikler';
+
+  @override
+  String get statsToggleBody =>
+      'Uygulamanın gelişmesine yardımcı olur. Tanımlayıcı yok, yazdığınız hiçbir şey yok.';
 }

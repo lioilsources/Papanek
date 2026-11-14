@@ -42,6 +42,10 @@ jobs:
           fi
           NEW="${BASE}+${{ github.run_number }}"
           sed -i.bak -E "s/^version: .*/version: ${NEW}/" pubspec.yaml
+          # The statistics report the same version (test/telemetry_test.dart keeps
+          # the constant equal to pubspec.yaml).
+          sed -i.bak -E "s/^const kAppVersion = .*/const kAppVersion = '${BASE}';/" lib/telemetry/telemetry_dictionary.dart
+          rm -f lib/telemetry/telemetry_dictionary.dart.bak
           rm -f pubspec.yaml.bak
           echo "Build version: ${NEW}"
 
@@ -105,7 +109,7 @@ jobs:
 
       - name: Build Flutter iOS (no codesign)
         working-directory: app
-        run: flutter build ios --release --no-codesign
+        run: flutter build ios --release --no-codesign --dart-define=TELEMETRY_KEY=${{ secrets.TELEMETRY_KEY }} --dart-define=TELEMETRY_HOST=${{ secrets.TELEMETRY_HOST }}
 
       - name: Archive with manual signing
         env:

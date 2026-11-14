@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{opskrifter på vej} one{{n} opskrift} other{{n} opskrifter}}",
   "lockedTitle": "Opskrift fra pakken {pack}",
   "lockedBody": "Du kan se ingredienserne; fremgangsmåden og madlavningstilstand låses op med pakken.",
-  "unlock": "Lås op"
+  "unlock": "Lås op",
+  "settings": "Indstillinger",
+  "statsToggle": "Anonym statistik",
+  "statsToggleBody": "Hjælper med at forbedre appen. Ingen identifikatorer, intet af det, du skriver."
 }

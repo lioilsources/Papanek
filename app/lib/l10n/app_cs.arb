@@ -73,5 +73,8 @@
   "lockedTitle": "Recept z balíčku {pack}",
   "@lockedTitle": {"placeholders": {"pack": {"type": "String"}}},
   "lockedBody": "Suroviny vidíš, postup a režim vaření se ukážou po odemčení balíčku.",
-  "unlock": "Odemknout"
+  "unlock": "Odemknout",
+  "settings": "Nastavení",
+  "statsToggle": "Anonymní statistiky",
+  "statsToggleBody": "Pomáhají appku zlepšovat. Bez identifikátorů a bez čehokoli, co zadáš."
 }

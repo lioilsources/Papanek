@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{레시피 준비 중} other{레시피 {n}개}}",
   "lockedTitle": "{pack} 팩의 레시피",
   "lockedBody": "재료는 볼 수 있어요. 조리 단계와 요리 모드는 팩과 함께 열립니다.",
-  "unlock": "잠금 해제"
+  "unlock": "잠금 해제",
+  "settings": "설정",
+  "statsToggle": "익명 통계",
+  "statsToggleBody": "앱 개선에 도움이 됩니다. 식별자나 입력한 내용은 포함되지 않습니다."
 }

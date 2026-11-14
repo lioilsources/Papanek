@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{resep sedang disiapkan} other{{n} resep}}",
   "lockedTitle": "Resep dari paket {pack}",
   "lockedBody": "Bahan-bahannya sudah terlihat; langkah dan mode memasak terbuka bersama paket.",
-  "unlock": "Buka"
+  "unlock": "Buka",
+  "settings": "Pengaturan",
+  "statsToggle": "Statistik anonim",
+  "statsToggleBody": "Membantu menyempurnakan aplikasi. Tanpa pengenal, tanpa apa pun yang kamu ketik."
 }

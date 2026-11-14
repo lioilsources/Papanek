@@ -25,6 +25,10 @@ class AppState extends ChangeNotifier {
   final Set<String> owned; // odemčené balíčky (cache stavu IAP, §6 purchases)
   Shop? shop;
 
+  /// The user had saved anything before this launch (anonymous statistics:
+  /// not a new install). Never read by the app itself.
+  bool hadData = false;
+
   static Future<AppState> load(String systemLang) async {
     final content = await Content.load();
     final dir = await getApplicationSupportDirectory();
@@ -51,7 +55,8 @@ class AppState extends ChangeNotifier {
     final s = await db.query('settings', where: 'key = ?', whereArgs: ['lang']);
     final lang = s.isNotEmpty ? s.first['value'] as String : (systemLang == 'cs' ? 'cs' : 'en');
     final owned = {for (final r in await db.query('purchases')) r['pack_id'] as String};
-    final state = AppState(content, db, pantry, shopping, lang, owned);
+    final state = AppState(content, db, pantry, shopping, lang, owned)
+      ..hadData = s.isNotEmpty || pantry.isNotEmpty || shopping.isNotEmpty || owned.isNotEmpty;
     state.shop = Shop(content.packs, state.grant)..addListener(state.notifyListeners);
     unawaited(state.shop!.init()); // start appky nečeká na store
     return state;

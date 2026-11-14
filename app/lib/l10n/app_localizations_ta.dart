@@ -321,4 +321,14 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get unlock => 'திற';
+
+  @override
+  String get settings => 'அமைப்புகள்';
+
+  @override
+  String get statsToggle => 'அநாமதேய புள்ளிவிவரங்கள்';
+
+  @override
+  String get statsToggleBody =>
+      'ஆப்பை மேம்படுத்த உதவுகிறது. அடையாளங்காட்டிகள் இல்லை, நீங்கள் தட்டச்சு செய்வது எதுவும் இல்லை.';
 }

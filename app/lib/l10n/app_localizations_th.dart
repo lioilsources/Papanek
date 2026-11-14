@@ -313,4 +313,14 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get unlock => 'ปลดล็อก';
+
+  @override
+  String get settings => 'การตั้งค่า';
+
+  @override
+  String get statsToggle => 'สถิติแบบไม่ระบุตัวตน';
+
+  @override
+  String get statsToggleBody =>
+      'ช่วยปรับปรุงแอป ไม่มีตัวระบุ และไม่มีสิ่งที่คุณพิมพ์';
 }

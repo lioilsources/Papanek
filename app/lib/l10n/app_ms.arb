@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{resipi sedang disediakan} other{{n} resipi}}",
   "lockedTitle": "Resipi daripada pek {pack}",
   "lockedBody": "Bahan-bahan sudah boleh dilihat; langkah dan mod memasak dibuka bersama pek.",
-  "unlock": "Buka"
+  "unlock": "Buka",
+  "settings": "Tetapan",
+  "statsToggle": "Statistik tanpa nama",
+  "statsToggleBody": "Membantu memperbaik aplikasi. Tiada pengecam, tiada apa-apa yang anda taip."
 }

@@ -324,4 +324,14 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get unlock => 'Odemknout';
+
+  @override
+  String get settings => 'Nastavení';
+
+  @override
+  String get statsToggle => 'Anonymní statistiky';
+
+  @override
+  String get statsToggleBody =>
+      'Pomáhají appku zlepšovat. Bez identifikátorů a bez čehokoli, co zadáš.';
 }

@@ -320,4 +320,14 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get unlock => 'अनलॉक करें';
+
+  @override
+  String get settings => 'सेटिंग्स';
+
+  @override
+  String get statsToggle => 'अनाम आँकड़े';
+
+  @override
+  String get statsToggleBody =>
+      'ऐप को बेहतर बनाने में मदद करते हैं। कोई पहचानकर्ता नहीं, आप जो लिखते हैं उसमें से कुछ नहीं।';
 }

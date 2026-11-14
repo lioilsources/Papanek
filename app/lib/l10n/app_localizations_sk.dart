@@ -316,4 +316,14 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get unlock => 'Odomknúť';
+
+  @override
+  String get settings => 'Nastavenia';
+
+  @override
+  String get statsToggle => 'Anonymné štatistiky';
+
+  @override
+  String get statsToggleBody =>
+      'Pomáhajú aplikáciu zlepšovať. Bez identifikátorov a bez čohokoľvek, čo zadáš.';
 }

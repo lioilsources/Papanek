@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{reseptejä tulossa} one{{n} resepti} other{{n} reseptiä}}",
   "lockedTitle": "Resepti paketista {pack}",
   "lockedBody": "Näet ainekset; vaiheet ja kokkaustila avautuvat paketin myötä.",
-  "unlock": "Avaa"
+  "unlock": "Avaa",
+  "settings": "Asetukset",
+  "statsToggle": "Nimettömät tilastot",
+  "statsToggleBody": "Auttavat parantamaan sovellusta. Ei tunnisteita eikä mitään, mitä kirjoitat."
 }

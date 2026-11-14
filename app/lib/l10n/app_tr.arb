@@ -58,5 +58,8 @@
   "recipeCount": "{n, plural, =0{tarifler hazırlanıyor} one{{n} tarif} other{{n} tarif}}",
   "lockedTitle": "{pack} paketinden tarif",
   "lockedBody": "Malzemeleri görebilirsin; adımlar ve pişirme modu paketle açılır.",
-  "unlock": "Kilidi aç"
+  "unlock": "Kilidi aç",
+  "settings": "Ayarlar",
+  "statsToggle": "Anonim istatistikler",
+  "statsToggleBody": "Uygulamanın gelişmesine yardımcı olur. Tanımlayıcı yok, yazdığınız hiçbir şey yok."
 }

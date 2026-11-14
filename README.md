@@ -12,6 +12,8 @@ Offline kuchařka pro začátečníky: ví, co máš doma, a vybere recept. Plá
   - `papanek-export`: staví `app/assets/content.db` (zatím bez receptů)
   - `papanek-enrich`: ukázky stylů, na Sparku jen přes `sparkctl`
 - `app/`: Flutter, `com.ol1n.papanek`
+- `docs/telemetry.md`: slovník anonymních statistik používání (`ol1n_telemetry`); appka bez
+  klíče v buildu nic neposílá, jinak jdou statistiky vypnout v nastavení
 
 ```sh
 make test       # testy nástrojů

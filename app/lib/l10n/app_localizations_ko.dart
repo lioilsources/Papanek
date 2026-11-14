@@ -305,4 +305,13 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get unlock => '잠금 해제';
+
+  @override
+  String get settings => '설정';
+
+  @override
+  String get statsToggle => '익명 통계';
+
+  @override
+  String get statsToggleBody => '앱 개선에 도움이 됩니다. 식별자나 입력한 내용은 포함되지 않습니다.';
 }

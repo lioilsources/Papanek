@@ -2,7 +2,7 @@
 
 **Autor:** Ol1n · **Datum:** 2026-10-31 · **Stav:** koncept → MVP plán
 **Repo (návrh):** `lioilsources/Papanek` · **Bundle ID:** `com.ol1n.papanek` · **Store jméno:** Papánek
-**Stack:** Flutter (app, **plně offline**, vše zapečené v binárce) · Go build-time pipeline na JODA (sqlc + Postgres + pgvector, jen pro výrobu obsahu) · DGX Spark (vLLM/LiteLLM pro LLM, ComfyUI flux-schnell pro obrázky) · **žádný runtime backend**
+**Stack:** Flutter (app, **plně offline**, vše zapečené v binárce) · Go build-time pipeline na JODA (sqlc + Postgres + pgvector, jen pro výrobu obsahu) · DGX Spark (vLLM/LiteLLM pro LLM, ComfyUI flux-schnell pro obrázky) · **žádný runtime backend** (jen anonymní statistiky na vlastního příjemce StoreMetrics, viz `docs/telemetry.md`)
 
 **Rozhodnutí (31. 10. 2026):** appka offline; obsah = 50 receptů zdarma napříč kuchyněmi + **balíčky kuchyní jako non-consumable IAP**; všechny recepty i obrázky jsou v appce, nákup jen odemyká.
 
@@ -37,7 +37,7 @@ Appka pro začátečníky: **ví, co mám doma, a podle toho mi vybere recept.**
 | Historie + hodnocení | Feedback do rankingu, „co jsem vařil minulý týden“. |
 | Domácnost | Bez serveru = bez sdílené spíže v MVP. Později export/import spíže (QR / soubor), ne sync. |
 | Legálnost zdroje receptů | Viz §5 — ne „stáhnout všechno“, ale extrakce dat + vlastní přepis + vlastní obrázky. |
-| Offline | Vše v appce: recepty, obrázky, ontologie, spíž (SQLite/Drift). Žádné síťové volání za běhu kromě IAP a volitelně čárových kódů. |
+| Offline | Vše v appce: recepty, obrázky, ontologie, spíž (SQLite/Drift). Žádné síťové volání za běhu kromě IAP, anonymních statistik (vypínač v nastavení, bez nich appka funguje stejně) a volitelně čárových kódů. |
 | Velikost appky | 2 000 receptů × hero WebP ≈ 100–150 MB → rozpočet, viz §10a. |
 | Aktualizace obsahu | Nový obsah = nová verze appky. OTA balíčky (GitHub Pages jako Pohádkomat) jako možný v2 krok, ne teď. |
 | Jazyky | CZ first, EN druhý; schéma vícejazyčné od začátku (`recipe_translations`). |
@@ -209,7 +209,7 @@ Design: cute/komiks, velké fonty, min. tapů. Lze zvážit `cute_kid_fonts`? �
 - **Zdarma:** 50 receptů napříč kuchyněmi + celá spíž, nákupní seznam, notifikace, režim vaření — plná funkčnost, omezený obsah.
 - **Balíčky kuchyní:** non-consumable IAP (StoreKit 2 / Play Billing přes `in_app_purchase`), ceny cca 49–79 Kč / 1,99–2,99 €. „Vše“ bundle za sníženou cenu.
 - **Ol1n Pass** odemkne všechny balíčky (konzistentní s [[ol1n-pass]]) — ověření Passu musí fungovat offline (lokální stav IAP, obnovení nákupů při online).
-- Bez reklam, bez účtu, bez sběru dat (Play: nesbírá data; věková kategorie 13+).
+- Bez reklam, bez účtu, bez analytiky třetích stran. Anonymní statistiky používání (bez identifikátoru, jen výčty a čísla, jdou vypnout) jdou jen na vlastní server, viz `docs/telemetry.md` (Play Data safety: App interactions a přibližná poloha (země), App Privacy: Product Interaction, Performance Data, Coarse Location; věková kategorie 13+).
 - Product ID konvence: `com.ol1n.papanek.pack.czech`, `.italian`, … + `.all`.
 
 ## 14. Milníky

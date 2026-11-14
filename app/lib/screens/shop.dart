@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
+import '../data/app_state.dart';
 import '../data/content.dart';
 import '../data/store.dart';
 import '../l10n/app_localizations.dart';
@@ -22,7 +24,9 @@ class _ShopScreenState extends State<ShopScreen> {
     if (err != null) {
       shop!.error = null;
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l.purchaseFailed(err))));
+        if (!mounted) return;
+        Telemetry.errorShown('purchase');
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l.purchaseFailed(err))));
       });
     }
     final paid = s.content.packs.where((p) => !p.free).toList();
@@ -145,4 +149,20 @@ class _BuyButton extends StatelessWidget {
 }
 
 /// Otevře obchod jako samostatnou stránku (ze zamčeného receptu).
-void openShop(BuildContext context) => Navigator.push(context, MaterialPageRoute(builder: (_) => const ShopScreen()));
+void openShop(BuildContext context) {
+  final s = Scope.of(context);
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      settings: const RouteSettings(name: '/shop'),
+      builder: (_) => const ShopScreen(),
+    ),
+  );
+  reportShopShown(s); // after the push, so the error counts on the shop screen
+}
+
+/// The shop came into view: report the "store unavailable" banner if it shows.
+void reportShopShown(AppState s) {
+  final shop = s.shop;
+  if (shop == null || (!shop.loading && !shop.available)) Telemetry.errorShown('store_unavailable');
+}
