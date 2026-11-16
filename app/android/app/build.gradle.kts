@@ -25,11 +25,28 @@ android {
         versionName = flutter.versionName
     }
 
+    // Upload signing: CI (.github/workflows/release-android.yml) writes
+    // android/key.properties and app/release.keystore from the
+    // ANDROID_KEYSTORE_* secrets. Without the file (local checkouts) release
+    // falls back to the debug key, so `flutter run --release` keeps working.
+    val keystorePropertiesFile = rootProject.file("key.properties")
+    val hasReleaseKey = keystorePropertiesFile.exists()
+    if (hasReleaseKey) {
+        val keystoreProperties = java.util.Properties()
+        keystorePropertiesFile.inputStream().use { keystoreProperties.load(it) }
+        signingConfigs {
+            create("release") {
+                storeFile = file(keystoreProperties.getProperty("storeFile"))
+                storePassword = keystoreProperties.getProperty("storePassword")
+                keyAlias = keystoreProperties.getProperty("keyAlias")
+                keyPassword = keystoreProperties.getProperty("keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName(if (hasReleaseKey) "release" else "debug")
         }
     }
 }
