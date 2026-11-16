@@ -106,8 +106,16 @@ func heroPhotoPrompt(r content.Recipe) string {
 	if p == "" {
 		p = "a plate of " + r.EN.Title
 	}
-	return "A photo of the finished dish " + r.EN.Title + ": " + p + hints(p+" "+r.EN.Title) +
-		". Served at home on a wooden kitchen table, seen from slightly above, " + photoStyle
+	surface := surfaces[seedFor(r.Slug)%int64(len(surfaces))]
+	return "Close-up photo of the finished dish " + r.EN.Title + ": " + p + hints(p+" "+r.EN.Title) +
+		". The food fills most of the frame, shot from a 45 degree angle, freshly served and appetising, " +
+		"home-style portion on " + surface + ", blurred background, " + photoStyle
+}
+
+// Povrchy pod talířem, aby jídla nevypadala jako z jednoho focení.
+var surfaces = []string{
+	"a rustic wooden table", "a light linen tablecloth", "a grey stone countertop", "a white marble surface",
+	"a dark slate board", "a pale oak table with a folded napkin", "a blue ceramic-tiled table", "a warm terracotta surface",
 }
 
 // stepPhotoPrompt popisuje jeden krok jako fotku z domácí kuchyně: ruce kuchaře, suroviny a
