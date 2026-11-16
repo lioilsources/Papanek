@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Stáhne hotové PNG z L40S (přes M2, kde je ssh config `tcloud`) do out/photos_png a převede
-# nové na WebP do app/assets/photos. Jde pouštět opakovaně během generování.
-#   tools/l40s/sync_photos.sh            # M2 jako skok (MacBook)
-#   HOP= tools/l40s/sync_photos.sh       # přímo z M2
+# Stáhne hotové PNG z L40S (ssh host `tcloud`) do out/photos_png a převede nové na WebP
+# do app/assets/photos. Jde pouštět opakovaně během generování. Když tenhle stroj `tcloud`
+# nezná, nastav v .env L40S_HOP na stroj, který ho zná (viz .env.example).
 set -euo pipefail
 cd "$(dirname "$0")/../.."
-HOP=${HOP-m2.local}
+[ -f .env ] && . ./.env
+HOP=${L40S_HOP-}
 SRC=/srv/work/papanek/png/
 RAW=out/photos_png
 DST=app/assets/photos
