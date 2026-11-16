@@ -319,4 +319,10 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get unlock => 'ଅନଲକ କରନ୍ତୁ';
+
+  @override
+  String get youWillNeed => 'ଆପଣଙ୍କୁ ଦରକାର';
+
+  @override
+  String get comicPictures => 'କମିକ୍ ଚିତ୍ର';
 }

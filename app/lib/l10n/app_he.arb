@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{מתכונים בהכנה} one{מתכון אחד} two{שני מתכונים} other{{n} מתכונים}}",
   "lockedTitle": "מתכון מהחבילה {pack}",
   "lockedBody": "את המצרכים כבר רואים; השלבים ומצב הבישול נפתחים עם החבילה.",
-  "unlock": "פתיחה"
+  "unlock": "פתיחה",
+  "youWillNeed": "תצטרך",
+  "comicPictures": "איורי קומיקס"
 }

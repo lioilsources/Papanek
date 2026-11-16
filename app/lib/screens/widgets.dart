@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../data/content.dart';
 import '../l10n/app_localizations.dart';
+import '../main.dart';
 
-/// Hero obrázek receptu; bez obrázku barevná plocha s ikonou kuchyně.
+/// Obrázek jídla (fotka, volitelně komiks); bez obrázku barevná plocha s ikonou kuchyně.
 class RecipeImage extends StatelessWidget {
   const RecipeImage(this.recipe, {super.key, this.height});
   final Recipe recipe;
@@ -12,14 +13,77 @@ class RecipeImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = Theme.of(context).colorScheme;
-    if (recipe.image != null) {
-      return Image.asset('assets/images/${recipe.image}', height: height, width: double.infinity, fit: BoxFit.cover);
+    final img = Scope.of(context).dishImage(recipe);
+    if (img != null) {
+      return Image.asset(img, height: height, width: double.infinity, fit: BoxFit.cover);
     }
     return Container(
       height: height,
       width: double.infinity,
       color: c.primaryContainer,
       child: Icon(Icons.ramen_dining, size: 48, color: c.onPrimaryContainer),
+    );
+  }
+}
+
+/// Čtvercová fotka suroviny nebo nástroje se zaoblenými rohy; bez fotky ikona.
+class PhotoThumb extends StatelessWidget {
+  const PhotoThumb(this.asset, {super.key, this.size = 40, this.icon = Icons.eco_outlined});
+  final String? asset;
+  final double size;
+  final IconData icon;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = Theme.of(context).colorScheme;
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(size / 5),
+      child: SizedBox.square(
+        dimension: size,
+        child: asset == null
+            ? ColoredBox(
+                color: c.surfaceContainerHighest,
+                child: Icon(icon, size: size * 0.55, color: c.onSurfaceVariant),
+              )
+            : Image.asset(asset!, fit: BoxFit.cover, cacheWidth: (size * 3).round()),
+      ),
+    );
+  }
+}
+
+/// Vodorovný pás nástrojů s fotkami („Budeš potřebovat“, nástroje kroku).
+class ToolStrip extends StatelessWidget {
+  const ToolStrip(this.tools, {super.key, this.size = 72});
+  final List<String> tools;
+  final double size;
+
+  @override
+  Widget build(BuildContext context) {
+    final s = Scope.of(context);
+    final list = [for (final t in tools) if (s.content.tools[t] != null) s.content.tools[t]!];
+    return SizedBox(
+      height: size + 40,
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        itemCount: list.length,
+        separatorBuilder: (_, _) => const SizedBox(width: 12),
+        itemBuilder: (c, i) => SizedBox(
+          width: size + 8,
+          child: Column(
+            children: [
+              PhotoThumb(s.photos.tool(list[i].slug), size: size, icon: Icons.soup_kitchen_outlined),
+              const SizedBox(height: 4),
+              Text(
+                list[i].name(s.lang),
+                maxLines: 2,
+                textAlign: TextAlign.center,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.labelSmall,
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

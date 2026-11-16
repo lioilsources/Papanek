@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{tarifler hazırlanıyor} one{{n} tarif} other{{n} tarif}}",
   "lockedTitle": "{pack} paketinden tarif",
   "lockedBody": "Malzemeleri görebilirsin; adımlar ve pişirme modu paketle açılır.",
-  "unlock": "Kilidi aç"
+  "unlock": "Kilidi aç",
+  "youWillNeed": "İhtiyacın olanlar",
+  "comicPictures": "Çizgi roman görselleri"
 }

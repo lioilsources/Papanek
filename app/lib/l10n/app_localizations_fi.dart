@@ -321,4 +321,10 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get unlock => 'Avaa';
+
+  @override
+  String get youWillNeed => 'Tarvitset';
+
+  @override
+  String get comicPictures => 'Sarjakuvakuvat';
 }

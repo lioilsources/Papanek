@@ -320,4 +320,10 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get unlock => 'અનલૉક કરો';
+
+  @override
+  String get youWillNeed => 'તમને જોઈશે';
+
+  @override
+  String get comicPictures => 'કોમિક ચિત્રો';
 }

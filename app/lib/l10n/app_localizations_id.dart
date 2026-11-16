@@ -315,4 +315,10 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get unlock => 'Buka';
+
+  @override
+  String get youWillNeed => 'Yang kamu perlukan';
+
+  @override
+  String get comicPictures => 'Gambar komik';
 }

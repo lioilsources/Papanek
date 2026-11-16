@@ -319,4 +319,10 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get unlock => 'ਅਨਲੌਕ ਕਰੋ';
+
+  @override
+  String get youWillNeed => 'ਤੁਹਾਨੂੰ ਚਾਹੀਦਾ ਹੈ';
+
+  @override
+  String get comicPictures => 'ਕਾਮਿਕ ਤਸਵੀਰਾਂ';
 }

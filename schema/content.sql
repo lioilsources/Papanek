@@ -85,7 +85,7 @@ CREATE TABLE recipe_translations (
   lang      TEXT NOT NULL CHECK (lang IN ('cs', 'en')),
   title     TEXT NOT NULL,
   summary   TEXT NOT NULL DEFAULT '',
-  steps     TEXT NOT NULL,                 -- JSON: [{text, timer_sec?, action_icon?, glossary?:[slug]}]
+  steps     TEXT NOT NULL,                 -- JSON: [{text, timer_sec?, tools?:[slug], action_icon?, glossary?:[slug]}]
   tips      TEXT NOT NULL DEFAULT '',
   PRIMARY KEY (recipe_id, lang)
 ) WITHOUT ROWID;
@@ -107,6 +107,22 @@ CREATE TABLE recipe_tags (
   PRIMARY KEY (recipe_id, tag)
 ) WITHOUT ROWID;
 CREATE INDEX recipe_tags_tag ON recipe_tags (tag);
+
+-- Nástroje a pomůcky (seed/tools.yaml). Fotky jsou assets/photos/tool/<slug>.webp,
+-- fotky surovin assets/photos/ing/<slug>.webp, jídel photos/hero/<slug>.webp a kroků
+-- photos/step/<slug>_NN.webp; appka zjistí, které existují, z AssetManifestu.
+CREATE TABLE tools (
+  slug    TEXT PRIMARY KEY,
+  name_cs TEXT NOT NULL,
+  name_en TEXT NOT NULL,
+  sort    INTEGER NOT NULL
+) WITHOUT ROWID;
+
+CREATE TABLE recipe_tools (
+  recipe_id INTEGER NOT NULL REFERENCES recipes(id),
+  tool      TEXT NOT NULL REFERENCES tools(slug),
+  PRIMARY KEY (recipe_id, tool)
+) WITHOUT ROWID;
 
 -- §9: glosář a FAQ jsou předpočítané, za běhu žádný LLM.
 CREATE TABLE glossary (

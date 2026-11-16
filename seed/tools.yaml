@@ -1,0 +1,63 @@
+# Kuchyňské nástroje a pomůcky. Fotí je papanek-enrich photos, appka je ukazuje u receptu
+# („Budeš potřebovat“). `match` jsou anglická slova z kroků receptů (celá slova, malými písmeny),
+# podle kterých export pozná, že recept nástroj potřebuje. `photo` je popis pro fotku.
+- {slug: chef_knife, cs: kuchařský nůž, en: chef's knife, match: [chop, dice, slice, cut, mince, halve, quarter, knife], photo: "a large stainless steel chef's knife with a black handle"}
+- {slug: paring_knife, cs: malý nůž, en: paring knife, match: [core, deseed, score], photo: "a small paring knife with a short pointed blade"}
+- {slug: bread_knife, cs: nůž na chleba, en: bread knife, match: [baguette, loaf], photo: "a long serrated bread knife"}
+- {slug: cutting_board, cs: prkénko, en: cutting board, match: [chop, dice, slice, cut, mince, board], photo: "a thick wooden cutting board"}
+- {slug: peeler, cs: škrabka, en: vegetable peeler, match: [peel, peeler], photo: "a Y-shaped vegetable peeler"}
+- {slug: grater, cs: struhadlo, en: box grater, match: [grate, grated, grater, shred], photo: "a stainless steel four-sided box grater"}
+- {slug: microplane, cs: jemné struhadlo, en: fine grater, match: [zest], photo: "a long fine microplane zester grater"}
+- {slug: garlic_press, cs: lis na česnek, en: garlic press, match: [garlic press, crushed garlic], photo: "a metal garlic press"}
+- {slug: frying_pan, cs: pánev, en: frying pan, match: [pan, fry, sauté, saute, sear, skillet], photo: "a black non-stick frying pan"}
+- {slug: wok, cs: wok, en: wok, match: [wok, stir-fry], photo: "a carbon steel wok with a wooden handle"}
+- {slug: pot, cs: hrnec, en: pot, match: [pot, boil, simmer], photo: "a large stainless steel cooking pot with a lid"}
+- {slug: saucepan, cs: kastrůlek, en: saucepan, match: [saucepan, melt, warm], photo: "a small stainless steel saucepan with a long handle"}
+- {slug: lid, cs: poklice, en: lid, match: [cover, covered, lid], photo: "a glass pot lid with a steam vent"}
+- {slug: baking_tray, cs: plech, en: baking tray, match: [tray, sheet], photo: "a metal oven baking tray"}
+- {slug: baking_dish, cs: zapékací mísa, en: baking dish, match: [baking dish, ovenproof dish, casserole, gratin], photo: "a white ceramic rectangular baking dish"}
+- {slug: parchment, cs: pečicí papír, en: parchment paper, match: [parchment, baking paper], photo: "a roll of baking parchment paper partly unrolled"}
+- {slug: muffin_tin, cs: forma na muffiny, en: muffin tin, match: [muffin, muffins, cupcake], photo: "a metal 12-cup muffin tin"}
+- {slug: oven, cs: trouba, en: oven, match: [oven, bake, roast, preheat], photo: "a modern built-in kitchen oven with the door closed and the light on"}
+- {slug: stove, cs: sporák, en: stove, match: [heat, stove, burner, hob], photo: "an induction cooktop hob"}
+- {slug: mixing_bowl, cs: mísa, en: mixing bowl, match: [bowl, mix, combine, toss], photo: "a large stainless steel mixing bowl"}
+- {slug: small_bowl, cs: miska, en: small bowl, match: [small bowl, cup], photo: "a small white ceramic bowl"}
+- {slug: whisk, cs: metla, en: whisk, match: [whisk, beat, batter], photo: "a stainless steel balloon whisk"}
+- {slug: wooden_spoon, cs: vařečka, en: wooden spoon, match: [stir, stirring, wooden spoon], photo: "a wooden cooking spoon"}
+- {slug: spatula, cs: obracečka, en: spatula, match: [flip, turn, spatula], photo: "a flat silicone kitchen turner spatula"}
+- {slug: ladle, cs: naběračka, en: ladle, match: [ladle, ladleful], photo: "a stainless steel soup ladle"}
+- {slug: tongs, cs: kleště, en: tongs, match: [tongs], photo: "stainless steel kitchen tongs"}
+- {slug: slotted_spoon, cs: děrovaná lžíce, en: slotted spoon, match: [slotted spoon], photo: "a stainless steel slotted spoon"}
+- {slug: colander, cs: cedník, en: colander, match: [drain, colander], photo: "a metal colander"}
+- {slug: sieve, cs: sítko, en: sieve, match: [sieve, sift, strain], photo: "a fine mesh kitchen sieve"}
+- {slug: measuring_cup, cs: odměrka, en: measuring jug, match: [measuring jug, measure], photo: "a clear glass measuring jug with markings"}
+- {slug: measuring_spoons, cs: odměrné lžíce, en: measuring spoons, match: [measuring spoon], photo: "a set of stainless steel measuring spoons"}
+- {slug: kitchen_scale, cs: kuchyňská váha, en: kitchen scale, match: [weigh], photo: "a flat digital kitchen scale"}
+- {slug: blender, cs: mixér, en: blender, match: [blend, blender, puree, purée], photo: "a countertop blender with a glass jar"}
+- {slug: stick_blender, cs: tyčový mixér, en: stick blender, match: [stick blender, immersion], photo: "a handheld immersion stick blender"}
+- {slug: hand_mixer, cs: ruční šlehač, en: hand mixer, match: [mixer, beaters], photo: "an electric hand mixer with two beaters"}
+- {slug: potato_masher, cs: šťouchadlo, en: potato masher, match: [mash, mashed, masher], photo: "a stainless steel potato masher"}
+- {slug: rolling_pin, cs: váleček, en: rolling pin, match: [roll out, rolling, flatten], photo: "a wooden rolling pin"}
+- {slug: meat_mallet, cs: palička na maso, en: meat mallet, match: [pound, tenderize, mallet], photo: "a metal meat tenderizer mallet"}
+- {slug: kitchen_scissors, cs: kuchyňské nůžky, en: kitchen scissors, match: [scissors, snip], photo: "a pair of kitchen scissors"}
+- {slug: can_opener, cs: otvírák na konzervy, en: can opener, match: [can opener, canned, tinned], photo: "a manual can opener"}
+- {slug: citrus_juicer, cs: odšťavňovač, en: citrus juicer, match: [squeeze, juice of], photo: "a glass citrus juicer reamer"}
+- {slug: paper_towels, cs: papírové utěrky, en: paper towels, match: [pat, paper towel, paper towels], photo: "a roll of white kitchen paper towels"}
+- {slug: kitchen_towel, cs: utěrka, en: kitchen towel, match: [tea towel, cloth], photo: "a folded linen kitchen towel"}
+- {slug: plate, cs: talíř, en: plate, match: [plate, plates], photo: "an empty white dinner plate"}
+- {slug: serving_bowl, cs: hluboký talíř, en: serving bowl, match: [bowls], photo: "an empty deep ceramic soup bowl"}
+- {slug: fork, cs: vidlička, en: fork, match: [fork], photo: "a stainless steel table fork"}
+- {slug: skewers, cs: špízy, en: skewers, match: [skewer, skewers, toothpick], photo: "wooden bamboo skewers"}
+- {slug: brush, cs: štětec, en: pastry brush, match: [brush, brushed], photo: "a silicone pastry brush"}
+- {slug: rice_cooker, cs: hrnec na rýži, en: rice cooker, match: [rice cooker], photo: "an electric rice cooker"}
+- {slug: toaster, cs: topinkovač, en: toaster, match: [toaster], photo: "a two-slot toaster"}
+- {slug: thermometer, cs: teploměr, en: kitchen thermometer, match: [thermometer], photo: "a digital probe kitchen thermometer"}
+- {slug: timer, cs: minutka, en: kitchen timer, match: [timer], photo: "a classic round kitchen timer"}
+- {slug: foil, cs: alobal, en: aluminium foil, match: [foil], photo: "a roll of aluminium foil partly unrolled"}
+- {slug: cling_film, cs: potravinová fólie, en: cling film, match: [cling film, plastic wrap], photo: "a roll of clear cling film"}
+- {slug: jar, cs: sklenice, en: jar, match: [jar, jars], photo: "an empty glass jar with a lid"}
+- {slug: mortar, cs: hmoždíř, en: mortar and pestle, match: [mortar, pestle], photo: "a stone mortar and pestle"}
+- {slug: food_processor, cs: kuchyňský robot, en: food processor, match: [processor, pulse], photo: "a food processor with a clear bowl"}
+- {slug: oven_gloves, cs: chňapky, en: oven gloves, match: [take out, out of the oven, remove from the oven], photo: "a pair of quilted oven gloves"}
+- {slug: cooling_rack, cs: mřížka, en: cooling rack, match: [rack], photo: "a metal wire cooling rack"}
+- {slug: crepe_pan, cs: pánev na palačinky, en: crêpe pan, match: [crepe, crêpe, pancake, pancakes], photo: "a flat thin crepe pan"}

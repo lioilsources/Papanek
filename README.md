@@ -11,6 +11,7 @@ Offline kuchařka pro začátečníky: ví, co máš doma, a vybere recept. Plá
   - `papanek-ingest`: extrakce z dumpů Wikibooks a ze schema.org/Recipe
   - `papanek-export`: staví `app/assets/content.db` (zatím bez receptů)
   - `papanek-enrich`: ukázky stylů, na Sparku jen přes `sparkctl`
+  - `papanek-enrich photos` + `tools/l40s/`: fotky jídel, kroků, surovin a nástrojů z Qwen-Image na L40S
 - `app/`: Flutter, `com.ol1n.papanek`
 
 ```sh

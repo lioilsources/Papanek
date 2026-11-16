@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{recepti u pripremi} one{{n} recept} few{{n} recepta} other{{n} recepata}}",
   "lockedTitle": "Recept iz paketa {pack}",
   "lockedBody": "Sastojke već vidiš; koraci i način kuhanja otključavaju se s paketom.",
-  "unlock": "Otključaj"
+  "unlock": "Otključaj",
+  "youWillNeed": "Trebat ćeš",
+  "comicPictures": "Strip slike"
 }

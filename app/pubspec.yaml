@@ -31,6 +31,10 @@ flutter:
   assets:
     - assets/content.db
     - assets/images/
+    - assets/photos/hero/
+    - assets/photos/step/
+    - assets/photos/ing/
+    - assets/photos/tool/
 
 flutter_launcher_icons:
   ios: true

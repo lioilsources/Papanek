@@ -321,6 +321,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get unlock => 'Desbloquear';
+
+  @override
+  String get youWillNeed => 'Você vai precisar';
+
+  @override
+  String get comicPictures => 'Imagens em quadrinhos';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -640,6 +646,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get unlock => 'Desbloquear';
+
+  @override
+  String get youWillNeed => 'Você vai precisar';
+
+  @override
+  String get comicPictures => 'Imagens em quadrinhos';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -959,4 +971,10 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get unlock => 'Desbloquear';
+
+  @override
+  String get youWillNeed => 'Vais precisar';
+
+  @override
+  String get comicPictures => 'Imagens em banda desenhada';
 }

@@ -320,4 +320,10 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get unlock => 'Lås op';
+
+  @override
+  String get youWillNeed => 'Du skal bruge';
+
+  @override
+  String get comicPictures => 'Tegneseriebilleder';
 }

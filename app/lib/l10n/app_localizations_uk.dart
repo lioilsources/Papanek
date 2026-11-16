@@ -317,4 +317,10 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get unlock => 'Розблокувати';
+
+  @override
+  String get youWillNeed => 'Знадобиться';
+
+  @override
+  String get comicPictures => 'Комікс-картинки';
 }

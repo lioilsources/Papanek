@@ -314,4 +314,10 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get unlock => 'Mở khóa';
+
+  @override
+  String get youWillNeed => 'Bạn sẽ cần';
+
+  @override
+  String get comicPictures => 'Hình truyện tranh';
 }

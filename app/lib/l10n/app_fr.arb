@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{recettes en préparation} one{{n} recette} other{{n} recettes}}",
   "lockedTitle": "Recette du pack {pack}",
   "lockedBody": "Tu vois les ingrédients ; les étapes et le mode cuisine se débloquent avec le pack.",
-  "unlock": "Débloquer"
+  "unlock": "Débloquer",
+  "youWillNeed": "Il te faut",
+  "comicPictures": "Images style BD"
 }

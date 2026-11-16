@@ -320,4 +320,10 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get unlock => 'Lås upp';
+
+  @override
+  String get youWillNeed => 'Du behöver';
+
+  @override
+  String get comicPictures => 'Seriebilder';
 }

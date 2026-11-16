@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{الوصفات قيد التحضير} one{وصفة واحدة} two{وصفتان} few{{n} وصفات} many{{n} وصفة} other{{n} وصفة}}",
   "lockedTitle": "وصفة من حزمة {pack}",
   "lockedBody": "يمكنك رؤية المكونات؛ أما الخطوات ووضع الطهي فتُفتح مع الحزمة.",
-  "unlock": "فتح"
+  "unlock": "فتح",
+  "youWillNeed": "ستحتاج إلى",
+  "comicPictures": "رسوم كرتونية"
 }

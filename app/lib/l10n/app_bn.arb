@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{রেসিপি তৈরি হচ্ছে} one{{n}টি রেসিপি} other{{n}টি রেসিপি}}",
   "lockedTitle": "{pack} প্যাকের রেসিপি",
   "lockedBody": "উপকরণ দেখা যাচ্ছে; ধাপ আর রান্নার মোড প্যাকের সাথে খুলবে।",
-  "unlock": "আনলক করুন"
+  "unlock": "আনলক করুন",
+  "youWillNeed": "যা লাগবে",
+  "comicPictures": "কমিক ছবি"
 }

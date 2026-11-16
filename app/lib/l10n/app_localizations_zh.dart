@@ -309,6 +309,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get unlock => '解锁';
+
+  @override
+  String get youWillNeed => '你需要';
+
+  @override
+  String get comicPictures => '漫画插图';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hans`).
@@ -616,6 +622,12 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
 
   @override
   String get unlock => '解锁';
+
+  @override
+  String get youWillNeed => '你需要';
+
+  @override
+  String get comicPictures => '漫画插图';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -923,4 +935,10 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get unlock => '解鎖';
+
+  @override
+  String get youWillNeed => '你需要';
+
+  @override
+  String get comicPictures => '漫畫插圖';
 }

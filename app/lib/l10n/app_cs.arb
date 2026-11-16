@@ -73,5 +73,9 @@
   "lockedTitle": "Recept z balíčku {pack}",
   "@lockedTitle": {"placeholders": {"pack": {"type": "String"}}},
   "lockedBody": "Suroviny vidíš, postup a režim vaření se ukážou po odemčení balíčku.",
-  "unlock": "Odemknout"
+  "unlock": "Odemknout",
+  "youWillNeed": "Budeš potřebovat",
+  "@youWillNeed": {"description": "Nadpis seznamu nástrojů a nádobí u receptu"},
+  "comicPictures": "Komiksové obrázky",
+  "@comicPictures": {"description": "Přepínač: obrázky jídel jako komiks místo fotek"}
 }

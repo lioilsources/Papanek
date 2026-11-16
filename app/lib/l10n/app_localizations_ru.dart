@@ -318,4 +318,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get unlock => 'Разблокировать';
+
+  @override
+  String get youWillNeed => 'Понадобится';
+
+  @override
+  String get comicPictures => 'Комиксовые картинки';
 }

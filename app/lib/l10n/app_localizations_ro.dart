@@ -324,4 +324,10 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get unlock => 'Deblochează';
+
+  @override
+  String get youWillNeed => 'Vei avea nevoie de';
+
+  @override
+  String get comicPictures => 'Imagini în stil benzi desenate';
 }

@@ -320,4 +320,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get unlock => 'আনলক করুন';
+
+  @override
+  String get youWillNeed => 'যা লাগবে';
+
+  @override
+  String get comicPictures => 'কমিক ছবি';
 }

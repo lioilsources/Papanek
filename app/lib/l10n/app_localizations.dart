@@ -537,6 +537,18 @@ abstract class AppLocalizations {
   /// In cs, this message translates to:
   /// **'Odemknout'**
   String get unlock;
+
+  /// Nadpis seznamu nástrojů a nádobí u receptu
+  ///
+  /// In cs, this message translates to:
+  /// **'Budeš potřebovat'**
+  String get youWillNeed;
+
+  /// Přepínač: obrázky jídel jako komiks místo fotek
+  ///
+  /// In cs, this message translates to:
+  /// **'Komiksové obrázky'**
+  String get comicPictures;
 }
 
 class _AppLocalizationsDelegate

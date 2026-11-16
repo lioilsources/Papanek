@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{레시피 준비 중} other{레시피 {n}개}}",
   "lockedTitle": "{pack} 팩의 레시피",
   "lockedBody": "재료는 볼 수 있어요. 조리 단계와 요리 모드는 팩과 함께 열립니다.",
-  "unlock": "잠금 해제"
+  "unlock": "잠금 해제",
+  "youWillNeed": "필요한 도구",
+  "comicPictures": "만화 그림"
 }

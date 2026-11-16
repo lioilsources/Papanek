@@ -317,4 +317,10 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get unlock => 'Odblokuj';
+
+  @override
+  String get youWillNeed => 'Będziesz potrzebować';
+
+  @override
+  String get comicPictures => 'Obrazki komiksowe';
 }

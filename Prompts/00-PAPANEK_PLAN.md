@@ -151,7 +151,15 @@ score     = coverage*0.5 + uses_expiring*0.2 + rating_affinity*0.15 + popularity
 - **Otázky při vaření** — předpočítané při výrobě obsahu: **glosář** (~200 pojmů: blanšírovat, al dente, restovat… s obrázkem) odkazovaný z kroků jako tooltip, + **FAQ per recept** (3–5 otázek vygenerovaných LLM: „můžu místo smetany…“, „jak poznám, že je hotové“). Uživatel nepíše dotaz, klepne na pojem nebo otevře FAQ.
 - Embeddingy při výrobě: `bge-m3` / `multilingual-e5-large` v pgvector — pro dedup a kategorizaci, do appky se exportují jen pokud bude v1.1.
 
-## 10. Obrázky (komiksový styl)
+## 10. Obrázky (fotky; komiks volitelně)
+
+**Změna 16. 11. 2026 (Ol1n):** užitečné je jen realistické fotografické zobrazení. Fotí se hotové jídlo,
+**každý krok postupu**, každá surovina a každý nástroj nebo pomůcka (`seed/tools.yaml`: nože, hrnce,
+struhadla…). Generuje Qwen-Image fp8 na L40S (1024², 20 kroků, ~22 s/obr., Apache 2.0; A/B proti
+FLUX-schnell vyhrál věrností jídel a rukou): `papanek-enrich photos` → `tools/l40s/run_photos.py` →
+`tools/l40s/sync_photos.sh` → `app/assets/photos/{hero,step,ing,tool}`. Komiksové obrázky jídel zůstávají
+jako volba v menu. Původní komiksový plán níže platí jen pro tu volbu.
+
 
 - **Jeden styl pro celou appku**: čistý komiks / flat ilustrace, výrazné obrysy, teplé barvy, bez textu v obrázku. Vyzkoušet 3 style-prompty, Ol1n vybere, zafixovat jako `STYLE_PROMPT` + případně LoRA (viz realeyes workflow).
 - Per recept: **hero obrázek** (jídlo na talíři) + volitelně **1 obrázek na krok** (ikonka akce: krájení, smažení…) — kroky lze sdílet z knihovny ~40 generických akcí místo generování per recept.

@@ -37,4 +37,6 @@ type Text struct {
 type Step struct {
 	Text     string `yaml:"text" json:"text"`
 	TimerSec int    `yaml:"timer_sec,omitempty" json:"timer_sec"`
+	// Tools doplňuje export z anglického textu kroku (seed/tools.yaml), v YAML není.
+	Tools []string `yaml:"-" json:"tools,omitempty"`
 }

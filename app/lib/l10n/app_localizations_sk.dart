@@ -316,4 +316,10 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get unlock => 'Odomknúť';
+
+  @override
+  String get youWillNeed => 'Budeš potrebovať';
+
+  @override
+  String get comicPictures => 'Komiksové obrázky';
 }

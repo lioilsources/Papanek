@@ -321,4 +321,10 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get unlock => 'திற';
+
+  @override
+  String get youWillNeed => 'உங்களுக்குத் தேவை';
+
+  @override
+  String get comicPictures => 'காமிக் படங்கள்';
 }

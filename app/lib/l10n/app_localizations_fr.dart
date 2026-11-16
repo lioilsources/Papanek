@@ -321,4 +321,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get unlock => 'Débloquer';
+
+  @override
+  String get youWillNeed => 'Il te faut';
+
+  @override
+  String get comicPictures => 'Images style BD';
 }

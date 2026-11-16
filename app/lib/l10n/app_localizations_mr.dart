@@ -320,4 +320,10 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get unlock => 'अनलॉक करा';
+
+  @override
+  String get youWillNeed => 'तुम्हाला लागेल';
+
+  @override
+  String get comicPictures => 'कॉमिक चित्रे';
 }

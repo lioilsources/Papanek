@@ -323,4 +323,10 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get unlock => 'פתיחה';
+
+  @override
+  String get youWillNeed => 'תצטרך';
+
+  @override
+  String get comicPictures => 'איורי קומיקס';
 }

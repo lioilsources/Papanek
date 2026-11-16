@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{レシピ準備中} other{{n}件のレシピ}}",
   "lockedTitle": "「{pack}」パックのレシピ",
   "lockedBody": "材料は見られます。手順と調理モードはパックで解放されます。",
-  "unlock": "解放する"
+  "unlock": "解放する",
+  "youWillNeed": "使う道具",
+  "comicPictures": "コミック風イラスト"
 }

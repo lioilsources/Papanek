@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{receitas em preparação} one{{n} receita} other{{n} receitas}}",
   "lockedTitle": "Receita do pacote {pack}",
   "lockedBody": "Você já vê os ingredientes; o passo a passo e o modo cozinhar são liberados com o pacote.",
-  "unlock": "Desbloquear"
+  "unlock": "Desbloquear",
+  "youWillNeed": "Você vai precisar",
+  "comicPictures": "Imagens em quadrinhos"
 }

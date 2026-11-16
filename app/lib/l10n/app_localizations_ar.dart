@@ -318,4 +318,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get unlock => 'فتح';
+
+  @override
+  String get youWillNeed => 'ستحتاج إلى';
+
+  @override
+  String get comicPictures => 'رسوم كرتونية';
 }

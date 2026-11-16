@@ -319,4 +319,10 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get unlock => 'کھولیں';
+
+  @override
+  String get youWillNeed => 'آپ کو ضرورت ہوگی';
+
+  @override
+  String get comicPictures => 'کامک تصاویر';
 }

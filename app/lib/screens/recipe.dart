@@ -72,9 +72,10 @@ class _RecipeScreenState extends State<RecipeScreen> {
                 for (final line in r.lines)
                   ListTile(
                     contentPadding: EdgeInsets.zero,
-                    leading: Icon(
-                      s.has(line.ingredient) ? Icons.check_circle : Icons.radio_button_unchecked,
-                      color: s.has(line.ingredient) ? Colors.green.shade600 : null,
+                    leading: Badge(
+                      backgroundColor: s.has(line.ingredient) ? Colors.green.shade600 : Colors.transparent,
+                      label: s.has(line.ingredient) ? const Icon(Icons.check, size: 10, color: Colors.white) : null,
+                      child: PhotoThumb(s.photos.ingredient(line.ingredient.slug), size: 48),
                     ),
                     title: Text(line.ingredient.name(s.lang)),
                     subtitle:
@@ -107,6 +108,12 @@ class _RecipeScreenState extends State<RecipeScreen> {
                       },
                     ),
                   ),
+                if (r.tools.isNotEmpty) ...[
+                  const SizedBox(height: 20),
+                  Text(l.youWillNeed, style: tt.titleLarge),
+                  const SizedBox(height: 12),
+                  ToolStrip(r.tools),
+                ],
                 const SizedBox(height: 20),
                 if (locked)
                   Card(
@@ -140,13 +147,29 @@ class _RecipeScreenState extends State<RecipeScreen> {
                   const SizedBox(height: 8),
                   for (final (i, st) in txt.steps.indexed)
                     Padding(
-                      padding: const EdgeInsets.only(bottom: 12),
-                      child: Row(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          CircleAvatar(radius: 14, child: Text('${i + 1}')),
-                          const SizedBox(width: 12),
-                          Expanded(child: Text(st.text, style: tt.bodyLarge)),
+                          if (s.photos.step(r.slug, i) case final photo?)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(16),
+                                child: AspectRatio(
+                                  aspectRatio: 4 / 3,
+                                  child: Image.asset(photo, fit: BoxFit.cover, cacheWidth: 900),
+                                ),
+                              ),
+                            ),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(radius: 14, child: Text('${i + 1}')),
+                              const SizedBox(width: 12),
+                              Expanded(child: Text(st.text, style: tt.bodyLarge)),
+                            ],
+                          ),
                         ],
                       ),
                     ),
