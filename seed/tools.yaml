@@ -36,7 +36,7 @@
 - {slug: blender, cs: mixér, en: blender, match: [blend, blender, puree, purée], photo: "a countertop blender with a glass jar"}
 - {slug: stick_blender, cs: tyčový mixér, en: stick blender, match: [stick blender, immersion], photo: "a handheld immersion stick blender"}
 - {slug: hand_mixer, cs: ruční šlehač, en: hand mixer, match: [mixer, beaters], photo: "an electric hand mixer with two beaters"}
-- {slug: potato_masher, cs: šťouchadlo, en: potato masher, match: [mash, mashed, masher], photo: "a stainless steel potato masher"}
+- {slug: potato_masher, cs: šťouchadlo, en: potato masher, match: [mash, mashed, masher], photo: "a stainless steel potato masher with a flat zigzag wire head at the bottom of a straight vertical handle"}
 - {slug: rolling_pin, cs: váleček, en: rolling pin, match: [roll out, rolling, flatten], photo: "a wooden rolling pin"}
 - {slug: meat_mallet, cs: palička na maso, en: meat mallet, match: [pound, tenderize, mallet], photo: "a metal meat tenderizer mallet"}
 - {slug: kitchen_scissors, cs: kuchyňské nůžky, en: kitchen scissors, match: [scissors, snip], photo: "a pair of kitchen scissors"}
@@ -47,7 +47,7 @@
 - {slug: plate, cs: talíř, en: plate, match: [plate, plates], photo: "an empty white dinner plate"}
 - {slug: serving_bowl, cs: hluboký talíř, en: serving bowl, match: [bowls], photo: "an empty deep ceramic soup bowl"}
 - {slug: fork, cs: vidlička, en: fork, match: [fork], photo: "a stainless steel table fork"}
-- {slug: skewers, cs: špízy, en: skewers, match: [skewer, skewers, toothpick], photo: "wooden bamboo skewers"}
+- {slug: skewers, cs: špízy, en: skewers, match: [skewer, skewers, toothpick], photo: "a bundle of long thin pointed bamboo skewer sticks, no cutlery"}
 - {slug: brush, cs: štětec, en: pastry brush, match: [brush, brushed], photo: "a silicone pastry brush"}
 - {slug: rice_cooker, cs: hrnec na rýži, en: rice cooker, match: [rice cooker], photo: "an electric rice cooker"}
 - {slug: toaster, cs: topinkovač, en: toaster, match: [toaster], photo: "a two-slot toaster"}
