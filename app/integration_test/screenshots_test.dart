@@ -23,30 +23,37 @@ void main() {
     await tester.pumpWidget(PapanekApp(state: state));
     await tester.pumpAndSettle();
     await binding.convertFlutterSurfaceToImage();
-    await tester.pumpAndSettle();
+    await settleImages(tester);
     await binding.takeScreenshot('1_co_uvarim');
 
     await tester.tap(find.byType(RecipeCard).first);
-    await tester.pumpAndSettle();
+    await settleImages(tester);
     await binding.takeScreenshot('2_recept');
     await tester.drag(find.byType(CustomScrollView), const Offset(0, -700));
-    await tester.pumpAndSettle();
+    await settleImages(tester);
     await binding.takeScreenshot('3_recept_suroviny');
 
     await tester.tap(find.byType(FloatingActionButton));
     await tester.pumpAndSettle();
     await tester.tap(find.byType(FilledButton).last);
-    await tester.pumpAndSettle();
+    await settleImages(tester);
     await binding.takeScreenshot('4_vareni');
     final nav = tester.state<NavigatorState>(find.byType(Navigator).first);
     nav.popUntil((r) => r.isFirst);
     await tester.pumpAndSettle();
 
     await tester.tap(find.byIcon(Icons.kitchen));
-    await tester.pumpAndSettle();
+    await settleImages(tester);
     await binding.takeScreenshot('5_spiz');
     await tester.enterText(find.byType(TextField), 'kuř');
     await tester.pumpAndSettle();
     await binding.takeScreenshot('6_naseptavac');
   });
+}
+
+/// Obrázky z assets se dekódují asynchronně; pumpAndSettle na ně nečeká.
+Future<void> settleImages(WidgetTester tester) async {
+  await tester.pumpAndSettle();
+  await tester.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 1500)));
+  await tester.pumpAndSettle();
 }
