@@ -7,7 +7,7 @@
 
   python3 run_photos.py jobs.jsonl --out /srv/work/papanek/png [--model qwen|schnell] [--only hero/] [--limit 6]
 """
-import argparse, json, os, sys, time, urllib.parse, urllib.request
+import argparse, json, os, sys, time, urllib.error, urllib.parse, urllib.request
 
 BASE = "http://127.0.0.1:8188"
 NEG = ("cartoon, illustration, drawing, painting, anime, 3d render, cgi, text, letters, watermark, logo, "
@@ -44,10 +44,20 @@ def wf(model, prompt, seed, prefix, size):
 
 
 def call(path, body=None):
-    req = urllib.request.Request(BASE + path, data=json.dumps(body).encode() if body else None,
-                                 headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return r.read()
+    # L40S sdílí víc sezení a přepnutí profilu ComfyUI zastaví: počkat, až zase naběhne.
+    wait = 10
+    while True:
+        try:
+            req = urllib.request.Request(BASE + path, data=json.dumps(body).encode() if body else None,
+                                         headers={"Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return r.read()
+        except (urllib.error.URLError, ConnectionError, TimeoutError) as e:
+            if isinstance(e, urllib.error.HTTPError):
+                raise
+            print(json.dumps({"comfy_down": str(e), "retry_s": wait}), flush=True)
+            time.sleep(wait)
+            wait = min(wait * 2, 300)
 
 
 def main():
@@ -78,11 +88,12 @@ def main():
     print(json.dumps({"todo": len(todo), "skipped": len(jobs) - len(todo)}), flush=True)
 
     pending, done, failed, t0 = {}, 0, 0, time.time()
+    retry = []  # úlohy ztracené restartem ComfyUI
     it = iter(todo)
     exhausted = False
-    while pending or not exhausted:
-        while not exhausted and len(pending) < a.depth:
-            j = next(it, None)
+    while pending or retry or not exhausted:
+        while (retry or not exhausted) and len(pending) < a.depth:
+            j = retry.pop() if retry else next(it, None)
             if j is None:
                 exhausted = True
                 break
@@ -94,14 +105,21 @@ def main():
                 print(json.dumps({"name": j["name"], "error": str(e)}), flush=True)
                 failed += 1
         time.sleep(0.5)
+        q = json.loads(call("/queue"))
+        queued = {x[1] for x in q.get("queue_running", []) + q.get("queue_pending", [])}
         for pid in list(pending):
             j, ts = pending[pid]
             h = json.loads(call("/history/" + pid)).get(pid)
             if not h:
-                if time.time() - ts > 900:
-                    print(json.dumps({"name": j["name"], "error": "timeout"}), flush=True)
+                # Není ve frontě ani v historii = ComfyUI mezitím restartoval.
+                if pid not in queued or time.time() - ts > 900:
                     del pending[pid]
-                    failed += 1
+                    j["tries"] = j.get("tries", 0) + 1
+                    if j["tries"] < 3:
+                        retry.append(j)
+                    else:
+                        print(json.dumps({"name": j["name"], "error": "timeout"}), flush=True)
+                        failed += 1
                 continue
             imgs = [i for o in h.get("outputs", {}).values() for i in o.get("images", [])]
             del pending[pid]
