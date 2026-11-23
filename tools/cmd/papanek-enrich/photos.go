@@ -119,12 +119,22 @@ var surfaces = []string{
 }
 
 // stepPhotoPrompt popisuje jeden krok jako fotku z domácí kuchyně: ruce kuchaře, suroviny a
-// nádobí z kroku, jídlo v rozpracovaném stavu.
+// nádobí z kroku, jídlo v rozpracovaném stavu. Název jídla dostane jen poslední krok: jinak ho
+// model kreslí hotové už do prvního kroku (bramboráky v míse při strouhání).
 func stepPhotoPrompt(r content.Recipe, i int, text string) string {
-	return fmt.Sprintf("A photo of cooking step %d of %d while making %s at home: %s"+
-		" Show exactly this moment: the cook's hands, the food in its current half-prepared state and the kitchen tools used,"+
-		" on a home kitchen counter or stove, close-up from the cook's point of view. %s",
-		i+1, len(r.EN.Steps), r.EN.Title, ensureDot(text)+hints(text+" "+r.EN.Title), photoStyle)
+	n := len(r.EN.Steps)
+	if i == n-1 {
+		return fmt.Sprintf("A photo of the last cooking step of %s at home: %s"+
+			" Show exactly this moment: the cook's hands, the food and the kitchen tools used,"+
+			" on a home kitchen counter or stove, close-up from the cook's point of view. %s",
+			r.EN.Title, ensureDot(text)+hints(text+" "+r.EN.Title), photoStyle)
+	}
+	return fmt.Sprintf("A photo of a home cooking step: %s"+
+		" Show only this moment and only the ingredients named in it, in the state they are in right now"+
+		" (step %d of %d, the dish is not finished yet): the cook's hands doing this action and the kitchen tools used,"+
+		" on a home kitchen counter or stove, close-up from the cook's point of view."+
+		" Nothing cooked, fried, baked or plated yet unless this step says so, no finished dish anywhere in the frame. %s",
+		ensureDot(text)+hints(text), i+1, n, photoStyle)
 }
 
 func hints(s string) string {
