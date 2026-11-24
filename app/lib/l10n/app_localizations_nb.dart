@@ -320,4 +320,10 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get unlock => 'Lås opp';
+
+  @override
+  String get youWillNeed => 'Du trenger';
+
+  @override
+  String get comicPictures => 'Tegneseriebilder';
 }

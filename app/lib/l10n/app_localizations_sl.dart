@@ -318,4 +318,10 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get unlock => 'Odkleni';
+
+  @override
+  String get youWillNeed => 'Potreboval boš';
+
+  @override
+  String get comicPictures => 'Stripovske slike';
 }

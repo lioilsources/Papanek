@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{食譜準備中} other{{n} 道食譜}}",
   "lockedTitle": "來自「{pack}」食譜包",
   "lockedBody": "食材已可查看；步驟和烹飪模式隨食譜包解鎖。",
-  "unlock": "解鎖"
+  "unlock": "解鎖",
+  "youWillNeed": "你需要",
+  "comicPictures": "漫畫插圖"
 }

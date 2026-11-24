@@ -324,4 +324,10 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get unlock => 'Odemknout';
+
+  @override
+  String get youWillNeed => 'Budeš potřebovat';
+
+  @override
+  String get comicPictures => 'Komiksové obrázky';
 }

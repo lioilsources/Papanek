@@ -320,4 +320,10 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get unlock => 'അൺലോക്ക് ചെയ്യുക';
+
+  @override
+  String get youWillNeed => 'നിങ്ങൾക്ക് വേണ്ടത്';
+
+  @override
+  String get comicPictures => 'കോമിക് ചിത്രങ്ങൾ';
 }

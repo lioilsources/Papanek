@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{recepty sa pripravujú} one{{n} recept} few{{n} recepty} other{{n} receptov}}",
   "lockedTitle": "Recept z balíčka {pack}",
   "lockedBody": "Suroviny vidíš, postup a režim varenia sa ukážu po odomknutí balíčka.",
-  "unlock": "Odomknúť"
+  "unlock": "Odomknúť",
+  "youWillNeed": "Budeš potrebovať",
+  "comicPictures": "Komiksové obrázky"
 }

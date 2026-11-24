@@ -305,4 +305,10 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get unlock => '잠금 해제';
+
+  @override
+  String get youWillNeed => '필요한 도구';
+
+  @override
+  String get comicPictures => '만화 그림';
 }

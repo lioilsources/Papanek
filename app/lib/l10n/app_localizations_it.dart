@@ -321,4 +321,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get unlock => 'Sblocca';
+
+  @override
+  String get youWillNeed => 'Ti servirà';
+
+  @override
+  String get comicPictures => 'Immagini a fumetti';
 }

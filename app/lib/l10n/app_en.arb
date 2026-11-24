@@ -73,5 +73,7 @@
   "lockedTitle": "Recipe from the {pack} pack",
   "@lockedTitle": {"placeholders": {"pack": {"type": "String"}}},
   "lockedBody": "You can see the ingredients; the steps and cooking mode unlock with the pack.",
-  "unlock": "Unlock"
+  "unlock": "Unlock",
+  "youWillNeed": "You will need",
+  "comicPictures": "Comic pictures"
 }

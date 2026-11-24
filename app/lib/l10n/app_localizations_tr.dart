@@ -319,4 +319,10 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get unlock => 'Kilidi aç';
+
+  @override
+  String get youWillNeed => 'İhtiyacın olanlar';
+
+  @override
+  String get comicPictures => 'Çizgi roman görselleri';
 }

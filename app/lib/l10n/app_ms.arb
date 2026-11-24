@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{resipi sedang disediakan} other{{n} resipi}}",
   "lockedTitle": "Resipi daripada pek {pack}",
   "lockedBody": "Bahan-bahan sudah boleh dilihat; langkah dan mod memasak dibuka bersama pek.",
-  "unlock": "Buka"
+  "unlock": "Buka",
+  "youWillNeed": "Anda perlukan",
+  "comicPictures": "Gambar komik"
 }

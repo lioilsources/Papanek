@@ -313,4 +313,10 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get unlock => 'ปลดล็อก';
+
+  @override
+  String get youWillNeed => 'สิ่งที่ต้องใช้';
+
+  @override
+  String get comicPictures => 'ภาพการ์ตูน';
 }

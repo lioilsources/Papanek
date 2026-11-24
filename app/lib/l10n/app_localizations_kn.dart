@@ -320,4 +320,10 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get unlock => 'ಅನ್‌ಲಾಕ್ ಮಾಡಿ';
+
+  @override
+  String get youWillNeed => 'ನಿಮಗೆ ಬೇಕಾಗುವುದು';
+
+  @override
+  String get comicPictures => 'ಕಾಮಿಕ್ ಚಿತ್ರಗಳು';
 }

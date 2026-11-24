@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{công thức đang được chuẩn bị} other{{n} công thức}}",
   "lockedTitle": "Công thức từ gói {pack}",
   "lockedBody": "Bạn đã xem được nguyên liệu; các bước và chế độ nấu sẽ mở khóa cùng gói.",
-  "unlock": "Mở khóa"
+  "unlock": "Mở khóa",
+  "youWillNeed": "Bạn sẽ cần",
+  "comicPictures": "Hình truyện tranh"
 }

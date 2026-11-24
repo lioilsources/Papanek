@@ -319,4 +319,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get unlock => 'Freischalten';
+
+  @override
+  String get youWillNeed => 'Du brauchst';
+
+  @override
+  String get comicPictures => 'Comic-Bilder';
 }

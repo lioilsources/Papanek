@@ -305,4 +305,10 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get unlock => '解放する';
+
+  @override
+  String get youWillNeed => '使う道具';
+
+  @override
+  String get comicPictures => 'コミック風イラスト';
 }

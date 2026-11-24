@@ -319,4 +319,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get unlock => 'Unlock';
+
+  @override
+  String get youWillNeed => 'You will need';
+
+  @override
+  String get comicPictures => 'Comic pictures';
 }

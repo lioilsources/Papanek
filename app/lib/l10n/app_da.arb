@@ -58,5 +58,7 @@
   "recipeCount": "{n, plural, =0{opskrifter på vej} one{{n} opskrift} other{{n} opskrifter}}",
   "lockedTitle": "Opskrift fra pakken {pack}",
   "lockedBody": "Du kan se ingredienserne; fremgangsmåden og madlavningstilstand låses op med pakken.",
-  "unlock": "Lås op"
+  "unlock": "Lås op",
+  "youWillNeed": "Du skal bruge",
+  "comicPictures": "Tegneseriebilleder"
 }

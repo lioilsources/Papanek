@@ -114,7 +114,16 @@ func run(seed, schema, out, version string) error {
 	for i, in := range items {
 		ids[in.Slug] = i + 1
 	}
-	n, err := exportRecipes(tx, filepath.Join(seed, "recipes"), ids, items)
+	tools, err := loadTools(filepath.Join(seed, "tools.yaml"))
+	if err != nil {
+		return err
+	}
+	for i, t := range tools {
+		if _, err := tx.Exec(`INSERT INTO tools VALUES (?,?,?,?)`, t.Slug, t.CS, t.EN, i); err != nil {
+			return err
+		}
+	}
+	n, err := exportRecipes(tx, filepath.Join(seed, "recipes"), ids, items, tools)
 	if err != nil {
 		return err
 	}

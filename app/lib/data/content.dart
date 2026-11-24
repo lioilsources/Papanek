@@ -27,9 +27,17 @@ class RecipeLine {
 }
 
 class Step {
-  Step(this.text, this.timerSec);
+  Step(this.text, this.timerSec, [this.tools = const []]);
   final String text;
   final int timerSec;
+  final List<String> tools; // slugy nástrojů z kroku (seed/tools.yaml)
+}
+
+/// Nástroj nebo pomůcka (nůž, hrnec, struhadlo…).
+class Tool {
+  Tool(this.slug, this.cs, this.en);
+  final String slug, cs, en;
+  String name(String lang) => lang == 'cs' ? cs : en;
 }
 
 class RecipeText {
@@ -55,6 +63,7 @@ class Recipe {
   final String? image;
   final lines = <RecipeLine>[];
   final tags = <String>{};
+  final tools = <String>[]; // podle pořadí katalogu
   final text = <String, RecipeText>{};
   int get totalMin => prepMin + cookMin;
   RecipeText t(String lang) => text[lang] ?? text.values.first;
@@ -87,10 +96,13 @@ class Alias {
 }
 
 class Content {
-  Content._(this.ingredients, this.recipes, this.units, this.aliases, this.packs);
+  Content._(this.ingredients, this.recipes, this.units, this.aliases, this.packs, this.tools);
 
   @visibleForTesting
-  Content.test(this.ingredients, this.recipes, [this.aliases = const [], this.packs = const []]) : units = {};
+  Content.test(this.ingredients, this.recipes, [this.aliases = const [], this.packs = const []])
+    : units = {},
+      tools = {};
+  final Map<String, Tool> tools; // podle sort
   final Map<int, Ingredient> ingredients;
   final List<Pack> packs; // podle sort
   int recipeCount(String pack) => recipes.where((r) => r.pack == pack).length;
@@ -160,7 +172,13 @@ class Content {
       }
       for (final r in await db.query('recipe_translations')) {
         final steps = (jsonDecode(r['steps'] as String) as List)
-            .map((s) => Step(s['text'] as String, (s['timer_sec'] as num?)?.toInt() ?? 0))
+            .map(
+              (s) => Step(
+                s['text'] as String,
+                (s['timer_sec'] as num?)?.toInt() ?? 0,
+                ((s['tools'] as List?) ?? const []).cast<String>(),
+              ),
+            )
             .toList();
         recipes[r['recipe_id'] as int]?.text[r['lang'] as String] = RecipeText(
           r['title'] as String,
@@ -168,6 +186,17 @@ class Content {
           steps,
           r['tips'] as String,
         );
+      }
+      final tools = {
+        for (final r in await db.query('tools', orderBy: 'sort'))
+          r['slug'] as String: Tool(r['slug'] as String, r['name_cs'] as String, r['name_en'] as String),
+      };
+      final order = {for (final (i, k) in tools.keys.indexed) k: i};
+      for (final r in await db.query('recipe_tools')) {
+        recipes[r['recipe_id'] as int]?.tools.add(r['tool'] as String);
+      }
+      for (final r in recipes.values) {
+        r.tools.sort((a, b) => (order[a] ?? 999).compareTo(order[b] ?? 999));
       }
       final aliases = [
         for (final r in await db.query('ingredient_aliases'))
@@ -184,7 +213,7 @@ class Content {
             r['sort'] as int,
           ),
       ];
-      return Content._(ings, recipes.values.toList(), units, aliases, packs);
+      return Content._(ings, recipes.values.toList(), units, aliases, packs, tools);
     } finally {
       await db.close();
     }

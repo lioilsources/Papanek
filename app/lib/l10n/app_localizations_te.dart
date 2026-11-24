@@ -320,4 +320,10 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get unlock => 'అన్‌లాక్ చేయి';
+
+  @override
+  String get youWillNeed => 'మీకు కావాల్సినవి';
+
+  @override
+  String get comicPictures => 'కామిక్ చిత్రాలు';
 }

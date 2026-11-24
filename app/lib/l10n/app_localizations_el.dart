@@ -320,4 +320,10 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get unlock => 'Ξεκλείδωμα';
+
+  @override
+  String get youWillNeed => 'Θα χρειαστείς';
+
+  @override
+  String get comicPictures => 'Εικόνες κόμικ';
 }

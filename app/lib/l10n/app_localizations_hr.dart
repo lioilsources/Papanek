@@ -317,4 +317,10 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get unlock => 'Otključaj';
+
+  @override
+  String get youWillNeed => 'Trebat ćeš';
+
+  @override
+  String get comicPictures => 'Strip slike';
 }
