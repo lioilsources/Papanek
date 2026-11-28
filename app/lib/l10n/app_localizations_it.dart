@@ -323,6 +323,16 @@ class AppLocalizationsIt extends AppLocalizations {
   String get unlock => 'Sblocca';
 
   @override
+  String get settings => 'Impostazioni';
+
+  @override
+  String get statsToggle => 'Statistiche anonime';
+
+  @override
+  String get statsToggleBody =>
+      'Aiutano a migliorare l\'app. Nessun identificativo, niente di ciò che scrivi.';
+
+  @override
   String get youWillNeed => 'Ti servirà';
 
   @override

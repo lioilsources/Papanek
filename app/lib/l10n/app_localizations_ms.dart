@@ -317,6 +317,16 @@ class AppLocalizationsMs extends AppLocalizations {
   String get unlock => 'Buka';
 
   @override
+  String get settings => 'Tetapan';
+
+  @override
+  String get statsToggle => 'Statistik tanpa nama';
+
+  @override
+  String get statsToggleBody =>
+      'Membantu memperbaik aplikasi. Tiada pengecam, tiada apa-apa yang anda taip.';
+
+  @override
   String get youWillNeed => 'Anda perlukan';
 
   @override

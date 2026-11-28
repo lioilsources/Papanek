@@ -59,6 +59,9 @@
   "lockedTitle": "Resipi daripada pek {pack}",
   "lockedBody": "Bahan-bahan sudah boleh dilihat; langkah dan mod memasak dibuka bersama pek.",
   "unlock": "Buka",
+  "settings": "Tetapan",
+  "statsToggle": "Statistik tanpa nama",
+  "statsToggleBody": "Membantu memperbaik aplikasi. Tiada pengecam, tiada apa-apa yang anda taip.",
   "youWillNeed": "Anda perlukan",
   "comicPictures": "Gambar komik"
 }

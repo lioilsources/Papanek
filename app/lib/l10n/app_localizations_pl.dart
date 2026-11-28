@@ -319,6 +319,16 @@ class AppLocalizationsPl extends AppLocalizations {
   String get unlock => 'Odblokuj';
 
   @override
+  String get settings => 'Ustawienia';
+
+  @override
+  String get statsToggle => 'Anonimowe statystyki';
+
+  @override
+  String get statsToggleBody =>
+      'Pomagają ulepszać aplikację. Bez identyfikatorów i bez niczego, co wpisujesz.';
+
+  @override
   String get youWillNeed => 'Będziesz potrzebować';
 
   @override

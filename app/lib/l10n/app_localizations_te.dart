@@ -322,6 +322,16 @@ class AppLocalizationsTe extends AppLocalizations {
   String get unlock => 'అన్‌లాక్ చేయి';
 
   @override
+  String get settings => 'సెట్టింగ్‌లు';
+
+  @override
+  String get statsToggle => 'అనామక గణాంకాలు';
+
+  @override
+  String get statsToggleBody =>
+      'యాప్‌ను మెరుగుపరచడంలో సహాయపడతాయి. ఐడెంటిఫైయర్‌లు లేవు, మీరు టైప్ చేసేది ఏదీ లేదు.';
+
+  @override
   String get youWillNeed => 'మీకు కావాల్సినవి';
 
   @override

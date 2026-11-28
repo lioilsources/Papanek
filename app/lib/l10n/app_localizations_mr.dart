@@ -322,6 +322,16 @@ class AppLocalizationsMr extends AppLocalizations {
   String get unlock => 'अनलॉक करा';
 
   @override
+  String get settings => 'सेटिंग्ज';
+
+  @override
+  String get statsToggle => 'निनावी आकडेवारी';
+
+  @override
+  String get statsToggleBody =>
+      'अ‍ॅप सुधारण्यास मदत करते. कोणतेही ओळखचिन्ह नाही, तुम्ही लिहिलेले काहीही नाही.';
+
+  @override
   String get youWillNeed => 'तुम्हाला लागेल';
 
   @override

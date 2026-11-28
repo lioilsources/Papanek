@@ -320,6 +320,16 @@ class AppLocalizationsAr extends AppLocalizations {
   String get unlock => 'فتح';
 
   @override
+  String get settings => 'الإعدادات';
+
+  @override
+  String get statsToggle => 'إحصاءات مجهولة الهوية';
+
+  @override
+  String get statsToggleBody =>
+      'تساعد على تحسين التطبيق. بلا معرّفات، ولا شيء مما تكتبه.';
+
+  @override
   String get youWillNeed => 'ستحتاج إلى';
 
   @override

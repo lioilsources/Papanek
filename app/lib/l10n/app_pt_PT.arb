@@ -59,6 +59,9 @@
   "lockedTitle": "Receita do pacote {pack}",
   "lockedBody": "Já vês os ingredientes; os passos e o modo cozinhar desbloqueiam-se com o pacote.",
   "unlock": "Desbloquear",
+  "settings": "Definições",
+  "statsToggle": "Estatísticas anónimas",
+  "statsToggleBody": "Ajudam a melhorar a app. Sem identificadores, nada do que escreves.",
   "youWillNeed": "Vais precisar",
   "comicPictures": "Imagens em banda desenhada"
 }

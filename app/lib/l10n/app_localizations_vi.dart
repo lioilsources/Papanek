@@ -316,6 +316,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get unlock => 'Mở khóa';
 
   @override
+  String get settings => 'Cài đặt';
+
+  @override
+  String get statsToggle => 'Thống kê ẩn danh';
+
+  @override
+  String get statsToggleBody =>
+      'Giúp cải thiện ứng dụng. Không có mã định danh, không có nội dung bạn nhập.';
+
+  @override
   String get youWillNeed => 'Bạn sẽ cần';
 
   @override

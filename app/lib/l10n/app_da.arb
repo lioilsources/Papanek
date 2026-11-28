@@ -59,6 +59,9 @@
   "lockedTitle": "Opskrift fra pakken {pack}",
   "lockedBody": "Du kan se ingredienserne; fremgangsmåden og madlavningstilstand låses op med pakken.",
   "unlock": "Lås op",
+  "settings": "Indstillinger",
+  "statsToggle": "Anonym statistik",
+  "statsToggleBody": "Hjælper med at forbedre appen. Ingen identifikatorer, intet af det, du skriver.",
   "youWillNeed": "Du skal bruge",
   "comicPictures": "Tegneseriebilleder"
 }

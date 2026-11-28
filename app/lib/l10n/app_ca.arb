@@ -59,6 +59,9 @@
   "lockedTitle": "Recepta del paquet {pack}",
   "lockedBody": "Ja veus els ingredients; els passos i el mode cuina es desbloquegen amb el paquet.",
   "unlock": "Desbloqueja",
+  "settings": "Configuració",
+  "statsToggle": "Estadístiques anònimes",
+  "statsToggleBody": "Ajuden a millorar l'aplicació. Sense identificadors ni res del que escrius.",
   "youWillNeed": "Necessitaràs",
   "comicPictures": "Imatges de còmic"
 }

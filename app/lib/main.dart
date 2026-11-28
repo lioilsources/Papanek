@@ -1,7 +1,9 @@
+import 'dart:async';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import 'data/app_state.dart';
 import 'l10n/app_localizations.dart';
@@ -9,10 +11,16 @@ import 'screens/cook_list.dart';
 import 'screens/pantry.dart';
 import 'screens/shop.dart';
 import 'screens/shopping.dart';
+import 'telemetry/app_telemetry.dart';
+import 'telemetry/telemetry_dictionary.dart';
 
 Future<void> main() async {
+  final launchedAt = DateTime.now();
   WidgetsFlutterBinding.ensureInitialized();
+  telemetryUiLocale = resolveLocale(ui.PlatformDispatcher.instance.locales, AppLocalizations.supportedLocales);
   final state = await AppState.load(ui.PlatformDispatcher.instance.locale.languageCode);
+  final readyMs = DateTime.now().difference(launchedAt).inMilliseconds;
+  unawaited(startTelemetry(state, launchedAt: launchedAt, readyMs: readyMs)); // the app never waits for it
   runApp(PapanekApp(state: state));
 }
 
@@ -64,7 +72,7 @@ class PapanekApp extends StatelessWidget {
           onGenerateTitle: (c) => AppLocalizations.of(c).appTitle,
           debugShowCheckedModeBanner: false,
           // The UI follows the system language; state.lang only selects the recipe language (cs / en).
-          localeListResolutionCallback: resolveLocale,
+          localeListResolutionCallback: (locales, supported) => telemetryUiLocale = resolveLocale(locales, supported),
           supportedLocales: AppLocalizations.supportedLocales,
           localizationsDelegates: const [
             AppLocalizations.delegate,
@@ -74,6 +82,7 @@ class PapanekApp extends StatelessWidget {
           ],
           theme: theme(Brightness.light),
           darkTheme: theme(Brightness.dark),
+          navigatorObservers: [PapanekNavigatorObserver()],
           home: const Home(),
         ),
       ),
@@ -98,12 +107,19 @@ class _HomeState extends State<Home> {
     // Kuchyně (obchod) jen když má nějaký placený balíček recepty; v 1.0 jsou všechny zdarma.
     final shop = s.content.packs.any((p) => !p.free && s.content.recipeCount(p.id) > 0);
     if (!shop && tab > 2) tab = 0;
+    telemetryTab = kTabScreens[tab];
     return Scaffold(
       body: IndexedStack(
-          index: tab, children: [const CookList(), const PantryScreen(), const ShoppingScreen(), if (shop) const ShopScreen()]),
+        index: tab,
+        children: [const CookList(), const PantryScreen(), const ShoppingScreen(), if (shop) const ShopScreen()],
+      ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: tab,
-        onDestinationSelected: (i) => setState(() => tab = i),
+        onDestinationSelected: (i) {
+          setState(() => tab = i);
+          Telemetry.screen(kTabScreens[i]);
+          if (kTabScreens[i] == 'shop') reportShopShown(s);
+        },
         destinations: [
           NavigationDestination(icon: const Icon(Icons.restaurant_menu), label: l.tabCook),
           NavigationDestination(icon: const Icon(Icons.kitchen), label: l.tabPantry),

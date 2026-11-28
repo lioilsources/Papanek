@@ -74,6 +74,9 @@
   "@lockedTitle": {"placeholders": {"pack": {"type": "String"}}},
   "lockedBody": "You can see the ingredients; the steps and cooking mode unlock with the pack.",
   "unlock": "Unlock",
+  "settings": "Settings",
+  "statsToggle": "Anonymous statistics",
+  "statsToggleBody": "Helps improve the app. No identifiers, nothing you type.",
   "youWillNeed": "You will need",
   "comicPictures": "Comic pictures"
 }

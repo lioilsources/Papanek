@@ -323,6 +323,16 @@ class AppLocalizationsFr extends AppLocalizations {
   String get unlock => 'Débloquer';
 
   @override
+  String get settings => 'Réglages';
+
+  @override
+  String get statsToggle => 'Statistiques anonymes';
+
+  @override
+  String get statsToggleBody =>
+      'Aident à améliorer l\'app. Aucun identifiant, rien de ce que vous saisissez.';
+
+  @override
   String get youWillNeed => 'Il te faut';
 
   @override

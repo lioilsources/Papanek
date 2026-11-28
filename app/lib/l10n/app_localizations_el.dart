@@ -322,6 +322,16 @@ class AppLocalizationsEl extends AppLocalizations {
   String get unlock => 'Ξεκλείδωμα';
 
   @override
+  String get settings => 'Ρυθμίσεις';
+
+  @override
+  String get statsToggle => 'Ανώνυμα στατιστικά';
+
+  @override
+  String get statsToggleBody =>
+      'Βοηθούν να βελτιωθεί η εφαρμογή. Χωρίς αναγνωριστικά, τίποτα από όσα πληκτρολογείς.';
+
+  @override
   String get youWillNeed => 'Θα χρειαστείς';
 
   @override

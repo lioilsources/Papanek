@@ -322,6 +322,16 @@ class AppLocalizationsCa extends AppLocalizations {
   String get unlock => 'Desbloqueja';
 
   @override
+  String get settings => 'Configuració';
+
+  @override
+  String get statsToggle => 'Estadístiques anònimes';
+
+  @override
+  String get statsToggleBody =>
+      'Ajuden a millorar l\'aplicació. Sense identificadors ni res del que escrius.';
+
+  @override
   String get youWillNeed => 'Necessitaràs';
 
   @override

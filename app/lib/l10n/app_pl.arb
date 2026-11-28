@@ -59,6 +59,9 @@
   "lockedTitle": "Przepis z pakietu {pack}",
   "lockedBody": "Składniki widzisz już teraz; przepis krok po kroku i tryb gotowania odblokujesz z pakietem.",
   "unlock": "Odblokuj",
+  "settings": "Ustawienia",
+  "statsToggle": "Anonimowe statystyki",
+  "statsToggleBody": "Pomagają ulepszać aplikację. Bez identyfikatorów i bez niczego, co wpisujesz.",
   "youWillNeed": "Będziesz potrzebować",
   "comicPictures": "Obrazki komiksowe"
 }

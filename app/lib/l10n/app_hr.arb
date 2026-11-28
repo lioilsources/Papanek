@@ -59,6 +59,9 @@
   "lockedTitle": "Recept iz paketa {pack}",
   "lockedBody": "Sastojke već vidiš; koraci i način kuhanja otključavaju se s paketom.",
   "unlock": "Otključaj",
+  "settings": "Postavke",
+  "statsToggle": "Anonimna statistika",
+  "statsToggleBody": "Pomaže poboljšati aplikaciju. Bez identifikatora i bez ičega što upišete.",
   "youWillNeed": "Trebat ćeš",
   "comicPictures": "Strip slike"
 }

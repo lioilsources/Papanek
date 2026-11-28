@@ -311,6 +311,15 @@ class AppLocalizationsZh extends AppLocalizations {
   String get unlock => '解锁';
 
   @override
+  String get settings => '设置';
+
+  @override
+  String get statsToggle => '匿名统计';
+
+  @override
+  String get statsToggleBody => '帮助改进应用。不含任何标识符，也不含你输入的内容。';
+
+  @override
   String get youWillNeed => '你需要';
 
   @override
@@ -624,6 +633,15 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get unlock => '解锁';
 
   @override
+  String get settings => '设置';
+
+  @override
+  String get statsToggle => '匿名统计';
+
+  @override
+  String get statsToggleBody => '帮助改进应用。不含任何标识符，也不含你输入的内容。';
+
+  @override
   String get youWillNeed => '你需要';
 
   @override
@@ -935,6 +953,15 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get unlock => '解鎖';
+
+  @override
+  String get settings => '設定';
+
+  @override
+  String get statsToggle => '匿名統計';
+
+  @override
+  String get statsToggleBody => '協助改進應用程式。不含任何識別碼，也不含你輸入的內容。';
 
   @override
   String get youWillNeed => '你需要';

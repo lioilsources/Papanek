@@ -326,6 +326,16 @@ class AppLocalizationsRo extends AppLocalizations {
   String get unlock => 'Deblochează';
 
   @override
+  String get settings => 'Setări';
+
+  @override
+  String get statsToggle => 'Statistici anonime';
+
+  @override
+  String get statsToggleBody =>
+      'Ajută la îmbunătățirea aplicației. Fără identificatori, nimic din ce scrii.';
+
+  @override
   String get youWillNeed => 'Vei avea nevoie de';
 
   @override

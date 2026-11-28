@@ -59,6 +59,9 @@
   "lockedTitle": "Recette du pack {pack}",
   "lockedBody": "Tu vois les ingrédients ; les étapes et le mode cuisine se débloquent avec le pack.",
   "unlock": "Débloquer",
+  "settings": "Réglages",
+  "statsToggle": "Statistiques anonymes",
+  "statsToggleBody": "Aident à améliorer l'app. Aucun identifiant, rien de ce que vous saisissez.",
   "youWillNeed": "Il te faut",
   "comicPictures": "Images style BD"
 }

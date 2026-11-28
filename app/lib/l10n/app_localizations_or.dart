@@ -321,6 +321,16 @@ class AppLocalizationsOr extends AppLocalizations {
   String get unlock => 'ଅନଲକ କରନ୍ତୁ';
 
   @override
+  String get settings => 'ସେଟିଂସ';
+
+  @override
+  String get statsToggle => 'ଅଜ୍ଞାତ ପରିସଂଖ୍ୟାନ';
+
+  @override
+  String get statsToggleBody =>
+      'ଆପକୁ ଉନ୍ନତ କରିବାରେ ସାହାଯ୍ୟ କରେ। କୌଣସି ପରିଚାୟକ ନାହିଁ, ଆପଣ ଲେଖୁଥିବା କିଛି ନୁହେଁ।';
+
+  @override
   String get youWillNeed => 'ଆପଣଙ୍କୁ ଦରକାର';
 
   @override

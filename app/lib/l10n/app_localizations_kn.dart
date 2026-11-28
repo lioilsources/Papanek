@@ -322,6 +322,16 @@ class AppLocalizationsKn extends AppLocalizations {
   String get unlock => 'ಅನ್‌ಲಾಕ್ ಮಾಡಿ';
 
   @override
+  String get settings => 'ಸೆಟ್ಟಿಂಗ್‌ಗಳು';
+
+  @override
+  String get statsToggle => 'ಅನಾಮಧೇಯ ಅಂಕಿಅಂಶಗಳು';
+
+  @override
+  String get statsToggleBody =>
+      'ಆ್ಯಪ್ ಸುಧಾರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ. ಯಾವುದೇ ಗುರುತಿಸುವಿಕೆ ಇಲ್ಲ, ನೀವು ಬರೆಯುವುದೇನೂ ಇಲ್ಲ.';
+
+  @override
   String get youWillNeed => 'ನಿಮಗೆ ಬೇಕಾಗುವುದು';
 
   @override

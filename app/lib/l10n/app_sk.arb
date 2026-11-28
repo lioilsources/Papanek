@@ -59,6 +59,9 @@
   "lockedTitle": "Recept z balíčka {pack}",
   "lockedBody": "Suroviny vidíš, postup a režim varenia sa ukážu po odomknutí balíčka.",
   "unlock": "Odomknúť",
+  "settings": "Nastavenia",
+  "statsToggle": "Anonymné štatistiky",
+  "statsToggleBody": "Pomáhajú aplikáciu zlepšovať. Bez identifikátorov a bez čohokoľvek, čo zadáš.",
   "youWillNeed": "Budeš potrebovať",
   "comicPictures": "Komiksové obrázky"
 }

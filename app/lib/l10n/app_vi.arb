@@ -59,6 +59,9 @@
   "lockedTitle": "Công thức từ gói {pack}",
   "lockedBody": "Bạn đã xem được nguyên liệu; các bước và chế độ nấu sẽ mở khóa cùng gói.",
   "unlock": "Mở khóa",
+  "settings": "Cài đặt",
+  "statsToggle": "Thống kê ẩn danh",
+  "statsToggleBody": "Giúp cải thiện ứng dụng. Không có mã định danh, không có nội dung bạn nhập.",
   "youWillNeed": "Bạn sẽ cần",
   "comicPictures": "Hình truyện tranh"
 }

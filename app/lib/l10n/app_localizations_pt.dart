@@ -323,6 +323,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String get unlock => 'Desbloquear';
 
   @override
+  String get settings => 'Definições';
+
+  @override
+  String get statsToggle => 'Estatísticas anónimas';
+
+  @override
+  String get statsToggleBody =>
+      'Ajudam a melhorar a app. Sem identificadores, nada do que escreves.';
+
+  @override
   String get youWillNeed => 'Você vai precisar';
 
   @override
@@ -648,6 +658,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get unlock => 'Desbloquear';
 
   @override
+  String get settings => 'Configurações';
+
+  @override
+  String get statsToggle => 'Estatísticas anônimas';
+
+  @override
+  String get statsToggleBody =>
+      'Ajudam a melhorar o app. Sem identificadores, nada do que você digita.';
+
+  @override
   String get youWillNeed => 'Você vai precisar';
 
   @override
@@ -971,6 +991,16 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get unlock => 'Desbloquear';
+
+  @override
+  String get settings => 'Definições';
+
+  @override
+  String get statsToggle => 'Estatísticas anónimas';
+
+  @override
+  String get statsToggleBody =>
+      'Ajudam a melhorar a app. Sem identificadores, nada do que escreves.';
 
   @override
   String get youWillNeed => 'Vais precisar';

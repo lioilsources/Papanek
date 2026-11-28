@@ -320,6 +320,16 @@ class AppLocalizationsSl extends AppLocalizations {
   String get unlock => 'Odkleni';
 
   @override
+  String get settings => 'Nastavitve';
+
+  @override
+  String get statsToggle => 'Anonimna statistika';
+
+  @override
+  String get statsToggleBody =>
+      'Pomaga izboljšati aplikacijo. Brez identifikatorjev in brez česar koli, kar vnesete.';
+
+  @override
   String get youWillNeed => 'Potreboval boš';
 
   @override

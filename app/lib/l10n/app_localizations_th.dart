@@ -315,6 +315,16 @@ class AppLocalizationsTh extends AppLocalizations {
   String get unlock => 'ปลดล็อก';
 
   @override
+  String get settings => 'การตั้งค่า';
+
+  @override
+  String get statsToggle => 'สถิติแบบไม่ระบุตัวตน';
+
+  @override
+  String get statsToggleBody =>
+      'ช่วยปรับปรุงแอป ไม่มีตัวระบุ และไม่มีสิ่งที่คุณพิมพ์';
+
+  @override
   String get youWillNeed => 'สิ่งที่ต้องใช้';
 
   @override

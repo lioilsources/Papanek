@@ -59,6 +59,9 @@
   "lockedTitle": "Resep dari paket {pack}",
   "lockedBody": "Bahan-bahannya sudah terlihat; langkah dan mode memasak terbuka bersama paket.",
   "unlock": "Buka",
+  "settings": "Pengaturan",
+  "statsToggle": "Statistik anonim",
+  "statsToggleBody": "Membantu menyempurnakan aplikasi. Tanpa pengenal, tanpa apa pun yang kamu ketik.",
   "youWillNeed": "Yang kamu perlukan",
   "comicPictures": "Gambar komik"
 }

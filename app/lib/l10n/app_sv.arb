@@ -59,6 +59,9 @@
   "lockedTitle": "Recept från paketet {pack}",
   "lockedBody": "Du ser ingredienserna; stegen och matlagningsläget låses upp med paketet.",
   "unlock": "Lås upp",
+  "settings": "Inställningar",
+  "statsToggle": "Anonym statistik",
+  "statsToggleBody": "Hjälper till att förbättra appen. Inga identifierare, inget av det du skriver.",
   "youWillNeed": "Du behöver",
   "comicPictures": "Seriebilder"
 }

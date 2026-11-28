@@ -28,6 +28,10 @@ class AppState extends ChangeNotifier {
   Photos photos = Photos.none();
   bool comic = false; // komiksové obrázky jídel místo fotek (volitelné)
 
+  /// The user had saved anything before this launch (anonymous statistics:
+  /// not a new install). Never read by the app itself.
+  bool hadData = false;
+
   static Future<AppState> load(String systemLang) async {
     final content = await Content.load();
     final dir = await getApplicationSupportDirectory();
@@ -55,6 +59,7 @@ class AppState extends ChangeNotifier {
     final lang = s.isNotEmpty ? s.first['value'] as String : (systemLang == 'cs' ? 'cs' : 'en');
     final owned = {for (final r in await db.query('purchases')) r['pack_id'] as String};
     final state = AppState(content, db, pantry, shopping, lang, owned)
+      ..hadData = s.isNotEmpty || pantry.isNotEmpty || shopping.isNotEmpty || owned.isNotEmpty
       ..photos = await Photos.load()
       ..comic = (await db.query('settings', where: 'key = ?', whereArgs: ['comic'])).isNotEmpty;
     state.shop = Shop(content.packs, state.grant)..addListener(state.notifyListeners);

@@ -6,6 +6,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import 'content.dart';
 
@@ -26,6 +27,11 @@ class Shop extends ChangeNotifier {
   final products = <String, ProductDetails>{}; // pack id → produkt
   final pending = <String>{}; // pack id, u kterých běží nákup
   String? error; // poslední chyba pro snackbar, UI ji po zobrazení smaže
+  final _flows = <String, TelemetryFlow>{}; // pack id → purchase flow (anonymous statistics)
+
+  void _endFlow(String? pack, String result) {
+    if (pack != null) _flows.remove(pack)?.end(result);
+  }
 
   /// pack id → product id pro aktuální platformu
   late final Map<String, String> _ids = {
@@ -74,9 +80,12 @@ class Shop extends ChangeNotifier {
     if (p == null) return;
     pending.add(packId);
     notifyListeners();
+    _endFlow(packId, 'cancel');
+    _flows[packId] = Telemetry.flow('purchase', {'target': packId == allPack ? 'all' : 'pack'});
     try {
       await _iap.buyNonConsumable(purchaseParam: PurchaseParam(productDetails: p));
     } catch (e) {
+      _endFlow(packId, 'error');
       pending.remove(packId);
       error = '$e';
       notifyListeners();
@@ -96,11 +105,14 @@ class Shop extends ChangeNotifier {
           // Bez serveru neověřujeme účtenku; spoléháme na StoreKit 2 / Play (§13).
           if (pack != null) await _grant(pack);
           if (pack != null) pending.remove(pack);
+          _endFlow(pack, d.status == PurchaseStatus.purchased ? 'ok' : 'restored');
         case PurchaseStatus.error:
           error = d.error?.message ?? 'error';
           if (pack != null) pending.remove(pack);
+          _endFlow(pack, 'error');
         case PurchaseStatus.canceled:
           if (pack != null) pending.remove(pack);
+          _endFlow(pack, 'cancel');
       }
       if (d.pendingCompletePurchase) await _iap.completePurchase(d);
     }

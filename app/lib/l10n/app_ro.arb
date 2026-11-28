@@ -59,6 +59,9 @@
   "lockedTitle": "Rețetă din pachetul {pack}",
   "lockedBody": "Vezi deja ingredientele; pașii și modul de gătit se deblochează cu pachetul.",
   "unlock": "Deblochează",
+  "settings": "Setări",
+  "statsToggle": "Statistici anonime",
+  "statsToggleBody": "Ajută la îmbunătățirea aplicației. Fără identificatori, nimic din ce scrii.",
   "youWillNeed": "Vei avea nevoie de",
   "comicPictures": "Imagini în stil benzi desenate"
 }

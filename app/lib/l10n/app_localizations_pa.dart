@@ -321,6 +321,16 @@ class AppLocalizationsPa extends AppLocalizations {
   String get unlock => 'ਅਨਲੌਕ ਕਰੋ';
 
   @override
+  String get settings => 'ਸੈਟਿੰਗਾਂ';
+
+  @override
+  String get statsToggle => 'ਗੁਮਨਾਮ ਅੰਕੜੇ';
+
+  @override
+  String get statsToggleBody =>
+      'ਐਪ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਨ। ਕੋਈ ਪਛਾਣਕਰਤਾ ਨਹੀਂ, ਤੁਸੀਂ ਜੋ ਲਿਖਦੇ ਹੋ ਉਸ ਵਿੱਚੋਂ ਕੁਝ ਨਹੀਂ।';
+
+  @override
   String get youWillNeed => 'ਤੁਹਾਨੂੰ ਚਾਹੀਦਾ ਹੈ';
 
   @override

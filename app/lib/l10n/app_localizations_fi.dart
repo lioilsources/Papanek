@@ -323,6 +323,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get unlock => 'Avaa';
 
   @override
+  String get settings => 'Asetukset';
+
+  @override
+  String get statsToggle => 'Nimettömät tilastot';
+
+  @override
+  String get statsToggleBody =>
+      'Auttavat parantamaan sovellusta. Ei tunnisteita eikä mitään, mitä kirjoitat.';
+
+  @override
   String get youWillNeed => 'Tarvitset';
 
   @override

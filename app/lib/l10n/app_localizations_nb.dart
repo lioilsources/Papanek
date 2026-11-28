@@ -322,6 +322,16 @@ class AppLocalizationsNb extends AppLocalizations {
   String get unlock => 'Lås opp';
 
   @override
+  String get settings => 'Innstillinger';
+
+  @override
+  String get statsToggle => 'Anonym statistikk';
+
+  @override
+  String get statsToggleBody =>
+      'Hjelper å forbedre appen. Ingen identifikatorer, ingenting av det du skriver.';
+
+  @override
   String get youWillNeed => 'Du trenger';
 
   @override

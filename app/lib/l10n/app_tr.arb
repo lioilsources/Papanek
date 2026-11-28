@@ -59,6 +59,9 @@
   "lockedTitle": "{pack} paketinden tarif",
   "lockedBody": "Malzemeleri görebilirsin; adımlar ve pişirme modu paketle açılır.",
   "unlock": "Kilidi aç",
+  "settings": "Ayarlar",
+  "statsToggle": "Anonim istatistikler",
+  "statsToggleBody": "Uygulamanın gelişmesine yardımcı olur. Tanımlayıcı yok, yazdığınız hiçbir şey yok.",
   "youWillNeed": "İhtiyacın olanlar",
   "comicPictures": "Çizgi roman görselleri"
 }
