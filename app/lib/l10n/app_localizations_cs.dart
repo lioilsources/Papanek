@@ -334,4 +334,10 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Pomáhají appku zlepšovat. Bez identifikátorů a bez čehokoli, co zadáš.';
+
+  @override
+  String get youWillNeed => 'Budeš potřebovat';
+
+  @override
+  String get comicPictures => 'Komiksové obrázky';
 }

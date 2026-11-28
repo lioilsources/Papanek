@@ -61,5 +61,7 @@
   "unlock": "Buka",
   "settings": "Tetapan",
   "statsToggle": "Statistik tanpa nama",
-  "statsToggleBody": "Membantu memperbaik aplikasi. Tiada pengecam, tiada apa-apa yang anda taip."
+  "statsToggleBody": "Membantu memperbaik aplikasi. Tiada pengecam, tiada apa-apa yang anda taip.",
+  "youWillNeed": "Anda perlukan",
+  "comicPictures": "Gambar komik"
 }

@@ -11,6 +11,7 @@ Offline kuchařka pro začátečníky: ví, co máš doma, a vybere recept. Plá
   - `papanek-ingest`: extrakce z dumpů Wikibooks a ze schema.org/Recipe
   - `papanek-export`: staví `app/assets/content.db` (zatím bez receptů)
   - `papanek-enrich`: ukázky stylů, na Sparku jen přes `sparkctl`
+  - `papanek-enrich photos` + `tools/l40s/`: fotky jídel, kroků, surovin a nástrojů z Qwen-Image na L40S
 - `app/`: Flutter, `com.ol1n.papanek`
 - `docs/telemetry.md`: slovník anonymních statistik používání (`ol1n_telemetry`); appka bez
   klíče v buildu nic neposílá, jinak jdou statistiky vypnout v nastavení
@@ -34,7 +35,7 @@ profilech a nástroje na něj dosáhnou přes LAN (`DATABASE_URL` skládá Makef
 
 `make db` nahraje `docker-compose.yml` a `tools/migrations` do `~/deploy/Papanek` na JODĚ a
 spustí projekt `papanek-<profil>`; migrace se aplikují jen na prázdná data. Data leží na pool
-disku v `/home/oli/pool-papanek/<profil>/db` (ZFS dataset `pool/papanek`, zakládá Olin se sudo,
+disku v `~/pool-papanek/<profil>/db` (ZFS dataset `pool/papanek`, zakládá Olin se sudo,
 DevConventions `shared/infra.md`); dokud dataset není, v `~/deploy/Papanek/data/<profil>/db`.
 Port je jen na LAN adrese JODY. Dál `make db-logs`, `make psql`, `make db-down` a
 `make db-reset CONFIRM=yes` (smaže data profilu). Každá akce zapíše řádek do

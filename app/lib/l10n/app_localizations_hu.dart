@@ -330,4 +330,10 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Segít jobbá tenni az alkalmazást. Nincs azonosító, semmi abból, amit beírsz.';
+
+  @override
+  String get youWillNeed => 'Szükséged lesz';
+
+  @override
+  String get comicPictures => 'Képregényes képek';
 }

@@ -61,5 +61,7 @@
   "unlock": "Odomknúť",
   "settings": "Nastavenia",
   "statsToggle": "Anonymné štatistiky",
-  "statsToggleBody": "Pomáhajú aplikáciu zlepšovať. Bez identifikátorov a bez čohokoľvek, čo zadáš."
+  "statsToggleBody": "Pomáhajú aplikáciu zlepšovať. Bez identifikátorov a bez čohokoľvek, čo zadáš.",
+  "youWillNeed": "Budeš potrebovať",
+  "comicPictures": "Komiksové obrázky"
 }

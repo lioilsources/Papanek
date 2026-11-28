@@ -61,5 +61,7 @@
   "unlock": "Lås upp",
   "settings": "Inställningar",
   "statsToggle": "Anonym statistik",
-  "statsToggleBody": "Hjälper till att förbättra appen. Inga identifierare, inget av det du skriver."
+  "statsToggleBody": "Hjälper till att förbättra appen. Inga identifierare, inget av det du skriver.",
+  "youWillNeed": "Du behöver",
+  "comicPictures": "Seriebilder"
 }

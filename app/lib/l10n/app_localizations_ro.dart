@@ -334,4 +334,10 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Ajută la îmbunătățirea aplicației. Fără identificatori, nimic din ce scrii.';
+
+  @override
+  String get youWillNeed => 'Vei avea nevoie de';
+
+  @override
+  String get comicPictures => 'Imagini în stil benzi desenate';
 }

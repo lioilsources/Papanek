@@ -61,5 +61,7 @@
   "unlock": "解鎖",
   "settings": "設定",
   "statsToggle": "匿名統計",
-  "statsToggleBody": "協助改進應用程式。不含任何識別碼，也不含你輸入的內容。"
+  "statsToggleBody": "協助改進應用程式。不含任何識別碼，也不含你輸入的內容。",
+  "youWillNeed": "你需要",
+  "comicPictures": "漫畫插圖"
 }

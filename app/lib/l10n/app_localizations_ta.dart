@@ -331,4 +331,10 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'ஆப்பை மேம்படுத்த உதவுகிறது. அடையாளங்காட்டிகள் இல்லை, நீங்கள் தட்டச்சு செய்வது எதுவும் இல்லை.';
+
+  @override
+  String get youWillNeed => 'உங்களுக்குத் தேவை';
+
+  @override
+  String get comicPictures => 'காமிக் படங்கள்';
 }

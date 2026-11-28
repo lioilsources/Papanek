@@ -61,5 +61,7 @@
   "unlock": "Mở khóa",
   "settings": "Cài đặt",
   "statsToggle": "Thống kê ẩn danh",
-  "statsToggleBody": "Giúp cải thiện ứng dụng. Không có mã định danh, không có nội dung bạn nhập."
+  "statsToggleBody": "Giúp cải thiện ứng dụng. Không có mã định danh, không có nội dung bạn nhập.",
+  "youWillNeed": "Bạn sẽ cần",
+  "comicPictures": "Hình truyện tranh"
 }

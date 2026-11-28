@@ -61,5 +61,7 @@
   "unlock": "Ontgrendelen",
   "settings": "Instellingen",
   "statsToggle": "Anonieme statistieken",
-  "statsToggleBody": "Helpen de app te verbeteren. Geen identificatoren, niets van wat je typt."
+  "statsToggleBody": "Helpen de app te verbeteren. Geen identificatoren, niets van wat je typt.",
+  "youWillNeed": "Je hebt nodig",
+  "comicPictures": "Stripplaatjes"
 }

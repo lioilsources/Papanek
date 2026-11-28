@@ -326,4 +326,10 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Pomáhajú aplikáciu zlepšovať. Bez identifikátorov a bez čohokoľvek, čo zadáš.';
+
+  @override
+  String get youWillNeed => 'Budeš potrebovať';
+
+  @override
+  String get comicPictures => 'Komiksové obrázky';
 }

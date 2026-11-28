@@ -7,6 +7,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 
 import 'content.dart';
+import 'photos.dart';
 import 'store.dart';
 
 class Match {
@@ -24,6 +25,8 @@ class AppState extends ChangeNotifier {
   String lang;
   final Set<String> owned; // odemčené balíčky (cache stavu IAP, §6 purchases)
   Shop? shop;
+  Photos photos = Photos.none();
+  bool comic = false; // komiksové obrázky jídel místo fotek (volitelné)
 
   /// The user had saved anything before this launch (anonymous statistics:
   /// not a new install). Never read by the app itself.
@@ -56,7 +59,9 @@ class AppState extends ChangeNotifier {
     final lang = s.isNotEmpty ? s.first['value'] as String : (systemLang == 'cs' ? 'cs' : 'en');
     final owned = {for (final r in await db.query('purchases')) r['pack_id'] as String};
     final state = AppState(content, db, pantry, shopping, lang, owned)
-      ..hadData = s.isNotEmpty || pantry.isNotEmpty || shopping.isNotEmpty || owned.isNotEmpty;
+      ..hadData = s.isNotEmpty || pantry.isNotEmpty || shopping.isNotEmpty || owned.isNotEmpty
+      ..photos = await Photos.load()
+      ..comic = (await db.query('settings', where: 'key = ?', whereArgs: ['comic'])).isNotEmpty;
     state.shop = Shop(content.packs, state.grant)..addListener(state.notifyListeners);
     unawaited(state.shop!.init()); // start appky nečeká na store
     return state;
@@ -85,6 +90,23 @@ class AppState extends ChangeNotifier {
     lang = l;
     notifyListeners();
     await _db?.insert('settings', {'key': 'lang', 'value': l}, conflictAlgorithm: ConflictAlgorithm.replace);
+  }
+
+  Future<void> setComic(bool v) async {
+    comic = v;
+    notifyListeners();
+    if (v) {
+      await _db?.insert('settings', {'key': 'comic', 'value': '1'}, conflictAlgorithm: ConflictAlgorithm.replace);
+    } else {
+      await _db?.delete('settings', where: 'key = ?', whereArgs: ['comic']);
+    }
+  }
+
+  /// Obrázek jídla: fotka, nebo komiks, když si ho uživatel zapnul (a existuje).
+  String? dishImage(Recipe r) {
+    final photo = photos.hero(r.slug);
+    final comicFile = r.image == null ? null : 'assets/images/${r.image}';
+    return comic ? (comicFile ?? photo) : (photo ?? comicFile);
   }
 
   Future<void> addToPantry(Iterable<int> ids) async {

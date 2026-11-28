@@ -330,4 +330,10 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'ಆ್ಯಪ್ ಸುಧಾರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ. ಯಾವುದೇ ಗುರುತಿಸುವಿಕೆ ಇಲ್ಲ, ನೀವು ಬರೆಯುವುದೇನೂ ಇಲ್ಲ.';
+
+  @override
+  String get youWillNeed => 'ನಿಮಗೆ ಬೇಕಾಗುವುದು';
+
+  @override
+  String get comicPictures => 'ಕಾಮಿಕ್ ಚಿತ್ರಗಳು';
 }

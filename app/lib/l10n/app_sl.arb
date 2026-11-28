@@ -61,5 +61,7 @@
   "unlock": "Odkleni",
   "settings": "Nastavitve",
   "statsToggle": "Anonimna statistika",
-  "statsToggleBody": "Pomaga izboljšati aplikacijo. Brez identifikatorjev in brez česar koli, kar vnesete."
+  "statsToggleBody": "Pomaga izboljšati aplikacijo. Brez identifikatorjev in brez česar koli, kar vnesete.",
+  "youWillNeed": "Potreboval boš",
+  "comicPictures": "Stripovske slike"
 }

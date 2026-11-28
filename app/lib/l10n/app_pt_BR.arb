@@ -61,5 +61,7 @@
   "unlock": "Desbloquear",
   "settings": "Configurações",
   "statsToggle": "Estatísticas anônimas",
-  "statsToggleBody": "Ajudam a melhorar o app. Sem identificadores, nada do que você digita."
+  "statsToggleBody": "Ajudam a melhorar o app. Sem identificadores, nada do que você digita.",
+  "youWillNeed": "Você vai precisar",
+  "comicPictures": "Imagens em quadrinhos"
 }

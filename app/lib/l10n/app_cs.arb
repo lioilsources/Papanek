@@ -76,5 +76,9 @@
   "unlock": "Odemknout",
   "settings": "Nastavení",
   "statsToggle": "Anonymní statistiky",
-  "statsToggleBody": "Pomáhají appku zlepšovat. Bez identifikátorů a bez čehokoli, co zadáš."
+  "statsToggleBody": "Pomáhají appku zlepšovat. Bez identifikátorů a bez čehokoli, co zadáš.",
+  "youWillNeed": "Budeš potřebovat",
+  "@youWillNeed": {"description": "Nadpis seznamu nástrojů a nádobí u receptu"},
+  "comicPictures": "Komiksové obrázky",
+  "@comicPictures": {"description": "Přepínač: obrázky jídel jako komiks místo fotek"}
 }

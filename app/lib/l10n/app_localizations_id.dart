@@ -325,4 +325,10 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Membantu menyempurnakan aplikasi. Tanpa pengenal, tanpa apa pun yang kamu ketik.';
+
+  @override
+  String get youWillNeed => 'Yang kamu perlukan';
+
+  @override
+  String get comicPictures => 'Gambar komik';
 }

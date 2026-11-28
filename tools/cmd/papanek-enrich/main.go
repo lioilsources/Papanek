@@ -56,12 +56,16 @@ func main() {
 		recipesCmd(os.Args[2:])
 		return
 	}
+	if len(os.Args) >= 2 && os.Args[1] == "photos" {
+		photosCmd(os.Args[2:])
+		return
+	}
 	if len(os.Args) >= 2 && os.Args[1] == "images" {
 		imagesCmd(os.Args[2:])
 		return
 	}
 	if len(os.Args) < 2 || os.Args[1] != "styles" {
-		log.Fatal("použití: papanek-enrich styles|recipes|images [volby]")
+		log.Fatal("použití: papanek-enrich styles|recipes|images|photos [volby]")
 	}
 	fs := flag.NewFlagSet("styles", flag.ExitOnError)
 	comfy := fs.String("comfy", sparkURL(8188, ""), "ComfyUI (výchozí z SPARK_HOST)")

@@ -61,5 +61,7 @@
   "unlock": "Buka",
   "settings": "Pengaturan",
   "statsToggle": "Statistik anonim",
-  "statsToggleBody": "Membantu menyempurnakan aplikasi. Tanpa pengenal, tanpa apa pun yang kamu ketik."
+  "statsToggleBody": "Membantu menyempurnakan aplikasi. Tanpa pengenal, tanpa apa pun yang kamu ketik.",
+  "youWillNeed": "Yang kamu perlukan",
+  "comicPictures": "Gambar komik"
 }

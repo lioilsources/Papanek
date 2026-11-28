@@ -3,6 +3,7 @@ import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../l10n/app_localizations.dart';
 import '../main.dart';
+import 'widgets.dart';
 
 /// Nákup (§12.5): checklist podle kategorie, „Nakoupeno“ přesune do spíže.
 class ShoppingScreen extends StatelessWidget {
@@ -37,6 +38,7 @@ class ShoppingScreen extends StatelessWidget {
                     child: CheckboxListTile(
                       value: s.shopping[it.id],
                       controlAffinity: ListTileControlAffinity.leading,
+                      secondary: PhotoThumb(s.photos.ingredient(it.slug), size: 44),
                       title: Text(
                         it.name(s.lang),
                         style: s.shopping[it.id]! ? const TextStyle(decoration: TextDecoration.lineThrough) : null,

@@ -330,4 +330,10 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'એપ સુધારવામાં મદદ કરે છે. કોઈ ઓળખકર્તા નહીં, તમે લખો તેમાંથી કંઈ નહીં.';
+
+  @override
+  String get youWillNeed => 'તમને જોઈશે';
+
+  @override
+  String get comicPictures => 'કોમિક ચિત્રો';
 }

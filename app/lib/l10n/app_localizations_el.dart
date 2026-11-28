@@ -330,4 +330,10 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Βοηθούν να βελτιωθεί η εφαρμογή. Χωρίς αναγνωριστικά, τίποτα από όσα πληκτρολογείς.';
+
+  @override
+  String get youWillNeed => 'Θα χρειαστείς';
+
+  @override
+  String get comicPictures => 'Εικόνες κόμικ';
 }

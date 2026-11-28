@@ -314,4 +314,10 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get statsToggleBody => 'アプリの改善に役立ちます。識別子や入力した内容は含まれません。';
+
+  @override
+  String get youWillNeed => '使う道具';
+
+  @override
+  String get comicPictures => 'コミック風イラスト';
 }

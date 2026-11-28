@@ -329,4 +329,10 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Hilft, die App zu verbessern. Keine Kennungen, nichts von dem, was du eingibst.';
+
+  @override
+  String get youWillNeed => 'Du brauchst';
+
+  @override
+  String get comicPictures => 'Comic-Bilder';
 }

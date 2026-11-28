@@ -330,4 +330,10 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Hjälper till att förbättra appen. Inga identifierare, inget av det du skriver.';
+
+  @override
+  String get youWillNeed => 'Du behöver';
+
+  @override
+  String get comicPictures => 'Seriebilder';
 }

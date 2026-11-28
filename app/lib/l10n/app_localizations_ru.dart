@@ -328,4 +328,10 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Помогает улучшать приложение. Без идентификаторов и без того, что вы вводите.';
+
+  @override
+  String get youWillNeed => 'Понадобится';
+
+  @override
+  String get comicPictures => 'Комиксовые картинки';
 }

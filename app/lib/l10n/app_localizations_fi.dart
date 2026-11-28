@@ -331,4 +331,10 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Auttavat parantamaan sovellusta. Ei tunnisteita eikä mitään, mitä kirjoitat.';
+
+  @override
+  String get youWillNeed => 'Tarvitset';
+
+  @override
+  String get comicPictures => 'Sarjakuvakuvat';
 }

@@ -5,6 +5,7 @@ import '../data/app_state.dart';
 import '../data/content.dart';
 import '../l10n/app_localizations.dart';
 import '../main.dart';
+import 'widgets.dart';
 
 /// Spíž (§12.4): našeptávač nad aliasy a seznam podle kategorií.
 class PantryScreen extends StatefulWidget {
@@ -70,8 +71,9 @@ class _PantryScreenState extends State<PantryScreen> {
                     children: [
                       for (final i in hits)
                         ListTile(
-                          leading: const Icon(Icons.add_circle_outline),
+                          leading: PhotoThumb(s.photos.ingredient(i.slug), size: 44),
                           title: Text(i.name(s.lang)),
+                          trailing: const Icon(Icons.add_circle_outline),
                           subtitle: Text(l.category(i.category)),
                           onTap: () => add(s, i),
                         ),
@@ -103,7 +105,11 @@ class _PantryScreenState extends State<PantryScreen> {
                             runSpacing: 8,
                             children: [
                               for (final i in byCat[c]!..sort((a, b) => a.name(s.lang).compareTo(b.name(s.lang))))
-                                InputChip(label: Text(i.name(s.lang)), onDeleted: () => s.removeFromPantry(i.id)),
+                                InputChip(
+                                  avatar: PhotoThumb(s.photos.ingredient(i.slug), size: 28),
+                                  label: Text(i.name(s.lang)),
+                                  onDeleted: () => s.removeFromPantry(i.id),
+                                ),
                             ],
                           ),
                         ),

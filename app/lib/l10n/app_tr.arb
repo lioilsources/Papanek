@@ -61,5 +61,7 @@
   "unlock": "Kilidi aç",
   "settings": "Ayarlar",
   "statsToggle": "Anonim istatistikler",
-  "statsToggleBody": "Uygulamanın gelişmesine yardımcı olur. Tanımlayıcı yok, yazdığınız hiçbir şey yok."
+  "statsToggleBody": "Uygulamanın gelişmesine yardımcı olur. Tanımlayıcı yok, yazdığınız hiçbir şey yok.",
+  "youWillNeed": "İhtiyacın olanlar",
+  "comicPictures": "Çizgi roman görselleri"
 }

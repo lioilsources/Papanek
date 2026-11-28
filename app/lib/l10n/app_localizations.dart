@@ -555,6 +555,18 @@ abstract class AppLocalizations {
   /// In cs, this message translates to:
   /// **'Pomáhají appku zlepšovat. Bez identifikátorů a bez čehokoli, co zadáš.'**
   String get statsToggleBody;
+
+  /// Nadpis seznamu nástrojů a nádobí u receptu
+  ///
+  /// In cs, this message translates to:
+  /// **'Budeš potřebovat'**
+  String get youWillNeed;
+
+  /// Přepínač: obrázky jídel jako komiks místo fotek
+  ///
+  /// In cs, this message translates to:
+  /// **'Komiksové obrázky'**
+  String get comicPictures;
 }
 
 class _AppLocalizationsDelegate

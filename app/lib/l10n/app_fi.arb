@@ -61,5 +61,7 @@
   "unlock": "Avaa",
   "settings": "Asetukset",
   "statsToggle": "Nimettömät tilastot",
-  "statsToggleBody": "Auttavat parantamaan sovellusta. Ei tunnisteita eikä mitään, mitä kirjoitat."
+  "statsToggleBody": "Auttavat parantamaan sovellusta. Ei tunnisteita eikä mitään, mitä kirjoitat.",
+  "youWillNeed": "Tarvitset",
+  "comicPictures": "Sarjakuvakuvat"
 }

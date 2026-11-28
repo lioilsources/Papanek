@@ -331,4 +331,10 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Aident à améliorer l\'app. Aucun identifiant, rien de ce que vous saisissez.';
+
+  @override
+  String get youWillNeed => 'Il te faut';
+
+  @override
+  String get comicPictures => 'Images style BD';
 }

@@ -15,7 +15,7 @@ import (
 
 // exportRecipes zapíše seed/recipes/<pack>/*.yaml. Chybějící surovina je chyba:
 // recept bez ní by matching „co uvařím“ počítal špatně.
-func exportRecipes(tx *sql.Tx, dir string, ids map[string]int, items []ontology.Ingredient) (int, error) {
+func exportRecipes(tx *sql.Tx, dir string, ids map[string]int, items []ontology.Ingredient, tools []tool) (int, error) {
 	files, err := filepath.Glob(filepath.Join(dir, "*", "*.yaml"))
 	if err != nil {
 		return 0, err
@@ -62,6 +62,23 @@ func exportRecipes(tx *sql.Tx, dir string, ids map[string]int, items []ontology.
 		for _, t := range r.Tags {
 			if _, err := tx.Exec(`INSERT OR IGNORE INTO recipe_tags VALUES (?,?)`, id, t); err != nil {
 				return 0, err
+			}
+		}
+		// Nástroje kroku podle anglického textu; česká verze má stejné kroky ve stejném pořadí.
+		used := map[string]bool{}
+		for i, st := range r.EN.Steps {
+			found := matchTools(st.Text, tools)
+			r.EN.Steps[i].Tools = found
+			if i < len(r.CS.Steps) {
+				r.CS.Steps[i].Tools = found
+			}
+			for _, t := range found {
+				if !used[t] {
+					used[t] = true
+					if _, err := tx.Exec(`INSERT INTO recipe_tools VALUES (?,?)`, id, t); err != nil {
+						return 0, err
+					}
+				}
 			}
 		}
 		for lang, t := range map[string]content.Text{"cs": r.CS, "en": r.EN} {

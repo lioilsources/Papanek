@@ -324,4 +324,10 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Giúp cải thiện ứng dụng. Không có mã định danh, không có nội dung bạn nhập.';
+
+  @override
+  String get youWillNeed => 'Bạn sẽ cần';
+
+  @override
+  String get comicPictures => 'Hình truyện tranh';
 }

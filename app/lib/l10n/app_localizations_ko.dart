@@ -314,4 +314,10 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get statsToggleBody => '앱 개선에 도움이 됩니다. 식별자나 입력한 내용은 포함되지 않습니다.';
+
+  @override
+  String get youWillNeed => '필요한 도구';
+
+  @override
+  String get comicPictures => '만화 그림';
 }

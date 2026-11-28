@@ -42,6 +42,10 @@ class CookList extends StatelessWidget {
               tooltip: l.settings,
               onPressed: () => openSettings(context),
             ),
+          PopupMenuButton<bool>(
+            onSelected: s.setComic,
+            itemBuilder: (_) => [CheckedPopupMenuItem(value: !s.comic, checked: s.comic, child: Text(l.comicPictures))],
+          ),
         ],
       ),
       body: all.isEmpty

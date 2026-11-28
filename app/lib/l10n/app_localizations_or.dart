@@ -329,4 +329,10 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'ଆପକୁ ଉନ୍ନତ କରିବାରେ ସାହାଯ୍ୟ କରେ। କୌଣସି ପରିଚାୟକ ନାହିଁ, ଆପଣ ଲେଖୁଥିବା କିଛି ନୁହେଁ।';
+
+  @override
+  String get youWillNeed => 'ଆପଣଙ୍କୁ ଦରକାର';
+
+  @override
+  String get comicPictures => 'କମିକ୍ ଚିତ୍ର';
 }

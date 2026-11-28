@@ -330,4 +330,10 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'యాప్‌ను మెరుగుపరచడంలో సహాయపడతాయి. ఐడెంటిఫైయర్‌లు లేవు, మీరు టైప్ చేసేది ఏదీ లేదు.';
+
+  @override
+  String get youWillNeed => 'మీకు కావాల్సినవి';
+
+  @override
+  String get comicPictures => 'కామిక్ చిత్రాలు';
 }

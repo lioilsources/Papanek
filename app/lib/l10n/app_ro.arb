@@ -61,5 +61,7 @@
   "unlock": "Deblochează",
   "settings": "Setări",
   "statsToggle": "Statistici anonime",
-  "statsToggleBody": "Ajută la îmbunătățirea aplicației. Fără identificatori, nimic din ce scrii."
+  "statsToggleBody": "Ajută la îmbunătățirea aplicației. Fără identificatori, nimic din ce scrii.",
+  "youWillNeed": "Vei avea nevoie de",
+  "comicPictures": "Imagini în stil benzi desenate"
 }

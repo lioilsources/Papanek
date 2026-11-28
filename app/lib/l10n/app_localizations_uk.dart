@@ -327,4 +327,10 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Допомагає покращувати застосунок. Без ідентифікаторів і без того, що ви вводите.';
+
+  @override
+  String get youWillNeed => 'Знадобиться';
+
+  @override
+  String get comicPictures => 'Комікс-картинки';
 }

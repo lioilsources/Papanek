@@ -329,4 +329,10 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Uygulamanın gelişmesine yardımcı olur. Tanımlayıcı yok, yazdığınız hiçbir şey yok.';
+
+  @override
+  String get youWillNeed => 'İhtiyacın olanlar';
+
+  @override
+  String get comicPictures => 'Çizgi roman görselleri';
 }

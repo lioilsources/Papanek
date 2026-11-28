@@ -61,5 +61,7 @@
   "unlock": "Freischalten",
   "settings": "Einstellungen",
   "statsToggle": "Anonyme Statistik",
-  "statsToggleBody": "Hilft, die App zu verbessern. Keine Kennungen, nichts von dem, was du eingibst."
+  "statsToggleBody": "Hilft, die App zu verbessern. Keine Kennungen, nichts von dem, was du eingibst.",
+  "youWillNeed": "Du brauchst",
+  "comicPictures": "Comic-Bilder"
 }

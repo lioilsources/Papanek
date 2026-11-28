@@ -330,4 +330,10 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Hjælper med at forbedre appen. Ingen identifikatorer, intet af det, du skriver.';
+
+  @override
+  String get youWillNeed => 'Du skal bruge';
+
+  @override
+  String get comicPictures => 'Tegneseriebilleder';
 }

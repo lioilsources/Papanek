@@ -116,12 +116,24 @@ class _CookingScreenState extends State<CookingScreen> {
                 itemBuilder: (c, i) {
                   final st = steps[i];
                   final running = timerStep == i && left > 0;
+                  final photo = s.photos.step(widget.recipe.slug, i);
                   return SingleChildScrollView(
                     padding: const EdgeInsets.all(24),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        if (photo != null) ...[
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                            child: AspectRatio(aspectRatio: 4 / 3, child: Image.asset(photo, fit: BoxFit.cover)),
+                          ),
+                          const SizedBox(height: 20),
+                        ],
                         Text(st.text, style: Theme.of(context).textTheme.headlineSmall?.copyWith(height: 1.4)),
+                        if (st.tools.isNotEmpty) ...[
+                          const SizedBox(height: 20),
+                          ToolStrip(st.tools, size: 56),
+                        ],
                         if (st.timerSec > 0) ...[
                           const SizedBox(height: 32),
                           Center(

@@ -330,4 +330,10 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Ajuden a millorar l\'aplicació. Sense identificadors ni res del que escrius.';
+
+  @override
+  String get youWillNeed => 'Necessitaràs';
+
+  @override
+  String get comicPictures => 'Imatges de còmic';
 }

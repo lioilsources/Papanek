@@ -61,5 +61,7 @@
   "unlock": "Feloldás",
   "settings": "Beállítások",
   "statsToggle": "Névtelen statisztika",
-  "statsToggleBody": "Segít jobbá tenni az alkalmazást. Nincs azonosító, semmi abból, amit beírsz."
+  "statsToggleBody": "Segít jobbá tenni az alkalmazást. Nincs azonosító, semmi abból, amit beírsz.",
+  "youWillNeed": "Szükséged lesz",
+  "comicPictures": "Képregényes képek"
 }

@@ -323,4 +323,10 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'ช่วยปรับปรุงแอป ไม่มีตัวระบุ และไม่มีสิ่งที่คุณพิมพ์';
+
+  @override
+  String get youWillNeed => 'สิ่งที่ต้องใช้';
+
+  @override
+  String get comicPictures => 'ภาพการ์ตูน';
 }

@@ -325,4 +325,10 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'Membantu memperbaik aplikasi. Tiada pengecam, tiada apa-apa yang anda taip.';
+
+  @override
+  String get youWillNeed => 'Anda perlukan';
+
+  @override
+  String get comicPictures => 'Gambar komik';
 }

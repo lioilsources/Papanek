@@ -330,4 +330,10 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get statsToggleBody =>
       'ആപ്പ് മെച്ചപ്പെടുത്താൻ സഹായിക്കുന്നു. തിരിച്ചറിയൽ വിവരങ്ങളില്ല, നിങ്ങൾ ടൈപ്പ് ചെയ്യുന്നതൊന്നുമില്ല.';
+
+  @override
+  String get youWillNeed => 'നിങ്ങൾക്ക് വേണ്ടത്';
+
+  @override
+  String get comicPictures => 'കോമിക് ചിത്രങ്ങൾ';
 }
